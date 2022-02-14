@@ -39,6 +39,9 @@ The application must be built in Swift
 Our application will not be able to enter the market
 Our application may die in competition because lack of resources
 ## Mockups, Wireframes
-![alt text](images/mockups)
+![alt text](images/mockups/account.png)
+![alt text](images/mockups/enter1.png)
+![alt text](images/mockups/enter2.png)
+![alt text](images/mockups/main-page.png)
 ## Future iterations
 Our world is being in process, everyday we see something new , new jobs , new gadgets , new technology. Its not that easy to follow all the trends for everyone, especially to our old gen , that is why this app will gain more importance as time goes.
