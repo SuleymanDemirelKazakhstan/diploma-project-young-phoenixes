@@ -1,9 +1,9 @@
 # CSS 410 Research tools and methods
 ## Team members
-Aituar Konys (180103045) - Product Manager, Business Analytic
-Abylbek Khassenov (180103060) - Ios Developer
-Laila Mukhambetzhanova (180103267) - UI/UX designer
-
+Aituar Konys (180103045) - Product Manager, Business Analytic;
+Abylbek Khassenov (180103060) - Ios Developer;
+Laila Mukhambetzhanova (180103267) - UI/UX designer;
+Azamat Meirkhan (180103170) - Ios Developer;
 ## Project
 Our project is about to get chance for individuals to gain a help from a specialist for payment. Having map the costumer will choose needed specialist and the app will find the closest specialist around so they can connect.
 ## Alternatives / Market research
