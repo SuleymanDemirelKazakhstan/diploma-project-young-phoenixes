@@ -1,9 +1,9 @@
 # CSS 410 Research tools and methods
 ## Team members
-Aituar Konys (180103045) - Product Manager, Business Analytic;
+Aituar Konys (180103045) - Business Analytic;
 Abylbek Khassenov (180103060) - Ios Developer;
 Laila Mukhambetzhanova (180103267) - UI/UX designer;
-Azamat Meirkhan (180103170) - Web Developer;
+Azamat Meirkhan (180103170) - Product Manager;
 Nurpeiis Bexultan (180103024) - Ios Developer;
 ## Project
 Our project is about to get chance for individuals to gain a help from a specialist for payment. Having map the costumer will choose needed specialist and the app will find the closest specialist around so they can connect. Also it will be made easy to use for older generation and everything will be made as they will understand from first time , and it will attract people to be used for our app and use it and recommend it for their friends/relatives.
@@ -13,7 +13,7 @@ Our project is about to get chance for individuals to gain a help from a special
 ## Goals
 Our main goal is to help to our citizens and connect them together. Currently we know that in out big country there is many good specialists that may have no work or cannot connect with people in real life, moreover lets not forget about the injuries that our citizens get doing work that is made for specialist. That is the reason we made ups with this idea in our project and our goal is to solve this problem and create something in the process of New Kazakhstan.
 ## Technologies
-In our project we use Excel, Microsoft services, Trello, Figma, Adobe Illustrator, Swift, UiKit
+In our project we use Excel, Microsoft services, Trello, Figma, Adobe Illustrator, Swift, UiKit, xCode
 
 ## Pages / Activities 
 We will have following pages:
