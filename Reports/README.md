@@ -1,7 +1,7 @@
 > This folders will contain your reports
 ## Week by week plan
 |...|Laila Mukhambetzhanova|
-|---|---|---|
+|---|---|
 |Week #5|Learning IOS platform (Human Interface Guidelines / IOS design system).|
 |Week #6|Define the structure of the application, study the pains of consumers and find their solutions.|
 |Week #7|Creating a moodboard, analyzing the design of other applications, creating application content.|
@@ -11,7 +11,7 @@
 |Week #11-15|Working with developers (“Author's supervision” in design).|
 
 |...|Azamat Meirkhan|
-|---|---|---|
+|---|---|
 |Week #5|Research marketplace and create Trello platform for tasks.|
 |Week #6|Make stand-up and planing the following tasks for the team.|
 |Week #7|Analysis tasks for priority.|
@@ -20,7 +20,7 @@
 |Week #14-15|Checking the latest version of our project, find bugs.|
 
 |...|Abylbek Khassenov|
-|---|---|---|
+|---|---|
 |Week #5|Create x-Code project and choose architecture for project.|
 |Week #6|Create base scenes and named them, get structure of application from designer.|
 |Week #7|Create base labels and prototypes of scenes , base design part.|
@@ -34,7 +34,7 @@
 |Week #14|Code review with team and debugging.|
 
 |...|Bexultan Nurpeiis|
-|---|---|---|
+|---|---|
 |Week #5|Choose architecture for a project .|
 |Week #6|Create base scenes and named them, get structure of application from designer.|
 |Week #7|Make a make up from a ready design parts .|
