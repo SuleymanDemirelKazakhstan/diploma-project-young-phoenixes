@@ -46,6 +46,7 @@
 |Week #13|Work with animations in application.|
 |Week #14|Work with whole logic of application.|
 |Week #14|Code review with team and debugging.|
+
 |...|Aituar Konys|
 |---|---|
 |Week #5|to analyze impact of change in the sphere.|
