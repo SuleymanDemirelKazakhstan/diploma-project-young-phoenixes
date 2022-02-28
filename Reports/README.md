@@ -49,10 +49,9 @@
 
 |...|Aituar Konys|
 |---|---|
-|Week #5|to analyze impact of change in the sphere.|
-|Week #6|find the right options to start with and find out on what costumers in this sphere really need right now.|
+|Week #5-6|Find the right options to start with and find out on what costumers in this sphere really need right now.|
 |Week #7|Analyze on the behavior of users about what pages may scary users, and give report to developers |
-|Week #8-9|Find out the best way to advertize and look up for out priority users platform.|
+|Week #8-9|To analyze impact of change in the sphere/Find out the best way to advertize and look up for out priority users platform.|
 |Week #10-13|Make an analyze of market to see cost or salary needed to engage workers , find most valuable specialist for now to make advertisment.|
 |Week #14-15|By demo version make A/B tests (of the app will be on) , or make beta test with random people to understand user-moments joining the app , and solve if something is needed)or change).|
 
