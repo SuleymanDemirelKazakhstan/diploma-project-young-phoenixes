@@ -7,4 +7,4 @@
 * Created Trello platform for out team https://trello.com/b/l1k8Zhnf/tasks
 # Aituar Konys
 * Look up for the trand beeing around our sphere
-* Downloaded and tried to find wort position in alternative apps not to have same problems(review of comments about the apps also made)
+* Downloaded and tried to find worst positions in alternative apps not to have same problems(review of comments about the apps also made)
