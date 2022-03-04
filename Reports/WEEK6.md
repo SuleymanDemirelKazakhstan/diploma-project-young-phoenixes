@@ -21,4 +21,4 @@ Why not VIPER - because both developers have no development experience, which pr
 
 Why we chose MVVM - there is development experience and convenient file changeability and independence of different layers from each other.
 
-![alt text](../images/ios/x-codeProject.png)
+![alt text](../images/ios/x-codeProject.jpeg)
