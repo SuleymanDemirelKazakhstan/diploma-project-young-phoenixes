@@ -8,3 +8,17 @@
 # Aituar Konys
 * Look up for the trand beeing around our sphere
 * Downloaded and tried to find worst positions in alternative apps not to have same problems(review of comments about the apps also made)
+
+# Khassenov Abylbek
+Create a project with a software integrated development environment (IDE) for macOS, iOS, watchOS, and tvOS platforms. The name of the project is Asar (Ancient Kazakh custom "asar" translated into Russian means "with the whole world." The main goal of this tradition is to help others) since the basis of our project is to help people who need it.
+
+Choice of architecture:
+Which architectures can we choose : MVC, MVVM, VIPER
+
+Why not MVC - the dependence of files on each other, as a result of which it will be more difficult to test and change the project, it will be more difficult, also our MODEL VIEW CONTROLLER turns into a Massive View Controller, which means that the view controller contains all the logic and all the data, which also makes it difficult work .
+
+Why not VIPER - because both developers have no development experience, which promises incorrect use of the architecture itself.
+
+Why we chose MVVM - there is development experience and convenient file changeability and independence of different layers from each other.
+
+![alt text](../images/ios/x-codeProject.png)
