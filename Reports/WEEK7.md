@@ -42,3 +42,4 @@ Create a Swift files and Cocoa touch classes to given folders. Each folders were
 Made more detailed analys to find needed points
 
 <img width="1174" alt="Screen Shot 2022-03-05 at 15 37 33" src="https://user-images.githubusercontent.com/99612071/156877603-2587e8c0-0f43-4c2f-81ca-c2cd2fe22229.png">
+<img width="1173" alt="Screen Shot 2022-03-05 at 15 48 25" src="https://user-images.githubusercontent.com/99612071/156877996-92c6c0d3-f9e9-4bfc-8d0e-0ff99bec5e8f.png">
