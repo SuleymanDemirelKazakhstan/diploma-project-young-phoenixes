@@ -37,3 +37,8 @@ Create a Swift files and Cocoa touch classes to given folders. Each folders were
     * Cocoa touch class - file that has frsameworks and foundations.
 
 ![alt text](../images/ios/x-codeProject3.jpeg)
+
+# Konys Aituar
+Made more detailed analys to find needed points
+
+<img width="1174" alt="Screen Shot 2022-03-05 at 15 37 33" src="https://user-images.githubusercontent.com/99612071/156877603-2587e8c0-0f43-4c2f-81ca-c2cd2fe22229.png">
