@@ -26,3 +26,12 @@ We also use a pattern called Coordinators to better manage the entire flow of th
 https://www.hackingwithswift.com/articles/71/how-to-use-the-coordinator-pattern-in-ios-apps
 
 ![alt text](../images/ios/x-codeProject2.jpeg)
+
+# Nurpeiis Bexultan
+
+Create a Swift files and Cocoa touch classes to given folders. Each folders were divided by thei functionality, data, UI, that's why it was given files by their types.
+    
+    * Swift File - a source of code in file.
+    * Cocoa touch class - file that has frsameworks and foundations.
+
+![alt text](../images/ios/x-codeProject3.jpeg)

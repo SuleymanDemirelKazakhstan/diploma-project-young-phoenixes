@@ -22,3 +22,9 @@ Why not VIPER - because both developers have no development experience, which pr
 Why we chose MVVM - there is development experience and convenient file changeability and independence of different layers from each other.
 
 ![alt text](../images/ios/x-codeProject.jpeg)
+
+# Nurpeiis Bexultan
+
+Choose an architectures for Asar project. There were a lot of architectures, that we can use, but we took MVVM. Because it has a great two points than other architectures:
+    *Speed test
+    *Easy to control
