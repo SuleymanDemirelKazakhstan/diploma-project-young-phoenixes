@@ -6,7 +6,7 @@
 * Researched marketplace (First i downloaded alternative applications like naimi.kz and shaqyr. And i found the one disadvantages of them in payment system, a lot of people complained that they can not pay by online. I noted to me to avoid this problem in the future)
 * Created Trello platform for out team https://trello.com/b/l1k8Zhnf/tasks
 # Aituar Konys
-* Look up for the trand beeing around our sphere
+* Look up for the trand beeing around our sphere. Finding by people comment what is going with their app and see the problems in it
 * Downloaded and tried to find worst positions in alternative apps not to have same problems(review of comments about the apps also made)
 
 # Khassenov Abylbek
