@@ -101,40 +101,8 @@
 				6D77C5A827D361C4005A182A /* Profile */,
 				6D77C5A727D361BA005A182A /* Coordinator */,
 				6D77C5A427D3619F005A182A /* Flows */,
-				6D77C5A027D36127005A182A /* Auth */,
 			);
 			path = Scenes;
-			sourceTree = "<group>";
-		};
-		6D77C5A027D36127005A182A /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				6D77C5A327D36145005A182A /* Agreements */,
-				6D77C5A227D3613C005A182A /* Auth */,
-				6D77C5A127D3612F005A182A /* PasswordRecovery */,
-			);
-			path = Auth;
-			sourceTree = "<group>";
-		};
-		6D77C5A127D3612F005A182A /* PasswordRecovery */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PasswordRecovery;
-			sourceTree = "<group>";
-		};
-		6D77C5A227D3613C005A182A /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Auth;
-			sourceTree = "<group>";
-		};
-		6D77C5A327D36145005A182A /* Agreements */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Agreements;
 			sourceTree = "<group>";
 		};
 		6D77C5A427D3619F005A182A /* Flows */ = {
