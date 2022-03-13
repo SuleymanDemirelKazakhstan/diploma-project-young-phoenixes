@@ -19,6 +19,12 @@
 		EC4D158C27CCA1F1008C2841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4D158A27CCA1F1008C2841 /* LaunchScreen.storyboard */; };
 		EC4D159727CCA1F1008C2841 /* AsarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D159627CCA1F1008C2841 /* AsarTests.swift */; };
 		EC4D15A227CCA1F1008C2841 /* AsarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D15A127CCA1F1008C2841 /* AsarUITests.swift */; };
+		ECB006D727DE680D002ADDD3 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB006D527DE680D002ADDD3 /* AuthViewController.swift */; };
+		ECB006D827DE680D002ADDD3 /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB006D627DE680D002ADDD3 /* AuthViewController.xib */; };
+		ECB006DC27DE694B002ADDD3 /* PasswordRecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB006DA27DE694B002ADDD3 /* PasswordRecoveryViewController.swift */; };
+		ECB006DD27DE694B002ADDD3 /* PasswordRecoveryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB006DB27DE694B002ADDD3 /* PasswordRecoveryViewController.xib */; };
+		ECB006E127DE6978002ADDD3 /* AuthWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB006DF27DE6978002ADDD3 /* AuthWelcomeViewController.swift */; };
+		ECB006E227DE6978002ADDD3 /* AuthWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB006E027DE6978002ADDD3 /* AuthWelcomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,12 @@
 		EC4D159D27CCA1F1008C2841 /* AsarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC4D15A127CCA1F1008C2841 /* AsarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsarUITests.swift; sourceTree = "<group>"; };
 		EC4D15A327CCA1F1008C2841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECB006D527DE680D002ADDD3 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		ECB006D627DE680D002ADDD3 /* AuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
+		ECB006DA27DE694B002ADDD3 /* PasswordRecoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryViewController.swift; sourceTree = "<group>"; };
+		ECB006DB27DE694B002ADDD3 /* PasswordRecoveryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordRecoveryViewController.xib; sourceTree = "<group>"; };
+		ECB006DF27DE6978002ADDD3 /* AuthWelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthWelcomeViewController.swift; sourceTree = "<group>"; };
+		ECB006E027DE6978002ADDD3 /* AuthWelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthWelcomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +110,6 @@
 		6D77C59F27D3611D005A182A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				6D77C5A827D361C4005A182A /* Profile */,
 				6D77C5A727D361BA005A182A /* Coordinator */,
 				6D77C5A427D3619F005A182A /* Flows */,
 			);
@@ -108,6 +119,8 @@
 		6D77C5A427D3619F005A182A /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				ECB006D127DE67C4002ADDD3 /* Auth */,
+				6D77C5A827D361C4005A182A /* Profile */,
 				6D77C5A627D361B0005A182A /* Main */,
 				6D77C5A527D361A7005A182A /* Home */,
 			);
@@ -228,6 +241,43 @@
 			path = AsarUITests;
 			sourceTree = "<group>";
 		};
+		ECB006D127DE67C4002ADDD3 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				ECB006D927DE688A002ADDD3 /* AuthWelcome */,
+				ECB006D327DE67D4002ADDD3 /* PasswordRecovery */,
+				ECB006D227DE67CC002ADDD3 /* Auth */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		ECB006D227DE67CC002ADDD3 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				ECB006D527DE680D002ADDD3 /* AuthViewController.swift */,
+				ECB006D627DE680D002ADDD3 /* AuthViewController.xib */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		ECB006D327DE67D4002ADDD3 /* PasswordRecovery */ = {
+			isa = PBXGroup;
+			children = (
+				ECB006DA27DE694B002ADDD3 /* PasswordRecoveryViewController.swift */,
+				ECB006DB27DE694B002ADDD3 /* PasswordRecoveryViewController.xib */,
+			);
+			path = PasswordRecovery;
+			sourceTree = "<group>";
+		};
+		ECB006D927DE688A002ADDD3 /* AuthWelcome */ = {
+			isa = PBXGroup;
+			children = (
+				ECB006DF27DE6978002ADDD3 /* AuthWelcomeViewController.swift */,
+				ECB006E027DE6978002ADDD3 /* AuthWelcomeViewController.xib */,
+			);
+			path = AuthWelcome;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -331,9 +381,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECB006D827DE680D002ADDD3 /* AuthViewController.xib in Resources */,
 				EC4D158C27CCA1F1008C2841 /* LaunchScreen.storyboard in Resources */,
 				EC4D158927CCA1F1008C2841 /* Assets.xcassets in Resources */,
+				ECB006DD27DE694B002ADDD3 /* PasswordRecoveryViewController.xib in Resources */,
 				EC4D158727CCA1EF008C2841 /* Main.storyboard in Resources */,
+				ECB006E227DE6978002ADDD3 /* AuthWelcomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,11 +413,14 @@
 			files = (
 				6D77C5B227D36267005A182A /* CoordinatorViewController.swift in Sources */,
 				6D77C5AE27D36204005A182A /* Action.swift in Sources */,
+				ECB006DC27DE694B002ADDD3 /* PasswordRecoveryViewController.swift in Sources */,
 				EC4D158027CCA1EF008C2841 /* AppDelegate.swift in Sources */,
 				6D77C5B427D3627A005A182A /* MainViewController.swift in Sources */,
+				ECB006D727DE680D002ADDD3 /* AuthViewController.swift in Sources */,
 				6D77C5B027D3623C005A182A /* ProfileViewController.swift in Sources */,
 				6D77C5B627D3628C005A182A /* HomeViewController.swift in Sources */,
 				EC4D158227CCA1EF008C2841 /* SceneDelegate.swift in Sources */,
+				ECB006E127DE6978002ADDD3 /* AuthWelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
