@@ -32,3 +32,10 @@ I analyzed working processes of the team and realized that we have to spend more
 
 # Konys Aituar
 Learned and chose righ A/B test for our project.
+
+# Nurpeiis Bexultan
+Creat a new cocos touch class(Tabbar View Controller) and make this view controller to connect other viewcontroller that made last week.
+
+Let our TabBarViewController input pages that we already creat. Gave a icon for the tab bar labels and make it large.
+
+![alt text](../images/ios/bex_week8.jpeg)

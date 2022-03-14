@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D0E29B727DF0D8F00658E7F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E29B627DF0D8F00658E7F /* TabBarViewController.swift */; };
 		6D77C5AE27D36204005A182A /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77C5AD27D36204005A182A /* Action.swift */; };
 		6D77C5B027D3623C005A182A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77C5AF27D3623C005A182A /* ProfileViewController.swift */; };
 		6D77C5B227D36267005A182A /* CoordinatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77C5B127D36267005A182A /* CoordinatorViewController.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D0E29B627DF0D8F00658E7F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		6D77C5AD27D36204005A182A /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		6D77C5AF27D3623C005A182A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6D77C5B127D36267005A182A /* CoordinatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D0E29B527DF0D4D00658E7F /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				6D0E29B627DF0D8F00658E7F /* TabBarViewController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
 		6D77C59E27D3610A005A182A /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +129,7 @@
 		6D77C5A427D3619F005A182A /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				6D0E29B527DF0D4D00658E7F /* Tabbar */,
 				ECB006D127DE67C4002ADDD3 /* Auth */,
 				6D77C5A827D361C4005A182A /* Profile */,
 				6D77C5A627D361B0005A182A /* Main */,
@@ -413,6 +424,7 @@
 			files = (
 				6D77C5B227D36267005A182A /* CoordinatorViewController.swift in Sources */,
 				6D77C5AE27D36204005A182A /* Action.swift in Sources */,
+				6D0E29B727DF0D8F00658E7F /* TabBarViewController.swift in Sources */,
 				ECB006DC27DE694B002ADDD3 /* PasswordRecoveryViewController.swift in Sources */,
 				EC4D158027CCA1EF008C2841 /* AppDelegate.swift in Sources */,
 				6D77C5B427D3627A005A182A /* MainViewController.swift in Sources */,
