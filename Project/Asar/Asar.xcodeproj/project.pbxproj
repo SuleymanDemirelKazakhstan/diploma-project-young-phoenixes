@@ -10,11 +10,10 @@
 		6D0E29B727DF0D8F00658E7F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E29B627DF0D8F00658E7F /* TabBarViewController.swift */; };
 		6D77C5AE27D36204005A182A /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77C5AD27D36204005A182A /* Action.swift */; };
 		6D77C5B027D3623C005A182A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77C5AF27D3623C005A182A /* ProfileViewController.swift */; };
-		6D77C5B227D36267005A182A /* CoordinatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77C5B127D36267005A182A /* CoordinatorViewController.swift */; };
 		6D77C5B427D3627A005A182A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77C5B327D3627A005A182A /* MainViewController.swift */; };
 		6D77C5B627D3628C005A182A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D77C5B527D3628C005A182A /* HomeViewController.swift */; };
+		EC21355327DF65BB00B1B361 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC21355227DF65BB00B1B361 /* AppCoordinator.swift */; };
 		EC4D158027CCA1EF008C2841 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D157F27CCA1EF008C2841 /* AppDelegate.swift */; };
-		EC4D158227CCA1EF008C2841 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D158127CCA1EF008C2841 /* SceneDelegate.swift */; };
 		EC4D158727CCA1EF008C2841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4D158527CCA1EF008C2841 /* Main.storyboard */; };
 		EC4D158927CCA1F1008C2841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC4D158827CCA1F1008C2841 /* Assets.xcassets */; };
 		EC4D158C27CCA1F1008C2841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4D158A27CCA1F1008C2841 /* LaunchScreen.storyboard */; };
@@ -49,12 +48,11 @@
 		6D0E29B627DF0D8F00658E7F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		6D77C5AD27D36204005A182A /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		6D77C5AF27D3623C005A182A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		6D77C5B127D36267005A182A /* CoordinatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorViewController.swift; sourceTree = "<group>"; };
 		6D77C5B327D3627A005A182A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6D77C5B527D3628C005A182A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EC21355227DF65BB00B1B361 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		EC4D157C27CCA1EF008C2841 /* Asar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC4D157F27CCA1EF008C2841 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC4D158127CCA1EF008C2841 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EC4D158627CCA1EF008C2841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC4D158827CCA1F1008C2841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC4D158B27CCA1F1008C2841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -157,7 +155,7 @@
 		6D77C5A727D361BA005A182A /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				6D77C5B127D36267005A182A /* CoordinatorViewController.swift */,
+				EC21355227DF65BB00B1B361 /* AppCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -173,7 +171,6 @@
 		6D77C5A927D361D7005A182A /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				EC4D158127CCA1EF008C2841 /* SceneDelegate.swift */,
 				EC4D157F27CCA1EF008C2841 /* AppDelegate.swift */,
 			);
 			path = Application;
@@ -422,16 +419,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D77C5B227D36267005A182A /* CoordinatorViewController.swift in Sources */,
 				6D77C5AE27D36204005A182A /* Action.swift in Sources */,
 				6D0E29B727DF0D8F00658E7F /* TabBarViewController.swift in Sources */,
+				EC21355327DF65BB00B1B361 /* AppCoordinator.swift in Sources */,
 				ECB006DC27DE694B002ADDD3 /* PasswordRecoveryViewController.swift in Sources */,
 				EC4D158027CCA1EF008C2841 /* AppDelegate.swift in Sources */,
 				6D77C5B427D3627A005A182A /* MainViewController.swift in Sources */,
 				ECB006D727DE680D002ADDD3 /* AuthViewController.swift in Sources */,
 				6D77C5B027D3623C005A182A /* ProfileViewController.swift in Sources */,
 				6D77C5B627D3628C005A182A /* HomeViewController.swift in Sources */,
-				EC4D158227CCA1EF008C2841 /* SceneDelegate.swift in Sources */,
 				ECB006E127DE6978002ADDD3 /* AuthWelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,7 +605,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Asar/Info.plist;
+				INFOPLIST_FILE = Asar/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -627,7 +623,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Asar/Info.plist;
+				INFOPLIST_FILE = Asar/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
