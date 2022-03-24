@@ -6,62 +6,6 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		EC4D159727CCA1F1008C2841 /* AsarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D159627CCA1F1008C2841 /* AsarTests.swift */; };
-		EC4D15A227CCA1F1008C2841 /* AsarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4D15A127CCA1F1008C2841 /* AsarUITests.swift */; };
-		ECEED88827EC91270078FBD1 /* Walktrough.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECEED83A27EC91260078FBD1 /* Walktrough.storyboard */; };
-		ECEED88927EC91270078FBD1 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECEED83B27EC91260078FBD1 /* Profile.storyboard */; };
-		ECEED88A27EC91270078FBD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECEED83C27EC91260078FBD1 /* LaunchScreen.storyboard */; };
-		ECEED88B27EC91270078FBD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECEED83E27EC91260078FBD1 /* Main.storyboard */; };
-		ECEED88C27EC91270078FBD1 /* ChangePassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECEED84027EC91260078FBD1 /* ChangePassword.storyboard */; };
-		ECEED88D27EC91270078FBD1 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECEED84127EC91260078FBD1 /* Auth.storyboard */; };
-		ECEED88E27EC91270078FBD1 /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECEED84227EC91260078FBD1 /* First.storyboard */; };
-		ECEED88F27EC91270078FBD1 /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED84427EC91260078FBD1 /* UIStoryboard.swift */; };
-		ECEED89127EC91270078FBD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED84727EC91260078FBD1 /* AppDelegate.swift */; };
-		ECEED89227EC91270078FBD1 /* RegisterModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED84B27EC91270078FBD1 /* RegisterModels.swift */; };
-		ECEED89327EC91270078FBD1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED84C27EC91270078FBD1 /* RegisterViewController.swift */; };
-		ECEED89427EC91270078FBD1 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED84D27EC91270078FBD1 /* RegisterViewModel.swift */; };
-		ECEED89527EC91270078FBD1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED84F27EC91270078FBD1 /* LoginViewModel.swift */; };
-		ECEED89627EC91270078FBD1 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED85027EC91270078FBD1 /* LoginModels.swift */; };
-		ECEED89727EC91270078FBD1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED85127EC91270078FBD1 /* LoginViewController.swift */; };
-		ECEED89827EC91270078FBD1 /* WalktroughModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED85327EC91270078FBD1 /* WalktroughModels.swift */; };
-		ECEED89927EC91270078FBD1 /* WalktroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED85427EC91270078FBD1 /* WalktroughViewController.swift */; };
-		ECEED89A27EC91270078FBD1 /* WalktroughViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED85527EC91270078FBD1 /* WalktroughViewModel.swift */; };
-		ECEED89B27EC91270078FBD1 /* ProfileModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED85727EC91270078FBD1 /* ProfileModels.swift */; };
-		ECEED89C27EC91270078FBD1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED85827EC91270078FBD1 /* ProfileViewController.swift */; };
-		ECEED89D27EC91270078FBD1 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED85927EC91270078FBD1 /* ProfileViewModel.swift */; };
-		ECEED89E27EC91270078FBD1 /* ChangePasswordStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED85C27EC91270078FBD1 /* ChangePasswordStep2ViewController.swift */; };
-		ECEED89F27EC91270078FBD1 /* ChangePasswordStep2Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED85D27EC91270078FBD1 /* ChangePasswordStep2Models.swift */; };
-		ECEED8A027EC91270078FBD1 /* ChangePasswordStep2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED85E27EC91270078FBD1 /* ChangePasswordStep2ViewModel.swift */; };
-		ECEED8A127EC91270078FBD1 /* ChangePasswordStep1Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED86027EC91270078FBD1 /* ChangePasswordStep1Models.swift */; };
-		ECEED8A227EC91270078FBD1 /* ChangePasswordStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED86127EC91270078FBD1 /* ChangePasswordStep1ViewController.swift */; };
-		ECEED8A327EC91270078FBD1 /* ChangePasswordStep1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED86227EC91270078FBD1 /* ChangePasswordStep1ViewModel.swift */; };
-		ECEED8A427EC91270078FBD1 /* AViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED86527EC91270078FBD1 /* AViewModel.swift */; };
-		ECEED8A527EC91270078FBD1 /* AModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED86627EC91270078FBD1 /* AModels.swift */; };
-		ECEED8A627EC91270078FBD1 /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED86727EC91270078FBD1 /* AViewController.swift */; };
-		ECEED8A727EC91270078FBD1 /* BViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED86927EC91270078FBD1 /* BViewModel.swift */; };
-		ECEED8A827EC91270078FBD1 /* BModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED86A27EC91270078FBD1 /* BModels.swift */; };
-		ECEED8A927EC91270078FBD1 /* BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED86B27EC91270078FBD1 /* BViewController.swift */; };
-		ECEED8AA27EC91270078FBD1 /* ChangePasswordCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED86E27EC91270078FBD1 /* ChangePasswordCoordinator.swift */; };
-		ECEED8AB27EC91270078FBD1 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED86F27EC91270078FBD1 /* AuthCoordinator.swift */; };
-		ECEED8AC27EC91270078FBD1 /* WalktroughCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED87027EC91270078FBD1 /* WalktroughCoordinator.swift */; };
-		ECEED8AD27EC91270078FBD1 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED87127EC91270078FBD1 /* ProfileCoordinator.swift */; };
-		ECEED8AE27EC91270078FBD1 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED87227EC91270078FBD1 /* ApplicationCoordinator.swift */; };
-		ECEED8AF27EC91270078FBD1 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED87327EC91270078FBD1 /* MainCoordinator.swift */; };
-		ECEED8B027EC91270078FBD1 /* DeepLinkOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED87627EC91270078FBD1 /* DeepLinkOption.swift */; };
-		ECEED8B127EC91270078FBD1 /* LaunchInstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED87727EC91270078FBD1 /* LaunchInstructor.swift */; };
-		ECEED8B227EC91270078FBD1 /* ViewController+Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED87927EC91270078FBD1 /* ViewController+Coordinator.swift */; };
-		ECEED8B327EC91270078FBD1 /* AuthCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED87B27EC91270078FBD1 /* AuthCoordinatorOutput.swift */; };
-		ECEED8B427EC91270078FBD1 /* BaseViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED87C27EC91270078FBD1 /* BaseViewControllerProtocol.swift */; };
-		ECEED8B527EC91270078FBD1 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED87D27EC91270078FBD1 /* Presentable.swift */; };
-		ECEED8B627EC91270078FBD1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED87E27EC91270078FBD1 /* Coordinator.swift */; };
-		ECEED8B727EC91270078FBD1 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED88027EC91270078FBD1 /* ViewControllerFactory.swift */; };
-		ECEED8B827EC91270078FBD1 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED88127EC91270078FBD1 /* CoordinatorFactory.swift */; };
-		ECEED8B927EC91270078FBD1 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED88327EC91270078FBD1 /* BaseCoordinator.swift */; };
-		ECEED8BA27EC91270078FBD1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED88527EC91270078FBD1 /* Router.swift */; };
-		ECEED8BB27EC91270078FBD1 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEED88727EC91270078FBD1 /* Dynamic.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		EC4D159327CCA1F1008C2841 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -83,62 +27,7 @@
 		EC4D157C27CCA1EF008C2841 /* Asar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC4D158D27CCA1F1008C2841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC4D159227CCA1F1008C2841 /* AsarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC4D159627CCA1F1008C2841 /* AsarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsarTests.swift; sourceTree = "<group>"; };
-		EC4D159827CCA1F1008C2841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC4D159D27CCA1F1008C2841 /* AsarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC4D15A127CCA1F1008C2841 /* AsarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsarUITests.swift; sourceTree = "<group>"; };
-		EC4D15A327CCA1F1008C2841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECEED83A27EC91260078FBD1 /* Walktrough.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Walktrough.storyboard; sourceTree = "<group>"; };
-		ECEED83B27EC91260078FBD1 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
-		ECEED83D27EC91260078FBD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ECEED83F27EC91260078FBD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ECEED84027EC91260078FBD1 /* ChangePassword.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChangePassword.storyboard; sourceTree = "<group>"; };
-		ECEED84127EC91260078FBD1 /* Auth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
-		ECEED84227EC91260078FBD1 /* First.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = First.storyboard; sourceTree = "<group>"; };
-		ECEED84427EC91260078FBD1 /* UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
-		ECEED84727EC91260078FBD1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ECEED84B27EC91270078FBD1 /* RegisterModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterModels.swift; sourceTree = "<group>"; };
-		ECEED84C27EC91270078FBD1 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		ECEED84D27EC91270078FBD1 /* RegisterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
-		ECEED84F27EC91270078FBD1 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		ECEED85027EC91270078FBD1 /* LoginModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
-		ECEED85127EC91270078FBD1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		ECEED85327EC91270078FBD1 /* WalktroughModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalktroughModels.swift; sourceTree = "<group>"; };
-		ECEED85427EC91270078FBD1 /* WalktroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalktroughViewController.swift; sourceTree = "<group>"; };
-		ECEED85527EC91270078FBD1 /* WalktroughViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalktroughViewModel.swift; sourceTree = "<group>"; };
-		ECEED85727EC91270078FBD1 /* ProfileModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileModels.swift; sourceTree = "<group>"; };
-		ECEED85827EC91270078FBD1 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		ECEED85927EC91270078FBD1 /* ProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
-		ECEED85C27EC91270078FBD1 /* ChangePasswordStep2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordStep2ViewController.swift; sourceTree = "<group>"; };
-		ECEED85D27EC91270078FBD1 /* ChangePasswordStep2Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordStep2Models.swift; sourceTree = "<group>"; };
-		ECEED85E27EC91270078FBD1 /* ChangePasswordStep2ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordStep2ViewModel.swift; sourceTree = "<group>"; };
-		ECEED86027EC91270078FBD1 /* ChangePasswordStep1Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordStep1Models.swift; sourceTree = "<group>"; };
-		ECEED86127EC91270078FBD1 /* ChangePasswordStep1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordStep1ViewController.swift; sourceTree = "<group>"; };
-		ECEED86227EC91270078FBD1 /* ChangePasswordStep1ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordStep1ViewModel.swift; sourceTree = "<group>"; };
-		ECEED86527EC91270078FBD1 /* AViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AViewModel.swift; sourceTree = "<group>"; };
-		ECEED86627EC91270078FBD1 /* AModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AModels.swift; sourceTree = "<group>"; };
-		ECEED86727EC91270078FBD1 /* AViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
-		ECEED86927EC91270078FBD1 /* BViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BViewModel.swift; sourceTree = "<group>"; };
-		ECEED86A27EC91270078FBD1 /* BModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BModels.swift; sourceTree = "<group>"; };
-		ECEED86B27EC91270078FBD1 /* BViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
-		ECEED86E27EC91270078FBD1 /* ChangePasswordCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordCoordinator.swift; sourceTree = "<group>"; };
-		ECEED86F27EC91270078FBD1 /* AuthCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
-		ECEED87027EC91270078FBD1 /* WalktroughCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalktroughCoordinator.swift; sourceTree = "<group>"; };
-		ECEED87127EC91270078FBD1 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
-		ECEED87227EC91270078FBD1 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
-		ECEED87327EC91270078FBD1 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
-		ECEED87627EC91270078FBD1 /* DeepLinkOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLinkOption.swift; sourceTree = "<group>"; };
-		ECEED87727EC91270078FBD1 /* LaunchInstructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchInstructor.swift; sourceTree = "<group>"; };
-		ECEED87927EC91270078FBD1 /* ViewController+Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Coordinator.swift"; sourceTree = "<group>"; };
-		ECEED87B27EC91270078FBD1 /* AuthCoordinatorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCoordinatorOutput.swift; sourceTree = "<group>"; };
-		ECEED87C27EC91270078FBD1 /* BaseViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewControllerProtocol.swift; sourceTree = "<group>"; };
-		ECEED87D27EC91270078FBD1 /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
-		ECEED87E27EC91270078FBD1 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		ECEED88027EC91270078FBD1 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
-		ECEED88127EC91270078FBD1 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
-		ECEED88327EC91270078FBD1 /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
-		ECEED88527EC91270078FBD1 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		ECEED88727EC91270078FBD1 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		ECEED8BF27EC91930078FBD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,8 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				EC4D157E27CCA1EF008C2841 /* Asar */,
-				EC4D159527CCA1F1008C2841 /* AsarTests */,
-				EC4D15A027CCA1F1008C2841 /* AsarUITests */,
 				EC4D157D27CCA1EF008C2841 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -199,284 +86,9 @@
 		EC4D157E27CCA1EF008C2841 /* Asar */ = {
 			isa = PBXGroup;
 			children = (
-				ECEED84627EC91260078FBD1 /* AppDelegate */,
-				ECEED86C27EC91270078FBD1 /* Coordinator */,
-				ECEED84327EC91260078FBD1 /* Extensions */,
-				ECEED84827EC91260078FBD1 /* Scenes */,
-				ECEED83927EC91260078FBD1 /* Storyboards */,
-				ECEED88627EC91270078FBD1 /* Utils */,
 				6D77C59E27D3610A005A182A /* SupportingFiles */,
 			);
 			path = Asar;
-			sourceTree = "<group>";
-		};
-		EC4D159527CCA1F1008C2841 /* AsarTests */ = {
-			isa = PBXGroup;
-			children = (
-				EC4D159627CCA1F1008C2841 /* AsarTests.swift */,
-				EC4D159827CCA1F1008C2841 /* Info.plist */,
-			);
-			path = AsarTests;
-			sourceTree = "<group>";
-		};
-		EC4D15A027CCA1F1008C2841 /* AsarUITests */ = {
-			isa = PBXGroup;
-			children = (
-				EC4D15A127CCA1F1008C2841 /* AsarUITests.swift */,
-				EC4D15A327CCA1F1008C2841 /* Info.plist */,
-			);
-			path = AsarUITests;
-			sourceTree = "<group>";
-		};
-		ECEED83927EC91260078FBD1 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED83A27EC91260078FBD1 /* Walktrough.storyboard */,
-				ECEED83B27EC91260078FBD1 /* Profile.storyboard */,
-				ECEED83C27EC91260078FBD1 /* LaunchScreen.storyboard */,
-				ECEED83E27EC91260078FBD1 /* Main.storyboard */,
-				ECEED84027EC91260078FBD1 /* ChangePassword.storyboard */,
-				ECEED84127EC91260078FBD1 /* Auth.storyboard */,
-				ECEED84227EC91260078FBD1 /* First.storyboard */,
-			);
-			name = Storyboards;
-			path = ../../../../FlowCoordinator/CoordinatorsWithDelegation/CoordinatorsWithDelegation/Storyboards;
-			sourceTree = "<group>";
-		};
-		ECEED84327EC91260078FBD1 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED84427EC91260078FBD1 /* UIStoryboard.swift */,
-			);
-			name = Extensions;
-			path = ../../../../FlowCoordinator/CoordinatorsWithDelegation/CoordinatorsWithDelegation/Extensions;
-			sourceTree = "<group>";
-		};
-		ECEED84627EC91260078FBD1 /* AppDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED84727EC91260078FBD1 /* AppDelegate.swift */,
-			);
-			name = AppDelegate;
-			path = ../../../../FlowCoordinator/CoordinatorsWithDelegation/CoordinatorsWithDelegation/AppDelegate;
-			sourceTree = "<group>";
-		};
-		ECEED84827EC91260078FBD1 /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED84927EC91270078FBD1 /* Auth */,
-				ECEED85227EC91270078FBD1 /* Walktrough */,
-				ECEED85627EC91270078FBD1 /* Profile */,
-				ECEED85A27EC91270078FBD1 /* ChangePassword */,
-				ECEED86327EC91270078FBD1 /* Main */,
-			);
-			name = Scenes;
-			path = ../../../../FlowCoordinator/CoordinatorsWithDelegation/CoordinatorsWithDelegation/Scenes;
-			sourceTree = "<group>";
-		};
-		ECEED84927EC91270078FBD1 /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED84A27EC91270078FBD1 /* Register */,
-				ECEED84E27EC91270078FBD1 /* Login */,
-			);
-			path = Auth;
-			sourceTree = "<group>";
-		};
-		ECEED84A27EC91270078FBD1 /* Register */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED84B27EC91270078FBD1 /* RegisterModels.swift */,
-				ECEED84C27EC91270078FBD1 /* RegisterViewController.swift */,
-				ECEED84D27EC91270078FBD1 /* RegisterViewModel.swift */,
-			);
-			path = Register;
-			sourceTree = "<group>";
-		};
-		ECEED84E27EC91270078FBD1 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED84F27EC91270078FBD1 /* LoginViewModel.swift */,
-				ECEED85027EC91270078FBD1 /* LoginModels.swift */,
-				ECEED85127EC91270078FBD1 /* LoginViewController.swift */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		ECEED85227EC91270078FBD1 /* Walktrough */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED85327EC91270078FBD1 /* WalktroughModels.swift */,
-				ECEED85427EC91270078FBD1 /* WalktroughViewController.swift */,
-				ECEED85527EC91270078FBD1 /* WalktroughViewModel.swift */,
-			);
-			path = Walktrough;
-			sourceTree = "<group>";
-		};
-		ECEED85627EC91270078FBD1 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED85727EC91270078FBD1 /* ProfileModels.swift */,
-				ECEED85827EC91270078FBD1 /* ProfileViewController.swift */,
-				ECEED85927EC91270078FBD1 /* ProfileViewModel.swift */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		ECEED85A27EC91270078FBD1 /* ChangePassword */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED85B27EC91270078FBD1 /* Step2 */,
-				ECEED85F27EC91270078FBD1 /* Step1 */,
-			);
-			path = ChangePassword;
-			sourceTree = "<group>";
-		};
-		ECEED85B27EC91270078FBD1 /* Step2 */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED85C27EC91270078FBD1 /* ChangePasswordStep2ViewController.swift */,
-				ECEED85D27EC91270078FBD1 /* ChangePasswordStep2Models.swift */,
-				ECEED85E27EC91270078FBD1 /* ChangePasswordStep2ViewModel.swift */,
-			);
-			path = Step2;
-			sourceTree = "<group>";
-		};
-		ECEED85F27EC91270078FBD1 /* Step1 */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED86027EC91270078FBD1 /* ChangePasswordStep1Models.swift */,
-				ECEED86127EC91270078FBD1 /* ChangePasswordStep1ViewController.swift */,
-				ECEED86227EC91270078FBD1 /* ChangePasswordStep1ViewModel.swift */,
-			);
-			path = Step1;
-			sourceTree = "<group>";
-		};
-		ECEED86327EC91270078FBD1 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED86427EC91270078FBD1 /* A */,
-				ECEED86827EC91270078FBD1 /* B */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		ECEED86427EC91270078FBD1 /* A */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED86527EC91270078FBD1 /* AViewModel.swift */,
-				ECEED86627EC91270078FBD1 /* AModels.swift */,
-				ECEED86727EC91270078FBD1 /* AViewController.swift */,
-			);
-			path = A;
-			sourceTree = "<group>";
-		};
-		ECEED86827EC91270078FBD1 /* B */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED86927EC91270078FBD1 /* BViewModel.swift */,
-				ECEED86A27EC91270078FBD1 /* BModels.swift */,
-				ECEED86B27EC91270078FBD1 /* BViewController.swift */,
-			);
-			path = B;
-			sourceTree = "<group>";
-		};
-		ECEED86C27EC91270078FBD1 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED86D27EC91270078FBD1 /* Coordinators */,
-				ECEED87427EC91270078FBD1 /* BaseCoordinator */,
-			);
-			name = Coordinator;
-			path = ../../../../FlowCoordinator/CoordinatorsWithDelegation/CoordinatorsWithDelegation/Coordinator;
-			sourceTree = "<group>";
-		};
-		ECEED86D27EC91270078FBD1 /* Coordinators */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED86E27EC91270078FBD1 /* ChangePasswordCoordinator.swift */,
-				ECEED86F27EC91270078FBD1 /* AuthCoordinator.swift */,
-				ECEED87027EC91270078FBD1 /* WalktroughCoordinator.swift */,
-				ECEED87127EC91270078FBD1 /* ProfileCoordinator.swift */,
-				ECEED87227EC91270078FBD1 /* ApplicationCoordinator.swift */,
-				ECEED87327EC91270078FBD1 /* MainCoordinator.swift */,
-			);
-			path = Coordinators;
-			sourceTree = "<group>";
-		};
-		ECEED87427EC91270078FBD1 /* BaseCoordinator */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED87527EC91270078FBD1 /* Enums */,
-				ECEED87827EC91270078FBD1 /* Extensions */,
-				ECEED87A27EC91270078FBD1 /* Protocols */,
-				ECEED87F27EC91270078FBD1 /* Factory */,
-				ECEED88227EC91270078FBD1 /* Base */,
-				ECEED88427EC91270078FBD1 /* Router */,
-			);
-			path = BaseCoordinator;
-			sourceTree = "<group>";
-		};
-		ECEED87527EC91270078FBD1 /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED87627EC91270078FBD1 /* DeepLinkOption.swift */,
-				ECEED87727EC91270078FBD1 /* LaunchInstructor.swift */,
-			);
-			path = Enums;
-			sourceTree = "<group>";
-		};
-		ECEED87827EC91270078FBD1 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED87927EC91270078FBD1 /* ViewController+Coordinator.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		ECEED87A27EC91270078FBD1 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED87B27EC91270078FBD1 /* AuthCoordinatorOutput.swift */,
-				ECEED87C27EC91270078FBD1 /* BaseViewControllerProtocol.swift */,
-				ECEED87D27EC91270078FBD1 /* Presentable.swift */,
-				ECEED87E27EC91270078FBD1 /* Coordinator.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		ECEED87F27EC91270078FBD1 /* Factory */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED88027EC91270078FBD1 /* ViewControllerFactory.swift */,
-				ECEED88127EC91270078FBD1 /* CoordinatorFactory.swift */,
-			);
-			path = Factory;
-			sourceTree = "<group>";
-		};
-		ECEED88227EC91270078FBD1 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED88327EC91270078FBD1 /* BaseCoordinator.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		ECEED88427EC91270078FBD1 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED88527EC91270078FBD1 /* Router.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		ECEED88627EC91270078FBD1 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				ECEED88727EC91270078FBD1 /* Dynamic.swift */,
-			);
-			name = Utils;
-			path = ../../../../FlowCoordinator/CoordinatorsWithDelegation/CoordinatorsWithDelegation/Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -582,13 +194,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECEED88D27EC91270078FBD1 /* Auth.storyboard in Resources */,
-				ECEED88A27EC91270078FBD1 /* LaunchScreen.storyboard in Resources */,
-				ECEED88927EC91270078FBD1 /* Profile.storyboard in Resources */,
-				ECEED88827EC91270078FBD1 /* Walktrough.storyboard in Resources */,
-				ECEED88E27EC91270078FBD1 /* First.storyboard in Resources */,
-				ECEED88C27EC91270078FBD1 /* ChangePassword.storyboard in Resources */,
-				ECEED88B27EC91270078FBD1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,50 +218,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECEED8A227EC91270078FBD1 /* ChangePasswordStep1ViewController.swift in Sources */,
-				ECEED8B027EC91270078FBD1 /* DeepLinkOption.swift in Sources */,
-				ECEED8B627EC91270078FBD1 /* Coordinator.swift in Sources */,
-				ECEED89227EC91270078FBD1 /* RegisterModels.swift in Sources */,
-				ECEED89427EC91270078FBD1 /* RegisterViewModel.swift in Sources */,
-				ECEED8A327EC91270078FBD1 /* ChangePasswordStep1ViewModel.swift in Sources */,
-				ECEED8B427EC91270078FBD1 /* BaseViewControllerProtocol.swift in Sources */,
-				ECEED8AA27EC91270078FBD1 /* ChangePasswordCoordinator.swift in Sources */,
-				ECEED89627EC91270078FBD1 /* LoginModels.swift in Sources */,
-				ECEED8B127EC91270078FBD1 /* LaunchInstructor.swift in Sources */,
-				ECEED8A827EC91270078FBD1 /* BModels.swift in Sources */,
-				ECEED8A427EC91270078FBD1 /* AViewModel.swift in Sources */,
-				ECEED8A927EC91270078FBD1 /* BViewController.swift in Sources */,
-				ECEED89B27EC91270078FBD1 /* ProfileModels.swift in Sources */,
-				ECEED8AC27EC91270078FBD1 /* WalktroughCoordinator.swift in Sources */,
-				ECEED8B327EC91270078FBD1 /* AuthCoordinatorOutput.swift in Sources */,
-				ECEED8B527EC91270078FBD1 /* Presentable.swift in Sources */,
-				ECEED8A127EC91270078FBD1 /* ChangePasswordStep1Models.swift in Sources */,
-				ECEED89527EC91270078FBD1 /* LoginViewModel.swift in Sources */,
-				ECEED89F27EC91270078FBD1 /* ChangePasswordStep2Models.swift in Sources */,
-				ECEED8A627EC91270078FBD1 /* AViewController.swift in Sources */,
-				ECEED8B727EC91270078FBD1 /* ViewControllerFactory.swift in Sources */,
-				ECEED89E27EC91270078FBD1 /* ChangePasswordStep2ViewController.swift in Sources */,
-				ECEED89A27EC91270078FBD1 /* WalktroughViewModel.swift in Sources */,
-				ECEED89D27EC91270078FBD1 /* ProfileViewModel.swift in Sources */,
-				ECEED8B927EC91270078FBD1 /* BaseCoordinator.swift in Sources */,
-				ECEED89827EC91270078FBD1 /* WalktroughModels.swift in Sources */,
-				ECEED8AB27EC91270078FBD1 /* AuthCoordinator.swift in Sources */,
-				ECEED89727EC91270078FBD1 /* LoginViewController.swift in Sources */,
-				ECEED8BB27EC91270078FBD1 /* Dynamic.swift in Sources */,
-				ECEED89927EC91270078FBD1 /* WalktroughViewController.swift in Sources */,
-				ECEED8BA27EC91270078FBD1 /* Router.swift in Sources */,
-				ECEED8A727EC91270078FBD1 /* BViewModel.swift in Sources */,
-				ECEED8A027EC91270078FBD1 /* ChangePasswordStep2ViewModel.swift in Sources */,
-				ECEED8B227EC91270078FBD1 /* ViewController+Coordinator.swift in Sources */,
-				ECEED89127EC91270078FBD1 /* AppDelegate.swift in Sources */,
-				ECEED8AF27EC91270078FBD1 /* MainCoordinator.swift in Sources */,
-				ECEED89C27EC91270078FBD1 /* ProfileViewController.swift in Sources */,
-				ECEED8A527EC91270078FBD1 /* AModels.swift in Sources */,
-				ECEED88F27EC91270078FBD1 /* UIStoryboard.swift in Sources */,
-				ECEED8B827EC91270078FBD1 /* CoordinatorFactory.swift in Sources */,
-				ECEED8AD27EC91270078FBD1 /* ProfileCoordinator.swift in Sources */,
-				ECEED89327EC91270078FBD1 /* RegisterViewController.swift in Sources */,
-				ECEED8AE27EC91270078FBD1 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,7 +225,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC4D159727CCA1F1008C2841 /* AsarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,7 +232,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC4D15A227CCA1F1008C2841 /* AsarUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,25 +249,6 @@
 			targetProxy = EC4D159E27CCA1F1008C2841 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		ECEED83C27EC91260078FBD1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ECEED83D27EC91260078FBD1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		ECEED83E27EC91260078FBD1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ECEED83F27EC91260078FBD1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EC4D15A427CCA1F1008C2841 /* Debug */ = {
@@ -866,7 +406,6 @@
 		EC4D15AA27CCA1F1008C2841 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AsarTests/Info.plist;
@@ -887,7 +426,6 @@
 		EC4D15AB27CCA1F1008C2841 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AsarTests/Info.plist;
@@ -908,7 +446,6 @@
 		EC4D15AD27CCA1F1008C2841 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AsarUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -927,7 +464,6 @@
 		EC4D15AE27CCA1F1008C2841 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AsarUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
