@@ -8,24 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		EC897F5927ED95CF00B11A5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F5827ED95CF00B11A5D /* AppDelegate.swift */; };
-		EC897F5B27ED95CF00B11A5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F5A27ED95CF00B11A5D /* SceneDelegate.swift */; };
-		EC897F5D27ED95CF00B11A5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F5C27ED95CF00B11A5D /* ViewController.swift */; };
 		EC897F6027ED95CF00B11A5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC897F5E27ED95CF00B11A5D /* Main.storyboard */; };
 		EC897F6327ED95CF00B11A5D /* Asar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC897F6127ED95CF00B11A5D /* Asar.xcdatamodeld */; };
 		EC897F6527ED95D000B11A5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC897F6427ED95D000B11A5D /* Assets.xcassets */; };
-		EC897F6827ED95D000B11A5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC897F6627ED95D000B11A5D /* LaunchScreen.storyboard */; };
+		EC897F7B27ED97F400B11A5D /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F7A27ED97F400B11A5D /* BaseCoordinator.swift */; };
+		EC897F7D27ED980900B11A5D /* LaunchInstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F7C27ED980900B11A5D /* LaunchInstructor.swift */; };
+		EC897F7F27ED982900B11A5D /* AuthCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F7E27ED982900B11A5D /* AuthCoordinatorOutput.swift */; };
+		EC897F8127ED983C00B11A5D /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F8027ED983C00B11A5D /* ModuleFactory.swift */; };
+		EC897F8327ED984C00B11A5D /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F8227ED984C00B11A5D /* CoordinatorFactory.swift */; };
+		EC897F8527ED985700B11A5D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F8427ED985700B11A5D /* Router.swift */; };
+		EC897F8727ED987C00B11A5D /* ViewController+Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F8627ED987C00B11A5D /* ViewController+Coordinator.swift */; };
+		EC897F8927ED9C3C00B11A5D /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F8827ED9C3C00B11A5D /* ApplicationCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EC897F5527ED95CF00B11A5D /* Asar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC897F5827ED95CF00B11A5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC897F5A27ED95CF00B11A5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EC897F5C27ED95CF00B11A5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EC897F5F27ED95CF00B11A5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC897F6227ED95CF00B11A5D /* Asar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Asar.xcdatamodel; sourceTree = "<group>"; };
 		EC897F6427ED95D000B11A5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EC897F6727ED95D000B11A5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC897F6927ED95D000B11A5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC897F7A27ED97F400B11A5D /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		EC897F7C27ED980900B11A5D /* LaunchInstructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchInstructor.swift; sourceTree = "<group>"; };
+		EC897F7E27ED982900B11A5D /* AuthCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinatorOutput.swift; sourceTree = "<group>"; };
+		EC897F8027ED983C00B11A5D /* ModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
+		EC897F8227ED984C00B11A5D /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		EC897F8427ED985700B11A5D /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		EC897F8627ED987C00B11A5D /* ViewController+Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Coordinator.swift"; sourceTree = "<group>"; };
+		EC897F8827ED9C3C00B11A5D /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +68,173 @@
 		EC897F5727ED95CF00B11A5D /* Asar */ = {
 			isa = PBXGroup;
 			children = (
-				EC897F5827ED95CF00B11A5D /* AppDelegate.swift */,
-				EC897F5A27ED95CF00B11A5D /* SceneDelegate.swift */,
-				EC897F5C27ED95CF00B11A5D /* ViewController.swift */,
+				EC897F6F27ED976800B11A5D /* AppDelegate */,
+				EC897F7027ED977600B11A5D /* Coordinator */,
+				EC897F8A27ED9F0100B11A5D /* Scenes */,
 				EC897F5E27ED95CF00B11A5D /* Main.storyboard */,
 				EC897F6427ED95D000B11A5D /* Assets.xcassets */,
-				EC897F6627ED95D000B11A5D /* LaunchScreen.storyboard */,
 				EC897F6927ED95D000B11A5D /* Info.plist */,
 				EC897F6127ED95CF00B11A5D /* Asar.xcdatamodeld */,
 			);
 			path = Asar;
+			sourceTree = "<group>";
+		};
+		EC897F6F27ED976800B11A5D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				EC897F5827ED95CF00B11A5D /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		EC897F7027ED977600B11A5D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EC897F7127ED978200B11A5D /* Coordinators */,
+				EC897F7227ED979100B11A5D /* BaseCoordinator */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		EC897F7127ED978200B11A5D /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				EC897F8827ED9C3C00B11A5D /* ApplicationCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		EC897F7227ED979100B11A5D /* BaseCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EC897F7727ED97CB00B11A5D /* Base */,
+				EC897F7327ED97A400B11A5D /* Enums */,
+				EC897F7427ED97AB00B11A5D /* Extensions */,
+				EC897F7627ED97C400B11A5D /* Factory */,
+				EC897F7527ED97BB00B11A5D /* Protocols */,
+				EC897F7827ED97CF00B11A5D /* Router */,
+			);
+			path = BaseCoordinator;
+			sourceTree = "<group>";
+		};
+		EC897F7327ED97A400B11A5D /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				EC897F7C27ED980900B11A5D /* LaunchInstructor.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		EC897F7427ED97AB00B11A5D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EC897F8627ED987C00B11A5D /* ViewController+Coordinator.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EC897F7527ED97BB00B11A5D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EC897F7E27ED982900B11A5D /* AuthCoordinatorOutput.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EC897F7627ED97C400B11A5D /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				EC897F8027ED983C00B11A5D /* ModuleFactory.swift */,
+				EC897F8227ED984C00B11A5D /* CoordinatorFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		EC897F7727ED97CB00B11A5D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EC897F7A27ED97F400B11A5D /* BaseCoordinator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EC897F7827ED97CF00B11A5D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EC897F8427ED985700B11A5D /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		EC897F8A27ED9F0100B11A5D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EC897F9227ED9FCD00B11A5D /* Profile */,
+				EC897F9127ED9FC700B11A5D /* Main */,
+				EC897F8E27ED9F4B00B11A5D /* ChangePassword */,
+				EC897F8B27ED9F2D00B11A5D /* Auth */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EC897F8B27ED9F2D00B11A5D /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				EC897F8C27ED9F3900B11A5D /* Login */,
+				EC897F8D27ED9F3F00B11A5D /* Register */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		EC897F8C27ED9F3900B11A5D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EC897F8D27ED9F3F00B11A5D /* Register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		EC897F8E27ED9F4B00B11A5D /* ChangePassword */ = {
+			isa = PBXGroup;
+			children = (
+				EC897F8F27ED9F6000B11A5D /* ChangePassword */,
+				EC897F9027ED9FAE00B11A5D /* ChangePasswordConfirm */,
+			);
+			path = ChangePassword;
+			sourceTree = "<group>";
+		};
+		EC897F8F27ED9F6000B11A5D /* ChangePassword */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChangePassword;
+			sourceTree = "<group>";
+		};
+		EC897F9027ED9FAE00B11A5D /* ChangePasswordConfirm */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChangePasswordConfirm;
+			sourceTree = "<group>";
+		};
+		EC897F9127ED9FC700B11A5D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EC897F9227ED9FCD00B11A5D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +294,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC897F6827ED95D000B11A5D /* LaunchScreen.storyboard in Resources */,
 				EC897F6527ED95D000B11A5D /* Assets.xcassets in Resources */,
 				EC897F6027ED95CF00B11A5D /* Main.storyboard in Resources */,
 			);
@@ -140,10 +306,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC897F8727ED987C00B11A5D /* ViewController+Coordinator.swift in Sources */,
+				EC897F8527ED985700B11A5D /* Router.swift in Sources */,
 				EC897F6327ED95CF00B11A5D /* Asar.xcdatamodeld in Sources */,
-				EC897F5D27ED95CF00B11A5D /* ViewController.swift in Sources */,
+				EC897F7F27ED982900B11A5D /* AuthCoordinatorOutput.swift in Sources */,
+				EC897F8327ED984C00B11A5D /* CoordinatorFactory.swift in Sources */,
+				EC897F8927ED9C3C00B11A5D /* ApplicationCoordinator.swift in Sources */,
+				EC897F7D27ED980900B11A5D /* LaunchInstructor.swift in Sources */,
+				EC897F7B27ED97F400B11A5D /* BaseCoordinator.swift in Sources */,
+				EC897F8127ED983C00B11A5D /* ModuleFactory.swift in Sources */,
 				EC897F5927ED95CF00B11A5D /* AppDelegate.swift in Sources */,
-				EC897F5B27ED95CF00B11A5D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,14 +328,6 @@
 				EC897F5F27ED95CF00B11A5D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EC897F6627ED95D000B11A5D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC897F6727ED95D000B11A5D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
