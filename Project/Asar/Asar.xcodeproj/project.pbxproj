@@ -19,6 +19,9 @@
 		EC897F8527ED985700B11A5D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F8427ED985700B11A5D /* Router.swift */; };
 		EC897F8727ED987C00B11A5D /* ViewController+Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F8627ED987C00B11A5D /* ViewController+Coordinator.swift */; };
 		EC897F8927ED9C3C00B11A5D /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F8827ED9C3C00B11A5D /* ApplicationCoordinator.swift */; };
+		EC897F9727EDB9E700B11A5D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F9527EDB9E600B11A5D /* LoginViewController.swift */; };
+		EC897F9827EDB9E700B11A5D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC897F9627EDB9E600B11A5D /* LoginViewController.xib */; };
+		EC897F9A27EDC1F500B11A5D /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F9927EDC1F500B11A5D /* AuthCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		EC897F8427ED985700B11A5D /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		EC897F8627ED987C00B11A5D /* ViewController+Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Coordinator.swift"; sourceTree = "<group>"; };
 		EC897F8827ED9C3C00B11A5D /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		EC897F9527EDB9E600B11A5D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EC897F9627EDB9E600B11A5D /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		EC897F9927EDC1F500B11A5D /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +186,7 @@
 		EC897F8B27ED9F2D00B11A5D /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				EC897F9927EDC1F500B11A5D /* AuthCoordinator.swift */,
 				EC897F8C27ED9F3900B11A5D /* Login */,
 				EC897F8D27ED9F3F00B11A5D /* Register */,
 			);
@@ -189,6 +196,8 @@
 		EC897F8C27ED9F3900B11A5D /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				EC897F9527EDB9E600B11A5D /* LoginViewController.swift */,
+				EC897F9627EDB9E600B11A5D /* LoginViewController.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -296,6 +305,7 @@
 			files = (
 				EC897F6527ED95D000B11A5D /* Assets.xcassets in Resources */,
 				EC897F6027ED95CF00B11A5D /* Main.storyboard in Resources */,
+				EC897F9827EDB9E700B11A5D /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +326,8 @@
 				EC897F7B27ED97F400B11A5D /* BaseCoordinator.swift in Sources */,
 				EC897F8127ED983C00B11A5D /* ModuleFactory.swift in Sources */,
 				EC897F5927ED95CF00B11A5D /* AppDelegate.swift in Sources */,
+				EC897F9A27EDC1F500B11A5D /* AuthCoordinator.swift in Sources */,
+				EC897F9727EDB9E700B11A5D /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

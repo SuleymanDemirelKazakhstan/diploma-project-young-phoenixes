@@ -11,11 +11,11 @@ import CoreData
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
-    var rootController: UINavigationController {
+    var navigationController: UINavigationController {
         return self.window!.rootViewController as! UINavigationController
     }
     
-    private lazy var applicationCoordinator: Coordinator = ApplicationCoordinator(router: Router(rootController: self.rootController), coordinatorFactory: CoordinatorFactory())
+    private lazy var applicationCoordinator: Coordinator = ApplicationCoordinator(coordinatorFactory: CoordinatorFactory(), router: .init(navigationController: navigationController))
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.applicationCoordinator.start()

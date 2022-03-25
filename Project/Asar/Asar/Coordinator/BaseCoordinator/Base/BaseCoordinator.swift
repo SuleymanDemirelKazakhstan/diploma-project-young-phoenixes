@@ -12,7 +12,12 @@ protocol Coordinator: AnyObject {
 }
 
 class BaseCoordinator: Coordinator {
+    let router: Router
     var childCoordinators = [Coordinator]()
+    
+    init(router: Router) {
+        self.router = router
+    }
     
     func addDependency(_ coordinator: Coordinator) {
         for element in childCoordinators {
