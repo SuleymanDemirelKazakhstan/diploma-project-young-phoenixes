@@ -7,11 +7,7 @@
 
 import UIKit
 
-protocol RouterProtocol {
-    
-}
-
-final class Router: RouterProtocol {
+final class Router {
     let navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {

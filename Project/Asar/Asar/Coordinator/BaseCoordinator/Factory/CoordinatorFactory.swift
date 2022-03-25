@@ -5,10 +5,9 @@
 //  Created by Abylbek Khassenov on 25.03.2022.
 //
 
-protocol CoordinatorFactoryProtocol {
-    
-}
-
-final class CoordinatorFactory: CoordinatorFactoryProtocol {
-    
+final class CoordinatorFactory {
+    func makeAuthCoordinator(router: Router, coordinatorFactory: CoordinatorFactory, moduleFactory: ModuleFactory) -> AuthCoordinator {
+        let coordinator = AuthCoordinator(router: router, cordinatorFactory: coordinatorFactory, moduleFactory: moduleFactory)
+        return coordinator
+    }
 }

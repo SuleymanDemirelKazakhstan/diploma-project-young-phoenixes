@@ -9,11 +9,10 @@ import Foundation
 
 final class ApplicationCoordinator: BaseCoordinator {
     private var launchInstractor = LaunchInstructor.configure()
-    private let coordinatorFactory: CoordinatorFactoryProtocol
+    private let coordinatorFactory: CoordinatorFactory = CoordinatorFactory()
     private let moduleFactory: ModuleFactory = ModuleFactory()
     
-    init(coordinatorFactory: CoordinatorFactory, router: Router) {
-        self.coordinatorFactory = coordinatorFactory
+    override init(router: Router) {
         super.init(router: router)
     }
     
@@ -29,11 +28,12 @@ final class ApplicationCoordinator: BaseCoordinator {
     }
     
     private func runOnboardingFlow() {
-        
+        let coordinator = coordinatorFactory.makeAuthCoordinator(router: router, coordinatorFactory: coordinatorFactory, moduleFactory: moduleFactory)
+        coordinator.start()
     }
     
     private func runAuthFlow() {
-//        router.push()
+        
     }
     
     private func runMainFlow() {

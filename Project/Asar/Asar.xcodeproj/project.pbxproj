@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EC897F5927ED95CF00B11A5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F5827ED95CF00B11A5D /* AppDelegate.swift */; };
-		EC897F6027ED95CF00B11A5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC897F5E27ED95CF00B11A5D /* Main.storyboard */; };
 		EC897F6327ED95CF00B11A5D /* Asar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC897F6127ED95CF00B11A5D /* Asar.xcdatamodeld */; };
 		EC897F6527ED95D000B11A5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC897F6427ED95D000B11A5D /* Assets.xcassets */; };
 		EC897F7B27ED97F400B11A5D /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F7A27ED97F400B11A5D /* BaseCoordinator.swift */; };
@@ -27,7 +26,6 @@
 /* Begin PBXFileReference section */
 		EC897F5527ED95CF00B11A5D /* Asar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC897F5827ED95CF00B11A5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC897F5F27ED95CF00B11A5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC897F6227ED95CF00B11A5D /* Asar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Asar.xcdatamodel; sourceTree = "<group>"; };
 		EC897F6427ED95D000B11A5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC897F6927ED95D000B11A5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 				EC897F6F27ED976800B11A5D /* AppDelegate */,
 				EC897F7027ED977600B11A5D /* Coordinator */,
 				EC897F8A27ED9F0100B11A5D /* Scenes */,
-				EC897F5E27ED95CF00B11A5D /* Main.storyboard */,
 				EC897F6427ED95D000B11A5D /* Assets.xcassets */,
 				EC897F6927ED95D000B11A5D /* Info.plist */,
 				EC897F6127ED95CF00B11A5D /* Asar.xcdatamodeld */,
@@ -304,7 +301,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC897F6527ED95D000B11A5D /* Assets.xcassets in Resources */,
-				EC897F6027ED95CF00B11A5D /* Main.storyboard in Resources */,
 				EC897F9827EDB9E700B11A5D /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,17 +328,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		EC897F5E27ED95CF00B11A5D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC897F5F27ED95CF00B11A5D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EC897F6A27ED95D000B11A5D /* Debug */ = {

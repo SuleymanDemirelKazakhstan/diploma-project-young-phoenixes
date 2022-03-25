@@ -8,14 +8,13 @@
 import Foundation
 
 final class AuthCoordinator: BaseCoordinator {
-    private let router: RouterProtocol
-    private let coordinatorFactory: CoordinatorFactoryProtocol
-    private let modulFactory: ModuleFactory
+    private let coordinatorFactory: CoordinatorFactory
+    private let moduleFactory: ModuleFactory
 
-    init(router: RouterProtocol, cordinatorFactory: CoordinatorFactoryProtocol, moduleFactory: ModuleFactory) {
-        self.router = router
+    init(router: Router,cordinatorFactory: CoordinatorFactory, moduleFactory: ModuleFactory) {
         self.coordinatorFactory = cordinatorFactory
-        self.modulFactory = modulFactory
+        self.moduleFactory = moduleFactory
+        super.init(router: router)
     }
     
     override func start() {
@@ -23,7 +22,8 @@ final class AuthCoordinator: BaseCoordinator {
     }
     
     private func showLoginViewController() {
-        
+        let loginVC = moduleFactory.makeLoginViewController()
+        router.push(loginVC)
     }
     
     private func showRegisterViewController() {
