@@ -8,11 +8,17 @@ Router contains all the necessary transitions between screens, it is the router 
 present(_ viewController: UIViewController, animated: Bool = true)
  
 present(_ viewController: UIViewController, animated: Bool, modalPresentationStyle: UIModalPresentationStyle)
+
 dismissModule(animated: Bool = true, completion: (() -> Void)? = nil)
+
 popToModule(_ viewController: UIViewController, animated: Bool = true, completion: @escaping () -> Void = {})
+
 push(_ viewController: UIViewController, animated: Bool = true, hideBottomBarWhenPushed: Bool = true)
+
 popModule(animated: Bool = true)
+
 setRootModule(_ viewController: UIViewController, isNavigationBarHidden: Bool = false)
+
 popToRootModule(animated: Bool = true, completion: @escaping () -> Void = {})
 
 The role of these functions should be clear from the names.
