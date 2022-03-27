@@ -1,3 +1,3 @@
 # Khassenov Abylbek 
 Checking
-![alt text](../images/design/week9xcode1.png)
+![alt text](../images/ios/week9xcode1.png)
