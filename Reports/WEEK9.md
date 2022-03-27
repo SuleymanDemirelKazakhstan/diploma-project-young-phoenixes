@@ -1,6 +1,3 @@
-# Jet Lee
-* Made kung-fu
-* Learned kung-fu
-# Jacky Chan
-* Learn kung-fu
-* Invented kung-fu
+# Khassenov Abylbek 
+Checking
+![alt text](../images/design/week9xcode1.png)
