@@ -34,5 +34,5 @@ An example of the above. We create an AuthCoordinator that can open the login, r
 ![alt text](../images/ios/week9xcode4.png)
 
 # Meirkhan Azamat
-![alt text](../images/pm.meeting2.png)
+![alt text](../images/pm/meeting2.png)
 I made meeting with team members and went through tasks. So, and made some question for customers in google form https://docs.google.com/forms/d/e/1FAIpQLSc1amNO97orCjl81LSO5E4r8sxPR_LvME-dxhYdwRJT6hVHVg/viewform?usp=sf_link. Next week i will share this link to the future users to take feedback.
