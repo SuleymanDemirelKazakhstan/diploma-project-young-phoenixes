@@ -32,6 +32,9 @@ I analyzed working processes of the team and realized that we have to spend more
 
 # Konys Aituar
 Started learning more about Data Analyst from Google course in coursesra about DA in order to make more detailed analysis and Learned to choose right A/B test for our project.
+![alt text](../images/pm/aitu_8week.jpeg)
+
+![alt text](../images/pm/aitu_8week2.jpeg)
 
 # Nurpeiis Bexultan
 Creat a new cocos touch class(Tabbar View Controller) and make this view controller to connect other viewcontroller that made last week.
