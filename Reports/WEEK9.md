@@ -47,6 +47,7 @@ hh = 1200 specialist with average of salary 293.000(by formula of mean)
 market.kz = 453 specialist with average salary of 220.000
 rabotanur = 240 specialist with average salary of 200.000
 Also I started to search on internet about what kind of questions can be asked for specialist as a mini interview to make quality of specialist higher. For now by on working on questions to fill up the test interview.
+<img width="1440" alt="Screen Shot 2022-03-28 at 16 08 26" src="https://user-images.githubusercontent.com/99612071/160376216-bd75459e-4b2f-4ff3-ace5-841fa74efcb0.png">
 
 # Laila Mukhambetzhanova
 Work on the UX design has been started. I drew the onboarding pages, login and registration pages, and also developed the main pages, like home page, my orders and profile. The onboarding page helps the user to assimilate the application faster, that is, it explains how the mobile app works. We will have 3 such pages. Then after the onboarding pages, registration and login pages come out. If the user has just started using the application, then first user register and see the main page. https://www.figma.com/file/5hCtwZFzAUUymb6wb4C98Q/Diploma-project?node-id=133%3A5047
