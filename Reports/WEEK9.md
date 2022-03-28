@@ -42,5 +42,5 @@ I started to learn multithreading in open platform named Stepik. I learned, how 
 ![alt text](../images/ios/bex_week9.jpeg)
 
 # Laila Mukhambetzhanova
-Work on the UX design has been started. I drew the onboarding pages, login and registration pages, and also developed the main pages, like home page, my orders and profile. The onboarding page helps the user to assimilate the application faster, that is, it explains how the mobile app works. We will have 3 such pages. Then after the onboarding pages, registration and login pages come out. If the user has just started using the application, then first user register and see the main page. 
+Work on the UX design has been started. I drew the onboarding pages, login and registration pages, and also developed the main pages, like home page, my orders and profile. The onboarding page helps the user to assimilate the application faster, that is, it explains how the mobile app works. We will have 3 such pages. Then after the onboarding pages, registration and login pages come out. If the user has just started using the application, then first user register and see the main page. https://www.figma.com/file/5hCtwZFzAUUymb6wb4C98Q/Diploma-project?node-id=133%3A5047
 ![alt text](../images/design/screen5.png)
