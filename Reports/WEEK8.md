@@ -31,7 +31,7 @@ of a language selection. UITextFied - An input field that has a placeholder whos
 I analyzed working processes of the team and realized that we have to spend more time on creating database and configure user flow by the developers, and the design of our application. It's our priority for future.
 
 # Konys Aituar
-Learned and chose righ A/B test for our project.
+Started learning more about Data Analyst from Google course in coursesra about DA in order to make more detailed analysis and Learned to choose right A/B test for our project.
 
 # Nurpeiis Bexultan
 Creat a new cocos touch class(Tabbar View Controller) and make this view controller to connect other viewcontroller that made last week.
