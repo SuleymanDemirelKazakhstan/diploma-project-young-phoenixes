@@ -32,3 +32,7 @@ ApplicationCoorinator is our first coordinator to open. This is an example of ho
 An example of the above. We create an AuthCoordinator that can open the login, registration and password recovery screen. Here we already use the router not to transfer to another coordinator , but to open one of the screens depending on the button that the user will press.
 
 ![alt text](../images/ios/week9xcode4.png)
+
+# Meirkhan Azamat
+![alt text](../images/pm.meeting2.png)
+I made meeting with team members and went through tasks. So, and made some question for customers in google form https://docs.google.com/forms/d/e/1FAIpQLSc1amNO97orCjl81LSO5E4r8sxPR_LvME-dxhYdwRJT6hVHVg/viewform?usp=sf_link. Next week i will share this link to the future users to take feedback.
