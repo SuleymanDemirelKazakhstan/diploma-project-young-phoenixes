@@ -29,14 +29,19 @@ final class ApplicationCoordinator: BaseCoordinator {
     
     private func runOnboardingFlow() {
         let coordinator = coordinatorFactory.makeAuthCoordinator(router: router, coordinatorFactory: coordinatorFactory, moduleFactory: moduleFactory)
+        self.addDependency(coordinator)
         coordinator.start()
     }
     
     private func runAuthFlow() {
-        
+        let coordinator = coordinatorFactory.makeAuthCoordinator(router: router, coordinatorFactory: coordinatorFactory, moduleFactory: moduleFactory)
+        self.addDependency(coordinator)
+        coordinator.start()
     }
     
     private func runMainFlow() {
-        
+        let coordinator = coordinatorFactory.makeAuthCoordinator(router: router, coordinatorFactory: coordinatorFactory, moduleFactory: moduleFactory)
+        self.addDependency(coordinator)
+        coordinator.start()
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC569CF227F637B000EBEE9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC569CF127F637B000EBEE9B /* SceneDelegate.swift */; };
 		EC897F5927ED95CF00B11A5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F5827ED95CF00B11A5D /* AppDelegate.swift */; };
 		EC897F6327ED95CF00B11A5D /* Asar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC897F6127ED95CF00B11A5D /* Asar.xcdatamodeld */; };
 		EC897F6527ED95D000B11A5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC897F6427ED95D000B11A5D /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC569CF127F637B000EBEE9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EC897F5527ED95CF00B11A5D /* Asar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC897F5827ED95CF00B11A5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC897F6227ED95CF00B11A5D /* Asar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Asar.xcdatamodel; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				EC897F5827ED95CF00B11A5D /* AppDelegate.swift */,
+				EC569CF127F637B000EBEE9B /* SceneDelegate.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				EC897F8927ED9C3C00B11A5D /* ApplicationCoordinator.swift in Sources */,
 				EC897F7D27ED980900B11A5D /* LaunchInstructor.swift in Sources */,
 				EC897F7B27ED97F400B11A5D /* BaseCoordinator.swift in Sources */,
+				EC569CF227F637B000EBEE9B /* SceneDelegate.swift in Sources */,
 				EC897F8127ED983C00B11A5D /* ModuleFactory.swift in Sources */,
 				EC897F5927ED95CF00B11A5D /* AppDelegate.swift in Sources */,
 				EC897F9A27EDC1F500B11A5D /* AuthCoordinator.swift in Sources */,
