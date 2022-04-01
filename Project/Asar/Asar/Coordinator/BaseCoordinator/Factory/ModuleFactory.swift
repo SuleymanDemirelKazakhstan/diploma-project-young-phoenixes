@@ -9,6 +9,6 @@ import UIKit
 
 final class ModuleFactory {
     func makeLoginViewController() -> UIViewController {
-        return LoginViewController()
+        return TabBarViewController()
     }
 }
