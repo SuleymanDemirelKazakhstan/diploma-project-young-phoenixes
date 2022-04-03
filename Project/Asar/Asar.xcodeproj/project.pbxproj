@@ -12,6 +12,7 @@
 		6D6336B327F70CC700B27701 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6336B227F70CC700B27701 /* OrderViewController.swift */; };
 		6D6336B527F70CEC00B27701 /* MyOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6336B427F70CEC00B27701 /* MyOrdersViewController.swift */; };
 		6D6336B727F70CFB00B27701 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6336B627F70CFB00B27701 /* ProfileViewController.swift */; };
+		6DC2A6C727FA3EF60021BD26 /* ServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC2A6C627FA3EF60021BD26 /* ServiceCollectionViewCell.swift */; };
 		EC569CF227F637B000EBEE9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC569CF127F637B000EBEE9B /* SceneDelegate.swift */; };
 		EC897F5927ED95CF00B11A5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F5827ED95CF00B11A5D /* AppDelegate.swift */; };
 		EC897F6327ED95CF00B11A5D /* Asar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC897F6127ED95CF00B11A5D /* Asar.xcdatamodeld */; };
@@ -35,6 +36,7 @@
 		6D6336B227F70CC700B27701 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		6D6336B427F70CEC00B27701 /* MyOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrdersViewController.swift; sourceTree = "<group>"; };
 		6D6336B627F70CFB00B27701 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		6DC2A6C627FA3EF60021BD26 /* ServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCollectionViewCell.swift; sourceTree = "<group>"; };
 		EC569CF127F637B000EBEE9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EC897F5527ED95CF00B11A5D /* Asar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC897F5827ED95CF00B11A5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 				6D6336B627F70CFB00B27701 /* ProfileViewController.swift */,
 			);
 			path = "Main ViewControllers";
+			sourceTree = "<group>";
+		};
+		6DC2A6C527FA3E9A0021BD26 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6DC2A6C627FA3EF60021BD26 /* ServiceCollectionViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		EC897F4C27ED95CF00B11A5D = {
@@ -197,6 +207,7 @@
 		EC897F8A27ED9F0100B11A5D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				6DC2A6C527FA3E9A0021BD26 /* Views */,
 				6D6336AD27F70C5A00B27701 /* Main ViewControllers */,
 				EC897F8E27ED9F4B00B11A5D /* ChangePassword */,
 				EC897F8B27ED9F2D00B11A5D /* Auth */,
@@ -324,6 +335,7 @@
 			files = (
 				EC897F8727ED987C00B11A5D /* ViewController+Coordinator.swift in Sources */,
 				EC897F8527ED985700B11A5D /* Router.swift in Sources */,
+				6DC2A6C727FA3EF60021BD26 /* ServiceCollectionViewCell.swift in Sources */,
 				EC897F6327ED95CF00B11A5D /* Asar.xcdatamodeld in Sources */,
 				6D6336B327F70CC700B27701 /* OrderViewController.swift in Sources */,
 				EC897F7F27ED982900B11A5D /* AuthCoordinatorOutput.swift in Sources */,
