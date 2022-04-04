@@ -59,3 +59,9 @@ Moreover this week I started on analysing the market for potential advertisment 
 ![alt text](../images/design/screen8.png)
 ![alt text](../images/design/screen9.png)
 ![alt text](../images/design/screen10.png)
+
+# Azamat Meirkhan
+In this week i planned some tasks in Trello.
+Wathced videos about How To Manage Your Project Priorities, How to Monitor Daily Progress as a Project Manager.
+https://youtu.be/E2Qahnv1j1g
+https://youtu.be/uAwSbqaN3UQ
