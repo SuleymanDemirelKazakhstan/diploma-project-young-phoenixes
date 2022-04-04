@@ -8,7 +8,7 @@
 import Foundation
 
 final class ApplicationCoordinator: BaseCoordinator {
-    private var launchInstractor = LaunchInstructor.configure()
+    private var launchInstractor = LaunchInstructor.configure(tutorialWasShown: false, isAutorized: true)
     private let coordinatorFactory: CoordinatorFactory = CoordinatorFactory()
     private let moduleFactory: ModuleFactory = ModuleFactory()
     

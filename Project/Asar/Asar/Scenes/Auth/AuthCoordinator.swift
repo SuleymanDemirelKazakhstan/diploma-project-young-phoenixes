@@ -23,7 +23,7 @@ final class AuthCoordinator: BaseCoordinator {
     
     private func showLoginViewController() {
         let loginVC = moduleFactory.makeLoginViewController()
-        router.push(loginVC)
+        router.setRootModule(loginVC)
     }
     
     private func showRegisterViewController() {
