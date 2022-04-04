@@ -52,3 +52,10 @@ https://docs.google.com/forms/d/e/1FAIpQLSfOWz5Qx_7uXVCWG5jBa1e8mKWVDIiGt01VvbI2
 Ended the survey for potential specialist to work. Still continue on studying more about data analyst , this week was more about thinking as DA and practical works.<img width="1440" alt="Screen Shot 2022-04-04 at 14 26 27" src="https://user-images.githubusercontent.com/99612071/161504482-98cfd10f-fd4a-481b-8ad4-3ec6693b361e.png">
 <img width="1440" alt="Screen Shot 2022-04-04 at 14 26 03" src="https://user-images.githubusercontent.com/99612071/161504502-f03683e3-9471-4096-bb8d-b6a62f04234e.png">
 Moreover this week I started on analysing the market for potential advertisment places and target that we are searching for. Target was mostly chosen older generation as they are ones who need help in some home problems , research on what is most sites the use and what target can be made is in progress.
+
+# Laila Mukhambetzhanova
+![alt text](../images/design/screen6.png)
+![alt text](../images/design/screen7.png)
+![alt text](../images/design/screen8.png)
+![alt text](../images/design/screen9.png)
+![alt text](../images/design/screen10.png)
