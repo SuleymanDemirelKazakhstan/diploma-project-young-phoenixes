@@ -1,0 +1,6 @@
+framework module Pods_Asar {
+  umbrella header "Pods-Asar-umbrella.h"
+
+  export *
+  module * { export * }
+}
