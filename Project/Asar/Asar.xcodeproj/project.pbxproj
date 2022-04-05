@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D8DD60A27FD010500BDFD7A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D8DD60C27FD010500BDFD7A /* Localizable.strings */; };
 		7482BD9C78AEFF91CFD52A25 /* Pods_Asar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A6C03DFAE830D6060C700F /* Pods_Asar.framework */; };
 		EC569CF227F637B000EBEE9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC569CF127F637B000EBEE9B /* SceneDelegate.swift */; };
 		EC897F5927ED95CF00B11A5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F5827ED95CF00B11A5D /* AppDelegate.swift */; };
@@ -28,6 +29,9 @@
 
 /* Begin PBXFileReference section */
 		16A6C03DFAE830D6060C700F /* Pods_Asar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Asar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D8DD60B27FD010500BDFD7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6D8DD60D27FD015300BDFD7A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6D8DD60E27FD016400BDFD7A /* kk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kk; path = kk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BA10B34020AF89CF82B81849 /* Pods-Asar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asar.debug.xcconfig"; path = "Target Support Files/Pods-Asar/Pods-Asar.debug.xcconfig"; sourceTree = "<group>"; };
 		E959CB219F10FD5780E22DB8 /* Pods-Asar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asar.release.xcconfig"; path = "Target Support Files/Pods-Asar/Pods-Asar.release.xcconfig"; sourceTree = "<group>"; };
 		EC569CF127F637B000EBEE9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,7 +80,6 @@
 				BA10B34020AF89CF82B81849 /* Pods-Asar.debug.xcconfig */,
 				E959CB219F10FD5780E22DB8 /* Pods-Asar.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,6 +210,7 @@
 				EC897F9127ED9FC700B11A5D /* Main */,
 				EC897F8E27ED9F4B00B11A5D /* ChangePassword */,
 				EC897F8B27ED9F2D00B11A5D /* Auth */,
+				6D8DD60C27FD010500BDFD7A /* Localizable.strings */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -317,6 +321,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				kk,
 			);
 			mainGroup = EC897F4C27ED95CF00B11A5D;
 			productRefGroup = EC897F5627ED95CF00B11A5D /* Products */;
@@ -334,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC897F6527ED95D000B11A5D /* Assets.xcassets in Resources */,
+				6D8DD60A27FD010500BDFD7A /* Localizable.strings in Resources */,
 				EC897F9827EDB9E700B11A5D /* LoginViewController.xib in Resources */,
 				ECD68BCB27FAB21A00A8DE0A /* GoogleService-Info.plist in Resources */,
 			);
@@ -406,11 +413,25 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		6D8DD60C27FD010500BDFD7A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8DD60B27FD010500BDFD7A /* en */,
+				6D8DD60D27FD015300BDFD7A /* ru */,
+				6D8DD60E27FD016400BDFD7A /* kk */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		EC897F6A27ED95D000B11A5D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -472,6 +493,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

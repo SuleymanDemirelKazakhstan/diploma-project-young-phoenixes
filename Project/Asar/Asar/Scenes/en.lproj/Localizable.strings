@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Asar
+
+  Created by Бексултан Нурпейс on 06.04.2022.
+  
+*/
+"log_in" = "log in";
+"forget_password" = "forget password";
+"register" = "register";

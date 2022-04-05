@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0C5951E819745E912FFFBE849854402D"
-               BuildableName = "Pods_Asar.framework"
-               BlueprintName = "Pods-Asar"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "EC897F5427ED95CF00B11A5D"
+               BuildableName = "Asar.app"
+               BlueprintName = "Asar"
+               ReferencedContainer = "container:Asar.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,6 +40,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "EC897F5427ED95CF00B11A5D"
+            BuildableName = "Asar.app"
+            BlueprintName = "Asar"
+            ReferencedContainer = "container:Asar.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -47,6 +57,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "EC897F5427ED95CF00B11A5D"
+            BuildableName = "Asar.app"
+            BlueprintName = "Asar"
+            ReferencedContainer = "container:Asar.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
