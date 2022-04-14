@@ -219,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				EC897F9927EDC1F500B11A5D /* AuthCoordinator.swift */,
+				ECFA50F92801A8590048FFE2 /* Onboarding */,
 				EC897F8C27ED9F3900B11A5D /* Login */,
 				EC897F8D27ED9F3F00B11A5D /* Register */,
 			);
@@ -276,6 +277,29 @@
 			children = (
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		ECFA50F92801A8590048FFE2 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				ECFA50FE2801E8130048FFE2 /* ViewController */,
+				ECFA50FF2801E8220048FFE2 /* Model */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		ECFA50FE2801E8130048FFE2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		ECFA50FF2801E8220048FFE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

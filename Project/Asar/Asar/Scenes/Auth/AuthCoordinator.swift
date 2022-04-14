@@ -11,14 +11,14 @@ final class AuthCoordinator: BaseCoordinator {
     private let coordinatorFactory: CoordinatorFactory
     private let moduleFactory: ModuleFactory
 
-    init(router: Router,cordinatorFactory: CoordinatorFactory, moduleFactory: ModuleFactory) {
+    init(router: Router, cordinatorFactory: CoordinatorFactory, moduleFactory: ModuleFactory) {
         self.coordinatorFactory = cordinatorFactory
         self.moduleFactory = moduleFactory
         super.init(router: router)
     }
     
     override func start() {
-        showLoginViewController()
+        showOnboardingViewController()
     }
     
     private func showLoginViewController() {
@@ -28,6 +28,11 @@ final class AuthCoordinator: BaseCoordinator {
     
     private func showRegisterViewController() {
         
+    }
+    
+    private func showOnboardingViewController() {
+//        let onboarding = moduleFactory.makeOnboardingViewController()
+//        router.setRootModule(onboarding)
     }
     
     private func runForgetPasswordFlow() {
