@@ -16,11 +16,11 @@ final class AuthCoordinator: BaseCoordinator {
         self.moduleFactory = moduleFactory
         super.init(router: router)
     }
-    
+
     override func start() {
         showOnboardingViewController()
     }
-    
+
     private func showLoginViewController() {
         let loginVC = moduleFactory.makeLoginViewController()
         router.setRootModule(loginVC)
@@ -31,8 +31,8 @@ final class AuthCoordinator: BaseCoordinator {
     }
     
     private func showOnboardingViewController() {
-//        let onboarding = moduleFactory.makeOnboardingViewController()
-//        router.setRootModule(onboarding)
+        let onboarding = moduleFactory.makeOnboardingViewController()
+        router.setRootModule(onboarding)
     }
     
     private func runForgetPasswordFlow() {

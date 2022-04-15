@@ -12,7 +12,7 @@ final class ModuleFactory {
         return LoginViewController()
     }
     
-//    func makeOnboardingViewController() -> UIViewController {
-//        return OnboardingViewController()
-//    }
+    func makeOnboardingViewController() -> UIViewController {
+        return OnboardingViewController()
+    }
 }
