@@ -8,4 +8,5 @@
 
 # Konys Aituar
 Continue searching of specialist market and giving them the version of google form made in last week, and asking for their feedback on adding or deleting questions. Needing on more requests to make analys pool
-<img width="1173" alt="Screen Shot 2022-03-05 at 15 48 25" src="https://user-images.githubusercontent.com/99612071/163736320-8aa84e26-3a34-4aa6-aa67-712fbc44c793.png">
+<img width="1438" alt="Screen Shot 2022-04-18 at 05 35 53" src="https://user-images.githubusercontent.com/99612071/163736344-2b35e561-4b78-459b-b65e-493cf6a379ce.png">
+
