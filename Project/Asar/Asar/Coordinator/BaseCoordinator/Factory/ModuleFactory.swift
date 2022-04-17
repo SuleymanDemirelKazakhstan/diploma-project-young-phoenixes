@@ -8,11 +8,19 @@
 import UIKit
 
 final class ModuleFactory {
-    func makeLoginViewController() -> UIViewController {
-        return LoginViewController()
+    func makeLoginViewController(navigationDelegate: LoginViewControllerDelegate) -> UIViewController {
+        return LoginViewController(navigationDelegate: navigationDelegate)
     }
     
     func makeOnboardingViewController() -> UIViewController {
         return OnboardingViewController()
+    }
+    
+    func makeMainViewController() -> UIViewController {
+        return MainViewController()
+    }
+    
+    func makeRegisterViewController(navigationDelegate: RegisterViewControllerDelegate) -> UIViewController {
+        return RegisterViewController(navigationDelegate: navigationDelegate)
     }
 }

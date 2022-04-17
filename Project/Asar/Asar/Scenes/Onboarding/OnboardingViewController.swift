@@ -94,5 +94,4 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
         currentPage = Int(scrollView.contentOffset.x / width)
         
     }
-    
 }

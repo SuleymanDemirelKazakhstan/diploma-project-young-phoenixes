@@ -1,67 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Asar" customModuleProvider="target">
             <connections>
-                <outlet property="forget_btn" destination="876-9J-chR" id="4mM-wD-mTz"/>
-                <outlet property="login_btn" destination="xgB-zI-XJ9" id="MSJ-zZ-NrR"/>
-                <outlet property="register_btn" destination="0hx-ka-rQI" id="tEP-Pa-HKU"/>
+                <outlet property="emailTextField" destination="bfk-si-MNI" id="K8t-1I-qxK"/>
+                <outlet property="headerView" destination="Bj3-iW-pJF" id="OOk-nq-E4j"/>
+                <outlet property="loginButton" destination="VMV-Nt-opt" id="om7-9K-MoQ"/>
+                <outlet property="passwordTextField" destination="MQJ-Gj-3ej" id="5UZ-Ag-kMK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="871"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="FEw-Fr-y9b">
-                    <rect key="frame" x="149.5" y="369" width="115" height="168"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgB-zI-XJ9">
-                            <rect key="frame" x="38.5" y="0.0" width="38" height="30"/>
-                            <state key="normal" title="Login"/>
-                            <connections>
-                                <action selector="loginDidTap:" destination="-1" eventType="touchUpInside" id="fo7-9k-psC"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="876-9J-chR">
-                            <rect key="frame" x="0.0" y="69" width="115" height="30"/>
-                            <state key="normal" title="Forget password"/>
-                            <connections>
-                                <action selector="forgetPasswordDidTap:" destination="-1" eventType="touchUpInside" id="cFs-ml-eeP"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hx-ka-rQI">
-                            <rect key="frame" x="29" y="138" width="57" height="30"/>
-                            <state key="normal" title="Register"/>
-                            <connections>
-                                <action selector="registerDidTap:" destination="-1" eventType="touchUpInside" id="bA9-FJ-VL9"/>
-                            </connections>
-                        </button>
-                    </subviews>
-                </stackView>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="Bj3-iW-pJF" customClass="HeaderView" customModule="Asar" customModuleProvider="target">
+                    <rect key="frame" x="16" y="169" width="382" height="128"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Номер телефона" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bfk-si-MNI">
+                    <rect key="frame" x="16" y="317" width="382" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="W26-XI-NOc"/>
+                    </constraints>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Пароль" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MQJ-Gj-3ej">
+                    <rect key="frame" x="16" y="388" width="382" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="g6a-mG-wn4"/>
+                    </constraints>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMV-Nt-opt">
+                    <rect key="frame" x="16" y="798" width="382" height="54"/>
+                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="esm-ed-m6K"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="loginButtonDidTap:" destination="-1" eventType="touchUpInside" id="zWc-Oh-YZa"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="FEw-Fr-y9b" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="oab-G6-bnq"/>
-                <constraint firstItem="FEw-Fr-y9b" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="ub8-5W-Q9Z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bfk-si-MNI" secondAttribute="trailing" constant="16" id="05A-rv-sr0"/>
+                <constraint firstItem="Bj3-iW-pJF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="8TZ-yn-31s"/>
+                <constraint firstItem="Bj3-iW-pJF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="125" id="9dT-pV-eS1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Bj3-iW-pJF" secondAttribute="trailing" constant="16" id="AfT-Z4-sr8"/>
+                <constraint firstItem="MQJ-Gj-3ej" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="HZe-8z-Dv8"/>
+                <constraint firstItem="bfk-si-MNI" firstAttribute="top" secondItem="Bj3-iW-pJF" secondAttribute="bottom" constant="20" id="Itk-16-fJQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MQJ-Gj-3ej" secondAttribute="trailing" constant="16" id="LWT-dp-g4c"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="VMV-Nt-opt" secondAttribute="bottom" constant="10" id="Uzz-L2-ena"/>
+                <constraint firstItem="MQJ-Gj-3ej" firstAttribute="top" secondItem="bfk-si-MNI" secondAttribute="bottom" constant="15" id="ctJ-Bv-OzA"/>
+                <constraint firstItem="bfk-si-MNI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="v9h-dv-4IR"/>
+                <constraint firstItem="VMV-Nt-opt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="wAe-Xj-dYg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VMV-Nt-opt" secondAttribute="trailing" constant="16" id="z4g-UC-6XU"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="28" y="109"/>
+            <point key="canvasLocation" x="27.536231884057973" y="100.11160714285714"/>
         </view>
     </objects>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

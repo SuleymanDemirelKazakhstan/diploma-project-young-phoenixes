@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="Asar" customModuleProvider="target">
+            <connections>
+                <outlet property="emailTextField" destination="GdG-BY-GEO" id="eOe-u8-Fcb"/>
+                <outlet property="headerView" destination="sNE-W1-1G8" id="nyu-vl-RCR"/>
+                <outlet property="infoLabel" destination="X83-P4-OqQ" id="Ce0-5D-606"/>
+                <outlet property="passwordTextField" destination="eaU-RZ-dat" id="8Dg-gR-Kfj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="727"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="sNE-W1-1G8" customClass="HeaderView" customModule="Asar" customModuleProvider="target">
+                    <rect key="frame" x="16" y="169" width="382" height="128"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GdG-BY-GEO">
+                    <rect key="frame" x="16" y="317" width="382" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="bMI-2t-O2j"/>
+                    </constraints>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eaU-RZ-dat">
+                    <rect key="frame" x="16" y="388" width="382" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="0yc-kW-mdk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X83-P4-OqQ">
+                    <rect key="frame" x="16" y="453" width="382" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEM-Ni-d32">
+                    <rect key="frame" x="16" y="653" width="382" height="54"/>
+                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="vCB-Pw-MJ6"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="registerButtonDidTap:" destination="-1" eventType="touchUpInside" id="DSR-4G-zgX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xEM-Ni-d32" secondAttribute="bottom" constant="20" id="3Ge-FO-j9G"/>
+                <constraint firstItem="eaU-RZ-dat" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="3fA-hp-g8g"/>
+                <constraint firstItem="xEM-Ni-d32" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Aa8-7D-iQd"/>
+                <constraint firstItem="sNE-W1-1G8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="CHA-tF-Df2"/>
+                <constraint firstItem="GdG-BY-GEO" firstAttribute="top" secondItem="sNE-W1-1G8" secondAttribute="bottom" constant="20" id="Fo1-1D-4JM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sNE-W1-1G8" secondAttribute="trailing" constant="16" id="HNh-pa-CGY"/>
+                <constraint firstItem="X83-P4-OqQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="JyO-X8-87G"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xEM-Ni-d32" secondAttribute="trailing" constant="16" id="NUt-zi-NP4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GdG-BY-GEO" secondAttribute="trailing" constant="16" id="O97-4c-fox"/>
+                <constraint firstItem="eaU-RZ-dat" firstAttribute="top" secondItem="GdG-BY-GEO" secondAttribute="bottom" constant="15" id="UDF-rv-B0C"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="X83-P4-OqQ" secondAttribute="trailing" constant="16" id="fAe-QO-3hL"/>
+                <constraint firstItem="X83-P4-OqQ" firstAttribute="top" secondItem="eaU-RZ-dat" secondAttribute="bottom" constant="10" id="hrF-Wz-e2q"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eaU-RZ-dat" secondAttribute="trailing" constant="16" id="laR-2s-mha"/>
+                <constraint firstItem="sNE-W1-1G8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="125" id="oHi-VK-H4u"/>
+                <constraint firstItem="GdG-BY-GEO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="vQk-la-s8q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="53.623188405797109" y="62.611607142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

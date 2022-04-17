@@ -6,5 +6,8 @@ target 'Asar' do
   use_frameworks!
 
   # Pods for Asar
-	pod 'Firebase'
+	pod 'Firebase/Analytics'
+	pod 'Firebase/Auth'	
+	pod 'Firebase/Core'
+	pod 'Firebase/Firestore'
 end

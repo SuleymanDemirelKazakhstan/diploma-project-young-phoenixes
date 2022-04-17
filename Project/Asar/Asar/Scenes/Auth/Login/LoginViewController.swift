@@ -6,36 +6,61 @@
 //
 
 import UIKit
+import Firebase
 
-protocol LoginViewControllerDelegate {
+protocol LoginViewControllerDelegate: AnyObject {
     func loginDidTap()
     func forgetPasswordDidTap()
     func registerDidTap()
 }
 
 class LoginViewController: UIViewController {
-
-    @IBOutlet weak var login_btn: UIButton!
-    @IBOutlet weak var forget_btn: UIButton!
-    @IBOutlet weak var register_btn: UIButton!
+    private weak var navigationDelegate: LoginViewControllerDelegate?
+    @IBOutlet private var headerView: HeaderView!
+    @IBOutlet private var emailTextField: UITextField!
+    @IBOutlet private var passwordTextField: UITextField!
+    @IBOutlet private var loginButton: UIButton!
+    
+    init(navigationDelegate: LoginViewControllerDelegate) {
+        self.navigationDelegate = navigationDelegate
+        super.init(nibName: String(describing: Self.self), bundle: Bundle(for: Self.self))
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+    }
+    
+    private func setupUI() {
+        headerView.configureTexts(titleText: "Добро пожаловать!", subtitleText: "Введите данные, указанные при регистрации")
+        loginButton.layer.cornerRadius = 10
         
-        let login = NSLocalizedString("log_in", comment: "")
-        login_btn.setTitle(login, for: .normal)
-        let forgetBtn = NSLocalizedString("forget_password", comment: "")
-        forget_btn.setTitle(forgetBtn, for: .normal)
-        let register = NSLocalizedString("register", comment: "")
-        register_btn.setTitle(register, for: .normal)
+        Utilities.styleTextField(emailTextField)
+        Utilities.styleTextField(passwordTextField)
     }
     
-    @IBAction private func loginDidTap() {
+    func validateFields() -> String? {
+        
+        // Check that all fields are filled in
+        if  emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            return "Please fill in all fields."
+        }
+        // Check if the password is secure
+        let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        if Utilities.isPasswordValid(cleanedPassword) == false {
+            return "Please make sure your password is at least 8 characters, contains a special character and a number."
+        }
+        
+        return nil
     }
     
-    @IBAction func forgetPasswordDidTap() {
-    }
-    
-    @IBAction func registerDidTap() {
+    @IBAction func loginButtonDidTap(_ sender: Any) {
+
     }
 }
