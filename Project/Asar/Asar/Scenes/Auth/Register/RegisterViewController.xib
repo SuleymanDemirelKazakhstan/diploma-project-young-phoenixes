@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -15,10 +16,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="Asar" customModuleProvider="target">
             <connections>
-                <outlet property="emailTextField" destination="GdG-BY-GEO" id="eOe-u8-Fcb"/>
                 <outlet property="headerView" destination="sNE-W1-1G8" id="nyu-vl-RCR"/>
                 <outlet property="infoLabel" destination="X83-P4-OqQ" id="Ce0-5D-606"/>
-                <outlet property="passwordTextField" destination="eaU-RZ-dat" id="8Dg-gR-Kfj"/>
+                <outlet property="phoneTextField" destination="GdG-BY-GEO" id="eOe-u8-Fcb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -31,25 +31,17 @@
                     <rect key="frame" x="16" y="169" width="382" height="128"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GdG-BY-GEO">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Номер телефона" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GdG-BY-GEO">
                     <rect key="frame" x="16" y="317" width="382" height="56"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="56" id="bMI-2t-O2j"/>
                     </constraints>
                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eaU-RZ-dat">
-                    <rect key="frame" x="16" y="388" width="382" height="55"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="55" id="0yc-kW-mdk"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad" enablesReturnKeyAutomatically="YES" textContentType="tel"/>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X83-P4-OqQ">
-                    <rect key="frame" x="16" y="453" width="382" height="21"/>
+                    <rect key="frame" x="16" y="383" width="382" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -70,7 +62,6 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xEM-Ni-d32" secondAttribute="bottom" constant="20" id="3Ge-FO-j9G"/>
-                <constraint firstItem="eaU-RZ-dat" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="3fA-hp-g8g"/>
                 <constraint firstItem="xEM-Ni-d32" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Aa8-7D-iQd"/>
                 <constraint firstItem="sNE-W1-1G8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="CHA-tF-Df2"/>
                 <constraint firstItem="GdG-BY-GEO" firstAttribute="top" secondItem="sNE-W1-1G8" secondAttribute="bottom" constant="20" id="Fo1-1D-4JM"/>
@@ -78,10 +69,8 @@
                 <constraint firstItem="X83-P4-OqQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="JyO-X8-87G"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xEM-Ni-d32" secondAttribute="trailing" constant="16" id="NUt-zi-NP4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GdG-BY-GEO" secondAttribute="trailing" constant="16" id="O97-4c-fox"/>
-                <constraint firstItem="eaU-RZ-dat" firstAttribute="top" secondItem="GdG-BY-GEO" secondAttribute="bottom" constant="15" id="UDF-rv-B0C"/>
+                <constraint firstItem="X83-P4-OqQ" firstAttribute="top" secondItem="GdG-BY-GEO" secondAttribute="bottom" constant="10" id="UqP-3D-rdJ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="X83-P4-OqQ" secondAttribute="trailing" constant="16" id="fAe-QO-3hL"/>
-                <constraint firstItem="X83-P4-OqQ" firstAttribute="top" secondItem="eaU-RZ-dat" secondAttribute="bottom" constant="10" id="hrF-Wz-e2q"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eaU-RZ-dat" secondAttribute="trailing" constant="16" id="laR-2s-mha"/>
                 <constraint firstItem="sNE-W1-1G8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="125" id="oHi-VK-H4u"/>
                 <constraint firstItem="GdG-BY-GEO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="vQk-la-s8q"/>
             </constraints>

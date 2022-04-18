@@ -11,7 +11,6 @@ import Firebase
 protocol LoginViewControllerDelegate: AnyObject {
     func loginDidTap()
     func forgetPasswordDidTap()
-    func registerDidTap()
 }
 
 class LoginViewController: UIViewController {
@@ -44,23 +43,28 @@ class LoginViewController: UIViewController {
     }
     
     func validateFields() -> String? {
-        
         // Check that all fields are filled in
         if  emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
             return "Please fill in all fields."
         }
-        // Check if the password is secure
-        let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        
-        if Utilities.isPasswordValid(cleanedPassword) == false {
-            return "Please make sure your password is at least 8 characters, contains a special character and a number."
-        }
-        
         return nil
     }
     
     @IBAction func loginButtonDidTap(_ sender: Any) {
-
+        let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        // Signing in the user
+        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+            
+            if error != nil {
+                // Couldn't sign in
+                print(error!)
+            }
+            else {
+                self.navigationDelegate?.loginDidTap()
+            }
+        }
     }
 }

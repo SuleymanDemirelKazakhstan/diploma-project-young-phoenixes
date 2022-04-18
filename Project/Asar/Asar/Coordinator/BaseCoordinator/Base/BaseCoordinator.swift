@@ -9,6 +9,7 @@ import Foundation
 
 protocol Coordinator: AnyObject {
     func start()
+    func start(launchInstructor: LaunchInstructor)
 }
 
 class BaseCoordinator: Coordinator {
@@ -39,4 +40,5 @@ class BaseCoordinator: Coordinator {
     // MARK: - Coordinator
     
     func start() {}
+    func start(launchInstructor: LaunchInstructor) {}
 }

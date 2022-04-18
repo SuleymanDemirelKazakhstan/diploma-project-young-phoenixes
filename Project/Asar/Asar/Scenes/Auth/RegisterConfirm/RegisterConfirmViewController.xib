@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterConfirmViewController" customModule="Asar" customModuleProvider="target">
+            <connections>
+                <outlet property="codeTextField" destination="oiP-01-jij" id="zkk-cS-gv9"/>
+                <outlet property="confirmButton" destination="JM9-Zg-Pwr" id="1C4-o6-I16"/>
+                <outlet property="detailLabel" destination="j5f-KV-IeY" id="0aq-oU-nWO"/>
+                <outlet property="headerView" destination="yS0-FM-HR7" id="dOv-GE-9zY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="yS0-FM-HR7" customClass="HeaderView" customModule="Asar" customModuleProvider="target">
+                    <rect key="frame" x="16" y="169" width="382" height="128"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oiP-01-jij">
+                    <rect key="frame" x="16" y="317" width="382" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad" enablesReturnKeyAutomatically="YES"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5f-KV-IeY">
+                    <rect key="frame" x="16" y="752" width="382" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JM9-Zg-Pwr">
+                    <rect key="frame" x="16" y="788" width="382" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="Dbf-JL-hAU"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="confirmDidTap:" destination="-1" eventType="touchUpInside" id="eJH-GK-bYE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JM9-Zg-Pwr" secondAttribute="trailing" constant="16" id="28d-zw-BTU"/>
+                <constraint firstItem="j5f-KV-IeY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="4oz-sU-w64"/>
+                <constraint firstItem="yS0-FM-HR7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="125" id="7Cn-Od-8VA"/>
+                <constraint firstItem="yS0-FM-HR7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="80F-RE-sfF"/>
+                <constraint firstItem="oiP-01-jij" firstAttribute="top" secondItem="yS0-FM-HR7" secondAttribute="bottom" constant="20" id="EKq-ip-YmV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yS0-FM-HR7" secondAttribute="trailing" constant="16" id="P03-2F-sPH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oiP-01-jij" secondAttribute="trailing" constant="16" id="QS0-z0-cTY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="j5f-KV-IeY" secondAttribute="trailing" constant="16" id="cgU-iB-uwd"/>
+                <constraint firstItem="JM9-Zg-Pwr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="fiz-Ku-me3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JM9-Zg-Pwr" secondAttribute="bottom" constant="20" id="jYo-62-uac"/>
+                <constraint firstItem="oiP-01-jij" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="kM7-xd-hqj"/>
+                <constraint firstItem="JM9-Zg-Pwr" firstAttribute="top" secondItem="j5f-KV-IeY" secondAttribute="bottom" constant="15" id="qAW-Wl-EP2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="73"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

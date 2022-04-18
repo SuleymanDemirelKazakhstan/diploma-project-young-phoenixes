@@ -41,6 +41,11 @@ final class AuthCoordinator: BaseCoordinator {
         router.push(main)
     }
     
+    private func showRegisterConfirmViewController() {
+        let registerConfirm = moduleFactory.makeRegisterConfirmViewController(navigationDelegate: self)
+        router.push(registerConfirm)
+    }
+    
     private func runForgetPasswordFlow() {
         
     }
@@ -65,6 +70,14 @@ extension AuthCoordinator: LoginViewControllerDelegate {
 
 extension AuthCoordinator: RegisterViewControllerDelegate {
     func registerButtonDidTap() {
+        showRegisterConfirmViewController()
+    }
+}
+
+// MARK: - RegisterConfirmNavigationDelegate
+
+extension AuthCoordinator: RegisterConfirmNavigationDelegate {
+    func confirmDidTap() {
         showMainViewController()
     }
 }

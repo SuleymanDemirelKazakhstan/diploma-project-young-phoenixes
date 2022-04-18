@@ -8,7 +8,6 @@
 import Foundation
 
 final class ApplicationCoordinator: BaseCoordinator {
-    private var launchInstractor = LaunchInstructor.configure(tutorialWasShown: false, isAutorized: true)
     private let coordinatorFactory: CoordinatorFactory = CoordinatorFactory()
     private let moduleFactory: ModuleFactory = ModuleFactory()
     
@@ -16,12 +15,12 @@ final class ApplicationCoordinator: BaseCoordinator {
         super.init(router: router)
     }
     
-    override func start() {
-        switch launchInstractor {
-        case .onboarding:
-            runOnboardingFlow()
+    override func start(launchInstructor: LaunchInstructor) {
+        switch launchInstructor {
         case .auth:
             runAuthFlow()
+        case .onboarding:
+            runOnboardingFlow()
         case .main:
             runMainFlow()
         }

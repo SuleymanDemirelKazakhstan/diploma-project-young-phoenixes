@@ -23,4 +23,8 @@ final class ModuleFactory {
     func makeRegisterViewController(navigationDelegate: RegisterViewControllerDelegate) -> UIViewController {
         return RegisterViewController(navigationDelegate: navigationDelegate)
     }
+    
+    func makeRegisterConfirmViewController(navigationDelegate: RegisterConfirmNavigationDelegate) -> UIViewController {
+        return RegisterConfirmViewController(navigationDelegate: navigationDelegate)
+    }
 }
