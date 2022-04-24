@@ -7,3 +7,15 @@ Had an meeting with Leila on detailing the logistic of booking specialist in our
 Localized our app to two languages. One of the base system language english and the second russian.
 
 ![alt text](../images/ios/week12_bex.jpeg)
+
+# Khassenov Abylbek 
+
+Add Utilities class that will consist some functions to help avoid overriding some code and to structure code style
+
+![alt text](../images/ios/Week12/1.jpeg)
+
+Add auth manager that have two functions veryPhoneNumber and signIn with FireBase
+
+![alt text](../images/ios/Week12/2.jpeg)
+
+
