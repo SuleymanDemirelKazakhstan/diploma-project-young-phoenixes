@@ -12,3 +12,5 @@ Creat onboarfing page as in a design. Creat for it ViewController with the Colle
 ![alt text](../images/ios/Week13/1.png)
 ![alt text](../images/ios/Week13/2.png)
 ![alt text](../images/ios/Week13/3.png)
+# Meirkhan Azamat
+I checked ready tasks and recognized that we dont have time and we fail to do it. So, beacuse of this i talked with our main developer Abylbek and discussed our opportunities, deadlines. I have to control all the working process.

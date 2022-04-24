@@ -19,3 +19,5 @@ Add auth manager that have two functions veryPhoneNumber and signIn with FireBas
 ![alt text](../images/ios/Week12/2.png)
 
 
+# Meirkhan Azamat
+Organized meeting with Aituar to checked some parts of logic, after i made changes on our specialist flow in Miro. And i searched feedbacks of our competiter on their official website https://naimi.kz and https://2gis.kz/almaty/firm/70000001039963081.
