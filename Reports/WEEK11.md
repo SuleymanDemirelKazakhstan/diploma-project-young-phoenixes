@@ -20,16 +20,16 @@ Input Firebase to our app. Install all the needed cocoapods for it.
 
 Add two files nibOwnerLoadable and nibownerloadable that helps to load xib files
 
-![alt text](../images/ios/week11/1.jpeg)
-![alt text](../images/ios/week11/2.jpeg)
+![alt text](../images/ios/Week11/1.jpeg)
+![alt text](../images/ios/Week11/2.jpeg)
 
 Add fonts from design on figma 
 
-![alt text](../images/ios/week11/3.jpeg)
+![alt text](../images/ios/Week11/3.jpeg)
 
 Add header view that will use more than one page 
 
-![alt text](../images/ios/week11/4.jpeg)
-![alt text](../images/ios/week11/5.jpeg)
-![alt text](../images/ios/week11/6.jpeg)
+![alt text](../images/ios/Week11/4.jpeg)
+![alt text](../images/ios/Week11/5.jpeg)
+![alt text](../images/ios/Week11/6.jpeg)
 
