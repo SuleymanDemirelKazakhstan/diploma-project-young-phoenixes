@@ -9,6 +9,6 @@ Creat onboarfing page as in a design. Creat for it ViewController with the Colle
 
 # Khassenov Abylbek
 
-![alt text](../images/ios/Week13/1.jpeg)
-![alt text](../images/ios/Week13/2.jpeg)
-![alt text](../images/ios/Week13/3.jpeg)
+![alt text](../images/ios/Week13/1.png)
+![alt text](../images/ios/Week13/2.png)
+![alt text](../images/ios/Week13/3.png)

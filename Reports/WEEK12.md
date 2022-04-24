@@ -12,10 +12,10 @@ Localized our app to two languages. One of the base system language english and 
 
 Add Utilities class that will consist some functions to help avoid overriding some code and to structure code style
 
-![alt text](../images/ios/Week12/1.jpeg)
+![alt text](../images/ios/Week12/1.png)
 
 Add auth manager that have two functions veryPhoneNumber and signIn with FireBase
 
-![alt text](../images/ios/Week12/2.jpeg)
+![alt text](../images/ios/Week12/2.png)
 
 
