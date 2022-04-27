@@ -8,18 +8,17 @@
 import UIKit
 
 class OnboardingCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var imageCell: UIImageView!
-    
-    @IBOutlet weak var titleCell: UILabel!
-    @IBOutlet weak var subTitleCell: UILabel!
+    @IBOutlet private var imageCell: UIImageView!
+    @IBOutlet private var titleCell: UILabel!
+    @IBOutlet private var subtitleCell: UILabel!
     
     override class func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    func setup(_ slide: OnboardingSlides){
+    func configure(_ slide: OnboardingSlides){
         imageCell.image = slide.image
         titleCell.text = slide.title
-        subTitleCell.text = slide.description
+        subtitleCell.text = slide.description
     }
 }

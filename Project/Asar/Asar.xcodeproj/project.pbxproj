@@ -30,11 +30,9 @@
 		EC897F6527ED95D000B11A5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC897F6427ED95D000B11A5D /* Assets.xcassets */; };
 		EC897F7B27ED97F400B11A5D /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F7A27ED97F400B11A5D /* BaseCoordinator.swift */; };
 		EC897F7D27ED980900B11A5D /* LaunchInstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F7C27ED980900B11A5D /* LaunchInstructor.swift */; };
-		EC897F7F27ED982900B11A5D /* AuthCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F7E27ED982900B11A5D /* AuthCoordinatorOutput.swift */; };
 		EC897F8127ED983C00B11A5D /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F8027ED983C00B11A5D /* ModuleFactory.swift */; };
 		EC897F8327ED984C00B11A5D /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F8227ED984C00B11A5D /* CoordinatorFactory.swift */; };
 		EC897F8527ED985700B11A5D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F8427ED985700B11A5D /* Router.swift */; };
-		EC897F8727ED987C00B11A5D /* ViewController+Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F8627ED987C00B11A5D /* ViewController+Coordinator.swift */; };
 		EC897F8927ED9C3C00B11A5D /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F8827ED9C3C00B11A5D /* ApplicationCoordinator.swift */; };
 		EC897F9727EDB9E700B11A5D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F9527EDB9E600B11A5D /* LoginViewController.swift */; };
 		EC897F9827EDB9E700B11A5D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC897F9627EDB9E600B11A5D /* LoginViewController.xib */; };
@@ -46,6 +44,10 @@
 		ECDA70F2280D5E240009568A /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDA70F1280D5E240009568A /* AuthManager.swift */; };
 		ECDA70F6280D73DA0009568A /* RegisterConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDA70F4280D73DA0009568A /* RegisterConfirmViewController.swift */; };
 		ECDA70F7280D73DA0009568A /* RegisterConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECDA70F5280D73DA0009568A /* RegisterConfirmViewController.xib */; };
+		ECDA70FD280D91190009568A /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDA70FC280D91190009568A /* UIViewController+Alert.swift */; };
+		ECDA7100280D91B50009568A /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDA70FF280D91B50009568A /* Fonts.swift */; };
+		ECDA7102280D92470009568A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDA7101280D92470009568A /* Colors.swift */; };
+		ECF18D7E2812227800DC3FC9 /* UserSessionStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF18D7D2812227800DC3FC9 /* UserSessionStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,11 +80,9 @@
 		EC897F6927ED95D000B11A5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC897F7A27ED97F400B11A5D /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		EC897F7C27ED980900B11A5D /* LaunchInstructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchInstructor.swift; sourceTree = "<group>"; };
-		EC897F7E27ED982900B11A5D /* AuthCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinatorOutput.swift; sourceTree = "<group>"; };
 		EC897F8027ED983C00B11A5D /* ModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
 		EC897F8227ED984C00B11A5D /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		EC897F8427ED985700B11A5D /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		EC897F8627ED987C00B11A5D /* ViewController+Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Coordinator.swift"; sourceTree = "<group>"; };
 		EC897F8827ED9C3C00B11A5D /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		EC897F9527EDB9E600B11A5D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EC897F9627EDB9E600B11A5D /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -94,6 +94,10 @@
 		ECDA70F1280D5E240009568A /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		ECDA70F4280D73DA0009568A /* RegisterConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterConfirmViewController.swift; sourceTree = "<group>"; };
 		ECDA70F5280D73DA0009568A /* RegisterConfirmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterConfirmViewController.xib; sourceTree = "<group>"; };
+		ECDA70FC280D91190009568A /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		ECDA70FF280D91B50009568A /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		ECDA7101280D92470009568A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		ECF18D7D2812227800DC3FC9 /* UserSessionStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,17 +112,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6D03409628099D470032B916 /* Onboarding */ = {
-			isa = PBXGroup;
-			children = (
-				6D0340A82809D3E70032B916 /* OnboardingViewController.swift */,
-				6D0340AE2809D5460032B916 /* OnboardingCollectionViewCell.swift */,
-				6D0340A92809D3E70032B916 /* OnboardingViewController.xib */,
-				6D0340AC2809D5090032B916 /* OnboardingCollectionViewCell.xib */,
-			);
-			path = Onboarding;
-			sourceTree = "<group>";
-		};
 		6D03409B2809A3850032B916 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,9 +229,7 @@
 			children = (
 				EC897F7727ED97CB00B11A5D /* Base */,
 				EC897F7327ED97A400B11A5D /* Enums */,
-				EC897F7427ED97AB00B11A5D /* Extensions */,
 				EC897F7627ED97C400B11A5D /* Factory */,
-				EC897F7527ED97BB00B11A5D /* Protocols */,
 				EC897F7827ED97CF00B11A5D /* Router */,
 			);
 			path = BaseCoordinator;
@@ -250,22 +241,6 @@
 				EC897F7C27ED980900B11A5D /* LaunchInstructor.swift */,
 			);
 			path = Enums;
-			sourceTree = "<group>";
-		};
-		EC897F7427ED97AB00B11A5D /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				EC897F8627ED987C00B11A5D /* ViewController+Coordinator.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		EC897F7527ED97BB00B11A5D /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				EC897F7E27ED982900B11A5D /* AuthCoordinatorOutput.swift */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		EC897F7627ED97C400B11A5D /* Factory */ = {
@@ -296,7 +271,6 @@
 		EC897F8A27ED9F0100B11A5D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				6D03409628099D470032B916 /* Onboarding */,
 				EC897F9227ED9FCD00B11A5D /* Profile */,
 				EC897F9127ED9FC700B11A5D /* Main */,
 				EC897F8E27ED9F4B00B11A5D /* ChangePassword */,
@@ -311,6 +285,7 @@
 			children = (
 				EC897F9927EDC1F500B11A5D /* AuthCoordinator.swift */,
 				EC897F8C27ED9F3900B11A5D /* Login */,
+				ECF18D7B28121F0200DC3FC9 /* Onboarding */,
 				EC897F8D27ED9F3F00B11A5D /* Register */,
 				ECDA70F3280D73990009568A /* RegisterConfirm */,
 			);
@@ -377,6 +352,9 @@
 		ECD0028D280943F4005F2D0D /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				ECF18D7C2812225C00DC3FC9 /* Storages */,
+				ECDA70FE280D91A80009568A /* DesignSystem */,
+				ECDA70FB280D91000009568A /* Extensions */,
 				EC5A0A4F28098028003EC0C3 /* Protocols */,
 				EC5A0A4A28096EA7003EC0C3 /* Fonts */,
 				ECD0028E2809442A005F2D0D /* UIComponents */,
@@ -419,6 +397,66 @@
 				ECDA70F5280D73DA0009568A /* RegisterConfirmViewController.xib */,
 			);
 			path = RegisterConfirm;
+			sourceTree = "<group>";
+		};
+		ECDA70F8280D88940009568A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D0340A82809D3E70032B916 /* OnboardingViewController.swift */,
+				6D0340A92809D3E70032B916 /* OnboardingViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ECDA70F9280D88AE0009568A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECDA70FA280D88B70009568A /* OnboardingCollectionCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECDA70FA280D88B70009568A /* OnboardingCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				6D0340AE2809D5460032B916 /* OnboardingCollectionViewCell.swift */,
+				6D0340AC2809D5090032B916 /* OnboardingCollectionViewCell.xib */,
+			);
+			path = OnboardingCollectionCell;
+			sourceTree = "<group>";
+		};
+		ECDA70FB280D91000009568A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ECDA70FC280D91190009568A /* UIViewController+Alert.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ECDA70FE280D91A80009568A /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				ECDA70FF280D91B50009568A /* Fonts.swift */,
+				ECDA7101280D92470009568A /* Colors.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		ECF18D7B28121F0200DC3FC9 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				ECDA70F8280D88940009568A /* Controller */,
+				ECDA70F9280D88AE0009568A /* View */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		ECF18D7C2812225C00DC3FC9 /* Storages */ = {
+			isa = PBXGroup;
+			children = (
+				ECF18D7D2812227800DC3FC9 /* UserSessionStorage.swift */,
+			);
+			path = Storages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -547,14 +585,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC897F8727ED987C00B11A5D /* ViewController+Coordinator.swift in Sources */,
 				ECDA70F2280D5E240009568A /* AuthManager.swift in Sources */,
 				EC897F8527ED985700B11A5D /* Router.swift in Sources */,
 				EC897F6327ED95CF00B11A5D /* Asar.xcdatamodeld in Sources */,
 				EC5A0A5328098070003EC0C3 /* NibLoadable.swift in Sources */,
 				6D0340AF2809D5460032B916 /* OnboardingCollectionViewCell.swift in Sources */,
-				EC897F7F27ED982900B11A5D /* AuthCoordinatorOutput.swift in Sources */,
 				EC897F8327ED984C00B11A5D /* CoordinatorFactory.swift in Sources */,
+				ECDA7100280D91B50009568A /* Fonts.swift in Sources */,
 				EC897F8927ED9C3C00B11A5D /* ApplicationCoordinator.swift in Sources */,
 				EC897F7D27ED980900B11A5D /* LaunchInstructor.swift in Sources */,
 				6D0340AA2809D3E70032B916 /* OnboardingViewController.swift in Sources */,
@@ -564,10 +601,13 @@
 				ECD0028B28093FEE005F2D0D /* RegisterViewController.swift in Sources */,
 				EC897F8127ED983C00B11A5D /* ModuleFactory.swift in Sources */,
 				EC89294A280CD2B600503C7F /* MainViewController.swift in Sources */,
+				ECDA70FD280D91190009568A /* UIViewController+Alert.swift in Sources */,
 				EC5A0A5528098A48003EC0C3 /* Utilities.swift in Sources */,
 				ECDA70F6280D73DA0009568A /* RegisterConfirmViewController.swift in Sources */,
+				ECF18D7E2812227800DC3FC9 /* UserSessionStorage.swift in Sources */,
 				EC897F5927ED95CF00B11A5D /* AppDelegate.swift in Sources */,
 				EC5A0A512809804F003EC0C3 /* NibOwnerLoadable.swift in Sources */,
+				ECDA7102280D92470009568A /* Colors.swift in Sources */,
 				6D03409D2809A39B0032B916 /* OnboardingSlides.swift in Sources */,
 				EC897F9A27EDC1F500B11A5D /* AuthCoordinator.swift in Sources */,
 				EC897F9727EDB9E700B11A5D /* LoginViewController.swift in Sources */,

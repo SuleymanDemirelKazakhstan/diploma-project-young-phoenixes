@@ -41,7 +41,10 @@ class RegisterConfirmViewController: UIViewController {
     @IBAction func confirmDidTap(_ sender: Any) {
         if let code = codeTextField.text, !code.isEmpty {
             AuthManager.shared.verifyCode(smsCode: code) { [weak self] result in
-                guard result else { return }
+                guard result else {
+                    self?.presentAlert(title: "Неправильный код")
+                    return
+                }
                 DispatchQueue.main.async {
                     self?.navigationDelegate?.confirmDidTap()
                 }
