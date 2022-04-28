@@ -16,9 +16,10 @@ protocol RegisterViewControllerDelegate: AnyObject {
 class RegisterViewController: UIViewController {
     private weak var navigationDelegate: RegisterViewControllerDelegate?
     
-    @IBOutlet weak var headerView: HeaderView!
-    @IBOutlet weak var phoneTextField: UITextField!
-    @IBOutlet weak var infoLabel: UILabel!
+    @IBOutlet private var headerView: HeaderView!
+    @IBOutlet private var phoneTextField: UITextField!
+    @IBOutlet private var stackView: UIStackView!
+    @IBOutlet private var actionButton: BottomActionButton!
     
     init(navigationDelegate: RegisterViewControllerDelegate) {
         self.navigationDelegate = navigationDelegate
@@ -31,15 +32,33 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        actionButton.delegate = self
         setupUI()
     }
     
     private func setupUI() {
         headerView.configureTexts(titleText: "Регистрация", subtitleText: "Введите номер телефона, чтобы начать регистрацию")
+        setupCheckBoxView()
         Utilities.styleTextField(phoneTextField)
+        actionButton.configureTitle(text: "Зарегистрироваться")
+        
     }
     
-    @IBAction func registerButtonDidTap(_ sender: Any) {
+    private func setupCheckBoxView() {
+        let view = CheckBoxView.loadFromNib()
+        view.setText("Я соглашаюсь с условиями сервиса и политикой конфидициальности", part: "условиями сервиса и политикой конфидициальности")
+        stackView.addArrangedSubview(view)
+    }
+    
+    private func showError(_ message: String) {
+    // add alert show
+    }
+}
+
+// MARK: - BottomActionButtonDelegate
+
+extension RegisterViewController: BottomActionButtonDelegate {
+    func actionButtonDidTap() {
         if let phone = phoneTextField.text, !phone.isEmpty {
             let number = "+7\(phone)"
             AuthManager.shared.startAuth(phoneNumber: number) { [weak self] result in
@@ -49,9 +68,5 @@ class RegisterViewController: UIViewController {
                 }
             }
         }
-    }
-
-    private func showError(_ message: String) {
-    // add alert show
     }
 }

@@ -35,7 +35,8 @@ class LoginViewController: UIViewController {
     }
     
     private func setupUI() {
-        headerView.configureTexts(titleText: "Добро пожаловать!", subtitleText: "Введите данные, указанные при регистрации")
+        headerView.configureTexts(titleText: L10n.welcomeTitle, subtitleText: "Введите данные, указанные при регистрации")
+        
         loginButton.layer.cornerRadius = 10
         
         Utilities.styleTextField(emailTextField)

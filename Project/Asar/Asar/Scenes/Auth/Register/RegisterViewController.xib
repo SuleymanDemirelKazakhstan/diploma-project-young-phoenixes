@@ -16,9 +16,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="Asar" customModuleProvider="target">
             <connections>
+                <outlet property="actionButton" destination="gdq-N5-61l" id="6Nb-bm-ZKA"/>
                 <outlet property="headerView" destination="sNE-W1-1G8" id="nyu-vl-RCR"/>
-                <outlet property="infoLabel" destination="X83-P4-OqQ" id="Ce0-5D-606"/>
                 <outlet property="phoneTextField" destination="GdG-BY-GEO" id="eOe-u8-Fcb"/>
+                <outlet property="stackView" destination="8IX-S3-w1f" id="cBX-UJ-AR5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -40,39 +41,29 @@
                     <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
                     <textInputTraits key="textInputTraits" keyboardType="phonePad" enablesReturnKeyAutomatically="YES" textContentType="tel"/>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X83-P4-OqQ">
-                    <rect key="frame" x="16" y="383" width="382" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEM-Ni-d32">
-                    <rect key="frame" x="16" y="653" width="382" height="54"/>
-                    <color key="backgroundColor" systemColor="systemGray3Color"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="54" id="vCB-Pw-MJ6"/>
-                    </constraints>
-                    <state key="normal" title="Button"/>
-                    <connections>
-                        <action selector="registerButtonDidTap:" destination="-1" eventType="touchUpInside" id="DSR-4G-zgX"/>
-                    </connections>
-                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="200" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8IX-S3-w1f">
+                    <rect key="frame" x="16" y="389" width="382" height="200"/>
+                </stackView>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="74" translatesAutoresizingMaskIntoConstraints="NO" id="gdq-N5-61l" customClass="BottomActionButton" customModule="Asar" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="653" width="414" height="74"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xEM-Ni-d32" secondAttribute="bottom" constant="20" id="3Ge-FO-j9G"/>
-                <constraint firstItem="xEM-Ni-d32" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Aa8-7D-iQd"/>
+                <constraint firstItem="8IX-S3-w1f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="0Tu-rw-GN8"/>
                 <constraint firstItem="sNE-W1-1G8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="CHA-tF-Df2"/>
                 <constraint firstItem="GdG-BY-GEO" firstAttribute="top" secondItem="sNE-W1-1G8" secondAttribute="bottom" constant="20" id="Fo1-1D-4JM"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sNE-W1-1G8" secondAttribute="trailing" constant="16" id="HNh-pa-CGY"/>
-                <constraint firstItem="X83-P4-OqQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="JyO-X8-87G"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xEM-Ni-d32" secondAttribute="trailing" constant="16" id="NUt-zi-NP4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8IX-S3-w1f" secondAttribute="trailing" constant="16" id="Nsq-hu-4f2"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GdG-BY-GEO" secondAttribute="trailing" constant="16" id="O97-4c-fox"/>
-                <constraint firstItem="X83-P4-OqQ" firstAttribute="top" secondItem="GdG-BY-GEO" secondAttribute="bottom" constant="10" id="UqP-3D-rdJ"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="X83-P4-OqQ" secondAttribute="trailing" constant="16" id="fAe-QO-3hL"/>
+                <constraint firstItem="gdq-N5-61l" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cjf-s4-rdj"/>
+                <constraint firstItem="gdq-N5-61l" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="jQk-IZ-pX7"/>
                 <constraint firstItem="sNE-W1-1G8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="125" id="oHi-VK-H4u"/>
+                <constraint firstItem="8IX-S3-w1f" firstAttribute="top" secondItem="GdG-BY-GEO" secondAttribute="bottom" constant="16" id="rzf-68-CSp"/>
                 <constraint firstItem="GdG-BY-GEO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="vQk-la-s8q"/>
+                <constraint firstItem="gdq-N5-61l" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="y3G-nF-aOi"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="53.623188405797109" y="62.611607142857139"/>
@@ -81,9 +72,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

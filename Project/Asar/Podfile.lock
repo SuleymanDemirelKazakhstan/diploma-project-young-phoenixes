@@ -483,6 +483,7 @@ PODS:
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - PromisesObjC (2.0.0)
+  - SwiftGen (6.5.1)
 
 DEPENDENCIES:
   - Firebase/Analytics
@@ -490,6 +491,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Firestore
   - KeychainAccess (= 4.2.1)
+  - SwiftGen (= 6.5.1)
 
 SPEC REPOS:
   trunk:
@@ -512,6 +514,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - PromisesObjC
+    - SwiftGen
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
@@ -533,7 +536,8 @@ SPEC CHECKSUMS:
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
+  SwiftGen: a6d22010845f08fe18fbdf3a07a8e380fd22e0ea
 
-PODFILE CHECKSUM: eb373e0102d0d8eed7f0fc1e47ea977bc3765fa9
+PODFILE CHECKSUM: 970825be820d9b525e196a3e7d07df099455e857
 
 COCOAPODS: 1.11.2

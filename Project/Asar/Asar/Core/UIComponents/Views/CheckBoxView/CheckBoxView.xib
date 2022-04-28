@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="KR4-44-yIY" customClass="CheckBoxView" customModule="Asar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7b-2s-JI2" customClass="CheckboxButton" customModule="Asar" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="39" width="32" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="6Fa-d4-m7e"/>
+                    </constraints>
+                    <connections>
+                        <action selector="checkBoxButtonDidTap" destination="KR4-44-yIY" eventType="valueChanged" id="Nyt-VW-onP"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZa-S8-1B8">
+                    <rect key="frame" x="32" y="8" width="382" height="96"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="8Sx-km-t71"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="VZa-S8-1B8" firstAttribute="centerY" secondItem="KR4-44-yIY" secondAttribute="centerY" id="IXX-zC-2gh"/>
+                <constraint firstItem="VZa-S8-1B8" firstAttribute="leading" secondItem="g7b-2s-JI2" secondAttribute="trailing" id="T8m-lz-fZ6"/>
+                <constraint firstItem="8Sx-km-t71" firstAttribute="trailing" secondItem="VZa-S8-1B8" secondAttribute="trailing" id="l2v-f4-PX0"/>
+                <constraint firstItem="g7b-2s-JI2" firstAttribute="leading" secondItem="8Sx-km-t71" secondAttribute="leading" id="liK-z3-K49"/>
+                <constraint firstItem="VZa-S8-1B8" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="8Sx-km-t71" secondAttribute="bottom" constant="-8" id="qSu-FJ-YVZ"/>
+                <constraint firstItem="g7b-2s-JI2" firstAttribute="centerY" secondItem="VZa-S8-1B8" secondAttribute="centerY" id="uLf-Lz-YAI"/>
+                <constraint firstItem="VZa-S8-1B8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="KR4-44-yIY" secondAttribute="top" constant="8" id="vrZ-ey-1Fa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="checkBoxButton" destination="g7b-2s-JI2" id="Lu2-cA-VHz"/>
+                <outlet property="titleTextView" destination="VZa-S8-1B8" id="HyT-eJ-2Tc"/>
+            </connections>
+            <point key="canvasLocation" x="-95.652173913043484" y="277.90178571428572"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
