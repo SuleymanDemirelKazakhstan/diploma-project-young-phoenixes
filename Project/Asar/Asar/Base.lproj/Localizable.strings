@@ -8,4 +8,39 @@
 
 // Mark: - Ru
 
-"welcomeTitle" = "Добро пожаловать";
+"welcomeTitle" = "Добро пожаловать!";
+"subtitleOfWelcomeTitle" = "Введите данные, указанные при регистрации";
+"phoneNumberPlaceholder" = "Номер телефона";
+"passwordPlaceholder" = "Пароль";
+"forgotPasswordButton" = "Забыли пароль?";
+"logInButton" = "Войти";
+"dontHaveAccTitle" = "Еще нет аккаунта?";
+"makeRegistrationButton" =  "Зарегистрироваться";
+"registrationTitle" = "Регистрация";
+"subtitleOfRegistrationTitle" = "Введите номер телефона, чтобы начать регистрацию";
+"privacyPolicy" = "Я соглашаюсь с условиями сервиса и политикой конфиденциальности";
+"сonfirmationTitle" = "Подтверждение";
+"subtitleСonfirmation" = "Введите код авторизации, полученный по SMS на номер";
+"confirm" = "Подтвердить";
+"confirmationAlert" = "Разрешить приложению 'ASAR' прочитать сообщение ниже и ввести код";
+"cancel" = "Отклонить";
+"allow" = "Разрешить";
+"inputPassword" = "Установить пароль";
+"subtitleInputPassword" = "Придумайте пароль, содержащие латинские буквы, заглавные буквы, цифры и знаки пропинания ! @ $ % ^ ( ) _ - +";
+"input" = "Установить";
+"chooseRole" = "Выберите роль";
+"subtitleChooseRole" = "Чтобы закончить регистрацию, нужно выбрать";
+"lookingForSpecialist" = "Ищу специалиста";
+"lookingForJob" = "Ищу работу";
+"categoriesTitle" = "Категории";
+"plumberTitle" = "Сантехник";
+"householdRepairsTitle" = "Бытовой ремонт";
+"cargoTitle" = "Грузоперевозка";
+"cleaningTitle" = "Уборка";
+"beautyTitle" = "Красота";
+"electicianTitle" = "Электрик";
+"featuredTitle" = "Рекомендуемые";
+"mainTabBarTitle" = "Главная";
+"orderTabBarTitle" = "Заказать";
+"myOrdersTabBarTitle" = "Мои заявки";
+"profileTabBarTitle" = "Профиль";

@@ -7,4 +7,40 @@
 */
 // Mark: - Kz
 
-"welcomeTitle" = "Welcome";
+
+"welcomeTitle" = "Қош келдіңіз!";
+"subtitleOfWelcomeTitle" = "Берілген деректерді енгізіңіз";
+"phoneNumberPlaceholder" = "Телефон нөмірі";
+"passwordPlaceholder" = "Құпия сөз";
+"forgotPasswordButton" = "Құпия сөзіңізді ұмыттыңыз ба?";
+"logInButton" = "Кіру";
+"dontHaveAccTitle" = "Әлі тіркелмедіңіз ба?";
+"makeRegistrationButton" =  "Тіркелу";
+"registrationTitle" = "Тіркеу";
+"subtitleOfRegistrationTitle" = "Телефон нөміріңізді енгізіңіз, тіркеуді бастау үшін";
+"privacyPolicy" = "Мен қызмет көрсету шарттарымен және құпиялылық саясатымен келісемін";
+"сonfirmationTitle" = "Растау";
+"subtitleСonfirmation" = "Алынған авторизация кодын SMS арқылы енгізілген нөмір ";
+"confirm" = "Растау";
+"confirmationAlert" = "'ASAR' сөзін оқуға рұқсат етіңіз төмендегі хабарлама және кодты енгізіңіз";
+"cancel" = "Қабылдамау";
+"allow" = "Рұқсат ету";
+"inputPassword" = "Құпия сөзді орнату";
+"subtitleInputPassword" = "Латын тілінен тұратын құпия сөз жасаңыз әріптер, бас әріптер, сандар және белгілер тыныс белгілері! @ $ % ^ ( ) _ - +";
+"input" = "Орнату";
+"chooseRole" = "Рөлді таңдаңыз";
+"subtitleChooseRole" = "Тіркеуді аяқтау үшін таңдаңыз";
+"lookingForSpecialist" = "Маман іздеймін";
+"lookingForJob" = "Жұмыс іздеп жүрмін";
+"categoriesTitle" = "Санаттар";
+"plumberTitle" = "Сантехник";
+"householdRepairsTitle" = "Тұрмыстық жөндеу";
+"cargoTitle" = "Жүк тасымалдау";
+"cleaningTitle" = "Тазалау";
+"beautyTitle" = "Сұлулық";
+"electicianTitle" = "Электрик";
+"featuredTitle" = "Таңдаулы";
+"mainTabBarTitle" = "Басты бет";
+"orderTabBarTitle" = "Тапсырыс";
+"myOrdersTabBarTitle" = "Менің тапсырыстарым";
+"profileTabBarTitle" = "Профиль";

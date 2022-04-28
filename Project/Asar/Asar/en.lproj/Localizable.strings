@@ -8,4 +8,39 @@
 
 // Mark: - Eng
 
-"welcomeTitle" = "Welcome";
+"welcomeTitle" = "Welcome!";
+"subtitleOfWelcomeTitle" = "Enter the data";
+"phoneNumberPlaceholder" = "Phone number";
+"passwordPlaceholder" = "Password";
+"forgotPasswordButton" = "Forgot your password?";
+"logInButton" = "Log in";
+"dontHaveAccTitle" = "Don't have an account yet?";
+"makeRegistrationButton" =  "Register";
+"registrationTitle" = "Registration";
+"subtitleOfRegistrationTitle" = "Enter your phone number to start registration";
+"privacyPolicy" = "I agree to the terms of service and privacy policy";
+"сonfirmationTitle" = "Confirmation";
+"subtitleСonfirmation" = "Enter the authorization code received by SMS to number";
+"confirm" = "Confirm";
+"confirmationAlert" = "Allow 'ASAR' to read message below and enter the code";
+"cancel" = "Decline";
+"allow" = "Allow";
+"inputPassword" = "Set password";
+"subtitleInputPassword" = "Create a password containing latin letters, capital letters, numbers and symbols punctuation! @ $ % ^ ( ) _ - +";
+"input" = "Install";
+"chooseRole" = "Choose a role";
+"subtitleChooseRole" = "To complete registration, select";
+"lookingForSpecialist" = "Looking for a specialist";
+"lookingForJob" = "Looking for a job";
+"categoriesTitle" = "Categories";
+"plumberTitle" = "Plumber";
+"householdRepairsTitle" = "Household repairs";
+"cargoTitle" = "Cargo transportation";
+"cleaningTitle" = "Cleaning";
+"beautyTitle" = "Beauty";
+"electicianTitle" = "Electrician";
+"featuredTitle" = "Featured";
+"mainTabBarTitle" = "Home";
+"orderTabBarTitle" = "Order";
+"myOrdersTabBarTitle" = "My Orders";
+"profileTabBarTitle" = "Profile";
