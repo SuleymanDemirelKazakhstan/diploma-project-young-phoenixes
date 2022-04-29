@@ -12,6 +12,7 @@
 		6D0340AB2809D3E70032B916 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D0340A92809D3E70032B916 /* OnboardingViewController.xib */; };
 		6D0340AD2809D5090032B916 /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D0340AC2809D5090032B916 /* OnboardingCollectionViewCell.xib */; };
 		6D0340AF2809D5460032B916 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0340AE2809D5460032B916 /* OnboardingCollectionViewCell.swift */; };
+		6DF32EC0281B581000CEFEDD /* SMSCodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF32EBF281B581000CEFEDD /* SMSCodeTextField.swift */; };
 		7482BD9C78AEFF91CFD52A25 /* Pods_Asar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A6C03DFAE830D6060C700F /* Pods_Asar.framework */; };
 		EC217D512819FD100060C1A7 /* CheckBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC217D502819FD100060C1A7 /* CheckBoxView.xib */; };
 		EC217D532819FD450060C1A7 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC217D522819FD450060C1A7 /* CheckBoxView.swift */; };
@@ -62,6 +63,7 @@
 		6D0340A92809D3E70032B916 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
 		6D0340AC2809D5090032B916 /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
 		6D0340AE2809D5460032B916 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		6DF32EBF281B581000CEFEDD /* SMSCodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSCodeTextField.swift; sourceTree = "<group>"; };
 		BA10B34020AF89CF82B81849 /* Pods-Asar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asar.debug.xcconfig"; path = "Target Support Files/Pods-Asar/Pods-Asar.debug.xcconfig"; sourceTree = "<group>"; };
 		E959CB219F10FD5780E22DB8 /* Pods-Asar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asar.release.xcconfig"; path = "Target Support Files/Pods-Asar/Pods-Asar.release.xcconfig"; sourceTree = "<group>"; };
 		EC217D502819FD100060C1A7 /* CheckBoxView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckBoxView.xib; sourceTree = "<group>"; };
@@ -428,6 +430,7 @@
 			children = (
 				ECDA70F4280D73DA0009568A /* RegisterConfirmViewController.swift */,
 				ECDA70F5280D73DA0009568A /* RegisterConfirmViewController.xib */,
+				6DF32EBF281B581000CEFEDD /* SMSCodeTextField.swift */,
 			);
 			path = RegisterConfirm;
 			sourceTree = "<group>";
@@ -627,6 +630,7 @@
 				EC897F8327ED984C00B11A5D /* CoordinatorFactory.swift in Sources */,
 				ECDA7100280D91B50009568A /* Fonts.swift in Sources */,
 				EC217D532819FD450060C1A7 /* CheckBoxView.swift in Sources */,
+				6DF32EC0281B581000CEFEDD /* SMSCodeTextField.swift in Sources */,
 				EC392827281A227D00F0049A /* Assets.swift in Sources */,
 				EC897F8927ED9C3C00B11A5D /* ApplicationCoordinator.swift in Sources */,
 				EC897F7D27ED980900B11A5D /* LaunchInstructor.swift in Sources */,

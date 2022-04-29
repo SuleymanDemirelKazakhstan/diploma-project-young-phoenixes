@@ -15,13 +15,19 @@ class RegisterConfirmViewController: UIViewController {
     private weak var navigationDelegate: RegisterConfirmNavigationDelegate?
     
     @IBOutlet private var headerView: HeaderView!
-    @IBOutlet private var codeTextField: UITextField!
+  
+    @IBOutlet weak var codeTextField: SMSCodeTextField!
     @IBOutlet private var detailLabel: UILabel!
     @IBOutlet private var confirmButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        codeTextField.configure()
+        codeTextField.didEnterLastDigit = { [weak self] code in
+            print(code)
+            
+        }
     }
     
     init(navigationDelegate: RegisterConfirmNavigationDelegate) {
