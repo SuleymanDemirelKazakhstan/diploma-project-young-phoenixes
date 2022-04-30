@@ -16,17 +16,16 @@ class RegisterConfirmViewController: UIViewController {
     
     @IBOutlet private var headerView: HeaderView!
   
-    @IBOutlet weak var codeTextField: SMSCodeTextField!
-    @IBOutlet private var detailLabel: UILabel!
-    @IBOutlet private var confirmButton: UIButton!
+    @IBOutlet private var codeTextField: SMSCodeTextField!
+    @IBOutlet private var actionButton: BottomActionButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        actionButton.delegate = self
         setupUI()
         codeTextField.configure()
         codeTextField.didEnterLastDigit = { [weak self] code in
             print(code)
-            
         }
     }
     
@@ -40,11 +39,14 @@ class RegisterConfirmViewController: UIViewController {
     }
     
     private func setupUI() {
-        headerView.configureTexts(titleText: "Подтверждение", subtitleText: "Введите код авторизации, полученный по SMS на номер")
-        confirmButton.layer.cornerRadius = 10
+        headerView.configureTexts(titleText: L10n.сonfirmationTitle, subtitleText: L10n.subtitleСonfirmation)
+        actionButton.configureTitle(text: L10n.confirm)
+        
     }
-    
-    @IBAction func confirmDidTap(_ sender: Any) {
+}
+
+extension RegisterConfirmViewController: BottomActionButtonDelegate {
+    func actionButtonDidTap() {
         if let code = codeTextField.text, !code.isEmpty {
             AuthManager.shared.verifyCode(smsCode: code) { [weak self] result in
                 guard result else {

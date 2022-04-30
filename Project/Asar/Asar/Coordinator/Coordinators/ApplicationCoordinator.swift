@@ -5,7 +5,7 @@
 //  Created by Abylbek Khassenov on 25.03.2022.
 //
 
-import Foundation
+import UIKit
 
 final class ApplicationCoordinator: BaseCoordinator {
     private let coordinatorFactory: CoordinatorFactory = CoordinatorFactory()
@@ -22,8 +22,27 @@ final class ApplicationCoordinator: BaseCoordinator {
         case .onboarding:
             runOnboardingFlow()
         case .main:
-            runMainFlow()
+            showMain(viewControllers: [runProfileFlow(), runOrdersFlow()])
         }
+    }
+    
+    private func showMain(viewControllers: [UIViewController]) {
+        let main = moduleFactory.makeMain(viewControllers: viewControllers)
+        router.setRootModule(main, isNavigationBarHidden: true)
+    }
+    
+    private func runProfileFlow() -> UIViewController {
+        let (coordinator, module) = coordinatorFactory.makeProfileCoordinator()
+        coordinator.start()
+        addDependency(coordinator)
+        return module
+    }
+    
+    private func runOrdersFlow() -> UIViewController {
+        let (coordinator, module) = coordinatorFactory.makeOrderCoordinator()
+        coordinator.start()
+        addDependency(coordinator)
+        return module
     }
     
     private func runOnboardingFlow() {

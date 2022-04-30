@@ -35,10 +35,8 @@ class LoginViewController: UIViewController {
     }
     
     private func setupUI() {
-        headerView.configureTexts(titleText: L10n.welcomeTitle, subtitleText: L10n.beksChert)
-        
+        headerView.configureTexts(titleText: L10n.welcomeTitle, subtitleText: "")
         loginButton.layer.cornerRadius = 10
-        
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
     }
@@ -55,12 +53,9 @@ class LoginViewController: UIViewController {
     @IBAction func loginButtonDidTap(_ sender: Any) {
         let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        
-        // Signing in the user
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             
             if error != nil {
-                // Couldn't sign in
                 print(error!)
             }
             else {

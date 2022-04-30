@@ -8,6 +8,13 @@
 import UIKit
 
 final class ModuleFactory {
+    func makeMain(viewControllers: [UIViewController]) -> UIViewController {
+        let containerController = ContainerController(viewControllers: viewControllers)
+        let mainViewController = MainViewController(containerController: containerController)
+        containerController.delegate = mainViewController
+        return mainViewController
+    }
+    
     func makeLoginViewController(navigationDelegate: LoginViewControllerDelegate) -> UIViewController {
         return LoginViewController(navigationDelegate: navigationDelegate)
     }
@@ -16,9 +23,9 @@ final class ModuleFactory {
         return OnboardingViewController()
     }
     
-    func makeMainViewController() -> UIViewController {
-        return MainViewController()
-    }
+//    func makeMainViewController() -> UIViewController {
+//        return MainViewController()
+//    }
     
     func makeRegisterViewController(navigationDelegate: RegisterViewControllerDelegate) -> UIViewController {
         return RegisterViewController(navigationDelegate: navigationDelegate)

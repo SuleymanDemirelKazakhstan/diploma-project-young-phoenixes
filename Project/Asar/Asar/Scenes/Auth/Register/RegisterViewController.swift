@@ -18,6 +18,8 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet private var headerView: HeaderView!
     @IBOutlet private var phoneTextField: UITextField!
+    @IBOutlet private var emailTextField: UITextField!
+    @IBOutlet private var passwordTextField: UITextField!
     @IBOutlet private var stackView: UIStackView!
     @IBOutlet private var actionButton: BottomActionButton!
     
@@ -37,16 +39,22 @@ class RegisterViewController: UIViewController {
     }
     
     private func setupUI() {
-        headerView.configureTexts(titleText: "Регистрация", subtitleText: "Введите номер телефона, чтобы начать регистрацию")
+        headerView.configureTexts(titleText: L10n.registrationTitle, subtitleText: L10n.subtitleOfRegistrationTitle)
         setupCheckBoxView()
-        Utilities.styleTextField(phoneTextField)
-        actionButton.configureTitle(text: "Зарегистрироваться")
+        configureTextFields()
+        actionButton.configureTitle(text: L10n.makeRegistrationButton)
         
+    }
+    
+    private func configureTextFields() {
+        Utilities.styleTextField(phoneTextField)
+        Utilities.styleTextField(emailTextField)
+        Utilities.styleTextField(passwordTextField)
     }
     
     private func setupCheckBoxView() {
         let view = CheckBoxView.loadFromNib()
-        view.setText("Я соглашаюсь с условиями сервиса и политикой конфидициальности", part: "условиями сервиса и политикой конфидициальности")
+        view.setText(L10n.privacyPolicy, part: "условиями сервиса и политикой конфидициальности")
         stackView.addArrangedSubview(view)
     }
     
@@ -65,6 +73,23 @@ extension RegisterViewController: BottomActionButtonDelegate {
                 guard result else { return }
                 DispatchQueue.main.async {
                     self?.navigationDelegate?.registerButtonDidTap()
+                }
+            }
+        }
+        
+        let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+            if error != nil {
+                self.showError("Error creating user")
+            }
+            else {
+                let db = Firestore.firestore()
+                db.collection("users").addDocument(data: ["email": email,
+                                                          "uid": result!.user.uid ]) { (error) in
+                    if error != nil {
+                        self.showError("Error saving user data")
+                    }
                 }
             }
         }

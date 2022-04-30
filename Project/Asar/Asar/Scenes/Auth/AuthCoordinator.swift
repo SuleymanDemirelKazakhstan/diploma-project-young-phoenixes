@@ -18,7 +18,7 @@ final class AuthCoordinator: BaseCoordinator {
     }
 
     override func start() {
-        showRegisterViewController()
+        showLoginViewController()
     }
 
     private func showLoginViewController() {
@@ -37,8 +37,8 @@ final class AuthCoordinator: BaseCoordinator {
     }
     
     private func showMainViewController() {
-        let main = moduleFactory.makeMainViewController()
-        router.push(main)
+//        let main = moduleFactory.
+//        router.push(main)
     }
     
     private func showRegisterConfirmViewController() {

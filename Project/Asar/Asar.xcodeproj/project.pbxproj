@@ -30,8 +30,14 @@
 		EC5A0A512809804F003EC0C3 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5A0A502809804F003EC0C3 /* NibOwnerLoadable.swift */; };
 		EC5A0A5328098070003EC0C3 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5A0A5228098070003EC0C3 /* NibLoadable.swift */; };
 		EC5A0A5528098A48003EC0C3 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5A0A5428098A48003EC0C3 /* Utilities.swift */; };
+		EC87631C281CFFBA005EFC81 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC87631B281CFFBA005EFC81 /* ProfileCoordinator.swift */; };
+		EC87631F281D004F005EFC81 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC87631D281D004F005EFC81 /* ProfileViewController.swift */; };
+		EC876320281D004F005EFC81 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC87631E281D004F005EFC81 /* ProfileViewController.xib */; };
+		EC876323281D0114005EFC81 /* OrderCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC876322281D0114005EFC81 /* OrderCoordinator.swift */; };
+		EC876326281D0122005EFC81 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC876324281D0122005EFC81 /* OrderViewController.swift */; };
+		EC876327281D0122005EFC81 /* OrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC876325281D0122005EFC81 /* OrderViewController.xib */; };
+		EC876329281D083B005EFC81 /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC876328281D083B005EFC81 /* ContainerController.swift */; };
 		EC89294A280CD2B600503C7F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC892948280CD2B600503C7F /* MainViewController.swift */; };
-		EC89294B280CD2B600503C7F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC892949280CD2B600503C7F /* MainViewController.xib */; };
 		EC897F5927ED95CF00B11A5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC897F5827ED95CF00B11A5D /* AppDelegate.swift */; };
 		EC897F6327ED95CF00B11A5D /* Asar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC897F6127ED95CF00B11A5D /* Asar.xcdatamodeld */; };
 		EC897F6527ED95D000B11A5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC897F6427ED95D000B11A5D /* Assets.xcassets */; };
@@ -85,8 +91,14 @@
 		EC5A0A502809804F003EC0C3 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
 		EC5A0A5228098070003EC0C3 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		EC5A0A5428098A48003EC0C3 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		EC87631B281CFFBA005EFC81 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		EC87631D281D004F005EFC81 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EC87631E281D004F005EFC81 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		EC876322281D0114005EFC81 /* OrderCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCoordinator.swift; sourceTree = "<group>"; };
+		EC876324281D0122005EFC81 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		EC876325281D0122005EFC81 /* OrderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderViewController.xib; sourceTree = "<group>"; };
+		EC876328281D083B005EFC81 /* ContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerController.swift; sourceTree = "<group>"; };
 		EC892948280CD2B600503C7F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		EC892949280CD2B600503C7F /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		EC897F5527ED95CF00B11A5D /* Asar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC897F5827ED95CF00B11A5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC897F6227ED95CF00B11A5D /* Asar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Asar.xcdatamodel; sourceTree = "<group>"; };
@@ -204,6 +216,16 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		EC876321281D00FF005EFC81 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				EC876322281D0114005EFC81 /* OrderCoordinator.swift */,
+				EC876324281D0122005EFC81 /* OrderViewController.swift */,
+				EC876325281D0122005EFC81 /* OrderViewController.xib */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
 		EC897F4C27ED95CF00B11A5D = {
 			isa = PBXGroup;
 			children = (
@@ -263,6 +285,8 @@
 			isa = PBXGroup;
 			children = (
 				EC897F8827ED9C3C00B11A5D /* ApplicationCoordinator.swift */,
+				EC897F8027ED983C00B11A5D /* ModuleFactory.swift */,
+				EC897F8227ED984C00B11A5D /* CoordinatorFactory.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -271,8 +295,6 @@
 			isa = PBXGroup;
 			children = (
 				EC897F7727ED97CB00B11A5D /* Base */,
-				EC897F7327ED97A400B11A5D /* Enums */,
-				EC897F7627ED97C400B11A5D /* Factory */,
 				EC897F7827ED97CF00B11A5D /* Router */,
 			);
 			path = BaseCoordinator;
@@ -284,15 +306,6 @@
 				EC897F7C27ED980900B11A5D /* LaunchInstructor.swift */,
 			);
 			path = Enums;
-			sourceTree = "<group>";
-		};
-		EC897F7627ED97C400B11A5D /* Factory */ = {
-			isa = PBXGroup;
-			children = (
-				EC897F8027ED983C00B11A5D /* ModuleFactory.swift */,
-				EC897F8227ED984C00B11A5D /* CoordinatorFactory.swift */,
-			);
-			path = Factory;
 			sourceTree = "<group>";
 		};
 		EC897F7727ED97CB00B11A5D /* Base */ = {
@@ -314,6 +327,7 @@
 		EC897F8A27ED9F0100B11A5D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				EC876321281D00FF005EFC81 /* Order */,
 				EC897F9227ED9FCD00B11A5D /* Profile */,
 				EC897F9127ED9FC700B11A5D /* Main */,
 				EC897F8E27ED9F4B00B11A5D /* ChangePassword */,
@@ -378,8 +392,8 @@
 		EC897F9127ED9FC700B11A5D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EC876328281D083B005EFC81 /* ContainerController.swift */,
 				EC892948280CD2B600503C7F /* MainViewController.swift */,
-				EC892949280CD2B600503C7F /* MainViewController.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -387,6 +401,9 @@
 		EC897F9227ED9FCD00B11A5D /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				EC87631B281CFFBA005EFC81 /* ProfileCoordinator.swift */,
+				EC87631D281D004F005EFC81 /* ProfileViewController.swift */,
+				EC87631E281D004F005EFC81 /* ProfileViewController.xib */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -400,6 +417,7 @@
 				EC5A0A4F28098028003EC0C3 /* Protocols */,
 				EC5A0A4A28096EA7003EC0C3 /* Fonts */,
 				ECD0028E2809442A005F2D0D /* UIComponents */,
+				EC897F7327ED97A400B11A5D /* Enums */,
 				EC5A0A5428098A48003EC0C3 /* Utilities.swift */,
 				ECDA70F1280D5E240009568A /* AuthManager.swift */,
 			);
@@ -411,6 +429,7 @@
 			children = (
 				ECD002902809444B005F2D0D /* Views */,
 				EC217D552819FE1B0060C1A7 /* CheckBoxButton.swift */,
+				6DF32EBF281B581000CEFEDD /* SMSCodeTextField.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -430,7 +449,6 @@
 			children = (
 				ECDA70F4280D73DA0009568A /* RegisterConfirmViewController.swift */,
 				ECDA70F5280D73DA0009568A /* RegisterConfirmViewController.xib */,
-				6DF32EBF281B581000CEFEDD /* SMSCodeTextField.swift */,
 			);
 			path = RegisterConfirm;
 			sourceTree = "<group>";
@@ -559,9 +577,10 @@
 				EC5A0A4E28096FA0003EC0C3 /* SFProDisplay-Bold.ttf in Resources */,
 				EC897F6527ED95D000B11A5D /* Assets.xcassets in Resources */,
 				ECD0028C28093FEE005F2D0D /* RegisterViewController.xib in Resources */,
+				EC876327281D0122005EFC81 /* OrderViewController.xib in Resources */,
+				EC876320281D004F005EFC81 /* ProfileViewController.xib in Resources */,
 				EC5A0A4C28096ECF003EC0C3 /* SFProDisplay-Regular.ttf in Resources */,
 				6D0340AD2809D5090032B916 /* OnboardingCollectionViewCell.xib in Resources */,
-				EC89294B280CD2B600503C7F /* MainViewController.xib in Resources */,
 				6D0340AB2809D3E70032B916 /* OnboardingViewController.xib in Resources */,
 				EC39282B281A248900F0049A /* Localizable.strings in Resources */,
 				EC897F9827EDB9E700B11A5D /* LoginViewController.xib in Resources */,
@@ -629,6 +648,8 @@
 				6D0340AF2809D5460032B916 /* OnboardingCollectionViewCell.swift in Sources */,
 				EC897F8327ED984C00B11A5D /* CoordinatorFactory.swift in Sources */,
 				ECDA7100280D91B50009568A /* Fonts.swift in Sources */,
+				EC876329281D083B005EFC81 /* ContainerController.swift in Sources */,
+				EC876323281D0114005EFC81 /* OrderCoordinator.swift in Sources */,
 				EC217D532819FD450060C1A7 /* CheckBoxView.swift in Sources */,
 				6DF32EC0281B581000CEFEDD /* SMSCodeTextField.swift in Sources */,
 				EC392827281A227D00F0049A /* Assets.swift in Sources */,
@@ -636,6 +657,7 @@
 				EC897F7D27ED980900B11A5D /* LaunchInstructor.swift in Sources */,
 				EC392828281A227D00F0049A /* Strings.swift in Sources */,
 				6D0340AA2809D3E70032B916 /* OnboardingViewController.swift in Sources */,
+				EC87631C281CFFBA005EFC81 /* ProfileCoordinator.swift in Sources */,
 				EC897F7B27ED97F400B11A5D /* BaseCoordinator.swift in Sources */,
 				EC569CF227F637B000EBEE9B /* SceneDelegate.swift in Sources */,
 				ECD0028B28093FEE005F2D0D /* RegisterViewController.swift in Sources */,
@@ -647,11 +669,13 @@
 				ECF18D7E2812227800DC3FC9 /* UserSessionStorage.swift in Sources */,
 				EC217D562819FE1B0060C1A7 /* CheckBoxButton.swift in Sources */,
 				EC897F5927ED95CF00B11A5D /* AppDelegate.swift in Sources */,
+				EC876326281D0122005EFC81 /* OrderViewController.swift in Sources */,
 				EC5A0A512809804F003EC0C3 /* NibOwnerLoadable.swift in Sources */,
 				EC318FF2281A44F400DA15C1 /* BottomActionButton.swift in Sources */,
 				ECDA7102280D92470009568A /* Colors.swift in Sources */,
 				6D03409D2809A39B0032B916 /* OnboardingSlides.swift in Sources */,
 				EC897F9A27EDC1F500B11A5D /* AuthCoordinator.swift in Sources */,
+				EC87631F281D004F005EFC81 /* ProfileViewController.swift in Sources */,
 				EC897F9727EDB9E700B11A5D /* LoginViewController.swift in Sources */,
 				EC5A0A4728096CDF003EC0C3 /* HeaderView.swift in Sources */,
 			);

@@ -17,7 +17,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="Asar" customModuleProvider="target">
             <connections>
                 <outlet property="actionButton" destination="gdq-N5-61l" id="6Nb-bm-ZKA"/>
+                <outlet property="emailTextField" destination="2Du-OR-bxj" id="7lg-S6-9bT"/>
                 <outlet property="headerView" destination="sNE-W1-1G8" id="nyu-vl-RCR"/>
+                <outlet property="passwordTextField" destination="mf8-Vw-peD" id="New-gB-B0o"/>
                 <outlet property="phoneTextField" destination="GdG-BY-GEO" id="eOe-u8-Fcb"/>
                 <outlet property="stackView" destination="8IX-S3-w1f" id="cBX-UJ-AR5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -32,17 +34,38 @@
                     <rect key="frame" x="16" y="169" width="382" height="128"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Номер телефона" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GdG-BY-GEO">
-                    <rect key="frame" x="16" y="317" width="382" height="56"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="56" id="bMI-2t-O2j"/>
-                    </constraints>
-                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
-                    <textInputTraits key="textInputTraits" keyboardType="phonePad" enablesReturnKeyAutomatically="YES" textContentType="tel"/>
-                </textField>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="apb-9x-6iB">
+                    <rect key="frame" x="16" y="321" width="382" height="200"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Номер телефона" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GdG-BY-GEO">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="56"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="bMI-2t-O2j"/>
+                            </constraints>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" keyboardType="phonePad" enablesReturnKeyAutomatically="YES" textContentType="tel"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Du-OR-bxj">
+                            <rect key="frame" x="0.0" y="72" width="382" height="56"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="YXX-fV-McD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mf8-Vw-peD">
+                            <rect key="frame" x="0.0" y="144" width="382" height="56"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="CVt-Yb-qx2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" textContentType="password"/>
+                        </textField>
+                    </subviews>
+                </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="200" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8IX-S3-w1f">
-                    <rect key="frame" x="16" y="389" width="382" height="200"/>
+                    <rect key="frame" x="16" y="537" width="382" height="200"/>
                 </stackView>
                 <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="74" translatesAutoresizingMaskIntoConstraints="NO" id="gdq-N5-61l" customClass="BottomActionButton" customModule="Asar" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="653" width="414" height="74"/>
@@ -54,16 +77,16 @@
             <constraints>
                 <constraint firstItem="8IX-S3-w1f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="0Tu-rw-GN8"/>
                 <constraint firstItem="sNE-W1-1G8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="CHA-tF-Df2"/>
-                <constraint firstItem="GdG-BY-GEO" firstAttribute="top" secondItem="sNE-W1-1G8" secondAttribute="bottom" constant="20" id="Fo1-1D-4JM"/>
+                <constraint firstItem="apb-9x-6iB" firstAttribute="top" secondItem="sNE-W1-1G8" secondAttribute="bottom" constant="24" id="DH5-GE-5Z2"/>
+                <constraint firstItem="8IX-S3-w1f" firstAttribute="top" secondItem="apb-9x-6iB" secondAttribute="bottom" constant="16" id="GOl-vs-h7U"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sNE-W1-1G8" secondAttribute="trailing" constant="16" id="HNh-pa-CGY"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8IX-S3-w1f" secondAttribute="trailing" constant="16" id="Nsq-hu-4f2"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GdG-BY-GEO" secondAttribute="trailing" constant="16" id="O97-4c-fox"/>
                 <constraint firstItem="gdq-N5-61l" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cjf-s4-rdj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="apb-9x-6iB" secondAttribute="trailing" constant="16" id="gG1-3K-luf"/>
                 <constraint firstItem="gdq-N5-61l" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="jQk-IZ-pX7"/>
                 <constraint firstItem="sNE-W1-1G8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="125" id="oHi-VK-H4u"/>
-                <constraint firstItem="8IX-S3-w1f" firstAttribute="top" secondItem="GdG-BY-GEO" secondAttribute="bottom" constant="16" id="rzf-68-CSp"/>
-                <constraint firstItem="GdG-BY-GEO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="vQk-la-s8q"/>
                 <constraint firstItem="gdq-N5-61l" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="y3G-nF-aOi"/>
+                <constraint firstItem="apb-9x-6iB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="znR-Aw-Kw1"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="53.623188405797109" y="62.611607142857139"/>
