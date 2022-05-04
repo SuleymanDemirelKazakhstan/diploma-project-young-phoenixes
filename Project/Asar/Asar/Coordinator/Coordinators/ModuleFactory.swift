@@ -23,10 +23,6 @@ final class ModuleFactory {
         return OnboardingViewController()
     }
     
-//    func makeMainViewController() -> UIViewController {
-//        return MainViewController()
-//    }
-    
     func makeRegisterViewController(navigationDelegate: RegisterViewControllerDelegate) -> UIViewController {
         return RegisterViewController(navigationDelegate: navigationDelegate)
     }

@@ -22,7 +22,7 @@ final class ApplicationCoordinator: BaseCoordinator {
         case .onboarding:
             runOnboardingFlow()
         case .main:
-            showMain(viewControllers: [runProfileFlow(), runOrdersFlow()])
+            showMain(viewControllers: [runHomeMainFlow(), runOrdersFlow(), runMyOrdersFlow(), runProfileFlow()])
         }
     }
     
@@ -31,8 +31,8 @@ final class ApplicationCoordinator: BaseCoordinator {
         router.setRootModule(main, isNavigationBarHidden: true)
     }
     
-    private func runProfileFlow() -> UIViewController {
-        let (coordinator, module) = coordinatorFactory.makeProfileCoordinator()
+    private func runHomeMainFlow() -> UIViewController {
+        let (coordinator, module) = coordinatorFactory.makeHomeMainCoordinator()
         coordinator.start()
         addDependency(coordinator)
         return module
@@ -40,6 +40,20 @@ final class ApplicationCoordinator: BaseCoordinator {
     
     private func runOrdersFlow() -> UIViewController {
         let (coordinator, module) = coordinatorFactory.makeOrderCoordinator()
+        coordinator.start()
+        addDependency(coordinator)
+        return module
+    }
+    
+    private func runMyOrdersFlow() -> UIViewController {
+        let (coordinator, module) = coordinatorFactory.makeMyOrdersCoordinator()
+        coordinator.start()
+        addDependency(coordinator)
+        return module
+    }
+    
+    private func runProfileFlow() -> UIViewController {
+        let (coordinator, module) = coordinatorFactory.makeProfileCoordinator()
         coordinator.start()
         addDependency(coordinator)
         return module

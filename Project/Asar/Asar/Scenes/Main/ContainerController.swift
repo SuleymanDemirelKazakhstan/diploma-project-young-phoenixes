@@ -34,7 +34,7 @@ class ContainerController: UITabBarController {
     }
 
     private func updateColors() {
-        tabBar.barTintColor = .blue
-        tabBar.tintColor = .white
+        tabBar.barTintColor = .white
+        tabBar.tintColor = .black
     }
 }

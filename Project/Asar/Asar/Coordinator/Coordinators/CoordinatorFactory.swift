@@ -12,21 +12,31 @@ final class CoordinatorFactory {
         return coordinator
     }
     
-    func makeMainCoordinator() {
+    func makeHomeMainCoordinator() -> (coordinator: Coordinator, module: UIViewController) {
+        let navigationController = UINavigationController()
+        navigationController.tabBarItem.title = "HomeMain"
+        let coordinator = HomeMainCoordinator(router: .init(navigationController: navigationController))
+        return (coordinator, navigationController)
+    }
         
+    func makeOrderCoordinator() -> (coordinator: Coordinator, module: UIViewController) {
+        let navigationController = UINavigationController()
+        navigationController.tabBarItem.title = "Order"
+        let coordinator = OrderCoordinator(router: .init(navigationController: navigationController))
+        return (coordinator, navigationController)
+    }
+    
+    func makeMyOrdersCoordinator() -> (coordinator: Coordinator, module: UIViewController) {
+        let navigationController = UINavigationController()
+        navigationController.tabBarItem.title = "MyOrders"
+        let coordinator = MyOrdersCoordinator(router: .init(navigationController: navigationController))
+        return (coordinator, navigationController)
     }
     
     func makeProfileCoordinator() -> (coordinator: Coordinator, module: UIViewController) {
         let navigationController = UINavigationController()
         navigationController.tabBarItem.title = "Profile"
-        let coordinator = ProfileCoordinator(router: Router(navigationController: navigationController))
-        return (coordinator, navigationController)
-    }
-    
-    func makeOrderCoordinator() -> (coordinator: Coordinator, module: UIViewController) {
-        let navigationController = UINavigationController()
-        navigationController.tabBarItem.title = "Order"
-        let coordinator = OrderCoordinator(router: Router(navigationController: navigationController))
+        let coordinator = ProfileCoordinator(router: .init(navigationController: navigationController))
         return (coordinator, navigationController)
     }
 }

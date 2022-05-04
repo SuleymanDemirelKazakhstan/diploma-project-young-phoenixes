@@ -8,9 +8,7 @@
 import UIKit
 
 enum MenuOption: Int {
-    case home = 0, profile, finance, shop, messageCenter, tariffs, services, roaming,
-         internationalCalls, newNumber, transferNumber, promotions, eSim, commonQuestions,
-         aboutCompany, news, pressReleases, purchases, contacts, offices, settings
+    case home = 0, order, myOrders, profile
 }
 
 private enum Constants {
@@ -88,11 +86,9 @@ extension MainViewController: UITabBarControllerDelegate {
     private func updateMenuOption(index: Int) -> Bool {
         guard let menuOption = MenuOption(rawValue: index) else { return false }
         switch menuOption {
-        case .home, .profile, .finance, .shop:
+        case .home, .order, .myOrders, .profile:
             containerController.selectedIndex = index
             return true
-        default:
-            return false
         }
     }
 }
