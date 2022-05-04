@@ -29,6 +29,9 @@ internal enum Asset {
   internal static let wrench = ImageAsset(name: "wrench")
   internal static let blueSystem = ColorAsset(name: "BlueSystem")
   internal static let white = ColorAsset(name: "White")
+  internal static let kairat = ImageAsset(name: "kairat")
+  internal static let ruslan = ImageAsset(name: "ruslan")
+  internal static let saule = ImageAsset(name: "saule")
   internal static let generalDone = ImageAsset(name: "generalDone")
   internal static let rect = ImageAsset(name: "rect")
 }

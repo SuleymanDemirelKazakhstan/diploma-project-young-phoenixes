@@ -28,6 +28,9 @@ extension HomeMainViewDataSourceImpl: UITableViewDataSource {
         case .categories:
             let cell: HomeCategoriesCell = tableView.dequeueReusableCell(for: indexPath)
             return cell
+        case .recommendations:
+            let cell: HomeRecommendationsCell = tableView.dequeueReusableCell(for: indexPath)
+            return cell
         default:
             let cell: HomeTitleCell = tableView.dequeueReusableCell(for: indexPath)
             return cell

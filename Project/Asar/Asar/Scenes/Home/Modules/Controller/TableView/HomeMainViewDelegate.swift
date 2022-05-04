@@ -26,6 +26,9 @@ extension HomeMainTableViewDelegateImpl: UITableViewDelegate {
         case .categories:
             guard let cell = cell as? HomeCategoriesCell  else { return }
             cell.configure()
+        case .recommendations:
+            guard let cell = cell as? HomeRecommendationsCell else { return }
+            cell.configure()
         default:
             guard let cell = cell as? HomeTitleCell else { return }
             cell.configue(cellModel: .init(titleText: "text"))
@@ -38,6 +41,8 @@ extension HomeMainTableViewDelegateImpl: UITableViewDelegate {
             return 28
         case .categories:
             return 296
+        case .recommendations:
+            return 458
         default:
             return 0
         }
@@ -49,6 +54,8 @@ extension HomeMainTableViewDelegateImpl: UITableViewDelegate {
             return 28
         case .categories:
             return 296
+        case .recommendations:
+            return 458
         default:
             return 0
         }

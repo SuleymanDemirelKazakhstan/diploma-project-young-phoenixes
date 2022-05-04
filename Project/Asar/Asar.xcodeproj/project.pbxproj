@@ -81,6 +81,11 @@
 		ECDA70FD280D91190009568A /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDA70FC280D91190009568A /* UIViewController+Alert.swift */; };
 		ECDA7100280D91B50009568A /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDA70FF280D91B50009568A /* Fonts.swift */; };
 		ECDA7102280D92470009568A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDA7101280D92470009568A /* Colors.swift */; };
+		ECEA16D6282285EB0080F629 /* HomeRecommendationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEA16D4282285EB0080F629 /* HomeRecommendationsCell.swift */; };
+		ECEA16D7282285EB0080F629 /* HomeRecommendationsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECEA16D5282285EB0080F629 /* HomeRecommendationsCell.xib */; };
+		ECEA16DE282290070080F629 /* HomeRecommendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEA16DD282290070080F629 /* HomeRecommendationView.swift */; };
+		ECEA16E0282290210080F629 /* HomeRecommendationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECEA16DF282290210080F629 /* HomeRecommendationView.xib */; };
+		ECEA16E22822946E0080F629 /* HomeRecommendationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEA16E12822946E0080F629 /* HomeRecommendationViewModel.swift */; };
 		ECF18D7E2812227800DC3FC9 /* UserSessionStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF18D7D2812227800DC3FC9 /* UserSessionStorage.swift */; };
 /* End PBXBuildFile section */
 
@@ -166,6 +171,11 @@
 		ECDA70FC280D91190009568A /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		ECDA70FF280D91B50009568A /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		ECDA7101280D92470009568A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		ECEA16D4282285EB0080F629 /* HomeRecommendationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecommendationsCell.swift; sourceTree = "<group>"; };
+		ECEA16D5282285EB0080F629 /* HomeRecommendationsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeRecommendationsCell.xib; sourceTree = "<group>"; };
+		ECEA16DD282290070080F629 /* HomeRecommendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecommendationView.swift; sourceTree = "<group>"; };
+		ECEA16DF282290210080F629 /* HomeRecommendationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeRecommendationView.xib; sourceTree = "<group>"; };
+		ECEA16E12822946E0080F629 /* HomeRecommendationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecommendationViewModel.swift; sourceTree = "<group>"; };
 		ECF18D7D2812227800DC3FC9 /* UserSessionStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -327,6 +337,8 @@
 		EC87633C281D3D0B005EFC81 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ECEA16DC28228FEC0080F629 /* HomeRecommendationView */,
+				ECEA16D2282285B10080F629 /* HomeRecommendationsCell */,
 				EC9E6D16281F6A0000627C5B /* HomeCategoryCell */,
 				EC9E6D11281F682E00627C5B /* HomeCategoriesCell */,
 				EC9E6D06281F47F300627C5B /* HomeTitleCell */,
@@ -339,6 +351,7 @@
 			children = (
 				EC9E6D0B281F48AC00627C5B /* HomeTitleCellModel.swift */,
 				EC9E6D1F281F741100627C5B /* HomeCategoryViewModel.swift */,
+				ECEA16E12822946E0080F629 /* HomeRecommendationViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -674,6 +687,24 @@
 			path = DesignSystem;
 			sourceTree = "<group>";
 		};
+		ECEA16D2282285B10080F629 /* HomeRecommendationsCell */ = {
+			isa = PBXGroup;
+			children = (
+				ECEA16D4282285EB0080F629 /* HomeRecommendationsCell.swift */,
+				ECEA16D5282285EB0080F629 /* HomeRecommendationsCell.xib */,
+			);
+			path = HomeRecommendationsCell;
+			sourceTree = "<group>";
+		};
+		ECEA16DC28228FEC0080F629 /* HomeRecommendationView */ = {
+			isa = PBXGroup;
+			children = (
+				ECEA16DD282290070080F629 /* HomeRecommendationView.swift */,
+				ECEA16DF282290210080F629 /* HomeRecommendationView.xib */,
+			);
+			path = HomeRecommendationView;
+			sourceTree = "<group>";
+		};
 		ECF18D7B28121F0200DC3FC9 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -754,6 +785,7 @@
 			files = (
 				EC5A0A4E28096FA0003EC0C3 /* SFProDisplay-Bold.ttf in Resources */,
 				EC897F6527ED95D000B11A5D /* Assets.xcassets in Resources */,
+				ECEA16E0282290210080F629 /* HomeRecommendationView.xib in Resources */,
 				ECD0028C28093FEE005F2D0D /* RegisterViewController.xib in Resources */,
 				EC876327281D0122005EFC81 /* OrderViewController.xib in Resources */,
 				EC876320281D004F005EFC81 /* ProfileViewController.xib in Resources */,
@@ -772,6 +804,7 @@
 				EC9E6D0A281F481900627C5B /* HomeTitleCell.xib in Resources */,
 				EC5A0A4928096CEF003EC0C3 /* HeaderView.xib in Resources */,
 				EC876330281D37F2005EFC81 /* MyOrdersViewController.xib in Resources */,
+				ECEA16D7282285EB0080F629 /* HomeRecommendationsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -835,11 +868,13 @@
 				ECDA7100280D91B50009568A /* Fonts.swift in Sources */,
 				EC876329281D083B005EFC81 /* ContainerController.swift in Sources */,
 				EC876323281D0114005EFC81 /* OrderCoordinator.swift in Sources */,
+				ECEA16E22822946E0080F629 /* HomeRecommendationViewModel.swift in Sources */,
 				EC217D532819FD450060C1A7 /* CheckBoxView.swift in Sources */,
 				EC876340281D3D59005EFC81 /* HomeMainStore.swift in Sources */,
 				EC876344281D3E4F005EFC81 /* HomeMainViewDataSourceImpl.swift in Sources */,
 				EC9E6D09281F481900627C5B /* HomeTitleCell.swift in Sources */,
 				EC9E6D1C281F6AA100627C5B /* UICollectionView+Register.swift in Sources */,
+				ECEA16DE282290070080F629 /* HomeRecommendationView.swift in Sources */,
 				6DF32EC0281B581000CEFEDD /* SMSCodeTextField.swift in Sources */,
 				EC392827281A227D00F0049A /* Assets.swift in Sources */,
 				EC9E6D1E281F6CC100627C5B /* UICollectionView+Dequeue.swift in Sources */,
@@ -876,6 +911,7 @@
 				EC9E6D0C281F48AC00627C5B /* HomeTitleCellModel.swift in Sources */,
 				EC876333281D384B005EFC81 /* HomeMainCoordinator.swift in Sources */,
 				EC897F9727EDB9E700B11A5D /* LoginViewController.swift in Sources */,
+				ECEA16D6282285EB0080F629 /* HomeRecommendationsCell.swift in Sources */,
 				EC5A0A4728096CDF003EC0C3 /* HeaderView.swift in Sources */,
 				EC9E6D10281F4CF200627C5B /* UITableView+Cell.swift in Sources */,
 			);

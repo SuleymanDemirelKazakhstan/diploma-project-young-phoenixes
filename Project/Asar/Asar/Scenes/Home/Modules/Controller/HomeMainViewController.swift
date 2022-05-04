@@ -41,7 +41,7 @@ class HomeMainViewController: UIViewController {
         tableViewDelegateImpl.tableView = tableView
         tableView.dataSource = tableViewDataSourceImpl
         tableView.delegate = tableViewDelegateImpl
-        [HomeTitleCell.self, HomeCategoriesCell.self].forEach { tableView.register(cellClass: $0) }
+        [HomeTitleCell.self, HomeCategoriesCell.self, HomeRecommendationsCell.self].forEach { tableView.register(cellClass: $0) }
 //        [FAQSectionHeaderView.self, FAQHomeSectionFooterView.self].forEach { tableView.register(aClass: $0) }
     }
 
