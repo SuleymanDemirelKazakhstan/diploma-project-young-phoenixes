@@ -29,6 +29,9 @@ extension HomeMainTableViewDelegateImpl: UITableViewDelegate {
         case .recommendations:
             guard let cell = cell as? HomeRecommendationsCell else { return }
             cell.configure()
+        case .faqs:
+            guard let cell = cell as? HomeFAQCell else { return }
+            cell.configure()
         default:
             guard let cell = cell as? HomeTitleCell else { return }
             cell.configue(cellModel: .init(titleText: "text"))
@@ -43,6 +46,8 @@ extension HomeMainTableViewDelegateImpl: UITableViewDelegate {
             return 296
         case .recommendations:
             return 458
+        case .faqs:
+            return 344
         default:
             return 0
         }
@@ -56,6 +61,8 @@ extension HomeMainTableViewDelegateImpl: UITableViewDelegate {
             return 296
         case .recommendations:
             return 458
+        case .faqs:
+            return 344
         default:
             return 0
         }
@@ -70,15 +77,15 @@ extension HomeMainTableViewDelegateImpl: UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return nil
-//        switch sections[section].type {
-//        case .faqCategories:
-//            let view: FAQSectionHeaderView = tableView.dequeueReusableHeaderFooterView()
-//            view.configure(with: FAQHomeSectionHeaderViewModel(section: sections[section]))
-//            return view
-//        default:
-//            return nil
-//        }
+        switch sections[section].type {
+        case .category, .recommendation, .faq:
+            let view: SectionHeaderView = tableView.dequeueReusableHeaderFooterView()
+            view.tag = section
+            view.configure(with: ProfileHomeSectionHeaderViewModel(section: sections[section]))
+            return view
+        default:
+            return nil
+        }
     }
 
     func tableView(_ tableView: UITableView, estimatedHeightForFooterInSection section: Int) -> CGFloat {
@@ -91,17 +98,10 @@ extension HomeMainTableViewDelegateImpl: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return nil
-//        switch sections[section].type {
-//        case .faqCategories:
-//            let view: FAQHomeSectionFooterView = tableView.dequeueReusableHeaderFooterView()
-//            return view
-//        default:
-//            return nil
-//        }
     }
 
     private func heightForHeader(in section: Int) -> CGFloat {
-        return 0
+        return 64
 //        switch sections[section].type {
 //        case .faqCategories:
 //            return 32

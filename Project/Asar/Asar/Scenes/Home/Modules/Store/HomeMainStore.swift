@@ -66,11 +66,8 @@ final class HomeStore {
     private func configureSections() {
         sections = [
             .init(type: .banners, rows: [.banners]),
-            .init(type: .title, rows: [.title]),
             .init(type: .category, rows: [.categories]),
-            .init(type: .title, rows: [.title]),
             .init(type: .recommendation, rows: [.recommendations]),
-            .init(type: .title, rows: [.title]),
             .init(type: .faq, rows: [.faqs])
         ]
         state = .sections(sections: sections)

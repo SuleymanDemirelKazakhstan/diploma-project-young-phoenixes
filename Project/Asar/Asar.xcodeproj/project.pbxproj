@@ -14,6 +14,15 @@
 		6D0340AF2809D5460032B916 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0340AE2809D5460032B916 /* OnboardingCollectionViewCell.swift */; };
 		6DF32EC0281B581000CEFEDD /* SMSCodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF32EBF281B581000CEFEDD /* SMSCodeTextField.swift */; };
 		7482BD9C78AEFF91CFD52A25 /* Pods_Asar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A6C03DFAE830D6060C700F /* Pods_Asar.framework */; };
+		EC042BEF284DC93B0064871C /* HomeFAQCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC042BED284DC93B0064871C /* HomeFAQCell.swift */; };
+		EC042BF0284DC93B0064871C /* HomeFAQCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC042BEE284DC93B0064871C /* HomeFAQCell.xib */; };
+		EC042BF6284DD7990064871C /* HomeFAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC042BF5284DD7990064871C /* HomeFAQView.swift */; };
+		EC042BF8284DD7A70064871C /* HomeFAQView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC042BF7284DD7A70064871C /* HomeFAQView.xib */; };
+		EC042BFA284DDA2E0064871C /* HomeFAQCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC042BF9284DDA2E0064871C /* HomeFAQCellModel.swift */; };
+		EC042BFF284DE0670064871C /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC042BFE284DE0670064871C /* SectionHeaderView.xib */; };
+		EC042C03284DE2650064871C /* ActionSectionHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC042C02284DE2650064871C /* ActionSectionHeaderViewModel.swift */; };
+		EC042C05284DE4520064871C /* ProfileHomeSectionHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC042C04284DE4520064871C /* ProfileHomeSectionHeaderViewModel.swift */; };
+		EC042C0B284DEAF00064871C /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC042C0A284DEAF00064871C /* SectionHeaderView.swift */; };
 		EC217D512819FD100060C1A7 /* CheckBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC217D502819FD100060C1A7 /* CheckBoxView.xib */; };
 		EC217D532819FD450060C1A7 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC217D522819FD450060C1A7 /* CheckBoxView.swift */; };
 		EC217D562819FE1B0060C1A7 /* CheckBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC217D552819FE1B0060C1A7 /* CheckBoxButton.swift */; };
@@ -99,6 +108,15 @@
 		6DF32EBF281B581000CEFEDD /* SMSCodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSCodeTextField.swift; sourceTree = "<group>"; };
 		BA10B34020AF89CF82B81849 /* Pods-Asar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asar.debug.xcconfig"; path = "Target Support Files/Pods-Asar/Pods-Asar.debug.xcconfig"; sourceTree = "<group>"; };
 		E959CB219F10FD5780E22DB8 /* Pods-Asar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asar.release.xcconfig"; path = "Target Support Files/Pods-Asar/Pods-Asar.release.xcconfig"; sourceTree = "<group>"; };
+		EC042BED284DC93B0064871C /* HomeFAQCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFAQCell.swift; sourceTree = "<group>"; };
+		EC042BEE284DC93B0064871C /* HomeFAQCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeFAQCell.xib; sourceTree = "<group>"; };
+		EC042BF5284DD7990064871C /* HomeFAQView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFAQView.swift; sourceTree = "<group>"; };
+		EC042BF7284DD7A70064871C /* HomeFAQView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeFAQView.xib; sourceTree = "<group>"; };
+		EC042BF9284DDA2E0064871C /* HomeFAQCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFAQCellModel.swift; sourceTree = "<group>"; };
+		EC042BFE284DE0670064871C /* SectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
+		EC042C02284DE2650064871C /* ActionSectionHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSectionHeaderViewModel.swift; sourceTree = "<group>"; };
+		EC042C04284DE4520064871C /* ProfileHomeSectionHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHomeSectionHeaderViewModel.swift; sourceTree = "<group>"; };
+		EC042C0A284DEAF00064871C /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		EC217D502819FD100060C1A7 /* CheckBoxView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckBoxView.xib; sourceTree = "<group>"; };
 		EC217D522819FD450060C1A7 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
 		EC217D552819FE1B0060C1A7 /* CheckBoxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxButton.swift; sourceTree = "<group>"; };
@@ -214,6 +232,50 @@
 				E959CB219F10FD5780E22DB8 /* Pods-Asar.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC042BEA284DC8620064871C /* HomeFAQCell */ = {
+			isa = PBXGroup;
+			children = (
+				EC042BED284DC93B0064871C /* HomeFAQCell.swift */,
+				EC042BEE284DC93B0064871C /* HomeFAQCell.xib */,
+			);
+			path = HomeFAQCell;
+			sourceTree = "<group>";
+		};
+		EC042BF4284DD7810064871C /* HomeFAQView */ = {
+			isa = PBXGroup;
+			children = (
+				EC042BF5284DD7990064871C /* HomeFAQView.swift */,
+				EC042BF7284DD7A70064871C /* HomeFAQView.xib */,
+			);
+			path = HomeFAQView;
+			sourceTree = "<group>";
+		};
+		EC042BFB284DE0090064871C /* ActionSectionHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				EC042C01284DE23E0064871C /* ViewModel */,
+				EC042C00284DE2350064871C /* View */,
+			);
+			path = ActionSectionHeaderView;
+			sourceTree = "<group>";
+		};
+		EC042C00284DE2350064871C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC042BFE284DE0670064871C /* SectionHeaderView.xib */,
+				EC042C0A284DEAF00064871C /* SectionHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC042C01284DE23E0064871C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EC042C02284DE2650064871C /* ActionSectionHeaderViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		EC217D4F2819FCF50060C1A7 /* CheckBoxView */ = {
@@ -337,6 +399,8 @@
 		EC87633C281D3D0B005EFC81 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EC042BF4284DD7810064871C /* HomeFAQView */,
+				EC042BEA284DC8620064871C /* HomeFAQCell */,
 				ECEA16DC28228FEC0080F629 /* HomeRecommendationView */,
 				ECEA16D2282285B10080F629 /* HomeRecommendationsCell */,
 				EC9E6D16281F6A0000627C5B /* HomeCategoryCell */,
@@ -352,6 +416,8 @@
 				EC9E6D0B281F48AC00627C5B /* HomeTitleCellModel.swift */,
 				EC9E6D1F281F741100627C5B /* HomeCategoryViewModel.swift */,
 				ECEA16E12822946E0080F629 /* HomeRecommendationViewModel.swift */,
+				EC042BF9284DDA2E0064871C /* HomeFAQCellModel.swift */,
+				EC042C04284DE4520064871C /* ProfileHomeSectionHeaderViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -445,7 +511,6 @@
 			isa = PBXGroup;
 			children = (
 				EC897F7C27ED980900B11A5D /* LaunchInstructor.swift */,
-				EC74165F282D6E18002D18A3 /* Observable.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -605,6 +670,7 @@
 				EC5A0A4A28096EA7003EC0C3 /* Fonts */,
 				ECD0028E2809442A005F2D0D /* UIComponents */,
 				EC897F7327ED97A400B11A5D /* Enums */,
+				EC74165F282D6E18002D18A3 /* Observable.swift */,
 				EC5A0A5428098A48003EC0C3 /* Utilities.swift */,
 				ECDA70F1280D5E240009568A /* AuthManager.swift */,
 			);
@@ -624,6 +690,7 @@
 		ECD002902809444B005F2D0D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EC042BFB284DE0090064871C /* ActionSectionHeaderView */,
 				EC318FF0281A44D700DA15C1 /* BottomActionButton */,
 				EC217D4F2819FCF50060C1A7 /* CheckBoxView */,
 				EC5A0A4528096CB0003EC0C3 /* HeaderView */,
@@ -798,10 +865,13 @@
 				ECD68BCB27FAB21A00A8DE0A /* GoogleService-Info.plist in Resources */,
 				EC318FF4281A451400DA15C1 /* BottomActionButton.xib in Resources */,
 				EC217D512819FD100060C1A7 /* CheckBoxView.xib in Resources */,
+				EC042BFF284DE0670064871C /* SectionHeaderView.xib in Resources */,
+				EC042BF0284DC93B0064871C /* HomeFAQCell.xib in Resources */,
 				EC9E6D1A281F6A2300627C5B /* HomeCategoryCell.xib in Resources */,
 				EC9E6D15281F686A00627C5B /* HomeCategoriesCell.xib in Resources */,
 				ECDA70F7280D73DA0009568A /* RegisterConfirmViewController.xib in Resources */,
 				EC9E6D0A281F481900627C5B /* HomeTitleCell.xib in Resources */,
+				EC042BF8284DD7A70064871C /* HomeFAQView.xib in Resources */,
 				EC5A0A4928096CEF003EC0C3 /* HeaderView.xib in Resources */,
 				EC876330281D37F2005EFC81 /* MyOrdersViewController.xib in Resources */,
 				ECEA16D7282285EB0080F629 /* HomeRecommendationsCell.xib in Resources */,
@@ -861,6 +931,7 @@
 				EC897F8527ED985700B11A5D /* Router.swift in Sources */,
 				EC9E6D19281F6A2300627C5B /* HomeCategoryCell.swift in Sources */,
 				EC897F6327ED95CF00B11A5D /* Asar.xcdatamodeld in Sources */,
+				EC042C0B284DEAF00064871C /* SectionHeaderView.swift in Sources */,
 				EC87632C281D1D2B005EFC81 /* MyOrdersCoordinator.swift in Sources */,
 				EC5A0A5328098070003EC0C3 /* NibLoadable.swift in Sources */,
 				6D0340AF2809D5460032B916 /* OnboardingCollectionViewCell.swift in Sources */,
@@ -885,9 +956,11 @@
 				EC392828281A227D00F0049A /* Strings.swift in Sources */,
 				6D0340AA2809D3E70032B916 /* OnboardingViewController.swift in Sources */,
 				EC87631C281CFFBA005EFC81 /* ProfileCoordinator.swift in Sources */,
+				EC042C05284DE4520064871C /* ProfileHomeSectionHeaderViewModel.swift in Sources */,
 				EC897F7B27ED97F400B11A5D /* BaseCoordinator.swift in Sources */,
 				EC569CF227F637B000EBEE9B /* SceneDelegate.swift in Sources */,
 				ECD0028B28093FEE005F2D0D /* RegisterViewController.swift in Sources */,
+				EC042BFA284DDA2E0064871C /* HomeFAQCellModel.swift in Sources */,
 				EC897F8127ED983C00B11A5D /* ModuleFactory.swift in Sources */,
 				EC87632F281D37F2005EFC81 /* MyOrdersViewController.swift in Sources */,
 				EC89294A280CD2B600503C7F /* MainViewController.swift in Sources */,
@@ -902,14 +975,17 @@
 				EC217D562819FE1B0060C1A7 /* CheckBoxButton.swift in Sources */,
 				EC897F5927ED95CF00B11A5D /* AppDelegate.swift in Sources */,
 				EC876326281D0122005EFC81 /* OrderViewController.swift in Sources */,
+				EC042C03284DE2650064871C /* ActionSectionHeaderViewModel.swift in Sources */,
 				EC5A0A512809804F003EC0C3 /* NibOwnerLoadable.swift in Sources */,
 				EC318FF2281A44F400DA15C1 /* BottomActionButton.swift in Sources */,
 				ECDA7102280D92470009568A /* Colors.swift in Sources */,
+				EC042BF6284DD7990064871C /* HomeFAQView.swift in Sources */,
 				6D03409D2809A39B0032B916 /* OnboardingSlides.swift in Sources */,
 				EC897F9A27EDC1F500B11A5D /* AuthCoordinator.swift in Sources */,
 				EC87631F281D004F005EFC81 /* ProfileViewController.swift in Sources */,
 				EC9E6D0C281F48AC00627C5B /* HomeTitleCellModel.swift in Sources */,
 				EC876333281D384B005EFC81 /* HomeMainCoordinator.swift in Sources */,
+				EC042BEF284DC93B0064871C /* HomeFAQCell.swift in Sources */,
 				EC897F9727EDB9E700B11A5D /* LoginViewController.swift in Sources */,
 				ECEA16D6282285EB0080F629 /* HomeRecommendationsCell.swift in Sources */,
 				EC5A0A4728096CDF003EC0C3 /* HeaderView.swift in Sources */,

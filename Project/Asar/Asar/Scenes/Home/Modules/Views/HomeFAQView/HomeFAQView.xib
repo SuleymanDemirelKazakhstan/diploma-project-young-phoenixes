@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Bold.ttf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeFAQView" customModule="Asar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="105"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeC-iK-MXr">
+                    <rect key="frame" x="16" y="16" width="359" height="39"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVJ-XM-jcf">
+                    <rect key="frame" x="391" y="16" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="c2M-B8-AaY"/>
+                        <constraint firstAttribute="height" constant="24" id="oKt-gb-hW5"/>
+                    </constraints>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="BeC-iK-MXr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="AD7-96-ucT"/>
+                <constraint firstItem="EVJ-XM-jcf" firstAttribute="leading" secondItem="BeC-iK-MXr" secondAttribute="trailing" constant="16" id="D3b-WZ-coL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="EVJ-XM-jcf" secondAttribute="trailing" constant="16" id="ECR-tw-PTl"/>
+                <constraint firstItem="EVJ-XM-jcf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="QqO-oW-ZEn"/>
+                <constraint firstItem="BeC-iK-MXr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="hrh-Sp-WCU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="BeC-iK-MXr" secondAttribute="bottom" constant="16" id="iGc-tL-L6J"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconImageView" destination="EVJ-XM-jcf" id="CQJ-Ku-SHy"/>
+                <outlet property="titleLabel" destination="BeC-iK-MXr" id="pyV-7d-5ZD"/>
+            </connections>
+            <point key="canvasLocation" x="39.855072463768117" y="286.27232142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
