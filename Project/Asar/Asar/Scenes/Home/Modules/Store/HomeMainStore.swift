@@ -30,6 +30,7 @@ final class HomeStore {
     enum Action {
         case didLoadView
         case willAppearView
+        case didTapCategory(category: String)
     }
     
     enum State {
@@ -37,6 +38,7 @@ final class HomeStore {
         case loadingFinished
         case error(message: String?)
         case sections(sections: [HomeSection])
+        case categoryTapped(categoty: String)
     }
     
     private var isLoaded: Bool
@@ -57,6 +59,8 @@ final class HomeStore {
             getStorageContent()
         case .willAppearView:
             getStorageContent()
+        case let .didTapCategory(category):
+            state = .categoryTapped(categoty: category)
         }
     }
     

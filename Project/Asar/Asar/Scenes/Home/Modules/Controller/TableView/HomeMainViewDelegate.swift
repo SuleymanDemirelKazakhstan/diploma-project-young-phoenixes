@@ -18,14 +18,16 @@ final class HomeMainTableViewDelegateImpl: NSObject {
 }
 
 extension HomeMainTableViewDelegateImpl: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        switch sections[indexPath.section].rows[indexPath.row] {
+        default:
+            break
+        }
+    }
+    
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         switch sections[indexPath.section].rows[indexPath.row] {
-        case .title:
-            guard let cell = cell as? HomeTitleCell else { return }
-            cell.configue(cellModel: .init(titleText: "text"))
-        case .banners:
-            guard let cell = cell as? HomeBannerCell else { return }
-            cell.configure()
         case .categories:
             guard let cell = cell as? HomeCategoriesCell  else { return }
             cell.configure()
@@ -135,19 +137,10 @@ extension HomeMainTableViewDelegateImpl: UITableViewDelegate {
 //    }
 }
 
-// MARK: - FAQHomeCategoriesCellDelegate
+// MARK: - HomeRecommendationViewDelegate
 
-//extension FAQHomeTableViewDelegateImpl: FAQHomeCategoriesCellDelegate {
-//    func categoryDidSelect(_ cell: FAQHomeCategoriesCell, indexPath: IndexPath) {
-//        store.dispatch(action: .didSelectCategory(index: indexPath.item))
-//    }
-//}
-
-// MARK: - MaskedOptionCellDelegate
-
-//extension FAQHomeTableViewDelegateImpl: MaskedOptionCellDelegate {
-//    func optionButtonDidTap(_ cell: MaskedOptionCell) {
-//        guard let indexPath = tableView?.indexPath(for: cell) else { return }
-//        store.dispatch(action: .didTapOption(index: indexPath.row))
-//    }
-//}
+extension HomeMainTableViewDelegateImpl: HomeRecommendationViewDelegate {
+    func categoryDidSelect(_ view: HomeRecommendationView, category: String) {
+        store.dispatch(action: .didTapCategory(category: category))
+    }
+}

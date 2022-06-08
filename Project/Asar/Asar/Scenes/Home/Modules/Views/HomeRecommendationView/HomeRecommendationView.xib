@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,6 +24,17 @@
             <rect key="frame" x="0.0" y="0.0" width="472" height="223"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oD3-1x-9OA">
+                    <rect key="frame" x="0.0" y="44" width="472" height="145"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="titleShadowColor" name="AccentColor"/>
+                    </state>
+                    <connections>
+                        <action selector="categoryDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="tU4-Yg-ckc"/>
+                    </connections>
+                </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dED-u1-lCB">
                     <rect key="frame" x="18" y="16" width="64" height="64"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -32,28 +44,28 @@
                     </constraints>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="oXo-jd-ksZ">
-                    <rect key="frame" x="98" y="16" width="358" height="106"/>
+                    <rect key="frame" x="98" y="16" width="358" height="104"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xq9-QP-NU9">
-                            <rect key="frame" x="0.0" y="0.0" width="358" height="19.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="358" height="19"/>
                             <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="16"/>
                             <color key="textColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="At7-Wh-Vmc">
-                            <rect key="frame" x="0.0" y="30.5" width="358" height="17"/>
+                            <rect key="frame" x="0.0" y="30" width="358" height="16.5"/>
                             <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                             <color key="textColor" red="0.40784313725490196" green="0.40784313725490196" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZbN-YB-fpi">
-                            <rect key="frame" x="0.0" y="58.5" width="358" height="17"/>
+                            <rect key="frame" x="0.0" y="57.5" width="358" height="16.5"/>
                             <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                             <color key="textColor" red="0.40784313725490196" green="0.40784313725490196" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V39-kS-pGu">
-                            <rect key="frame" x="0.0" y="86.5" width="358" height="19.5"/>
+                            <rect key="frame" x="0.0" y="85" width="358" height="19"/>
                             <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="16"/>
                             <color key="textColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -64,9 +76,13 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="oD3-1x-9OA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5bu-fX-WlP"/>
                 <constraint firstItem="dED-u1-lCB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="18" id="5uU-uu-cbb"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oXo-jd-ksZ" secondAttribute="trailing" constant="16" id="B3c-Ay-KIT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="oD3-1x-9OA" secondAttribute="bottom" id="BdT-2g-jC3"/>
                 <constraint firstItem="dED-u1-lCB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="LR4-91-dKn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oD3-1x-9OA" secondAttribute="trailing" id="QzN-iu-hE4"/>
+                <constraint firstItem="oD3-1x-9OA" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ZYH-Zw-fqx"/>
                 <constraint firstItem="oXo-jd-ksZ" firstAttribute="leading" secondItem="dED-u1-lCB" secondAttribute="trailing" constant="16" id="rpY-VY-iMh"/>
                 <constraint firstItem="oXo-jd-ksZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="tQr-AT-8cI"/>
             </constraints>
@@ -82,6 +98,9 @@
         </view>
     </objects>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

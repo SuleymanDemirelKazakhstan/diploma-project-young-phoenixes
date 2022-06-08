@@ -60,7 +60,9 @@ class HomeMainViewController: UIViewController {
             case .loadingFinished:
                 print("")
             case let .error(message):
-                print(message)
+                print(message!)
+            case let .categoryTapped(categoty):
+                break
             }
         }
     }
