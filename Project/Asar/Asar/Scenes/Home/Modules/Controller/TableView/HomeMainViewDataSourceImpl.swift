@@ -25,6 +25,9 @@ extension HomeMainViewDataSourceImpl: UITableViewDataSource {
         case .title:
             let cell: HomeTitleCell = tableView.dequeueReusableCell(for: indexPath)
             return cell
+        case .banners:
+            let cell: HomeBannerCell = tableView.dequeueReusableCell(for: indexPath)
+            return cell
         case .categories:
             let cell: HomeCategoriesCell = tableView.dequeueReusableCell(for: indexPath)
             return cell

@@ -44,7 +44,7 @@ class HomeMainViewController: UIViewController {
         [SectionHeaderView.self].forEach {
             tableView.register(aClass: $0)
         }
-        [HomeTitleCell.self, HomeCategoriesCell.self, HomeRecommendationsCell.self, HomeFAQCell.self].forEach { tableView.register(cellClass: $0) }
+        [HomeBannerCell.self ,HomeTitleCell.self, HomeCategoriesCell.self, HomeRecommendationsCell.self, HomeFAQCell.self].forEach { tableView.register(cellClass: $0) }
     }
 
     private func setupObservers() {

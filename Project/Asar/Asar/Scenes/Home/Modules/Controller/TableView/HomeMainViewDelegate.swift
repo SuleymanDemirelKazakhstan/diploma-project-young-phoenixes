@@ -23,6 +23,9 @@ extension HomeMainTableViewDelegateImpl: UITableViewDelegate {
         case .title:
             guard let cell = cell as? HomeTitleCell else { return }
             cell.configue(cellModel: .init(titleText: "text"))
+        case .banners:
+            guard let cell = cell as? HomeBannerCell else { return }
+            cell.configure()
         case .categories:
             guard let cell = cell as? HomeCategoriesCell  else { return }
             cell.configure()
@@ -42,6 +45,8 @@ extension HomeMainTableViewDelegateImpl: UITableViewDelegate {
         switch sections[indexPath.section].rows[indexPath.row] {
         case .title:
             return 28
+        case .banners:
+            return 100
         case .categories:
             return 296
         case .recommendations:
@@ -57,6 +62,8 @@ extension HomeMainTableViewDelegateImpl: UITableViewDelegate {
         switch sections[indexPath.section].rows[indexPath.row] {
         case .title:
             return 28
+        case .banners:
+            return 100
         case .categories:
             return 296
         case .recommendations:
@@ -78,7 +85,7 @@ extension HomeMainTableViewDelegateImpl: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         switch sections[section].type {
-        case .category, .recommendation, .faq:
+        case .banners , .category, .recommendation, .faq:
             let view: SectionHeaderView = tableView.dequeueReusableHeaderFooterView()
             view.tag = section
             view.configure(with: ProfileHomeSectionHeaderViewModel(section: sections[section]))

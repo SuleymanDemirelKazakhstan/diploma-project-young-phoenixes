@@ -12,6 +12,11 @@
 		6D0340AB2809D3E70032B916 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D0340A92809D3E70032B916 /* OnboardingViewController.xib */; };
 		6D0340AD2809D5090032B916 /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D0340AC2809D5090032B916 /* OnboardingCollectionViewCell.xib */; };
 		6D0340AF2809D5460032B916 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0340AE2809D5460032B916 /* OnboardingCollectionViewCell.swift */; };
+		6D6B4CD1284E328900A9A4D7 /* HomeBannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6B4CD0284E328900A9A4D7 /* HomeBannerModel.swift */; };
+		6D6B4CDE284FAFE700A9A4D7 /* HomeBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6B4CDC284FAFE700A9A4D7 /* HomeBannerCell.swift */; };
+		6D6B4CDF284FAFE700A9A4D7 /* HomeBannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D6B4CDD284FAFE700A9A4D7 /* HomeBannerCell.xib */; };
+		6D6B4CE2284FB00200A9A4D7 /* HomeBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6B4CE0284FB00200A9A4D7 /* HomeBannerView.swift */; };
+		6D6B4CE3284FB00200A9A4D7 /* HomeBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D6B4CE1284FB00200A9A4D7 /* HomeBannerView.xib */; };
 		6DF32EC0281B581000CEFEDD /* SMSCodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF32EBF281B581000CEFEDD /* SMSCodeTextField.swift */; };
 		7482BD9C78AEFF91CFD52A25 /* Pods_Asar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A6C03DFAE830D6060C700F /* Pods_Asar.framework */; };
 		EC042BEF284DC93B0064871C /* HomeFAQCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC042BED284DC93B0064871C /* HomeFAQCell.swift */; };
@@ -100,11 +105,16 @@
 
 /* Begin PBXFileReference section */
 		16A6C03DFAE830D6060C700F /* Pods_Asar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Asar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D03409C2809A39B0032B916 /* OnboardingSlides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlides.swift; sourceTree = "<group>"; };
+		6D03409C2809A39B0032B916 /* OnboardingSlides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingSlides.swift; path = "../New Group/OnboardingSlides.swift"; sourceTree = "<group>"; };
 		6D0340A82809D3E70032B916 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		6D0340A92809D3E70032B916 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
 		6D0340AC2809D5090032B916 /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
 		6D0340AE2809D5460032B916 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		6D6B4CD0284E328900A9A4D7 /* HomeBannerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerModel.swift; sourceTree = "<group>"; };
+		6D6B4CDC284FAFE700A9A4D7 /* HomeBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerCell.swift; sourceTree = "<group>"; };
+		6D6B4CDD284FAFE700A9A4D7 /* HomeBannerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeBannerCell.xib; sourceTree = "<group>"; };
+		6D6B4CE0284FB00200A9A4D7 /* HomeBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerView.swift; sourceTree = "<group>"; };
+		6D6B4CE1284FB00200A9A4D7 /* HomeBannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeBannerView.xib; sourceTree = "<group>"; };
 		6DF32EBF281B581000CEFEDD /* SMSCodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSCodeTextField.swift; sourceTree = "<group>"; };
 		BA10B34020AF89CF82B81849 /* Pods-Asar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asar.debug.xcconfig"; path = "Target Support Files/Pods-Asar/Pods-Asar.debug.xcconfig"; sourceTree = "<group>"; };
 		E959CB219F10FD5780E22DB8 /* Pods-Asar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asar.release.xcconfig"; path = "Target Support Files/Pods-Asar/Pods-Asar.release.xcconfig"; sourceTree = "<group>"; };
@@ -209,12 +219,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6D03409B2809A3850032B916 /* Models */ = {
+		6D6B4CCB284E31EC00A9A4D7 /* HomeBannerCell */ = {
+			isa = PBXGroup;
+			children = (
+				6D6B4CDC284FAFE700A9A4D7 /* HomeBannerCell.swift */,
+				6D6B4CDD284FAFE700A9A4D7 /* HomeBannerCell.xib */,
+			);
+			path = HomeBannerCell;
+			sourceTree = "<group>";
+		};
+		6D6B4CD2284E32B600A9A4D7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				6D03409C2809A39B0032B916 /* OnboardingSlides.swift */,
 			);
-			path = Models;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D6B4CD3284E339300A9A4D7 /* HomeBannerView */ = {
+			isa = PBXGroup;
+			children = (
+				6D6B4CE0284FB00200A9A4D7 /* HomeBannerView.swift */,
+				6D6B4CE1284FB00200A9A4D7 /* HomeBannerView.xib */,
+			);
+			path = HomeBannerView;
 			sourceTree = "<group>";
 		};
 		996843B342D601CB312B5C4D /* Frameworks */ = {
@@ -399,6 +427,8 @@
 		EC87633C281D3D0B005EFC81 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6D6B4CD3284E339300A9A4D7 /* HomeBannerView */,
+				6D6B4CCB284E31EC00A9A4D7 /* HomeBannerCell */,
 				EC042BF4284DD7810064871C /* HomeFAQView */,
 				EC042BEA284DC8620064871C /* HomeFAQCell */,
 				ECEA16DC28228FEC0080F629 /* HomeRecommendationView */,
@@ -418,6 +448,7 @@
 				ECEA16E12822946E0080F629 /* HomeRecommendationViewModel.swift */,
 				EC042BF9284DDA2E0064871C /* HomeFAQCellModel.swift */,
 				EC042C04284DE4520064871C /* ProfileHomeSectionHeaderViewModel.swift */,
+				6D6B4CD0284E328900A9A4D7 /* HomeBannerModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -454,7 +485,6 @@
 		EC897F5727ED95CF00B11A5D /* Asar */ = {
 			isa = PBXGroup;
 			children = (
-				6D03409B2809A3850032B916 /* Models */,
 				EC897F6F27ED976800B11A5D /* AppDelegate */,
 				ECD0028D280943F4005F2D0D /* Core */,
 				EC897F7027ED977600B11A5D /* Coordinator */,
@@ -775,6 +805,7 @@
 		ECF18D7B28121F0200DC3FC9 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				6D6B4CD2284E32B600A9A4D7 /* Model */,
 				ECDA70F8280D88940009568A /* Controller */,
 				ECDA70F9280D88AE0009568A /* View */,
 			);
@@ -853,6 +884,7 @@
 				EC5A0A4E28096FA0003EC0C3 /* SFProDisplay-Bold.ttf in Resources */,
 				EC897F6527ED95D000B11A5D /* Assets.xcassets in Resources */,
 				ECEA16E0282290210080F629 /* HomeRecommendationView.xib in Resources */,
+				6D6B4CE3284FB00200A9A4D7 /* HomeBannerView.xib in Resources */,
 				ECD0028C28093FEE005F2D0D /* RegisterViewController.xib in Resources */,
 				EC876327281D0122005EFC81 /* OrderViewController.xib in Resources */,
 				EC876320281D004F005EFC81 /* ProfileViewController.xib in Resources */,
@@ -864,6 +896,7 @@
 				EC897F9827EDB9E700B11A5D /* LoginViewController.xib in Resources */,
 				ECD68BCB27FAB21A00A8DE0A /* GoogleService-Info.plist in Resources */,
 				EC318FF4281A451400DA15C1 /* BottomActionButton.xib in Resources */,
+				6D6B4CDF284FAFE700A9A4D7 /* HomeBannerCell.xib in Resources */,
 				EC217D512819FD100060C1A7 /* CheckBoxView.xib in Resources */,
 				EC042BFF284DE0670064871C /* SectionHeaderView.xib in Resources */,
 				EC042BF0284DC93B0064871C /* HomeFAQCell.xib in Resources */,
@@ -940,7 +973,9 @@
 				EC876329281D083B005EFC81 /* ContainerController.swift in Sources */,
 				EC876323281D0114005EFC81 /* OrderCoordinator.swift in Sources */,
 				ECEA16E22822946E0080F629 /* HomeRecommendationViewModel.swift in Sources */,
+				6D6B4CE2284FB00200A9A4D7 /* HomeBannerView.swift in Sources */,
 				EC217D532819FD450060C1A7 /* CheckBoxView.swift in Sources */,
+				6D6B4CD1284E328900A9A4D7 /* HomeBannerModel.swift in Sources */,
 				EC876340281D3D59005EFC81 /* HomeMainStore.swift in Sources */,
 				EC876344281D3E4F005EFC81 /* HomeMainViewDataSourceImpl.swift in Sources */,
 				EC9E6D09281F481900627C5B /* HomeTitleCell.swift in Sources */,
@@ -970,6 +1005,7 @@
 				EC9E6D0E281F49F700627C5B /* UITableView+Dequeue.swift in Sources */,
 				EC876346281D3E67005EFC81 /* HomeMainViewDelegate.swift in Sources */,
 				ECDA70F6280D73DA0009568A /* RegisterConfirmViewController.swift in Sources */,
+				6D6B4CDE284FAFE700A9A4D7 /* HomeBannerCell.swift in Sources */,
 				EC9E6D14281F686A00627C5B /* HomeCategoriesCell.swift in Sources */,
 				ECF18D7E2812227800DC3FC9 /* UserSessionStorage.swift in Sources */,
 				EC217D562819FE1B0060C1A7 /* CheckBoxButton.swift in Sources */,
