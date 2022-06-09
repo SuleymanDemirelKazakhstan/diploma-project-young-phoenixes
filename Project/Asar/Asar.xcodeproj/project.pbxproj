@@ -38,6 +38,9 @@
 		EC39282B281A248900F0049A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC392829281A248900F0049A /* Localizable.strings */; };
 		EC5278652851EB8F00AD32E9 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5278642851EB8F00AD32E9 /* SearchBar.swift */; };
 		EC5278672851EFB000AD32E9 /* UISearchBar+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5278662851EFB000AD32E9 /* UISearchBar+Subviews.swift */; };
+		EC5278712851FAAB00AD32E9 /* OrderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5278702851FAAB00AD32E9 /* OrderStore.swift */; };
+		EC5278742851FDF000AD32E9 /* OrderTableViewDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5278732851FDF000AD32E9 /* OrderTableViewDataSourceImpl.swift */; };
+		EC5278762851FE0600AD32E9 /* OrderTableViewDelegateImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5278752851FE0600AD32E9 /* OrderTableViewDelegateImpl.swift */; };
 		EC569CF227F637B000EBEE9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC569CF127F637B000EBEE9B /* SceneDelegate.swift */; };
 		EC5A0A4728096CDF003EC0C3 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5A0A4628096CDF003EC0C3 /* HeaderView.swift */; };
 		EC5A0A4928096CEF003EC0C3 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC5A0A4828096CEF003EC0C3 /* HeaderView.xib */; };
@@ -142,6 +145,9 @@
 		EC39282F281A259300F0049A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EC5278642851EB8F00AD32E9 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		EC5278662851EFB000AD32E9 /* UISearchBar+Subviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Subviews.swift"; sourceTree = "<group>"; };
+		EC5278702851FAAB00AD32E9 /* OrderStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStore.swift; sourceTree = "<group>"; };
+		EC5278732851FDF000AD32E9 /* OrderTableViewDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewDataSourceImpl.swift; sourceTree = "<group>"; };
+		EC5278752851FE0600AD32E9 /* OrderTableViewDelegateImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewDelegateImpl.swift; sourceTree = "<group>"; };
 		EC569CF127F637B000EBEE9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EC5A0A4628096CDF003EC0C3 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		EC5A0A4828096CEF003EC0C3 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
@@ -345,6 +351,66 @@
 			path = SearchBar;
 			sourceTree = "<group>";
 		};
+		EC5278682851FA4A00AD32E9 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EC876322281D0114005EFC81 /* OrderCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		EC5278692851FA5200AD32E9 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EC52786C2851FA6F00AD32E9 /* Controller */,
+				EC52786D2851FA7400AD32E9 /* Store */,
+				EC52786E2851FA7A00AD32E9 /* ViewModels */,
+				EC52786F2851FA8100AD32E9 /* Views */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EC52786C2851FA6F00AD32E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC876324281D0122005EFC81 /* OrderViewController.swift */,
+				EC876325281D0122005EFC81 /* OrderViewController.xib */,
+				EC5278722851FB2700AD32E9 /* TableView */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC52786D2851FA7400AD32E9 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				EC5278702851FAAB00AD32E9 /* OrderStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		EC52786E2851FA7A00AD32E9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EC52786F2851FA8100AD32E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EC5278722851FB2700AD32E9 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				EC5278732851FDF000AD32E9 /* OrderTableViewDataSourceImpl.swift */,
+				EC5278752851FE0600AD32E9 /* OrderTableViewDelegateImpl.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 		EC5A0A4528096CB0003EC0C3 /* HeaderView */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,9 +441,8 @@
 		EC876321281D00FF005EFC81 /* Order */ = {
 			isa = PBXGroup;
 			children = (
-				EC876322281D0114005EFC81 /* OrderCoordinator.swift */,
-				EC876324281D0122005EFC81 /* OrderViewController.swift */,
-				EC876325281D0122005EFC81 /* OrderViewController.xib */,
+				EC5278682851FA4A00AD32E9 /* Coordinator */,
+				EC5278692851FA5200AD32E9 /* Modules */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -995,6 +1060,7 @@
 				EC9E6D09281F481900627C5B /* HomeTitleCell.swift in Sources */,
 				EC9E6D1C281F6AA100627C5B /* UICollectionView+Register.swift in Sources */,
 				ECEA16DE282290070080F629 /* HomeRecommendationView.swift in Sources */,
+				EC5278762851FE0600AD32E9 /* OrderTableViewDelegateImpl.swift in Sources */,
 				6DF32EC0281B581000CEFEDD /* SMSCodeTextField.swift in Sources */,
 				EC741660282D6E18002D18A3 /* Observable.swift in Sources */,
 				EC392827281A227D00F0049A /* Assets.swift in Sources */,
@@ -1018,8 +1084,10 @@
 				EC876336281D3880005EFC81 /* HomeMainViewController.swift in Sources */,
 				EC5A0A5528098A48003EC0C3 /* Utilities.swift in Sources */,
 				EC9E6D0E281F49F700627C5B /* UITableView+Dequeue.swift in Sources */,
+				EC5278712851FAAB00AD32E9 /* OrderStore.swift in Sources */,
 				EC876346281D3E67005EFC81 /* HomeMainViewDelegate.swift in Sources */,
 				EC5278672851EFB000AD32E9 /* UISearchBar+Subviews.swift in Sources */,
+				EC5278742851FDF000AD32E9 /* OrderTableViewDataSourceImpl.swift in Sources */,
 				ECDA70F6280D73DA0009568A /* RegisterConfirmViewController.swift in Sources */,
 				6D6B4CDE284FAFE700A9A4D7 /* HomeBannerCell.swift in Sources */,
 				EC9E6D14281F686A00627C5B /* HomeCategoriesCell.swift in Sources */,

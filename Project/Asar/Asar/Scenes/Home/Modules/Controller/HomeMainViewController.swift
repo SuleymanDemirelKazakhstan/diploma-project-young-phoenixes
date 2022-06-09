@@ -59,7 +59,6 @@ class HomeMainViewController: UIViewController {
         searchBar.actionDelegate = self
         searchBar.setupClearButton()
         searchBar.placeholder = "Поиск"
-//        searchSuggestionViewController.navigationDelegate = self
         navigationItem.titleView = searchBar
     }
 
