@@ -53,6 +53,7 @@ class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Profile"
         tableDirector.tableView.reloadData()
         rightBarItem()
         setupLayouts()
@@ -123,7 +124,6 @@ class ProfileViewController: UIViewController {
             guard let strongSelf = self else { return }
             print(configurator.item)
             if configurator.item == "Личная информация" {
-                self?.navigationController?.popToRootViewController(animated: false)
                 self?.navigationController?.pushViewController(ProfileInformationViewController(), animated: true)
             }
             else if configurator.item == "Банковские данные" {
