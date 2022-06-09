@@ -56,8 +56,8 @@ class OrderViewController: UIViewController {
     private func setupTableView() {
         tableViewDataSourceImpl.tableView = tableView
         tableViewDelegateImpl.tableView = tableView
-        tableView.dataSource = tableViewDataSourceImpl
-        tableView.delegate = tableViewDelegateImpl
+//        tableView.dataSource = tableViewDataSourceImpl
+//        tableView.delegate = tableViewDelegateImpl
         [
 //            FeedbackContentCell.self,
 //            FeedbackSelectCell.self,
@@ -67,38 +67,38 @@ class OrderViewController: UIViewController {
     }
 
     private func setupObservers() {
-        store.$state.observe(self) { vc, state in
-            guard let state = state else { return }
-            switch state {
-            case let .rows(rows, form, formatter):
-                vc.tableViewDataSourceImpl.rows = rows
-                vc.tableViewDataSourceImpl.form = form
-                vc.tableViewDelegateImpl.rows = rows
-                vc.tableViewDelegateImpl.form = form
-                vc.tableViewDelegateImpl.formatter = formatter
-                vc.tableView.reloadData()
-            case .loading:
-                ProgressHud.startAnimating()
-            case .loadingFinished:
-                ProgressHud.stopAnimating()
-            case let .error(message):
-                vc.showToast(category: .error, message: message)
-            case let .textFieldChanged(form):
-                vc.tableViewDataSourceImpl.form = form
-                vc.tableViewDelegateImpl.form = form
-            case let .contentChanged(form):
-                vc.tableViewDataSourceImpl.form = form
-                vc.tableViewDelegateImpl.form = form
-            case let .messageSubjectSelected(subjects):
-                vc.presentThemesActionSheet(subjects: subjects)
-            case let .regionSelectTapped(region):
-                vc.navigationDelegate?.regionSelectDidTap(vc, region: region)
-            case .feedbackSent:
-                vc.navigationDelegate?.formDidVerify(vc)
-            case let .attachmentTapped(items):
-                vc.presentAttachmentActionSheet(items: items)
-            }
-        }
+//        store.$state.observe(self) { vc, state in
+//            guard let state = state else { return }
+//            switch state {
+//            case let .rows(rows, form, formatter):
+//                vc.tableViewDataSourceImpl.rows = rows
+//                vc.tableViewDataSourceImpl.form = form
+//                vc.tableViewDelegateImpl.rows = rows
+//                vc.tableViewDelegateImpl.form = form
+//                vc.tableViewDelegateImpl.formatter = formatter
+//                vc.tableView.reloadData()
+//            case .loading:
+//                ProgressHud.startAnimating()
+//            case .loadingFinished:
+//                ProgressHud.stopAnimating()
+//            case let .error(message):
+//                vc.showToast(category: .error, message: message)
+//            case let .textFieldChanged(form):
+//                vc.tableViewDataSourceImpl.form = form
+//                vc.tableViewDelegateImpl.form = form
+//            case let .contentChanged(form):
+//                vc.tableViewDataSourceImpl.form = form
+//                vc.tableViewDelegateImpl.form = form
+//            case let .messageSubjectSelected(subjects):
+//                vc.presentThemesActionSheet(subjects: subjects)
+//            case let .regionSelectTapped(region):
+//                vc.navigationDelegate?.regionSelectDidTap(vc, region: region)
+//            case .feedbackSent:
+//                vc.navigationDelegate?.formDidVerify(vc)
+//            case let .attachmentTapped(items):
+//                vc.presentAttachmentActionSheet(items: items)
+//            }
+//        }
     }
 
 //    private func presentThemesActionSheet(subjects: [MessageSubject]) {

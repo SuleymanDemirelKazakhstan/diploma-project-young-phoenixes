@@ -13,7 +13,17 @@ final class OrderCoordinator: BaseCoordinator {
     }
     
     private func showOrderViewController() {
-        let vc = OrderViewController()
+        let vc = OrderViewController(navigationDelegate: self)
         router.setRootModule(vc)
+    }
+}
+
+extension OrderCoordinator: OrderNavigationDelegate {
+    func closeDidTap(_ viewController: OrderViewController) {
+        
+    }
+    
+    func formDidVerify(_ viewController: OrderViewController) {
+    
     }
 }

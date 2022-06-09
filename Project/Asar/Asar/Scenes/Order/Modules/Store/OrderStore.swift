@@ -16,11 +16,10 @@ struct OrderForm {
     var name: String?
     var phoneNumber: String?
     var email: String?
-    var messageSubject: MessageSubject?
+//    var messageSubject: MessageSubject?
     var answerType: OrderFormAnswerType?
     var files: [OrderFileType] = []
     var content: String?
-    var region: Region?
 }
 
 enum OrderFormAnswerType: Int, CaseIterable {
@@ -42,11 +41,11 @@ enum OrderFormAnswerType: Int, CaseIterable {
     var title: String {
         switch self {
         case .email:
-            return L10n.feedbackEmailAnswer
+            return ""
         case .phone:
-            return L10n.feedbackNoAnswer
+            return ""
         case .none:
-            return L10n.feedbackPhoneAnswer
+            return ""
         }
     }
 }
@@ -69,8 +68,8 @@ final class OrderStore {
         case didChangeTextField(text: String?, row: OrderRow)
         case didChangeContent(text: String?)
         case didTapDropDown(row: OrderRow)
-        case didSelectMessageSubject(subject: MessageSubject)
-        case didUpdateRegion(region: Region)
+//        case didSelectMessageSubject(subject: MessageSubject)
+//        case didUpdateRegion(region: Region)
         case didSelectAnswerType(type: OrderFormAnswerType)
         case didTapAttachment
         case didTapSend
@@ -78,53 +77,48 @@ final class OrderStore {
     }
 
     enum State {
-        case rows(rows: [OrderRow], form: OrderForm, formatter: PhoneNumberFormatter)
+//        case rows(rows: [OrderRow], form: OrderForm, formatter: PhoneNumberFormatter)
         case loading
         case loadingFinished
         case error(message: String?)
-        case messageSubjectSelected(subjects: [MessageSubject])
-        case regionSelectTapped(region: Region?)
+//        case messageSubjectSelected(subjects: [MessageSubject])
+//        case regionSelectTapped(region: Region?)
         case textFieldChanged(form: OrderForm)
         case contentChanged(form: OrderForm)
         case feedbackSent
-        case attachmentTapped(items: [ActionSheetItem])
+//        case attachmentTapped(items: [ActionSheetItem])
     }
-
-    private let userSession: UserSession
-    private let provider: FeedbackProvider
-    private let storage: ProfileStorage
-    private let imagePickerService: ImagePickerService
-    private let documentPickerService: DocumentPickerService
-    private let formatter: PhoneNumberFormatter
+//
+//    private let userSession: UserSession
+//    private let provider: FeedbackProvider
+//    private let storage: ProfileStorage
+//    private let imagePickerService: ImagePickerService
+//    private let documentPickerService: DocumentPickerService
+//    private let formatter: PhoneNumberFormatter
 
     private var form: OrderForm = .init()
     private var rows: [OrderRow] = []
 
     @Observable private(set) var state: State?
 
-    init(userSession: UserSession,
-         provider: FeedbackProvider,
-         storage: ProfileStorage,
-         imagePickerService: ImagePickerService,
-         documentPickerService: DocumentPickerService,
-         formatter: PhoneNumberFormatter) {
-        self.userSession = userSession
-        self.provider = provider
-        self.storage = storage
-        self.imagePickerService = imagePickerService
-        self.documentPickerService = documentPickerService
-        self.formatter = formatter
+    init() {
+//        self.userSession = userSession
+//        self.provider = provider
+//        self.storage = storage
+//        self.imagePickerService = imagePickerService
+//        self.documentPickerService = documentPickerService
+//        self.formatter = formatter
     }
 
     func dispatch(action: Action) {
         switch action {
         case .didLoadView:
-            if userSession.isActive {
-                form.name = storage.profile?.name.fullName(with: [.last, .first, .middle])
-                form.phoneNumber = storage.profile?.phoneNumber
-                form.email = storage.profile?.email
-            }
-            form.region = storage.selectedRegion
+//            if userSession.isActive {
+//                form.name = storage.profile?.name.fullName(with: [.last, .first, .middle])
+//                form.phoneNumber = storage.profile?.phoneNumber
+//                form.email = storage.profile?.email
+//            }
+//            form.region = storage.selectedRegion
             getSubjects()
             updateList()
         case let .didChangeTextField(text, row):
@@ -134,26 +128,27 @@ final class OrderStore {
             state = .contentChanged(form: form)
         case let .didTapDropDown(row):
             didTapDropDown(row: row)
-        case let .didSelectMessageSubject(subject):
-            form.messageSubject = subject
-            updateList()
+//        case let .didSelectMessageSubject(subject):
+//            form.messageSubject = subject
+//            updateList()
         case let .didSelectAnswerType(type):
             form.answerType = type
-        case let .didUpdateRegion(region):
-            form.region = region
+//        case let .didUpdateRegion(region):
+//            form.region = region
             updateList()
         case .didTapAttachment:
-            let sourceTypes: [UIImagePickerController.SourceType] = [.camera, .photoLibrary]
-            var items: [ActionSheetItem] = sourceTypes.compactMap { type in
-                guard UIImagePickerController.isSourceTypeAvailable(type), let title = title(for: type) else { return nil }
-                return ActionSheetItem(title: title) { [weak self] in
-                    self?.imagePickerService.presentImagePicker(sourceType: type)
-                }
-            }
-            items.append(ActionSheetItem(title: L10n.feedbackDocuments) { [weak self] in
-                self?.documentPickerService.presentDocumentPicker()
-            })
-            state = .attachmentTapped(items: items)
+            break
+//            let sourceTypes: [UIImagePickerController.SourceType] = [.camera, .photoLibrary]
+//            var items: [ActionSheetItem] = sourceTypes.compactMap { type in
+//                guard UIImagePickerController.isSourceTypeAvailable(type), let title = title(for: type) else { return nil }
+//                return ActionSheetItem(title: title) { [weak self] in
+//                    self?.imagePickerService.presentImagePicker(sourceType: type)
+//                }
+//            }
+//            items.append(ActionSheetItem(title: L10n.feedbackDocuments) { [weak self] in
+//                self?.documentPickerService.presentDocumentPicker()
+//            })
+//            state = .attachmentTapped(items: items)
         case let .didDeleteFile(index):
             form.files.remove(at: index)
             updateList()
@@ -169,20 +164,20 @@ final class OrderStore {
     }
 
     private func title(for type: UIImagePickerController.SourceType) -> String? {
-        type == .camera ? L10n.feedbackCamera : L10n.feedbackPhotoVideo
+        type == .camera ? "" : ""
     }
 
     private func updateList() {
         setupRows()
-        state = .rows(rows: rows, form: form, formatter: formatter)
+//        state = .rows(rows: rows, form: form, formatter: formatter)
     }
 
     private func getSubjects() {
-        provider.getSubjects().then { [weak self] subjects in
-            self?.storage.messageSubjects = subjects
-        }.catch { [weak self] error in
-            self?.state = .error(message: error.wrappedError.localizedDescription)
-        }
+//        provider.getSubjects().then { [weak self] subjects in
+//            self?.storage.messageSubjects = subjects
+//        }.catch { [weak self] error in
+//            self?.state = .error(message: error.wrappedError.localizedDescription)
+//        }
     }
 
     private func didChangeTextField(text: String?, row: OrderRow) {
@@ -202,80 +197,82 @@ final class OrderStore {
     private func didTapDropDown(row: OrderRow) {
         switch row {
         case .messageSubject:
-            state = .messageSubjectSelected(subjects: storage.messageSubjects)
+            break
+//            state = .messageSubjectSelected(subjects: storage.messageSubjects)
         case .region:
-            state = .regionSelectTapped(region: form.region)
+            break
+//            state = .regionSelectTapped(region: form.region)
         default:
             break
         }
     }
 
     private func verifyFeedbackForm() {
-        guard form.region != nil else {
-            state = .error(message: L10n.feedbackEmptyRegion)
-            return
-        }
+//        guard form.region != nil else {
+//            state = .error(message: "")
+//            return
+//        }
         guard let name = form.name, !name.isEmpty else {
-            state = .error(message: L10n.feedbackEmptyName)
+            state = .error(message: "")
             return
         }
         guard let phoneNumber = form.phoneNumber else {
-            state = .error(message: L10n.feedbackEmptyPhoneNumber)
+            state = .error(message: "")
             return
         }
-        guard formatter.formattedPhoneNumber(from: phoneNumber) != nil else {
-            state = .error(message: L10n.feedbackIncorrectPhoneNumber)
-            return
-        }
+//        guard formatter.formattedPhoneNumber(from: phoneNumber) != nil else {
+//            state = .error(message: "")
+//            return
+//        }
         guard form.email != nil else {
-            state = .error(message: L10n.feedbackEmptyEmail)
+            state = .error(message: "")
             return
         }
-        guard let email = form.email, email.validate(rule: ValidationRuleEmailAddress()).isValid else {
-            state = .error(message: L10n.feedbackIncorrectEmail)
+        guard let email = form.email else {
+            state = .error(message: "")
             return
         }
-        guard form.messageSubject != nil else {
-            state = .error(message: L10n.feedbackEmptySubject)
-            return
-        }
-        guard form.answerType != nil else {
-            state = .error(message: L10n.feedbackEmptyAnswerType)
-            return
-        }
-        guard !(form.content ?? "").isEmpty else {
-            state = .error(message: L10n.feedbackEmptyContent)
-            return
-        }
+//        guard form.messageSubject != nil else {
+//            state = .error(message: L10n.feedbackEmptySubject)
+//            return
+//        }
+//        guard form.answerType != nil else {
+//            state = .error(message: L10n.feedbackEmptyAnswerType)
+//            return
+//        }
+//        guard !(form.content ?? "").isEmpty else {
+//            state = .error(message: L10n.feedbackEmptyContent)
+//            return
+//        }
         state = .loading
         sendForm()
     }
 
     private func sendForm() {
-        provider.sendFeedback(form: form) { [weak self] response, message in
-            self?.state = .loadingFinished
-            guard response != nil else {
-                self?.state = .error(message: message)
-                return
-            }
-            self?.state = .feedbackSent
-        }
+//        provider.sendFeedback(form: form) { [weak self] response, message in
+//            self?.state = .loadingFinished
+//            guard response != nil else {
+//                self?.state = .error(message: message)
+//                return
+//            }
+//            self?.state = .feedbackSent
+//        }
     }
 }
-
-extension OrderStore: DocumentPickerServiceDelegate {
-    func didPickDocument(_ service: DocumentPickerService, data: Data) {
-        form.files.append(.data(data: data))
-        updateList()
-    }
-}
-
-extension OrderStore: ImagePickerServiceDelegate {
-    func didPickImage(_ service: ImagePickerService, image: UIImage) {
-        form.files.append(.image(image: image))
-        updateList()
-    }
-
-    func didCropImage(_ service: ImagePickerService, image: UIImage) {}
-}
+//
+//extension OrderStore: DocumentPickerServiceDelegate {
+//    func didPickDocument(_ service: DocumentPickerService, data: Data) {
+//        form.files.append(.data(data: data))
+//        updateList()
+//    }
+//}
+//
+//extension OrderStore: ImagePickerServiceDelegate {
+//    func didPickImage(_ service: ImagePickerService, image: UIImage) {
+//        form.files.append(.image(image: image))
+//        updateList()
+//    }
+//
+//    func didCropImage(_ service: ImagePickerService, image: UIImage) {}
+//}
 
