@@ -17,6 +17,18 @@
 		6D6B4CDF284FAFE700A9A4D7 /* HomeBannerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D6B4CDD284FAFE700A9A4D7 /* HomeBannerCell.xib */; };
 		6D6B4CE2284FB00200A9A4D7 /* HomeBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6B4CE0284FB00200A9A4D7 /* HomeBannerView.swift */; };
 		6D6B4CE3284FB00200A9A4D7 /* HomeBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D6B4CE1284FB00200A9A4D7 /* HomeBannerView.xib */; };
+		6D9A9EFD28525E4D000F9FCD /* TableDirector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9A9EFC28525E4D000F9FCD /* TableDirector.swift */; };
+		6D9A9EFF28525EC3000F9FCD /* CellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9A9EFE28525EC3000F9FCD /* CellConfigurator.swift */; };
+		6D9A9F0128525EE1000F9FCD /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9A9F0028525EE1000F9FCD /* ConfigurableCell.swift */; };
+		6D9A9F0328525EFF000F9FCD /* CellAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9A9F0228525EFF000F9FCD /* CellAction.swift */; };
+		6D9A9F0528525F22000F9FCD /* CellActionProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9A9F0428525F22000F9FCD /* CellActionProxy.swift */; };
+		6D9A9F0D2852615E000F9FCD /* FunctionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9A9F0C2852615E000F9FCD /* FunctionCell.swift */; };
+		6D9A9F0F2852629D000F9FCD /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9A9F0E2852629D000F9FCD /* Function.swift */; };
+		6D9A9F1128527589000F9FCD /* ProfileInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9A9F1028527589000F9FCD /* ProfileInformationViewController.swift */; };
+		6D9A9F1328527AF1000F9FCD /* BankInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9A9F1228527AF1000F9FCD /* BankInformationViewController.swift */; };
+		6D9A9F1528527B04000F9FCD /* MyAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9A9F1428527B04000F9FCD /* MyAddressViewController.swift */; };
+		6D9A9F1728527B4A000F9FCD /* SettingsAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9A9F1628527B4A000F9FCD /* SettingsAppViewController.swift */; };
+		6D9A9F1928527B5C000F9FCD /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9A9F1828527B5C000F9FCD /* SupportViewController.swift */; };
 		6DF32EC0281B581000CEFEDD /* SMSCodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF32EBF281B581000CEFEDD /* SMSCodeTextField.swift */; };
 		7482BD9C78AEFF91CFD52A25 /* Pods_Asar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A6C03DFAE830D6060C700F /* Pods_Asar.framework */; };
 		EC042BEF284DC93B0064871C /* HomeFAQCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC042BED284DC93B0064871C /* HomeFAQCell.swift */; };
@@ -120,6 +132,18 @@
 		6D6B4CDD284FAFE700A9A4D7 /* HomeBannerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeBannerCell.xib; sourceTree = "<group>"; };
 		6D6B4CE0284FB00200A9A4D7 /* HomeBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerView.swift; sourceTree = "<group>"; };
 		6D6B4CE1284FB00200A9A4D7 /* HomeBannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeBannerView.xib; sourceTree = "<group>"; };
+		6D9A9EFC28525E4D000F9FCD /* TableDirector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDirector.swift; sourceTree = "<group>"; };
+		6D9A9EFE28525EC3000F9FCD /* CellConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfigurator.swift; sourceTree = "<group>"; };
+		6D9A9F0028525EE1000F9FCD /* ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
+		6D9A9F0228525EFF000F9FCD /* CellAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellAction.swift; sourceTree = "<group>"; };
+		6D9A9F0428525F22000F9FCD /* CellActionProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellActionProxy.swift; sourceTree = "<group>"; };
+		6D9A9F0C2852615E000F9FCD /* FunctionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionCell.swift; sourceTree = "<group>"; };
+		6D9A9F0E2852629D000F9FCD /* Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
+		6D9A9F1028527589000F9FCD /* ProfileInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInformationViewController.swift; sourceTree = "<group>"; };
+		6D9A9F1228527AF1000F9FCD /* BankInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankInformationViewController.swift; sourceTree = "<group>"; };
+		6D9A9F1428527B04000F9FCD /* MyAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAddressViewController.swift; sourceTree = "<group>"; };
+		6D9A9F1628527B4A000F9FCD /* SettingsAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAppViewController.swift; sourceTree = "<group>"; };
+		6D9A9F1828527B5C000F9FCD /* SupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
 		6DF32EBF281B581000CEFEDD /* SMSCodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSCodeTextField.swift; sourceTree = "<group>"; };
 		BA10B34020AF89CF82B81849 /* Pods-Asar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asar.debug.xcconfig"; path = "Target Support Files/Pods-Asar/Pods-Asar.debug.xcconfig"; sourceTree = "<group>"; };
 		E959CB219F10FD5780E22DB8 /* Pods-Asar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asar.release.xcconfig"; path = "Target Support Files/Pods-Asar/Pods-Asar.release.xcconfig"; sourceTree = "<group>"; };
@@ -157,7 +181,7 @@
 		EC5A0A5228098070003EC0C3 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		EC5A0A5428098A48003EC0C3 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		EC74165F282D6E18002D18A3 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
-		EC87631B281CFFBA005EFC81 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		EC87631B281CFFBA005EFC81 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileCoordinator.swift; path = "../New Group/ProfileCoordinator.swift"; sourceTree = "<group>"; };
 		EC87631D281D004F005EFC81 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EC87631E281D004F005EFC81 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		EC876322281D0114005EFC81 /* OrderCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCoordinator.swift; sourceTree = "<group>"; };
@@ -253,6 +277,68 @@
 				6D6B4CE1284FB00200A9A4D7 /* HomeBannerView.xib */,
 			);
 			path = HomeBannerView;
+			sourceTree = "<group>";
+		};
+		6D9A9F0628525FBC000F9FCD /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EC87631B281CFFBA005EFC81 /* ProfileCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		6D9A9F0728525FC4000F9FCD /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				6D9A9F0828525FDC000F9FCD /* Controller */,
+				6D9A9F0B2852605B000F9FCD /* ViewModel */,
+				6D9A9F0A2852603F000F9FCD /* Model */,
+				6D9A9F092852603A000F9FCD /* View */,
+			);
+			name = Module;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		6D9A9F0828525FDC000F9FCD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC87631D281D004F005EFC81 /* ProfileViewController.swift */,
+				EC87631E281D004F005EFC81 /* ProfileViewController.xib */,
+				6D9A9F1028527589000F9FCD /* ProfileInformationViewController.swift */,
+				6D9A9F1228527AF1000F9FCD /* BankInformationViewController.swift */,
+				6D9A9F1428527B04000F9FCD /* MyAddressViewController.swift */,
+				6D9A9F1628527B4A000F9FCD /* SettingsAppViewController.swift */,
+				6D9A9F1828527B5C000F9FCD /* SupportViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6D9A9F092852603A000F9FCD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D9A9F0428525F22000F9FCD /* CellActionProxy.swift */,
+				6D9A9F0228525EFF000F9FCD /* CellAction.swift */,
+				6D9A9F0028525EE1000F9FCD /* ConfigurableCell.swift */,
+				6D9A9EFE28525EC3000F9FCD /* CellConfigurator.swift */,
+				6D9A9EFC28525E4D000F9FCD /* TableDirector.swift */,
+				6D9A9F0C2852615E000F9FCD /* FunctionCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6D9A9F0A2852603F000F9FCD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D9A9F0E2852629D000F9FCD /* Function.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D9A9F0B2852605B000F9FCD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		996843B342D601CB312B5C4D /* Frameworks */ = {
@@ -717,9 +803,8 @@
 		EC897F9227ED9FCD00B11A5D /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				EC87631B281CFFBA005EFC81 /* ProfileCoordinator.swift */,
-				EC87631D281D004F005EFC81 /* ProfileViewController.swift */,
-				EC87631E281D004F005EFC81 /* ProfileViewController.xib */,
+				6D9A9F0628525FBC000F9FCD /* Coordinator */,
+				6D9A9F0728525FC4000F9FCD /* Module */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -1041,6 +1126,7 @@
 			files = (
 				ECDA70F2280D5E240009568A /* AuthManager.swift in Sources */,
 				EC897F8527ED985700B11A5D /* Router.swift in Sources */,
+				6D9A9EFF28525EC3000F9FCD /* CellConfigurator.swift in Sources */,
 				EC9E6D19281F6A2300627C5B /* HomeCategoryCell.swift in Sources */,
 				EC897F6327ED95CF00B11A5D /* Asar.xcdatamodeld in Sources */,
 				EC042C0B284DEAF00064871C /* SectionHeaderView.swift in Sources */,
@@ -1050,9 +1136,12 @@
 				EC897F8327ED984C00B11A5D /* CoordinatorFactory.swift in Sources */,
 				ECDA7100280D91B50009568A /* Fonts.swift in Sources */,
 				EC876329281D083B005EFC81 /* ContainerController.swift in Sources */,
+				6D9A9F0128525EE1000F9FCD /* ConfigurableCell.swift in Sources */,
 				EC876323281D0114005EFC81 /* OrderCoordinator.swift in Sources */,
+				6D9A9F1128527589000F9FCD /* ProfileInformationViewController.swift in Sources */,
 				ECEA16E22822946E0080F629 /* HomeRecommendationViewModel.swift in Sources */,
 				6D6B4CE2284FB00200A9A4D7 /* HomeBannerView.swift in Sources */,
+				6D9A9F1728527B4A000F9FCD /* SettingsAppViewController.swift in Sources */,
 				EC217D532819FD450060C1A7 /* CheckBoxView.swift in Sources */,
 				6D6B4CD1284E328900A9A4D7 /* HomeBannerModel.swift in Sources */,
 				EC876340281D3D59005EFC81 /* HomeMainStore.swift in Sources */,
@@ -1070,6 +1159,7 @@
 				EC897F7D27ED980900B11A5D /* LaunchInstructor.swift in Sources */,
 				EC9E6D20281F741100627C5B /* HomeCategoryViewModel.swift in Sources */,
 				EC392828281A227D00F0049A /* Strings.swift in Sources */,
+				6D9A9F0328525EFF000F9FCD /* CellAction.swift in Sources */,
 				6D0340AA2809D3E70032B916 /* OnboardingViewController.swift in Sources */,
 				EC87631C281CFFBA005EFC81 /* ProfileCoordinator.swift in Sources */,
 				EC042C05284DE4520064871C /* ProfileHomeSectionHeaderViewModel.swift in Sources */,
@@ -1081,6 +1171,7 @@
 				EC87632F281D37F2005EFC81 /* MyOrdersViewController.swift in Sources */,
 				EC89294A280CD2B600503C7F /* MainViewController.swift in Sources */,
 				ECDA70FD280D91190009568A /* UIViewController+Alert.swift in Sources */,
+				6D9A9EFD28525E4D000F9FCD /* TableDirector.swift in Sources */,
 				EC876336281D3880005EFC81 /* HomeMainViewController.swift in Sources */,
 				EC5A0A5528098A48003EC0C3 /* Utilities.swift in Sources */,
 				EC9E6D0E281F49F700627C5B /* UITableView+Dequeue.swift in Sources */,
@@ -1091,8 +1182,11 @@
 				ECDA70F6280D73DA0009568A /* RegisterConfirmViewController.swift in Sources */,
 				6D6B4CDE284FAFE700A9A4D7 /* HomeBannerCell.swift in Sources */,
 				EC9E6D14281F686A00627C5B /* HomeCategoriesCell.swift in Sources */,
+				6D9A9F0528525F22000F9FCD /* CellActionProxy.swift in Sources */,
 				ECF18D7E2812227800DC3FC9 /* UserSessionStorage.swift in Sources */,
 				EC217D562819FE1B0060C1A7 /* CheckBoxButton.swift in Sources */,
+				6D9A9F0F2852629D000F9FCD /* Function.swift in Sources */,
+				6D9A9F1928527B5C000F9FCD /* SupportViewController.swift in Sources */,
 				EC897F5927ED95CF00B11A5D /* AppDelegate.swift in Sources */,
 				EC876326281D0122005EFC81 /* OrderViewController.swift in Sources */,
 				EC042C03284DE2650064871C /* ActionSectionHeaderViewModel.swift in Sources */,
@@ -1102,8 +1196,11 @@
 				EC042BF6284DD7990064871C /* HomeFAQView.swift in Sources */,
 				6D03409D2809A39B0032B916 /* OnboardingSlides.swift in Sources */,
 				EC897F9A27EDC1F500B11A5D /* AuthCoordinator.swift in Sources */,
+				6D9A9F0D2852615E000F9FCD /* FunctionCell.swift in Sources */,
+				6D9A9F1328527AF1000F9FCD /* BankInformationViewController.swift in Sources */,
 				EC87631F281D004F005EFC81 /* ProfileViewController.swift in Sources */,
 				EC9E6D0C281F48AC00627C5B /* HomeTitleCellModel.swift in Sources */,
+				6D9A9F1528527B04000F9FCD /* MyAddressViewController.swift in Sources */,
 				EC876333281D384B005EFC81 /* HomeMainCoordinator.swift in Sources */,
 				EC042BEF284DC93B0064871C /* HomeFAQCell.swift in Sources */,
 				EC897F9727EDB9E700B11A5D /* LoginViewController.swift in Sources */,
@@ -1181,7 +1278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1237,7 +1334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
