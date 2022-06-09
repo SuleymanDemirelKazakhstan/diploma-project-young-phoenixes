@@ -36,6 +36,8 @@ internal enum Asset {
   internal static let ruslan = ImageAsset(name: "ruslan")
   internal static let saule = ImageAsset(name: "saule")
   internal static let faqdown = ImageAsset(name: "faqdown")
+  internal static let generalClose = ImageAsset(name: "general-close")
+  internal static let generalSearch = ImageAsset(name: "general-search")
   internal static let generalDone = ImageAsset(name: "generalDone")
   internal static let headerIcon = ImageAsset(name: "headerIcon")
   internal static let rect = ImageAsset(name: "rect")

@@ -477,6 +477,7 @@ PODS:
   - GTMSessionFetcher/Core (1.7.1)
   - KeychainAccess (4.2.1)
   - leveldb-library (1.22.1)
+  - MaterialActivityIndicator (0.0.6)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
     - nanopb/encode (= 2.30908.0)
@@ -491,6 +492,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Firestore
   - KeychainAccess (= 4.2.1)
+  - MaterialActivityIndicator
   - SwiftGen (= 6.5.1)
 
 SPEC REPOS:
@@ -512,6 +514,7 @@ SPEC REPOS:
     - GTMSessionFetcher
     - KeychainAccess
     - leveldb-library
+    - MaterialActivityIndicator
     - nanopb
     - PromisesObjC
     - SwiftGen
@@ -534,10 +537,11 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 4577a4cc914a5a07c40a8a0ad0acc22080418c2d
   KeychainAccess: 9b07f665298d13c3a85881bd3171f6f49b8151c1
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
+  MaterialActivityIndicator: 5061a52fadf7d22533734f2d34806311331bc424
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
   SwiftGen: a6d22010845f08fe18fbdf3a07a8e380fd22e0ea
 
-PODFILE CHECKSUM: 970825be820d9b525e196a3e7d07df099455e857
+PODFILE CHECKSUM: 7d5d2b6b4440ba9ee3082fa0efdbe9dec277a122
 
 COCOAPODS: 1.11.2

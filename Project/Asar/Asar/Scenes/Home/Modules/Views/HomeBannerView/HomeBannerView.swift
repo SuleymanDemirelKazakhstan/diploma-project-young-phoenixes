@@ -9,9 +9,11 @@ import UIKit
 
 class HomeBannerView: UICollectionViewCell {
 
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var subtitleLabel: UILabel!
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet private var view: UIView!
+    @IBOutlet private var titleLabel: UILabel!
+    @IBOutlet private var subtitleLabel: UILabel!
+//    @IBOutlet private var imageView: UIImageView!
+    @IBOutlet private var imageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,5 +24,6 @@ class HomeBannerView: UICollectionViewCell {
         titleLabel.text = viewModel.title
         subtitleLabel.text = viewModel.description
         imageView.image = viewModel.image
+        view.backgroundColor = viewModel.backgroundColor
     }
 }

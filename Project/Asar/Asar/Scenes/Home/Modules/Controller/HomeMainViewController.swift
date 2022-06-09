@@ -14,6 +14,12 @@ class HomeMainViewController: UIViewController {
     
     @IBOutlet private var tableView: UITableView!
     
+    private lazy var searchBar: SearchBar = {
+        let searchBar = SearchBar()
+        searchBar.showsCancelButton = false
+        return searchBar
+    }()
+    
     init() {
         store = .init()
         tableViewDataSourceImpl = .init()
@@ -34,6 +40,7 @@ class HomeMainViewController: UIViewController {
     }
 
     private func setupUI() {
+        setupNavigationBar()
         setupTableView()
     }
 
@@ -45,6 +52,15 @@ class HomeMainViewController: UIViewController {
             tableView.register(aClass: $0)
         }
         [HomeBannerCell.self ,HomeTitleCell.self, HomeCategoriesCell.self, HomeRecommendationsCell.self, HomeFAQCell.self].forEach { tableView.register(cellClass: $0) }
+    }
+    
+    private func setupNavigationBar() {
+        searchBar.delegate = self
+        searchBar.actionDelegate = self
+        searchBar.setupClearButton()
+        searchBar.placeholder = "Поиск"
+//        searchSuggestionViewController.navigationDelegate = self
+        navigationItem.titleView = searchBar
     }
 
     private func setupObservers() {
@@ -65,5 +81,30 @@ class HomeMainViewController: UIViewController {
                 break
             }
         }
+    }
+}
+
+// MARK: - UISearchBarDelegate
+
+extension HomeMainViewController: UISearchBarDelegate, SearchBarDelegate {
+    func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
+        return true
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+
+    }
+
+    func clearButtonDidTap(_ searchBar: SearchBar) {
+        
+    }
+
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        guard let searchText = searchBar.text, !searchText.isEmpty else { return }
+    }
+
+    private func setupSearchSuggestions(searchText: String) {
+
     }
 }
