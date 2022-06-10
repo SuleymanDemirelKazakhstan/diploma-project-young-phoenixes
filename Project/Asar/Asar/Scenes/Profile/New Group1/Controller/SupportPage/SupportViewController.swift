@@ -9,21 +9,52 @@ import UIKit
 
 class SupportViewController: UIViewController {
 
+    private let items: [CellConfigurator] = [
+        FunctionCellConfigurator(item: "FAQ"),
+        FunctionCellConfigurator(item: "Написать тех.поддержке")
+    ]
+    
+    private let tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.backgroundColor = .systemGray6
+        tableView.isScrollEnabled = false
+        return tableView
+    }()
+    
+    private lazy var tableDirector: TableDirector = {
+          let tableDirector = TableDirector(tableView: tableView, items: items)
+          return tableDirector
+      }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableDirector.tableView.reloadData()
+        view.backgroundColor = .systemGray6
+        navigationItem.title = "Service"
+        setupLayouts()
+        setUpActions()
         // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setupLayouts(){
+        view.addSubview(tableView)
+        tableView.snp.makeConstraints {
+            $0.edges.equalTo(view.safeAreaLayoutGuide)
+        }
     }
-    */
+    
+    private func setUpActions(){
+        tableDirector.actionProxy.on(action: .didSelect) { [weak self] (configurator: FunctionCellConfigurator, cell) in
+            guard let strongSelf = self else { return }
+            print(configurator.item)
+            if configurator.item == "FAQ" {
+                self?.navigationController?.pushViewController(FAQpage(), animated: true)
+            }
+            else if configurator.item == "Условия сервиса" {
+                self?.navigationController?.pushViewController(ChatSupport(), animated: true)
+            }
+        }
+    }
 
 }
