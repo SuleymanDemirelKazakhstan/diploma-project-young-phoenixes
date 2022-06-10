@@ -41,6 +41,7 @@ extension TableDirector: UITableViewDelegate{
         guard let cell = tableView.cellForRow(at: indexPath) else{
             return
         }
+        cell.selectionStyle = .none
         self.actionProxy.invoke(action: .didSelect, cell: cell, configurator: cellConfig)
     }
     
@@ -48,6 +49,7 @@ extension TableDirector: UITableViewDelegate{
         let cellConfig = self.items[indexPath.row]
         self.actionProxy.invoke(action: .willDisplay, cell: cell, configurator: cellConfig)
     }
+    
 }
 
 extension TableDirector: UITableViewDataSource{
@@ -64,6 +66,7 @@ extension TableDirector: UITableViewDataSource{
         tableView.register(type(of: cellConfig).cellClass, forCellReuseIdentifier: type(of:cellConfig).reuseId)
         let cell = tableView.dequeueReusableCell(withIdentifier: type(of: cellConfig).reuseId, for: indexPath)
         cellConfig.configure(cell: cell)
+        cell.backgroundColor = .systemGray6
         return cell
     }
 }

@@ -24,6 +24,7 @@ class SettingsAppViewController: UIViewController {
         let tableView = UITableView()
         tableView.backgroundColor = .systemGray6
         tableView.isScrollEnabled = false
+        tableView.separatorStyle = .none
         return tableView
     }()
     

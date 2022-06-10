@@ -43,6 +43,7 @@ class ProfileViewController: UIViewController {
         let tableView = UITableView()
         tableView.backgroundColor = .systemGray6
         tableView.isScrollEnabled = false
+        tableView.separatorStyle = .none
         return tableView
     }()
     
@@ -65,7 +66,7 @@ class ProfileViewController: UIViewController {
         topView.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide)
             $0.left.right.equalToSuperview()
-            $0.height.equalTo(200)
+            $0.height.equalTo(180)
         }
         
         topView.addSubview(photoView)

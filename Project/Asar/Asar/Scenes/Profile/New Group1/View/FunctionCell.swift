@@ -14,6 +14,13 @@ class FunctionCell: UITableViewCell, ConfigurableCell {
     typealias DataType = String
     
     
+    private let innerView: UIView = {
+        let innerView = UIView()
+        innerView.backgroundColor = .white
+        innerView.layer.cornerRadius = 16
+        return innerView
+    }()
+    
    private let functionLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 16, weight: .regular)
@@ -51,9 +58,14 @@ class FunctionCell: UITableViewCell, ConfigurableCell {
 
     
     private func layoutUI(){
-        contentView.addSubview(stackView)
+        contentView.addSubview(innerView)
+        innerView.snp.makeConstraints {
+            $0.edges.equalToSuperview().inset(8)
+            $0.height.equalTo(56)
+        }
+        innerView.addSubview(stackView)
         stackView.snp.makeConstraints {
-            $0.edges.equalToSuperview().inset(16)
+            $0.edges.equalToSuperview().inset(8)
         }
     }
     
