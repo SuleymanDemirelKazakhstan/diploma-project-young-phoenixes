@@ -17,7 +17,7 @@ class SettingCell: UITableViewCell, ConfigurableCell {
     private let innerView: UIView = {
         let innerView = UIView()
         innerView.backgroundColor = .white
-        innerView.layer.cornerRadius = 16
+        innerView.layer.cornerRadius = 10
         return innerView
     }()
     

@@ -17,7 +17,7 @@ class FunctionCell: UITableViewCell, ConfigurableCell {
     private let innerView: UIView = {
         let innerView = UIView()
         innerView.backgroundColor = .white
-        innerView.layer.cornerRadius = 16
+        innerView.layer.cornerRadius = 10
         return innerView
     }()
     
@@ -29,8 +29,9 @@ class FunctionCell: UITableViewCell, ConfigurableCell {
     
     private let imageRight: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "headerIcon")!
+        imageView.image = UIImage(named: "headerIcon")
         imageView.contentMode = .scaleAspectFill
+        imageView.frame = CGRect(x: 0, y: 0, width: 6, height: 12)
         return imageView
     }()
     

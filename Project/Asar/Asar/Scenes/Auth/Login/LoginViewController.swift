@@ -39,6 +39,7 @@ class LoginViewController: UIViewController {
         loginButton.layer.cornerRadius = 10
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
+        passwordTextField.isSecureTextEntry = true
     }
     
     func validateFields() -> String? {

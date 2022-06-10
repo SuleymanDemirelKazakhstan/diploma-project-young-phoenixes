@@ -43,7 +43,8 @@ class RegisterViewController: UIViewController {
         setupCheckBoxView()
         configureTextFields()
         actionButton.configureTitle(text: L10n.makeRegistrationButton)
-        
+        passwordTextField.isSecureTextEntry = true
+
     }
     
     private func configureTextFields() {
