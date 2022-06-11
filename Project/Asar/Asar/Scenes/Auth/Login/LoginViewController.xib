@@ -16,9 +16,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Asar" customModuleProvider="target">
             <connections>
+                <outlet property="actionView" destination="i8E-s0-Dut" id="zwo-HX-eKY"/>
                 <outlet property="emailTextField" destination="bfk-si-MNI" id="K8t-1I-qxK"/>
                 <outlet property="headerView" destination="Bj3-iW-pJF" id="OOk-nq-E4j"/>
-                <outlet property="loginButton" destination="VMV-Nt-opt" id="om7-9K-MoQ"/>
                 <outlet property="passwordTextField" destination="MQJ-Gj-3ej" id="5UZ-Ag-kMK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -50,33 +50,26 @@
                     <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMV-Nt-opt">
-                    <rect key="frame" x="16" y="798" width="382" height="54"/>
-                    <color key="backgroundColor" systemColor="systemGray3Color"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="54" id="esm-ed-m6K"/>
-                    </constraints>
-                    <state key="normal" title="Button"/>
-                    <connections>
-                        <action selector="loginButtonDidTap:" destination="-1" eventType="touchUpInside" id="zWc-Oh-YZa"/>
-                    </connections>
-                </button>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="i8E-s0-Dut" customClass="BottomActionButton" customModule="Asar" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="734" width="414" height="128"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bfk-si-MNI" secondAttribute="trailing" constant="16" id="05A-rv-sr0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="i8E-s0-Dut" secondAttribute="bottom" id="3Pm-TU-TB3"/>
                 <constraint firstItem="Bj3-iW-pJF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="8TZ-yn-31s"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="i8E-s0-Dut" secondAttribute="trailing" id="9ZG-Yt-rUh"/>
                 <constraint firstItem="Bj3-iW-pJF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="125" id="9dT-pV-eS1"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Bj3-iW-pJF" secondAttribute="trailing" constant="16" id="AfT-Z4-sr8"/>
                 <constraint firstItem="MQJ-Gj-3ej" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="HZe-8z-Dv8"/>
                 <constraint firstItem="bfk-si-MNI" firstAttribute="top" secondItem="Bj3-iW-pJF" secondAttribute="bottom" constant="20" id="Itk-16-fJQ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MQJ-Gj-3ej" secondAttribute="trailing" constant="16" id="LWT-dp-g4c"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="VMV-Nt-opt" secondAttribute="bottom" constant="10" id="Uzz-L2-ena"/>
                 <constraint firstItem="MQJ-Gj-3ej" firstAttribute="top" secondItem="bfk-si-MNI" secondAttribute="bottom" constant="15" id="ctJ-Bv-OzA"/>
+                <constraint firstItem="i8E-s0-Dut" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ljE-Nh-f0O"/>
                 <constraint firstItem="bfk-si-MNI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="v9h-dv-4IR"/>
-                <constraint firstItem="VMV-Nt-opt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="wAe-Xj-dYg"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VMV-Nt-opt" secondAttribute="trailing" constant="16" id="z4g-UC-6XU"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="27.536231884057973" y="100.11160714285714"/>
@@ -85,9 +78,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

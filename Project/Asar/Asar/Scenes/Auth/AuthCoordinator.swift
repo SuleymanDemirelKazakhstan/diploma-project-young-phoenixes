@@ -5,7 +5,7 @@
 //  Created by Abylbek Khassenov on 25.03.2022.
 //
 
-import Foundation
+import UIKit
 
 final class AuthCoordinator: BaseCoordinator {
     private let coordinatorFactory: CoordinatorFactory
@@ -37,8 +37,8 @@ final class AuthCoordinator: BaseCoordinator {
     }
     
     private func showMainViewController() {
-//        let main = moduleFactory.
-//        router.push(main)
+        let main = moduleFactory.makeMain(viewControllers: [runHomeMainFlow(), runOrdersFlow(), runMyOrdersFlow(), runProfileFlow()])
+        router.setRootModule(main)
     }
     
     private func showRegisterConfirmViewController() {
@@ -48,6 +48,34 @@ final class AuthCoordinator: BaseCoordinator {
     
     private func runForgetPasswordFlow() {
         
+    }
+    
+    private func runHomeMainFlow() -> UIViewController {
+        let (coordinator, module) = coordinatorFactory.makeHomeMainCoordinator()
+        coordinator.start()
+        addDependency(coordinator)
+        return module
+    }
+    
+    private func runOrdersFlow() -> UIViewController {
+        let (coordinator, module) = coordinatorFactory.makeOrderCoordinator()
+        coordinator.start()
+        addDependency(coordinator)
+        return module
+    }
+    
+    private func runMyOrdersFlow() -> UIViewController {
+        let (coordinator, module) = coordinatorFactory.makeMyOrdersCoordinator()
+        coordinator.start()
+        addDependency(coordinator)
+        return module
+    }
+    
+    private func runProfileFlow() -> UIViewController {
+        let (coordinator, module) = coordinatorFactory.makeProfileCoordinator()
+        coordinator.start()
+        addDependency(coordinator)
+        return module
     }
 }
 

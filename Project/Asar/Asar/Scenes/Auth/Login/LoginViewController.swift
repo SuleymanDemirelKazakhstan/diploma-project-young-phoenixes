@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
     @IBOutlet private var headerView: HeaderView!
     @IBOutlet private var emailTextField: UITextField!
     @IBOutlet private var passwordTextField: UITextField!
-    @IBOutlet private var loginButton: UIButton!
+    @IBOutlet private var actionView: BottomActionButton!
     
     init(navigationDelegate: LoginViewControllerDelegate) {
         self.navigationDelegate = navigationDelegate
@@ -36,7 +36,8 @@ class LoginViewController: UIViewController {
     
     private func setupUI() {
         headerView.configureTexts(titleText: L10n.welcomeTitle, subtitleText: "")
-        loginButton.layer.cornerRadius = 10
+        actionView.delegate = self
+        actionView.configureTitle(text: "Войти")
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
         passwordTextField.isSecureTextEntry = true
@@ -51,11 +52,10 @@ class LoginViewController: UIViewController {
         return nil
     }
     
-    @IBAction func loginButtonDidTap(_ sender: Any) {
+    private func actionButtonTapped() {
         let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
-            
             if error != nil {
                 print(error!)
             }
@@ -63,5 +63,11 @@ class LoginViewController: UIViewController {
                 self.navigationDelegate?.loginDidTap()
             }
         }
+    }
+}
+
+extension LoginViewController: BottomActionButtonDelegate {
+    func actionButtonDidTap() {
+        actionButtonTapped()
     }
 }
