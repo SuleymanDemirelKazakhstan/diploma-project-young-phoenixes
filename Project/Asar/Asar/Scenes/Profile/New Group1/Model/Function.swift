@@ -10,7 +10,6 @@ import UIKit
 
 struct Function: Hashable{
     let labelFunction: String
-
     
     func hash(into hasher: inout Hasher) {
            hasher.combine(labelFunction)
