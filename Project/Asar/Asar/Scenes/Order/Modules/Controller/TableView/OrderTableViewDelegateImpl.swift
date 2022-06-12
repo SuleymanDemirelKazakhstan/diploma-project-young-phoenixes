@@ -98,6 +98,8 @@ extension OrderTableViewDelegateImpl: OrderFieldCellDelegate {
                 guard let _ = self else { return }
                 textField.configure(cellModel: .init(row: .paymentWay, form: .init(paymentWay: item)), row: row)
             }
+        case .address:
+            store.dispatch(action: .didTapMap)
         default:
             print("")
         }

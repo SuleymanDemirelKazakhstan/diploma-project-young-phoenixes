@@ -67,6 +67,10 @@
 		EC217D512819FD100060C1A7 /* CheckBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC217D502819FD100060C1A7 /* CheckBoxView.xib */; };
 		EC217D532819FD450060C1A7 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC217D522819FD450060C1A7 /* CheckBoxView.swift */; };
 		EC217D562819FE1B0060C1A7 /* CheckBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC217D552819FE1B0060C1A7 /* CheckBoxButton.swift */; };
+		EC30C2B228567BDB003EBF08 /* MapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC30C2B128567BDB003EBF08 /* MapCoordinator.swift */; };
+		EC30C2BC2856894D003EBF08 /* MapStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC30C2BB2856894D003EBF08 /* MapStore.swift */; };
+		EC30C2BF28569E44003EBF08 /* MapViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC30C2BD28569E44003EBF08 /* MapViewControler.swift */; };
+		EC30C2C028569E44003EBF08 /* MapViewControler.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC30C2BE28569E44003EBF08 /* MapViewControler.xib */; };
 		EC318FF2281A44F400DA15C1 /* BottomActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC318FF1281A44F400DA15C1 /* BottomActionButton.swift */; };
 		EC318FF4281A451400DA15C1 /* BottomActionButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC318FF3281A451400DA15C1 /* BottomActionButton.xib */; };
 		EC392827281A227D00F0049A /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC392825281A227D00F0049A /* Assets.swift */; };
@@ -215,6 +219,10 @@
 		EC217D522819FD450060C1A7 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
 		EC217D552819FE1B0060C1A7 /* CheckBoxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxButton.swift; sourceTree = "<group>"; };
 		EC217D57281A01B20060C1A7 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		EC30C2B128567BDB003EBF08 /* MapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCoordinator.swift; sourceTree = "<group>"; };
+		EC30C2BB2856894D003EBF08 /* MapStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapStore.swift; sourceTree = "<group>"; };
+		EC30C2BD28569E44003EBF08 /* MapViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControler.swift; sourceTree = "<group>"; };
+		EC30C2BE28569E44003EBF08 /* MapViewControler.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewControler.xib; sourceTree = "<group>"; };
 		EC318FF1281A44F400DA15C1 /* BottomActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomActionButton.swift; sourceTree = "<group>"; };
 		EC318FF3281A451400DA15C1 /* BottomActionButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomActionButton.xib; sourceTree = "<group>"; };
 		EC392825281A227D00F0049A /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
@@ -570,6 +578,65 @@
 			path = SwiftGen;
 			sourceTree = "<group>";
 		};
+		EC30C2AE28567B7D003EBF08 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				EC30C2AF28567BB2003EBF08 /* Coordinator */,
+				EC30C2B028567BB8003EBF08 /* Modules */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		EC30C2AF28567BB2003EBF08 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EC30C2B128567BDB003EBF08 /* MapCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		EC30C2B028567BB8003EBF08 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EC30C2B328567C03003EBF08 /* Controller */,
+				EC30C2B428567C12003EBF08 /* Store */,
+				EC30C2B628567C1C003EBF08 /* ViewModules */,
+				EC30C2B528567C18003EBF08 /* Views */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EC30C2B328567C03003EBF08 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC30C2BD28569E44003EBF08 /* MapViewControler.swift */,
+				EC30C2BE28569E44003EBF08 /* MapViewControler.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC30C2B428567C12003EBF08 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				EC30C2BB2856894D003EBF08 /* MapStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		EC30C2B528567C18003EBF08 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EC30C2B628567C1C003EBF08 /* ViewModules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModules;
+			sourceTree = "<group>";
+		};
 		EC318FF0281A44D700DA15C1 /* BottomActionButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -891,12 +958,13 @@
 			isa = PBXGroup;
 			children = (
 				EC897F9127ED9FC700B11A5D /* Main */,
+				EC897F8B27ED9F2D00B11A5D /* Auth */,
+				EC897F8E27ED9F4B00B11A5D /* ChangePassword */,
 				EC876331281D3838005EFC81 /* Home */,
+				EC30C2AE28567B7D003EBF08 /* Map */,
 				EC87632A281D1CB3005EFC81 /* MyOrders */,
 				EC876321281D00FF005EFC81 /* Order */,
 				EC897F9227ED9FCD00B11A5D /* Profile */,
-				EC897F8E27ED9F4B00B11A5D /* ChangePassword */,
-				EC897F8B27ED9F2D00B11A5D /* Auth */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -1247,6 +1315,7 @@
 				EC042BFF284DE0670064871C /* SectionHeaderView.xib in Resources */,
 				EC042BF0284DC93B0064871C /* HomeFAQCell.xib in Resources */,
 				EC9E6D1A281F6A2300627C5B /* HomeCategoryCell.xib in Resources */,
+				EC30C2C028569E44003EBF08 /* MapViewControler.xib in Resources */,
 				EC9E6D15281F686A00627C5B /* HomeCategoriesCell.xib in Resources */,
 				ECDA70F7280D73DA0009568A /* RegisterConfirmViewController.xib in Resources */,
 				EC9E6D0A281F481900627C5B /* HomeTitleCell.xib in Resources */,
@@ -1351,6 +1420,7 @@
 				6DC05165285374CF00B23949 /* AgreementPage.swift in Sources */,
 				EC5278652851EB8F00AD32E9 /* SearchBar.swift in Sources */,
 				EC897F7D27ED980900B11A5D /* LaunchInstructor.swift in Sources */,
+				EC30C2BF28569E44003EBF08 /* MapViewControler.swift in Sources */,
 				EC9E6D20281F741100627C5B /* HomeCategoryViewModel.swift in Sources */,
 				6DB061CE2855E7E800C6F65D /* ServiceCell.swift in Sources */,
 				EC392828281A227D00F0049A /* Strings.swift in Sources */,
@@ -1373,6 +1443,7 @@
 				EC52787928525A3700AD32E9 /* OrderFieldCellModel.swift in Sources */,
 				EC5278712851FAAB00AD32E9 /* OrderStore.swift in Sources */,
 				EC876346281D3E67005EFC81 /* HomeMainViewDelegate.swift in Sources */,
+				EC30C2B228567BDB003EBF08 /* MapCoordinator.swift in Sources */,
 				6DC05177285375F800B23949 /* CompanyServicePage.swift in Sources */,
 				EC5278672851EFB000AD32E9 /* UISearchBar+Subviews.swift in Sources */,
 				EC5278742851FDF000AD32E9 /* OrderTableViewDataSourceImpl.swift in Sources */,
@@ -1384,6 +1455,7 @@
 				6D6B4CDE284FAFE700A9A4D7 /* HomeBannerCell.swift in Sources */,
 				EC9E6D14281F686A00627C5B /* HomeCategoriesCell.swift in Sources */,
 				6D9A9F0528525F22000F9FCD /* CellActionProxy.swift in Sources */,
+				EC30C2BC2856894D003EBF08 /* MapStore.swift in Sources */,
 				ECF18D7E2812227800DC3FC9 /* UserSessionStorage.swift in Sources */,
 				EC217D562819FE1B0060C1A7 /* CheckBoxButton.swift in Sources */,
 				6DC0516028534BAA00B23949 /* FAQpage.swift in Sources */,

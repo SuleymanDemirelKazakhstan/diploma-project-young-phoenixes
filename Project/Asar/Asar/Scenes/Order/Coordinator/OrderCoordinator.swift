@@ -8,6 +8,8 @@
 import Foundation
 
 final class OrderCoordinator: BaseCoordinator {
+    private let coordinatorFactory: CoordinatorFactory = CoordinatorFactory()
+    
     override func start() {
         showOrderViewController()
     }
@@ -25,5 +27,9 @@ extension OrderCoordinator: OrderNavigationDelegate {
     
     func formDidVerify(_ viewController: OrderViewController) {
     
+    }
+    
+    func mapDidTap(_ viewController: OrderViewController) {
+        MapCoordinator(router: router).start()
     }
 }

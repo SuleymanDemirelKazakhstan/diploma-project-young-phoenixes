@@ -11,6 +11,7 @@ protocol OrderNavigationDelegate: AnyObject {
     func closeDidTap(_ viewController: OrderViewController)
 //    func regionSelectDidTap(_ viewController: OrderViewController, region: Region?)
     func formDidVerify(_ viewController: OrderViewController)
+    func mapDidTap(_ viewController: OrderViewController)
 }
 
 class OrderViewController: UIViewController {
@@ -89,6 +90,8 @@ class OrderViewController: UIViewController {
             case let .contentChanged(form):
                 vc.tableViewDataSourceImpl.form = form
                 vc.tableViewDelegateImpl.form = form
+            case .mapTapped:
+                vc.navigationDelegate?.mapDidTap(self)
             }
         }
     }

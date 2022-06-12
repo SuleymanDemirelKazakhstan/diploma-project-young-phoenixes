@@ -42,6 +42,7 @@ final class OrderStore {
         case didTapDropDown(row: OrderRow)
         case didTapAttachment
         case didTapSend
+        case didTapMap
         case didDeleteFile(index: Int)
     }
 
@@ -52,6 +53,7 @@ final class OrderStore {
         case error(message: String?)
         case textFieldChanged(form: OrderForm)
         case contentChanged(form: OrderForm)
+        case mapTapped
     }
     
     private var form: OrderForm = .init()
@@ -93,6 +95,8 @@ final class OrderStore {
             updateList()
         case .didTapSend:
             verifyFeedbackForm()
+        case .didTapMap:
+            state = .mapTapped
         }
     }
 

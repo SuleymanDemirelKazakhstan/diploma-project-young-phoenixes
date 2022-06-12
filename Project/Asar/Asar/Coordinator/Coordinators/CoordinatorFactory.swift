@@ -39,4 +39,10 @@ final class CoordinatorFactory {
         let coordinator = ProfileCoordinator(router: .init(navigationController: navigationController))
         return (coordinator, navigationController)
     }
+    
+    func makeMapCoordinator() -> (coordinator: Coordinator, module: UIViewController) {
+        let navigationController = UINavigationController()
+        let coordinator = MapCoordinator(router: .init(navigationController: navigationController))
+        return (coordinator, navigationController)
+    }
 }
