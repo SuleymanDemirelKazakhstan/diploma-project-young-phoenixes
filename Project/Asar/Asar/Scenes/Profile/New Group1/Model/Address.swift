@@ -8,5 +8,5 @@
 import Foundation
 
 struct Address{
-    let addressText: String
+    let addressText: String?
 }

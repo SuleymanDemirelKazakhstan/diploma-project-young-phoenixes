@@ -7,10 +7,15 @@
 
 import UIKit
 
+protocol MyAddressTableViewCellDelegate {
+    func reloadTable(with: Address?)
+}
+
 class AddAddress: UIViewController {
 
     private var oldValue: Double = 0
     private var model: Address?
+    var delegate: MyAddressTableViewCellDelegate?
     
     private let addressView: UIView = {
         let view = UIView()
@@ -94,7 +99,9 @@ class AddAddress: UIViewController {
     }
     
     @objc private func touchBtn(){
-  
+        let address = Address(addressText: currentAddress.text)
+        delegate?.reloadTable(with: address)
+        navigationController?.popViewController(animated: true)
     }
     
     private func setupLayouts(){
@@ -119,17 +126,17 @@ class AddAddress: UIViewController {
         currentEntrance.snp.makeConstraints {
             $0.edges.equalToSuperview().inset(10)
         }
-        
+
         flatView.addSubview(currentFlat)
         currentFlat.snp.makeConstraints {
             $0.edges.equalToSuperview().inset(10)
         }
-        
+
         floorView.addSubview(currentFloor)
         currentFloor.snp.makeConstraints {
             $0.edges.equalToSuperview().inset(10)
         }
-        
+
         view.addSubview(stackView)
         stackView.snp.makeConstraints {
             $0.left.right.equalToSuperview().inset(16)

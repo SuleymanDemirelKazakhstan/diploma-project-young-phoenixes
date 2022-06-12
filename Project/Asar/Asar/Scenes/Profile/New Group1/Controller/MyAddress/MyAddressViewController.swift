@@ -9,6 +9,8 @@ import UIKit
 import SnapKit
 
 class MyAddressViewController: UIViewController {
+    
+    private var listOfAddress: [Address] = []
 
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
@@ -70,7 +72,8 @@ class MyAddressViewController: UIViewController {
     
     @objc private func touchBtn(){
         let vc = AddAddress()
-        self.navigationController?.pushViewController(vc, animated: true)
+        vc.delegate = self
+        navigationController?.pushViewController(vc, animated: true)
         
     }
 }
@@ -78,13 +81,13 @@ class MyAddressViewController: UIViewController {
 //  MARK: - TABLEVIEW DELEGATE
 extension MyAddressViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return AddressList.shared.basketList.count
+        return listOfAddress.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: MyAddressTableViewCell.cellIdentifier(), for: indexPath) as! MyAddressTableViewCell
-        cell.configure(model: AddressList.shared.basketList[indexPath.row])
-        cell.delegate = self
+        cell.configure(model: listOfAddress[indexPath.row])
         cell.selectionStyle = .none
+        cell.backgroundColor = .systemGray6
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -101,16 +104,12 @@ extension UITableViewCell {
 
 // MARK: - ORDER TABLE VIEW CELL DELEGATE
 extension MyAddressViewController: MyAddressTableViewCellDelegate {
-    func reloadTable() {
-//        UIView.transition(
-//            with: self.view,
-//                          duration: 0.25,
-//                          options: .transitionCrossDissolve,
-//                          animations: { [self] in
-//            tableView.reloadData()
-//        },
-//                          completion: nil)
-//    }
+    func reloadTable(with: Address?) {
+        if let address = with {
+            UIView.transition(with: self.view, duration: 0.25, options: .transitionCrossDissolve, animations: { [self] in
+                listOfAddress.append(address)
+                tableView.reloadData()
+            }, completion: nil)
+        }
     }
-    
 }
