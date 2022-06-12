@@ -13,7 +13,7 @@ final class OrderCoordinator: BaseCoordinator {
     }
     
     private func showOrderViewController() {
-        let vc = OrderViewController(navigationDelegate: self)
+        let vc = OrderViewController(store: .init(), navigationDelegate: self)
         router.setRootModule(vc)
     }
 }

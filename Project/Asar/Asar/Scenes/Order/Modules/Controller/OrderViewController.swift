@@ -14,7 +14,7 @@ protocol OrderNavigationDelegate: AnyObject {
 }
 
 class OrderViewController: UIViewController {
-//    private let store: FeedbackStore
+    private let store: OrderStore
     private let tableViewDataSourceImpl: OrderTableViewDataSourceImpl
     private let tableViewDelegateImpl: OrderTableViewDelegateImpl
     private weak var navigationDelegate: OrderNavigationDelegate?
@@ -22,10 +22,10 @@ class OrderViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var actionView: BottomActionButton!
     
-    init(navigationDelegate: OrderNavigationDelegate) {
-//        self.store = store
-        tableViewDataSourceImpl = .init()
-        tableViewDelegateImpl = .init()
+    init(store: OrderStore, navigationDelegate: OrderNavigationDelegate) {
+        self.store = store
+        tableViewDataSourceImpl = .init(store: store)
+        tableViewDelegateImpl = .init(store: store)
         self.navigationDelegate = navigationDelegate
         super.init(nibName: String(describing: Self.self), bundle: Bundle(for: Self.self))
     }
@@ -39,7 +39,7 @@ class OrderViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupObservers()
-//        store.dispatch(action: .didLoadView)
+        store.dispatch(action: .didLoadView)
     }
 
 //    func updateRegion(region: Region) {
@@ -47,58 +47,50 @@ class OrderViewController: UIViewController {
 //    }
 
     private func setupUI() {
-        setupNavigationBar()
+        self.view.backgroundColor = UIColor(red: 0.898, green: 0.898, blue: 0.898, alpha: 1)
+        self.navigationController?.isNavigationBarHidden = true
         actionView.delegate = self
         actionView.configureTitle(text: "Создать")
+        actionView.backgroundColor = .systemBackground
         setupTableView()
     }
 
     private func setupTableView() {
         tableViewDataSourceImpl.tableView = tableView
         tableViewDelegateImpl.tableView = tableView
-//        tableView.dataSource = tableViewDataSourceImpl
-//        tableView.delegate = tableViewDelegateImpl
+        tableView.dataSource = tableViewDataSourceImpl
+        tableView.delegate = tableViewDelegateImpl
         [
-//            FeedbackContentCell.self,
-//            FeedbackSelectCell.self,
-//            FeedbackFieldCell.self,
-//            FeedbackFilesCell.self
+            OrderFieldCell.self,
+            OrderHeaderCell.self,
+            OrderUploadCell.self
         ].forEach { tableView.register(cellClass: $0) }
     }
 
     private func setupObservers() {
-//        store.$state.observe(self) { vc, state in
-//            guard let state = state else { return }
-//            switch state {
-//            case let .rows(rows, form, formatter):
-//                vc.tableViewDataSourceImpl.rows = rows
-//                vc.tableViewDataSourceImpl.form = form
-//                vc.tableViewDelegateImpl.rows = rows
-//                vc.tableViewDelegateImpl.form = form
-//                vc.tableViewDelegateImpl.formatter = formatter
-//                vc.tableView.reloadData()
-//            case .loading:
-//                ProgressHud.startAnimating()
-//            case .loadingFinished:
-//                ProgressHud.stopAnimating()
-//            case let .error(message):
-//                vc.showToast(category: .error, message: message)
-//            case let .textFieldChanged(form):
-//                vc.tableViewDataSourceImpl.form = form
-//                vc.tableViewDelegateImpl.form = form
-//            case let .contentChanged(form):
-//                vc.tableViewDataSourceImpl.form = form
-//                vc.tableViewDelegateImpl.form = form
-//            case let .messageSubjectSelected(subjects):
-//                vc.presentThemesActionSheet(subjects: subjects)
-//            case let .regionSelectTapped(region):
-//                vc.navigationDelegate?.regionSelectDidTap(vc, region: region)
-//            case .feedbackSent:
-//                vc.navigationDelegate?.formDidVerify(vc)
-//            case let .attachmentTapped(items):
-//                vc.presentAttachmentActionSheet(items: items)
-//            }
-//        }
+        store.$state.observe(self) { vc, state in
+            guard let state = state else { return }
+            switch state {
+            case let .rows(rows, form):
+                vc.tableViewDataSourceImpl.rows = rows
+                vc.tableViewDataSourceImpl.form = form
+                vc.tableViewDelegateImpl.rows = rows
+                vc.tableViewDelegateImpl.form = form
+                vc.tableView.reloadData()
+            case .loading:
+                break
+            case .loadingFinished:
+                break
+            case let .error(message):
+                break
+            case let .textFieldChanged(form):
+                vc.tableViewDataSourceImpl.form = form
+                vc.tableViewDelegateImpl.form = form
+            case let .contentChanged(form):
+                vc.tableViewDataSourceImpl.form = form
+                vc.tableViewDelegateImpl.form = form
+            }
+        }
     }
 
 //    private func presentThemesActionSheet(subjects: [MessageSubject]) {
@@ -129,14 +121,6 @@ private extension OrderViewController {
     @objc
     func closeButtonDidTap() {
         navigationDelegate?.closeDidTap(self)
-    }
-
-    func setupNavigationBar() {
-        navigationItem.title = "Создать заявку"
-//        navigationItem.leftBarButtonItem = UIBarButtonItem(image: Assets.generalClose.image,
-//                                                           style: .plain,
-//                                                           target: self,
-//                                                           action: #selector(closeButtonDidTap))
     }
 }
 

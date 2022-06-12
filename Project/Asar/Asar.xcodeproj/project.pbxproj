@@ -73,6 +73,8 @@
 		EC5278712851FAAB00AD32E9 /* OrderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5278702851FAAB00AD32E9 /* OrderStore.swift */; };
 		EC5278742851FDF000AD32E9 /* OrderTableViewDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5278732851FDF000AD32E9 /* OrderTableViewDataSourceImpl.swift */; };
 		EC5278762851FE0600AD32E9 /* OrderTableViewDelegateImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5278752851FE0600AD32E9 /* OrderTableViewDelegateImpl.swift */; };
+		EC52787928525A3700AD32E9 /* OrderFieldCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52787828525A3700AD32E9 /* OrderFieldCellModel.swift */; };
+		EC52787C28525D9700AD32E9 /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52787B28525D9700AD32E9 /* BaseTextField.swift */; };
 		EC569CF227F637B000EBEE9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC569CF127F637B000EBEE9B /* SceneDelegate.swift */; };
 		EC5A0A4728096CDF003EC0C3 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5A0A4628096CDF003EC0C3 /* HeaderView.swift */; };
 		EC5A0A4928096CEF003EC0C3 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC5A0A4828096CEF003EC0C3 /* HeaderView.xib */; };
@@ -123,6 +125,12 @@
 		EC9E6D1C281F6AA100627C5B /* UICollectionView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9E6D1B281F6AA100627C5B /* UICollectionView+Register.swift */; };
 		EC9E6D1E281F6CC100627C5B /* UICollectionView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9E6D1D281F6CC100627C5B /* UICollectionView+Dequeue.swift */; };
 		EC9E6D20281F741100627C5B /* HomeCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9E6D1F281F741100627C5B /* HomeCategoryViewModel.swift */; };
+		ECB3C5082855375D0058C258 /* OrderFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3C5062855375D0058C258 /* OrderFieldCell.swift */; };
+		ECB3C5092855375D0058C258 /* OrderFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB3C5072855375D0058C258 /* OrderFieldCell.xib */; };
+		ECB3C50D28555F0A0058C258 /* OrderHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3C50B28555F0A0058C258 /* OrderHeaderCell.swift */; };
+		ECB3C50E28555F0A0058C258 /* OrderHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB3C50C28555F0A0058C258 /* OrderHeaderCell.xib */; };
+		ECB3C51228559BB80058C258 /* OrderUploadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3C51028559BB80058C258 /* OrderUploadCell.swift */; };
+		ECB3C51328559BB80058C258 /* OrderUploadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB3C51128559BB80058C258 /* OrderUploadCell.xib */; };
 		ECD0028B28093FEE005F2D0D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD0028928093FEE005F2D0D /* RegisterViewController.swift */; };
 		ECD0028C28093FEE005F2D0D /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECD0028A28093FEE005F2D0D /* RegisterViewController.xib */; };
 		ECD68BCB27FAB21A00A8DE0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECD68BCA27FAB21A00A8DE0A /* GoogleService-Info.plist */; };
@@ -212,6 +220,8 @@
 		EC5278702851FAAB00AD32E9 /* OrderStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStore.swift; sourceTree = "<group>"; };
 		EC5278732851FDF000AD32E9 /* OrderTableViewDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewDataSourceImpl.swift; sourceTree = "<group>"; };
 		EC5278752851FE0600AD32E9 /* OrderTableViewDelegateImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewDelegateImpl.swift; sourceTree = "<group>"; };
+		EC52787828525A3700AD32E9 /* OrderFieldCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderFieldCellModel.swift; sourceTree = "<group>"; };
+		EC52787B28525D9700AD32E9 /* BaseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
 		EC569CF127F637B000EBEE9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EC5A0A4628096CDF003EC0C3 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		EC5A0A4828096CEF003EC0C3 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
@@ -264,6 +274,12 @@
 		EC9E6D1B281F6AA100627C5B /* UICollectionView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Register.swift"; sourceTree = "<group>"; };
 		EC9E6D1D281F6CC100627C5B /* UICollectionView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Dequeue.swift"; sourceTree = "<group>"; };
 		EC9E6D1F281F741100627C5B /* HomeCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategoryViewModel.swift; sourceTree = "<group>"; };
+		ECB3C5062855375D0058C258 /* OrderFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderFieldCell.swift; sourceTree = "<group>"; };
+		ECB3C5072855375D0058C258 /* OrderFieldCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderFieldCell.xib; sourceTree = "<group>"; };
+		ECB3C50B28555F0A0058C258 /* OrderHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHeaderCell.swift; sourceTree = "<group>"; };
+		ECB3C50C28555F0A0058C258 /* OrderHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderHeaderCell.xib; sourceTree = "<group>"; };
+		ECB3C51028559BB80058C258 /* OrderUploadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderUploadCell.swift; sourceTree = "<group>"; };
+		ECB3C51128559BB80058C258 /* OrderUploadCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderUploadCell.xib; sourceTree = "<group>"; };
 		ECD0028928093FEE005F2D0D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		ECD0028A28093FEE005F2D0D /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		ECD68BCA27FAB21A00A8DE0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -574,8 +590,8 @@
 			children = (
 				EC52786C2851FA6F00AD32E9 /* Controller */,
 				EC52786D2851FA7400AD32E9 /* Store */,
-				EC52786E2851FA7A00AD32E9 /* ViewModels */,
 				EC52786F2851FA8100AD32E9 /* Views */,
+				EC52786E2851FA7A00AD32E9 /* ViewModels */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -601,6 +617,7 @@
 		EC52786E2851FA7A00AD32E9 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				EC52787828525A3700AD32E9 /* OrderFieldCellModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -608,6 +625,9 @@
 		EC52786F2851FA8100AD32E9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ECB3C50F28559B8F0058C258 /* OrderUploadCell */,
+				ECB3C50A28555EF00058C258 /* OrderHeaderCell */,
+				EC5278772852599B00AD32E9 /* OrderFieldCell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -619,6 +639,15 @@
 				EC5278752851FE0600AD32E9 /* OrderTableViewDelegateImpl.swift */,
 			);
 			path = TableView;
+			sourceTree = "<group>";
+		};
+		EC5278772852599B00AD32E9 /* OrderFieldCell */ = {
+			isa = PBXGroup;
+			children = (
+				ECB3C5062855375D0058C258 /* OrderFieldCell.swift */,
+				ECB3C5072855375D0058C258 /* OrderFieldCell.xib */,
+			);
+			path = OrderFieldCell;
 			sourceTree = "<group>";
 		};
 		EC5A0A4528096CB0003EC0C3 /* HeaderView */ = {
@@ -975,6 +1004,24 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		ECB3C50A28555EF00058C258 /* OrderHeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				ECB3C50B28555F0A0058C258 /* OrderHeaderCell.swift */,
+				ECB3C50C28555F0A0058C258 /* OrderHeaderCell.xib */,
+			);
+			path = OrderHeaderCell;
+			sourceTree = "<group>";
+		};
+		ECB3C50F28559B8F0058C258 /* OrderUploadCell */ = {
+			isa = PBXGroup;
+			children = (
+				ECB3C51028559BB80058C258 /* OrderUploadCell.swift */,
+				ECB3C51128559BB80058C258 /* OrderUploadCell.xib */,
+			);
+			path = OrderUploadCell;
+			sourceTree = "<group>";
+		};
 		ECD0028D280943F4005F2D0D /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -1011,6 +1058,7 @@
 				EC318FF0281A44D700DA15C1 /* BottomActionButton */,
 				EC217D4F2819FCF50060C1A7 /* CheckBoxView */,
 				EC5A0A4528096CB0003EC0C3 /* HeaderView */,
+				EC52787B28525D9700AD32E9 /* BaseTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1171,6 +1219,7 @@
 			files = (
 				EC5A0A4E28096FA0003EC0C3 /* SFProDisplay-Bold.ttf in Resources */,
 				EC897F6527ED95D000B11A5D /* Assets.xcassets in Resources */,
+				ECB3C50E28555F0A0058C258 /* OrderHeaderCell.xib in Resources */,
 				ECEA16E0282290210080F629 /* HomeRecommendationView.xib in Resources */,
 				6D6B4CE3284FB00200A9A4D7 /* HomeBannerView.xib in Resources */,
 				ECD0028C28093FEE005F2D0D /* RegisterViewController.xib in Resources */,
@@ -1192,8 +1241,10 @@
 				EC9E6D15281F686A00627C5B /* HomeCategoriesCell.xib in Resources */,
 				ECDA70F7280D73DA0009568A /* RegisterConfirmViewController.xib in Resources */,
 				EC9E6D0A281F481900627C5B /* HomeTitleCell.xib in Resources */,
+				ECB3C5092855375D0058C258 /* OrderFieldCell.xib in Resources */,
 				EC042BF8284DD7A70064871C /* HomeFAQView.xib in Resources */,
 				EC5A0A4928096CEF003EC0C3 /* HeaderView.xib in Resources */,
+				ECB3C51328559BB80058C258 /* OrderUploadCell.xib in Resources */,
 				EC876330281D37F2005EFC81 /* MyOrdersViewController.xib in Resources */,
 				ECEA16D7282285EB0080F629 /* HomeRecommendationsCell.xib in Resources */,
 			);
@@ -1267,6 +1318,7 @@
 				6D9A9F1128527589000F9FCD /* ProfileInformationViewController.swift in Sources */,
 				6DC05167285374F500B23949 /* GeneralProvisionsPage.swift in Sources */,
 				6DC0517B2854A73400B23949 /* AddAddress.swift in Sources */,
+				EC52787C28525D9700AD32E9 /* BaseTextField.swift in Sources */,
 				ECEA16E22822946E0080F629 /* HomeRecommendationViewModel.swift in Sources */,
 				6D6B4CE2284FB00200A9A4D7 /* HomeBannerView.swift in Sources */,
 				6D9A9F1728527B4A000F9FCD /* SettingsAppViewController.swift in Sources */,
@@ -1280,6 +1332,7 @@
 				ECEA16DE282290070080F629 /* HomeRecommendationView.swift in Sources */,
 				EC5278762851FE0600AD32E9 /* OrderTableViewDelegateImpl.swift in Sources */,
 				6DF32EC0281B581000CEFEDD /* SMSCodeTextField.swift in Sources */,
+				ECB3C51228559BB80058C258 /* OrderUploadCell.swift in Sources */,
 				EC741660282D6E18002D18A3 /* Observable.swift in Sources */,
 				6DC0517D2854B9B700B23949 /* Address.swift in Sources */,
 				EC392827281A227D00F0049A /* Assets.swift in Sources */,
@@ -1306,6 +1359,7 @@
 				EC876336281D3880005EFC81 /* HomeMainViewController.swift in Sources */,
 				EC5A0A5528098A48003EC0C3 /* Utilities.swift in Sources */,
 				EC9E6D0E281F49F700627C5B /* UITableView+Dequeue.swift in Sources */,
+				EC52787928525A3700AD32E9 /* OrderFieldCellModel.swift in Sources */,
 				EC5278712851FAAB00AD32E9 /* OrderStore.swift in Sources */,
 				EC876346281D3E67005EFC81 /* HomeMainViewDelegate.swift in Sources */,
 				6DC05177285375F800B23949 /* CompanyServicePage.swift in Sources */,
@@ -1329,6 +1383,7 @@
 				EC897F5927ED95CF00B11A5D /* AppDelegate.swift in Sources */,
 				EC876326281D0122005EFC81 /* OrderViewController.swift in Sources */,
 				EC042C03284DE2650064871C /* ActionSectionHeaderViewModel.swift in Sources */,
+				ECB3C50D28555F0A0058C258 /* OrderHeaderCell.swift in Sources */,
 				6DC0516B2853753D00B23949 /* SpecialistRegistrationPage.swift in Sources */,
 				EC5A0A512809804F003EC0C3 /* NibOwnerLoadable.swift in Sources */,
 				EC318FF2281A44F400DA15C1 /* BottomActionButton.swift in Sources */,
@@ -1337,6 +1392,7 @@
 				6D03409D2809A39B0032B916 /* OnboardingSlides.swift in Sources */,
 				EC897F9A27EDC1F500B11A5D /* AuthCoordinator.swift in Sources */,
 				6D9A9F0D2852615E000F9FCD /* FunctionCell.swift in Sources */,
+				ECB3C5082855375D0058C258 /* OrderFieldCell.swift in Sources */,
 				6DC0517F2854D0CB00B23949 /* MyAddressTableViewCell.swift in Sources */,
 				6D9A9F1328527AF1000F9FCD /* BankInformationViewController.swift in Sources */,
 				6D9A9F1C28528E61000F9FCD /* SettingCell.swift in Sources */,

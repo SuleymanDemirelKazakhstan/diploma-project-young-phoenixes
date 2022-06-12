@@ -11,40 +11,35 @@ final class OrderTableViewDataSourceImpl: NSObject {
     var tableView: UITableView?
     var form: OrderForm?
     var rows: [OrderRow] = []
-//    private let store: OrderStore
+    private let store: OrderStore
 
-//    init() {
-//        self.store = store
-//    }
+    init(store: OrderStore) {
+        self.store = store
+    }
 }
 
-//extension OrderTableViewDataSourceImpl: UITableViewDataSource {
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        rows.count
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        switch rows[indexPath.row] {
-//        case .answerType:
-//            let cell: FeedbackSelectCell = tableView.dequeueReusableCell(for: indexPath)
-//            return cell
-//        case .files:
-//            let cell: FeedbackFilesCell = tableView.dequeueReusableCell(for: indexPath)
-//            return cell
-//        case .content:
-//            let cell: FeedbackContentCell = tableView.dequeueReusableCell(for: indexPath)
-//            cell.delegate = self
-//            cell.configure(with: form?.content)
-//            return cell
-//        default:
-//            let cell: FeedbackFieldCell = tableView.dequeueReusableCell(for: indexPath)
-//            return cell
-//        }
-//    }
-//}
-//
-//// MARK: - MultilineTextFieldXibViewDelegate
-//
+extension OrderTableViewDataSourceImpl: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        rows.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        switch rows[indexPath.row] {
+        case .header:
+            let cell: OrderHeaderCell = tableView.dequeueReusableCell(for: indexPath)
+            return cell
+        case .content:
+            let cell: OrderUploadCell = tableView.dequeueReusableCell(for: indexPath)
+            return cell
+        default:
+            let cell: OrderFieldCell = tableView.dequeueReusableCell(for: indexPath)
+            return cell
+        }
+    }
+}
+
+// MARK: - MultilineTextFieldXibViewDelegate
+
 //extension OrderTableViewDataSourceImpl: FeedbackContentCellDelegate {
 //    func textViewDidChange(_ cell: FeedbackContentCell, textView: UITextView) {
 //        store.dispatch(action: .didChangeContent(text: textView.text))
@@ -63,8 +58,8 @@ final class OrderTableViewDataSourceImpl: NSObject {
 //        }
 //    }
 //
-////    func attachmentButtonDidTap(_ cell: FeedbackContentCell) {
-////        store.dispatch(action: .didTapAttachment)
-////    }
+//    func attachmentButtonDidTap(_ cell: FeedbackContentCell) {
+//        store.dispatch(action: .didTapAttachment)
+//    }
 //}
 //

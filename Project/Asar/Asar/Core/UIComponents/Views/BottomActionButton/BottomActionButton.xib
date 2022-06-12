@@ -21,11 +21,11 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="469" height="92"/>
+            <rect key="frame" x="0.0" y="0.0" width="469" height="100"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzp-Os-djg">
-                    <rect key="frame" x="16" y="44" width="437" height="48"/>
+                    <rect key="frame" x="16" y="52" width="437" height="48"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="48" id="yso-XR-GlJ"/>
                     </constraints>
@@ -41,13 +41,13 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="Qzp-Os-djg" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="29b-Fc-pPi"/>
+                <constraint firstItem="Qzp-Os-djg" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="29b-Fc-pPi"/>
                 <constraint firstItem="Qzp-Os-djg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="HXm-U3-1vv"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Qzp-Os-djg" secondAttribute="trailing" constant="16" id="Qkr-PR-J4E"/>
                 <constraint firstAttribute="bottom" secondItem="Qzp-Os-djg" secondAttribute="bottom" id="RJt-2M-3B0"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="64.492753623188406" y="291.96428571428572"/>
+            <point key="canvasLocation" x="64.492753623188406" y="294.64285714285711"/>
         </view>
     </objects>
     <resources>

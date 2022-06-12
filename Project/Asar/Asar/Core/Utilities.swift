@@ -9,9 +9,9 @@ import Foundation
 import UIKit
 
 class Utilities {
-    static func styleTextField(_ textfield:UITextField) {
+    static func styleTextField(_ textfield: UITextField, y: CGFloat? = 2) {
         let bottomLine = CALayer()
-        bottomLine.frame = CGRect(x: 0, y: textfield.frame.height - 2, width: textfield.frame.width, height: 0.5)
+        bottomLine.frame = CGRect(x: 0, y: textfield.frame.height - (y ?? 0), width: textfield.frame.width, height: 0.5)
         bottomLine.backgroundColor = UIColor.lightGray.cgColor
         textfield.borderStyle = .none
         textfield.layer.addSublayer(bottomLine)
