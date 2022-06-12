@@ -32,6 +32,10 @@
 		6D9A9F1C28528E61000F9FCD /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9A9F1B28528E60000F9FCD /* SettingCell.swift */; };
 		6D9A9F24285290D9000F9FCD /* PoliticalConf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9A9F23285290D9000F9FCD /* PoliticalConf.swift */; };
 		6D9A9F26285290F4000F9FCD /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9A9F25285290F4000F9FCD /* Service.swift */; };
+		6DB061C82855E76400C6F65D /* PoliticalConfModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB061C72855E76400C6F65D /* PoliticalConfModel.swift */; };
+		6DB061CA2855E78700C6F65D /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB061C92855E78700C6F65D /* ServiceModel.swift */; };
+		6DB061CC2855E7AE00C6F65D /* PoliticalConfCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB061CB2855E7AD00C6F65D /* PoliticalConfCell.swift */; };
+		6DB061CE2855E7E800C6F65D /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB061CD2855E7E800C6F65D /* ServiceCell.swift */; };
 		6DC0516028534BAA00B23949 /* FAQpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC0515F28534BAA00B23949 /* FAQpage.swift */; };
 		6DC0516228534BBD00B23949 /* ChatSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC0516128534BBD00B23949 /* ChatSupport.swift */; };
 		6DC05165285374CF00B23949 /* AgreementPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC05164285374CF00B23949 /* AgreementPage.swift */; };
@@ -175,6 +179,10 @@
 		6D9A9F1B28528E60000F9FCD /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		6D9A9F23285290D9000F9FCD /* PoliticalConf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticalConf.swift; sourceTree = "<group>"; };
 		6D9A9F25285290F4000F9FCD /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		6DB061C72855E76400C6F65D /* PoliticalConfModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticalConfModel.swift; sourceTree = "<group>"; };
+		6DB061C92855E78700C6F65D /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
+		6DB061CB2855E7AD00C6F65D /* PoliticalConfCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticalConfCell.swift; sourceTree = "<group>"; };
+		6DB061CD2855E7E800C6F65D /* ServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
 		6DC0515F28534BAA00B23949 /* FAQpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQpage.swift; sourceTree = "<group>"; };
 		6DC0516128534BBD00B23949 /* ChatSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSupport.swift; sourceTree = "<group>"; };
 		6DC05164285374CF00B23949 /* AgreementPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementPage.swift; sourceTree = "<group>"; };
@@ -375,6 +383,8 @@
 				6D9A9F0C2852615E000F9FCD /* FunctionCell.swift */,
 				6D9A9F1B28528E60000F9FCD /* SettingCell.swift */,
 				6DC0517E2854D0CB00B23949 /* MyAddressTableViewCell.swift */,
+				6DB061CB2855E7AD00C6F65D /* PoliticalConfCell.swift */,
+				6DB061CD2855E7E800C6F65D /* ServiceCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -386,6 +396,8 @@
 				6DC0517828549D6900B23949 /* AddressList.swift */,
 				6DC0517C2854B9B700B23949 /* Address.swift */,
 				6DC051802854D15C00B23949 /* AddressBasket.swift */,
+				6DB061C72855E76400C6F65D /* PoliticalConfModel.swift */,
+				6DB061C92855E78700C6F65D /* ServiceModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1304,6 +1316,7 @@
 				EC897F8527ED985700B11A5D /* Router.swift in Sources */,
 				6D9A9EFF28525EC3000F9FCD /* CellConfigurator.swift in Sources */,
 				EC9E6D19281F6A2300627C5B /* HomeCategoryCell.swift in Sources */,
+				6DB061CA2855E78700C6F65D /* ServiceModel.swift in Sources */,
 				EC897F6327ED95CF00B11A5D /* Asar.xcdatamodeld in Sources */,
 				EC042C0B284DEAF00064871C /* SectionHeaderView.swift in Sources */,
 				EC87632C281D1D2B005EFC81 /* MyOrdersCoordinator.swift in Sources */,
@@ -1319,6 +1332,7 @@
 				6DC05167285374F500B23949 /* GeneralProvisionsPage.swift in Sources */,
 				6DC0517B2854A73400B23949 /* AddAddress.swift in Sources */,
 				EC52787C28525D9700AD32E9 /* BaseTextField.swift in Sources */,
+				6DB061CC2855E7AE00C6F65D /* PoliticalConfCell.swift in Sources */,
 				ECEA16E22822946E0080F629 /* HomeRecommendationViewModel.swift in Sources */,
 				6D6B4CE2284FB00200A9A4D7 /* HomeBannerView.swift in Sources */,
 				6D9A9F1728527B4A000F9FCD /* SettingsAppViewController.swift in Sources */,
@@ -1342,6 +1356,7 @@
 				EC5278652851EB8F00AD32E9 /* SearchBar.swift in Sources */,
 				EC897F7D27ED980900B11A5D /* LaunchInstructor.swift in Sources */,
 				EC9E6D20281F741100627C5B /* HomeCategoryViewModel.swift in Sources */,
+				6DB061CE2855E7E800C6F65D /* ServiceCell.swift in Sources */,
 				EC392828281A227D00F0049A /* Strings.swift in Sources */,
 				6D9A9F0328525EFF000F9FCD /* CellAction.swift in Sources */,
 				6D0340AA2809D3E70032B916 /* OnboardingViewController.swift in Sources */,
@@ -1394,6 +1409,7 @@
 				6D9A9F0D2852615E000F9FCD /* FunctionCell.swift in Sources */,
 				ECB3C5082855375D0058C258 /* OrderFieldCell.swift in Sources */,
 				6DC0517F2854D0CB00B23949 /* MyAddressTableViewCell.swift in Sources */,
+				6DB061C82855E76400C6F65D /* PoliticalConfModel.swift in Sources */,
 				6D9A9F1328527AF1000F9FCD /* BankInformationViewController.swift in Sources */,
 				6D9A9F1C28528E61000F9FCD /* SettingCell.swift in Sources */,
 				EC87631F281D004F005EFC81 /* ProfileViewController.swift in Sources */,

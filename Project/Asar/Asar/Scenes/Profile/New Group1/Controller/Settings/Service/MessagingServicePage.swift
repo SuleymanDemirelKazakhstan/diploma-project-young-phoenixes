@@ -9,21 +9,40 @@ import UIKit
 
 class MessagingServicePage: UIViewController {
 
+    private let items: [CellConfigurator] = [
+        PoliticalConfCellConfigurator(item: PoliticalConfModel(
+            conflabel: " Сервис личных сообщений",
+            firstlabel: "Пользователю после Регистрации предоставляется доступ к услуге обмена сообщениями, которая позволяет обмениваться корреспонденцией с Администрацией и иными Пользователями. Переписка, осуществляемая посредством данного сервиса, не является личной. Пользователь, используя данный Сервис, принимает тот факт, что Администрация в любой момент имеет право осуществлять чтение отправляемых сообщений",
+            secondlabel: "Пользователь выражает свое согласие на получение личных сообщений от Администрации в любое время и любого характера, в том числе и рекламного. Администрация оставляет за собой право дополнять текст сообщений, отправляемых Пользователями, материалами рекламного характера. Администрация не осуществляет модерацию (предварительный просмотр, оценку и фильтрацию) сообщений, направляемых Пользователями друг другу. Пользователям запрещается использовать Сервис личных сообщений для: совершения действий, нарушающих законодательство Республики Казахстан, нормы международного права; загрузки, отправки, передачи или любого другого способа опубликования неразрешенной специальным образом рекламной информации, спама, схем «пирамид», «писем счастья» загрузки, отправки, передачи или любого другого способа опубликования материалов, которые являются незаконными, вредоносными, угрожающими, оскорбляющими нравственность, клеветническими, нарушающими авторские права, пропагандирующими ненависть и/или дискриминацию людей по расовому, этническому, половому, социальному признакам; загрузки, отправки, передачи или любого другого способа опубликования материалов, нарушающих права третьих лиц.",
+            thirdlabel: "  Администрация оставляет за собой право предоставить в случаях, предусмотренных законодательством Республики Казахстан, доступ к личным сообщениям Пользователя третьим лицам."))
+    ]
+    
+    private let tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.backgroundColor = .systemGray6
+        tableView.separatorStyle = .none
+        return tableView
+    }()
+
+    private lazy var tableDirector: TableDirector = {
+          let tableDirector = TableDirector(tableView: tableView, items: items)
+          return tableDirector
+      }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBlue
-        // Do any additional setup after loading the view.
+        tableDirector.tableView.reloadData()
+        view.backgroundColor = .systemGray6
+        setupLayouts()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setupLayouts(){
+        view.addSubview(tableView)
+        tableView.snp.makeConstraints {
+            $0.edges.equalTo(view.safeAreaLayoutGuide)
+        }
     }
-    */
-
+    
+ 
+    
 }

@@ -9,21 +9,40 @@ import UIKit
 
 class UsersResponsibilityPage: UIViewController {
 
+    private let items: [CellConfigurator] = [
+        PoliticalConfCellConfigurator(item: PoliticalConfModel(
+            conflabel: "Ответственность Пользователей и Посетителей Компании",
+            firstlabel: "Пользователь несет ответственность за любые свои действия и/или бездействия, как умышленные, так и неумышленные, а равно за любые действия и/или бездействие лиц, использующих его учетные данные, связанные с размещением и/или распространением информации в сети Интернет, получением посредством использования ресурсов Пользователя доступа к ресурсам третьих лиц, которые повлекли и/или могут повлечь нарушение законодательства, а также за любой ущерб, причиненный вышеуказанными действиями и/или бездействием Специалисту или третьим лицам.",
+            secondlabel: "В случае если надлежащее исполнение сторонами настоящего Соглашения невозможно в силу объективных причин (действие непреодолимой силы), которые Стороны не могли ни предвидеть, ни предотвратить (стихийные бедствия, изменения текущего законодательства Республики Казахстан, действия органов государственной власти и управления, военные действия всех видов и т. д.), ни одна из сторон не вправе требовать от другой стороны возмещения причиненных ненадлежащим исполнением или неисполнением настоящего договора убытков (включая упущенную выгоду).",
+            thirdlabel: "Стороны договорились, что все споры, вытекающие из настоящего Соглашения, подлежат рассмотрению по месту нахождения Компании. Посетители гарантируют, что обладают правами на использование материалов, размещенных ими в Интернет-ресурсе.Посетители обязуются соблюдать настоящее Соглашение. При нарушении Посетителями Соглашения Администрация оставляет за собой право временно ограничить доступ Посетителя к Интернет-ресурсу (временная блокировка), а в случае грубого и/или неоднократного нарушения Соглашения отказать в доступе к Интернет-ресурсу (постоянная блокировка)."))
+    ]
+    
+    private let tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.backgroundColor = .systemGray6
+        tableView.separatorStyle = .none
+        return tableView
+    }()
+
+    private lazy var tableDirector: TableDirector = {
+          let tableDirector = TableDirector(tableView: tableView, items: items)
+          return tableDirector
+      }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBlue
-        // Do any additional setup after loading the view.
+        tableDirector.tableView.reloadData()
+        view.backgroundColor = .systemGray6
+        setupLayouts()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setupLayouts(){
+        view.addSubview(tableView)
+        tableView.snp.makeConstraints {
+            $0.edges.equalTo(view.safeAreaLayoutGuide)
+        }
     }
-    */
-
+    
+ 
+    
 }

@@ -142,10 +142,10 @@ class ProfileViewController: UIViewController {
             else if configurator.item == "Выйти" {
                 do{
                     try Auth.auth().signOut()
+                    self?.dismiss(animated: true, completion: nil)
                 }catch{
                     print("error message")
                     }
-                self?.dismiss(animated: true, completion: nil)
             }
         }
     }
