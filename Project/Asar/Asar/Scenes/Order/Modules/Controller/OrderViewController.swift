@@ -92,29 +92,6 @@ class OrderViewController: UIViewController {
             }
         }
     }
-
-//    private func presentThemesActionSheet(subjects: [MessageSubject]) {
-//        var items: [ActionSheetItem] = subjects.map { subject in
-//            ActionSheetItem(title: subject.name) { [weak self] in
-//                guard let self = self else { return }
-//                self.store.dispatch(action: .didSelectMessageSubject(subject: subject))
-//            }
-//        }
-//        items.append(ActionSheetItem(title: L10n.dpMainSceneCancel))
-//        presentActionSheet(title: nil, message: L10n.feedbackEmptySubject, items: items)
-//    }
-//
-//    private func presentAttachmentActionSheet(items: [ActionSheetItem]) {
-//        var items: [ActionSheetItem] = items
-//        items.append(ActionSheetItem(title: L10n.dpMainSceneCancel))
-//        presentActionSheet(title: nil, message: nil, items: items)
-//    }
-//
-//    private func updateColors() {
-//        view.backgroundColor = Colors.fill2
-//        navigationController?.navigationBar.backgroundColor = Colors.fill2
-//        navigationController?.navigationBar.barTintColor = Colors.fill2
-//    }
 }
 
 private extension OrderViewController {
@@ -128,5 +105,6 @@ private extension OrderViewController {
 
 extension OrderViewController: BottomActionButtonDelegate {
     func actionButtonDidTap() {
+        
     }
 }

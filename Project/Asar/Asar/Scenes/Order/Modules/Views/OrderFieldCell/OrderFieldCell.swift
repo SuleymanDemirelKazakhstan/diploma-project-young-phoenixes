@@ -8,11 +8,13 @@
 import UIKit
 
 protocol OrderFieldCellDelegate: AnyObject {
-    func rightViewButtonDidTap(_ textField: OrderFieldCell)
+    func rightViewButtonDidTap(_ textField: OrderFieldCell, row: OrderRow)
 }
 
 class OrderFieldCell: UITableViewCell {
     weak var actionDelegate: OrderFieldCellDelegate?
+    private var row: OrderRow?
+    
     @IBOutlet private var view: UIView!
     @IBOutlet private var textField: UITextField!
     @IBOutlet private var descriptionLabel: UILabel!
@@ -30,15 +32,16 @@ class OrderFieldCell: UITableViewCell {
         setupUI()
     }
     
-    func configure(cellModel: OrderFieldCellModel) {
+    func configure(cellModel: OrderFieldCellModel, row: OrderRow) {
+        self.row = row
         textField.text = cellModel.text
+        textField.rightViewMode = cellModel.rightViewMode
+        textField.placeholder = cellModel.placeholder
         if cellModel.description != nil {
             descriptionLabel.text = cellModel.description
         } else {
             descriptionLabel.isHidden = true
         }
-        textField.rightViewMode = cellModel.rightViewMode
-        textField.placeholder = cellModel.placeholder
         if cellModel.rightViewMode == .always {
             if cellModel.rightViewText == nil {
                 rightViewButton.setImage(Asset.faqdown.image, for: .normal)
@@ -47,6 +50,7 @@ class OrderFieldCell: UITableViewCell {
                 rightViewButton.setTitle(cellModel.rightViewText, for: .normal)
                 rightViewButton.setTitleColor(UIColor(red: 1, green: 0.584, blue: 0, alpha: 1), for: .normal)
             }
+            rightViewButton.addTarget(self, action: #selector(rightViewButtonDidTap), for: .touchUpInside)
             textField.rightView = rightViewButton
         }
     }
@@ -61,6 +65,6 @@ class OrderFieldCell: UITableViewCell {
     
     @objc
     private func rightViewButtonDidTap() {
-        actionDelegate?.rightViewButtonDidTap(self)
+        actionDelegate?.rightViewButtonDidTap(self, row: row ?? .header)
     }
 }

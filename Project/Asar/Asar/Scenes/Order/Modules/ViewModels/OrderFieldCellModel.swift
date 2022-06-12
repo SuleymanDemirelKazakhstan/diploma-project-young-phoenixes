@@ -71,7 +71,7 @@ struct OrderFieldCellModel {
         }
     }
     
-    private let row: OrderRow
+    let row: OrderRow
     private let form: OrderForm
     
     init(row: OrderRow, form: OrderForm) {

@@ -7,12 +7,13 @@
 
 import UIKit
 import FirebaseAuth
+import DropDown
 
 final class OrderTableViewDelegateImpl: NSObject {
     var tableView: UITableView?
     var form: OrderForm?
-//    var formatter: PhoneNumberFormatter?
     var rows: [OrderRow] = []
+    private let dropDown = DropDown()
     private let store: OrderStore
 
     init(store: OrderStore) {
@@ -29,7 +30,8 @@ extension OrderTableViewDelegateImpl: UITableViewDelegate {
             cell.awakeFromNib()
         case .description,.category, .phoneNumber, .address, .date, .paymentWay:
             guard let cell = cell as? OrderFieldCell else { return }
-            cell.configure(cellModel: .init(row: row, form: .init(desciption: nil, phoneNumber: Auth.auth().currentUser?.phoneNumber, category: nil, paymentWay: nil, files: [], content: nil)))
+            cell.configure(cellModel: .init(row: row, form: .init(desciption: nil, phoneNumber: Auth.auth().currentUser?.phoneNumber, category: nil, paymentWay: nil, files: [], content: nil)), row: row)
+            cell.actionDelegate = self
         case .content:
             guard let cell = cell as? OrderUploadCell else { return }
             cell.awakeFromNib()
@@ -37,7 +39,7 @@ extension OrderTableViewDelegateImpl: UITableViewDelegate {
             guard let cell = cell as? OrderFieldCell else {
                 return
             }
-            cell.configure(cellModel: .init(row: .description, form: .init()))
+            cell.configure(cellModel: .init(row: .description, form: .init()), row: row)
         }
     }
 
@@ -73,13 +75,34 @@ extension OrderTableViewDelegateImpl: UITableViewDelegate {
     }
 }
 
-// MARK: - FeedbackSelectCellDelegate
+// MARK: - OrderFieldCellDelegate
 
-//extension OrderTableViewDelegateImpl: FeedbackSelectCellDelegate {
-//    func answerTypeDidSelect(_ cell: FeedbackSelectCell, answerType: OrderFormAnswerType) {
-//        store.dispatch(action: .didSelectAnswerType(type: answerType))
-//    }
-//}
+extension OrderTableViewDelegateImpl: OrderFieldCellDelegate {
+    func rightViewButtonDidTap(_ textField: OrderFieldCell, row: OrderRow) {
+        dropDown.anchorView = textField
+        dropDown.anchorView = textField
+        dropDown.bottomOffset = CGPoint(x: 16, y: textField.frame.size.height - 16)
+        dropDown.width = textField.frame.size.width - 32
+        dropDown.backgroundColor = .white
+        dropDown.show()
+        switch row {
+        case .category:
+            dropDown.dataSource = ["Электрик", "Сантехник", "Красота", "Уборка на дому", "Повар на дому"]
+            dropDown.selectionAction = { [weak self] (index: Int, item: String) in
+                guard let _ = self else { return }
+                textField.configure(cellModel: .init(row: .category, form: .init(category: item)), row: row)
+            }
+        case .paymentWay:
+            dropDown.dataSource = ["Наличный расчет", "Безналичный расчет"]
+            dropDown.selectionAction = {[weak self] (index: Int, item: String) in
+                guard let _ = self else { return }
+                textField.configure(cellModel: .init(row: .paymentWay, form: .init(paymentWay: item)), row: row)
+            }
+        default:
+            print("")
+        }
+    }
+}
 
 // MARK: - FeedbackFieldCellDelegate
 
@@ -94,12 +117,3 @@ extension OrderTableViewDelegateImpl: UITableViewDelegate {
 //        store.dispatch(action: .didChangeTextField(text: textField.text ?? "", row: rows[indexPath.row]))
 //    }
 //}
-
-// MARK: - FeedbackFilesCellDelegate
-
-//extension OrderTableViewDelegateImpl: FeedbackFilesCellDelegate {
-//    func deleteItemDidSelect(_ cell: FeedbackFilesCell, at indexPath: IndexPath) {
-//        store.dispatch(action: .didDeleteFile(index: indexPath.item))
-//    }
-//}
-

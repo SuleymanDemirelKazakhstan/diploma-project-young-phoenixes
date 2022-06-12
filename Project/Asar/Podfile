@@ -15,4 +15,5 @@ target 'Asar' do
 	pod 'MaterialActivityIndicator'
 	pod 'SnapKit', '~> 5.6.0'
 	pod 'SkyFloatingLabelTextField', '~> 3.0'
+	pod 'DropDown'
 end

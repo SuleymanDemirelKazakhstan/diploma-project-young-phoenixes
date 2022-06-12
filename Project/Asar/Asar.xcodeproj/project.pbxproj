@@ -78,7 +78,6 @@
 		EC5278742851FDF000AD32E9 /* OrderTableViewDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5278732851FDF000AD32E9 /* OrderTableViewDataSourceImpl.swift */; };
 		EC5278762851FE0600AD32E9 /* OrderTableViewDelegateImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5278752851FE0600AD32E9 /* OrderTableViewDelegateImpl.swift */; };
 		EC52787928525A3700AD32E9 /* OrderFieldCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52787828525A3700AD32E9 /* OrderFieldCellModel.swift */; };
-		EC52787C28525D9700AD32E9 /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52787B28525D9700AD32E9 /* BaseTextField.swift */; };
 		EC569CF227F637B000EBEE9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC569CF127F637B000EBEE9B /* SceneDelegate.swift */; };
 		EC5A0A4728096CDF003EC0C3 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5A0A4628096CDF003EC0C3 /* HeaderView.swift */; };
 		EC5A0A4928096CEF003EC0C3 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC5A0A4828096CEF003EC0C3 /* HeaderView.xib */; };
@@ -229,7 +228,6 @@
 		EC5278732851FDF000AD32E9 /* OrderTableViewDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewDataSourceImpl.swift; sourceTree = "<group>"; };
 		EC5278752851FE0600AD32E9 /* OrderTableViewDelegateImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewDelegateImpl.swift; sourceTree = "<group>"; };
 		EC52787828525A3700AD32E9 /* OrderFieldCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderFieldCellModel.swift; sourceTree = "<group>"; };
-		EC52787B28525D9700AD32E9 /* BaseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
 		EC569CF127F637B000EBEE9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EC5A0A4628096CDF003EC0C3 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		EC5A0A4828096CEF003EC0C3 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
@@ -1070,7 +1068,6 @@
 				EC318FF0281A44D700DA15C1 /* BottomActionButton */,
 				EC217D4F2819FCF50060C1A7 /* CheckBoxView */,
 				EC5A0A4528096CB0003EC0C3 /* HeaderView */,
-				EC52787B28525D9700AD32E9 /* BaseTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1331,7 +1328,6 @@
 				6D9A9F1128527589000F9FCD /* ProfileInformationViewController.swift in Sources */,
 				6DC05167285374F500B23949 /* GeneralProvisionsPage.swift in Sources */,
 				6DC0517B2854A73400B23949 /* AddAddress.swift in Sources */,
-				EC52787C28525D9700AD32E9 /* BaseTextField.swift in Sources */,
 				6DB061CC2855E7AE00C6F65D /* PoliticalConfCell.swift in Sources */,
 				ECEA16E22822946E0080F629 /* HomeRecommendationViewModel.swift in Sources */,
 				6D6B4CE2284FB00200A9A4D7 /* HomeBannerView.swift in Sources */,
