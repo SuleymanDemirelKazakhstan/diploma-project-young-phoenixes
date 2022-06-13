@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0C5951E819745E912FFFBE849854402D"
-               BuildableName = "Pods_Asar.framework"
-               BlueprintName = "Pods-Asar"
+               BlueprintIdentifier = "69AA1CD97ADEF721EFB8D16AF3E96CDE"
+               BuildableName = "uv.framework"
+               BlueprintName = "Libuv-gRPC"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
