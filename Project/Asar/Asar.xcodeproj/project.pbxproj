@@ -72,6 +72,7 @@
 		EC30C2BC2856894D003EBF08 /* MapStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC30C2BB2856894D003EBF08 /* MapStore.swift */; };
 		EC30C2BF28569E44003EBF08 /* MapViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC30C2BD28569E44003EBF08 /* MapViewControler.swift */; };
 		EC30C2C028569E44003EBF08 /* MapViewControler.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC30C2BE28569E44003EBF08 /* MapViewControler.xib */; };
+		EC30C2C22857857A003EBF08 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC30C2C12857857A003EBF08 /* CoreLocation.framework */; };
 		EC318FF2281A44F400DA15C1 /* BottomActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC318FF1281A44F400DA15C1 /* BottomActionButton.swift */; };
 		EC318FF4281A451400DA15C1 /* BottomActionButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC318FF3281A451400DA15C1 /* BottomActionButton.xib */; };
 		EC392827281A227D00F0049A /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC392825281A227D00F0049A /* Assets.swift */; };
@@ -225,6 +226,7 @@
 		EC30C2BB2856894D003EBF08 /* MapStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapStore.swift; sourceTree = "<group>"; };
 		EC30C2BD28569E44003EBF08 /* MapViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControler.swift; sourceTree = "<group>"; };
 		EC30C2BE28569E44003EBF08 /* MapViewControler.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewControler.xib; sourceTree = "<group>"; };
+		EC30C2C12857857A003EBF08 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		EC318FF1281A44F400DA15C1 /* BottomActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomActionButton.swift; sourceTree = "<group>"; };
 		EC318FF3281A451400DA15C1 /* BottomActionButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomActionButton.xib; sourceTree = "<group>"; };
 		EC392825281A227D00F0049A /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
@@ -318,6 +320,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC30C2C22857857A003EBF08 /* CoreLocation.framework in Frameworks */,
 				7482BD9C78AEFF91CFD52A25 /* Pods_Asar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +508,7 @@
 		996843B342D601CB312B5C4D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC30C2C12857857A003EBF08 /* CoreLocation.framework */,
 				16A6C03DFAE830D6060C700F /* Pods_Asar.framework */,
 			);
 			name = Frameworks;

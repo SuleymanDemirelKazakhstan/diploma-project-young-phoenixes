@@ -764,6 +764,7 @@ PODS:
     - Libuv-gRPC (= 0.0.10)
   - gRPC-Core/Interface (1.44.0)
   - GTMSessionFetcher/Core (2.0.0)
+  - iOSUtilitiesSource (1.0.0)
   - KeychainAccess (4.2.1)
   - leveldb-library (1.22.1)
   - Libuv-gRPC (0.0.10):
@@ -789,6 +790,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Firestore
+  - iOSUtilitiesSource (from `https://github.com/hasnine/iOSUtilitiesSource.git`)
   - KeychainAccess (= 4.2.1)
   - MaterialActivityIndicator
   - SkyFloatingLabelTextField (~> 3.0)
@@ -824,6 +826,15 @@ SPEC REPOS:
     - SnapKit
     - SwiftGen
 
+EXTERNAL SOURCES:
+  iOSUtilitiesSource:
+    :git: https://github.com/hasnine/iOSUtilitiesSource.git
+
+CHECKOUT OPTIONS:
+  iOSUtilitiesSource:
+    :commit: 0806dc2f1463355eb7b531b66e9130385be51c0e
+    :git: https://github.com/hasnine/iOSUtilitiesSource.git
+
 SPEC CHECKSUMS:
   abseil: ebe5b5529fb05d93a8bdb7951607be08b7fa71bc
   BoringSSL-GRPC: 3175b25143e648463a56daeaaa499c6cb86dad33
@@ -842,6 +853,7 @@ SPEC CHECKSUMS:
   "gRPC-C++": 9675f953ace2b3de7c506039d77be1f2e77a8db2
   gRPC-Core: 943e491cb0d45598b0b0eb9e910c88080369290b
   GTMSessionFetcher: 681175626052e03fdde7952f7e9c7a9785719506
+  iOSUtilitiesSource: bd69d00b8fdf29d8d99303410ce44e9df3c6ec20
   KeychainAccess: 9b07f665298d13c3a85881bd3171f6f49b8151c1
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   Libuv-gRPC: 55e51798e14ef436ad9bc45d12d43b77b49df378
@@ -852,6 +864,6 @@ SPEC CHECKSUMS:
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftGen: a6d22010845f08fe18fbdf3a07a8e380fd22e0ea
 
-PODFILE CHECKSUM: 4a9cc74f9e19a6be8d03d6f4e25452f2960860a9
+PODFILE CHECKSUM: e35cce3936b1bb04f9a00c93000ed76146164233
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.11.2

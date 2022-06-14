@@ -35,6 +35,9 @@
                         <constraint firstAttribute="width" constant="32" id="754-Is-sFd"/>
                         <constraint firstAttribute="height" constant="32" id="pdf-cF-riD"/>
                     </constraints>
+                    <connections>
+                        <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="Bvp-oF-p1v"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="1Nx-bn-2mV" customClass="BottomActionButton" customModule="Asar" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="718" width="414" height="128"/>

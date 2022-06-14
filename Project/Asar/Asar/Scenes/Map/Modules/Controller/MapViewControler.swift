@@ -9,7 +9,13 @@ import CoreLocation
 import UIKit
 import YandexMapsMobile
 
+protocol MapViewNavigationDelegate: AnyObject {
+    func backButtonTapped(_ viewController: MapViewControler)
+    func actionButtonTapped(_ viewController: MapViewControler)
+}
+
 class MapViewControler: UIViewController {
+    private weak var navigationDelegate: MapViewNavigationDelegate?
     private let store: MapStore
     private lazy var locationManager: CLLocationManager = {
         let manager = CLLocationManager()
@@ -38,8 +44,13 @@ class MapViewControler: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var actionButton: BottomActionButton!
     
-    init(store: MapStore) {
+    @IBAction func backButtonTapped(_ sender: UIButton) {
+        navigationDelegate?.backButtonTapped(self)
+    }
+    
+    init(store: MapStore, navigationDelegate: MapViewNavigationDelegate) {
         self.store = store
+        self.navigationDelegate = navigationDelegate
         super.init(nibName: String(describing: Self.self), bundle: Bundle(for: Self.self))
     }
     
@@ -51,16 +62,25 @@ class MapViewControler: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        locationManager.requestAlwaysAuthorization()
+        locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
     }
     
     private func setupUI() {
         tabBarController?.tabBar.isHidden = true
         Utilities.styleTextField(textField)
-        textField.placeholder = "Точный адрес"
         backButton.setImage(Asset.generalClose.image, for: .normal)
-        titleLabel.text = "Точка назначения"
         textFieldView.layer.cornerRadius = 16
+        textField.placeholder = "Точный адрес"
+        titleLabel.text = "Точка назначения"
         actionButton.configureTitle(text: "Подвердить")
+        actionButton.delegate = self
         setupMapView()
         setupUserLocationLayer()
     }
@@ -94,7 +114,16 @@ class MapViewControler: UIViewController {
 }
 
 extension MapViewControler: CLLocationManagerDelegate {
-    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.last {
+            let latitude = location.coordinate.latitude
+            let longitude = location.coordinate.longitude
+            mapView.mapWindow.map.move(
+                with: YMKCameraPosition(target: .init(latitude: latitude, longitude: longitude), zoom: 15, azimuth: 0, tilt: 0),
+                animationType: YMKAnimation(type: YMKAnimationType.smooth, duration: 2),
+                cameraCallback: nil)
+        }
+    }
 }
 
 extension MapViewControler: YMKMapInputListener {
@@ -115,5 +144,11 @@ extension MapViewControler: YMKUserLocationObjectListener {
     }
     
     func onObjectUpdated(with view: YMKUserLocationView, event: YMKObjectEvent) {
+    }
+}
+
+extension MapViewControler: BottomActionButtonDelegate {
+    func actionButtonDidTap() {
+        navigationDelegate?.actionButtonTapped(self)
     }
 }

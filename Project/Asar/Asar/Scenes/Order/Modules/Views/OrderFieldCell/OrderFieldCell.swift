@@ -16,7 +16,7 @@ class OrderFieldCell: UITableViewCell {
     private var row: OrderRow?
     
     @IBOutlet private var view: UIView!
-    @IBOutlet private var textField: UITextField!
+    @IBOutlet weak var textField: UITextField!
     @IBOutlet private var descriptionLabel: UILabel!
     
     private lazy var rightViewButton: UIButton = {

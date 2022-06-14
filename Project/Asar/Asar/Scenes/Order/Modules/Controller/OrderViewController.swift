@@ -18,10 +18,19 @@ class OrderViewController: UIViewController {
     private let store: OrderStore
     private let tableViewDataSourceImpl: OrderTableViewDataSourceImpl
     private let tableViewDelegateImpl: OrderTableViewDelegateImpl
+    private let shodowView = UIView()
     private weak var navigationDelegate: OrderNavigationDelegate?
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var actionView: BottomActionButton!
+    
+    private var datePicker: UIDatePicker = {
+        let datePicker = UIDatePicker()
+        datePicker.datePickerMode = .date
+        datePicker.preferredDatePickerStyle = .compact
+        datePicker.backgroundColor = .white
+        return datePicker
+    }()
     
     init(store: OrderStore, navigationDelegate: OrderNavigationDelegate) {
         self.store = store
@@ -40,12 +49,17 @@ class OrderViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupObservers()
+        setupDatePicker()
         store.dispatch(action: .didLoadView)
     }
 
 //    func updateRegion(region: Region) {
 //        store.dispatch(action: .didUpdateRegion(region: region))
 //    }
+    
+    func mapSelected() {
+        store.dispatch(action: .didChangeTextField(text: "Солодовникова 21", row: .address))
+    }
 
     private func setupUI() {
         self.view.backgroundColor = UIColor(red: 0.898, green: 0.898, blue: 0.898, alpha: 1)
@@ -67,7 +81,20 @@ class OrderViewController: UIViewController {
             OrderUploadCell.self
         ].forEach { tableView.register(cellClass: $0) }
     }
-
+    
+    private func setupDatePicker() {
+        datePicker.frame = CGRect(x: tableView.frame.width / 2 - 50, y: tableView.frame.height / 2, width: 80, height: 30)
+        datePicker.layer.cornerRadius = 50
+        datePicker.addTarget(self, action: #selector(datePickerValueChanged), for: .valueChanged)
+    }
+    
+    private func showDatePicker() {
+        shodowView.frame = view.frame
+        shodowView.backgroundColor = .black.withAlphaComponent(0.5)
+        view.addSubview(shodowView)
+        view.addSubview(datePicker)
+    }
+    
     private func setupObservers() {
         store.$state.observe(self) { vc, state in
             guard let state = state else { return }
@@ -87,11 +114,14 @@ class OrderViewController: UIViewController {
             case let .textFieldChanged(form):
                 vc.tableViewDataSourceImpl.form = form
                 vc.tableViewDelegateImpl.form = form
+                vc.tableView.reloadData()
             case let .contentChanged(form):
                 vc.tableViewDataSourceImpl.form = form
                 vc.tableViewDelegateImpl.form = form
             case .mapTapped:
                 vc.navigationDelegate?.mapDidTap(self)
+            case .calendarTapped:
+                self.showDatePicker()
             }
         }
     }
@@ -102,12 +132,23 @@ private extension OrderViewController {
     func closeButtonDidTap() {
         navigationDelegate?.closeDidTap(self)
     }
+    
+    @objc
+    func datePickerValueChanged() {
+        let dateFormatter: DateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        let selectedDate: String = dateFormatter.string(from: datePicker.date)
+        datePicker.endEditing(true)
+        datePicker.removeFromSuperview()
+        shodowView.removeFromSuperview()
+        store.dispatch(action: .didChangeTextField(text: selectedDate, row: .date))
+    }
 }
 
 // MARK: - BottomActionsViewDelegate
 
 extension OrderViewController: BottomActionButtonDelegate {
     func actionButtonDidTap() {
-        
+       print("")
     }
 }

@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import iOSUtilitiesSource
 
 protocol LoginViewControllerDelegate: AnyObject {
     func loginDidTap()
@@ -32,6 +33,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        hideKeyboardWhenTappedAround()
     }
     
     private func setupUI() {

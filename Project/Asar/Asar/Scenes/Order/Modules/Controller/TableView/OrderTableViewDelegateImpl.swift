@@ -30,7 +30,7 @@ extension OrderTableViewDelegateImpl: UITableViewDelegate {
             cell.awakeFromNib()
         case .description,.category, .phoneNumber, .address, .date, .paymentWay:
             guard let cell = cell as? OrderFieldCell else { return }
-            cell.configure(cellModel: .init(row: row, form: .init(desciption: nil, phoneNumber: Auth.auth().currentUser?.phoneNumber, category: nil, paymentWay: nil, files: [], content: nil)), row: row)
+            cell.configure(cellModel: .init(row: row, form: form ?? .init()), row: row)
             cell.actionDelegate = self
         case .content:
             guard let cell = cell as? OrderUploadCell else { return }
@@ -100,6 +100,8 @@ extension OrderTableViewDelegateImpl: OrderFieldCellDelegate {
             }
         case .address:
             store.dispatch(action: .didTapMap)
+        case .date:
+            store.dispatch(action: .didTapCalendar)
         default:
             print("")
         }

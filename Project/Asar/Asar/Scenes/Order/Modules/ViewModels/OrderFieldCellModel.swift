@@ -18,6 +18,10 @@ struct OrderFieldCellModel {
             return form.phoneNumber
         case .paymentWay:
             return form.paymentWay
+        case .date:
+            return form.date
+        case .address:
+            return form.address
         default:
             return nil
         }

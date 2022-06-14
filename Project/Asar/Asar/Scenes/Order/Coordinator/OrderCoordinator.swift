@@ -18,6 +18,12 @@ final class OrderCoordinator: BaseCoordinator {
         let vc = OrderViewController(store: .init(), navigationDelegate: self)
         router.setRootModule(vc)
     }
+    
+    private func runMapFlow() {
+        let coordinator = coordinatorFactory.makeMapCoordinator(router: router, delegate: self)
+        addDependency(coordinator)
+        coordinator.start()
+    }
 }
 
 extension OrderCoordinator: OrderNavigationDelegate {
@@ -30,6 +36,13 @@ extension OrderCoordinator: OrderNavigationDelegate {
     }
     
     func mapDidTap(_ viewController: OrderViewController) {
-        MapCoordinator(router: router).start()
+        runMapFlow()
+    }
+}
+
+extension OrderCoordinator: MapCoordinatorDelegate {
+    func didClose(_ coordinator: MapCoordinator) {
+        router.popToRootModule()
+        removeDependency(coordinator)
     }
 }

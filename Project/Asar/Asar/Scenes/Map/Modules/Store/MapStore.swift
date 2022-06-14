@@ -43,5 +43,6 @@ final class MapStore {
     }
     
     private func getGeoLocation() {
+        
     }
 }

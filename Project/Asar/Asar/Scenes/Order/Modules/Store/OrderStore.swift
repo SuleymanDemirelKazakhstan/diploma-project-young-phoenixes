@@ -19,6 +19,8 @@ struct OrderForm {
     var paymentWay: String?
     var files: [OrderFileType] = []
     var content: String?
+    var date: String?
+    var address: String?
 }
 
 enum OrderRow {
@@ -43,6 +45,7 @@ final class OrderStore {
         case didTapAttachment
         case didTapSend
         case didTapMap
+        case didTapCalendar
         case didDeleteFile(index: Int)
     }
 
@@ -54,6 +57,7 @@ final class OrderStore {
         case textFieldChanged(form: OrderForm)
         case contentChanged(form: OrderForm)
         case mapTapped
+        case calendarTapped
     }
     
     private var form: OrderForm = .init()
@@ -97,6 +101,8 @@ final class OrderStore {
             verifyFeedbackForm()
         case .didTapMap:
             state = .mapTapped
+        case .didTapCalendar:
+            state = .calendarTapped
         }
     }
 
@@ -124,6 +130,10 @@ final class OrderStore {
             form.desciption = text
         case .phoneNumber:
             form.phoneNumber = text
+        case .date:
+            form.date = text
+        case .address:
+            form.address = text
         default:
             break
         }

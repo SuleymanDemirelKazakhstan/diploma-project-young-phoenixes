@@ -40,9 +40,7 @@ final class CoordinatorFactory {
         return (coordinator, navigationController)
     }
     
-    func makeMapCoordinator() -> (coordinator: Coordinator, module: UIViewController) {
-        let navigationController = UINavigationController()
-        let coordinator = MapCoordinator(router: .init(navigationController: navigationController))
-        return (coordinator, navigationController)
+    func makeMapCoordinator(router: Router, delegate: MapCoordinatorDelegate) -> Coordinator {
+        return MapCoordinator(delegate: delegate, router: router)
     }
 }
