@@ -25,7 +25,7 @@ class OnboardingViewController: UIViewController{
             if currentPage == slides.count - 1{
                 nextButton.setTitle("Начать работу", for: .normal)
             }else{
-                nextButton.setTitle("Следующая", for: .normal)
+                nextButton.setTitle(L10n.onboardingNext, for: .normal)
             }
         }
 
@@ -37,14 +37,14 @@ class OnboardingViewController: UIViewController{
         collectionView.register(nibCell, forCellWithReuseIdentifier: OnboardingCollectionViewCellId)
         
         slides = [
-            OnboardingSlides(title: "Заказ в один клик",
-                             description: "Они автоматически подстраивают межбуквенное расстояние и высоту шрифта",
+            OnboardingSlides(title: L10n.onboardingAuthorization,
+                             description: L10n.onboardingAutorizationTitle,
                              image: UIImage(named: "rect")!),
-            OnboardingSlides(title: "Заказ в один клик",
-                             description: "Они автоматически подстраивают межбуквенное расстояние и высоту шрифта",
+            OnboardingSlides(title: L10n.onboardingProfile,
+                             description: L10n.onboardingProfileTitle,
                              image: UIImage(named: "rect")!),
-            OnboardingSlides(title: "Заказ в один клик",
-                             description: "Они автоматически подстраивают межбуквенное расстояние и высоту шрифта",
+            OnboardingSlides(title: L10n.onboardingLaunch,
+                             description: L10n.onboardingLaunchTitle,
                              image: UIImage(named: "rect")!)
         ]
     }

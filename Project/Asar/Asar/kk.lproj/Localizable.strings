@@ -17,6 +17,7 @@
 "onboardingLaunchTitle" = "Маман іздеуді бастаңыз немесе тапсырыстарыңызға негізделген мамандық немесе қажеттілік. ";
 "onboardingNext" = "Келесі";
 "onboardingSkip" = "Өткізу";
+"onboardingStart" = "Бастау";
 
 // Mark: - Registration Page / Login Page
 
@@ -32,10 +33,24 @@
 "registrationTitle" = "Тіркеу";
 "registrationSubtitle" = "Телефон нөміріңізді енгізіңіз, тіркеуді бастау үшін";
 "registrationPrivacyPolicy" = "Мен қызмет көрсету шарттарымен және құпиялылық саясатымен келісемін";
+"registrationEmailPlaceholder" = "Email";
+"registrationNumberPlaceholder" = "Телефон нөмірі";
+"registrationSMSConfirmTitle" = "Растау";
+"registrationSMSConfirmSubtitle" = "SMS арқылы алынған авторизация кодын енгізіңіз";
+"registrationSMSConfirmButton" = "Растау";
 "registrationPasswordPlaceholder" = "Құпия сөз";
 "registrationButton" = "Тіркелу";
 
+// Mark: - Role choose
+
+"roleTitle" = "Рөлді таңдаңыз";
+"roleSubtitle" = "Тіркеуді аяқтау үшін рөлді таңдау керек";
+"roleSearchingSpecialist" = "Маман іздеймін";
+"roleSearchingJob" = "Жұмыс іздеп жүрмін";
+
 // Mark: - Main Page
+
+"mainSearch" = "Іздеу";
 
 "mainAuthorizationOnboarding" = "Авторизация";
 "mainAutorizationTitle" = "Зызығушылықтарыңызға сәйкес тіркеліңіз. Клиент немесе маман рөлдерін таңдаңыз.";
@@ -82,7 +97,11 @@
 "orderUploadImage" = "Фотосуретті немесе бейнені жүктеп салыңыз";
 "orderMapTitle" = "Тұрақты нүкте";
 "orderCreatButton" = "Қолданба жасау";
-
+"orderServiceElectrical" = "Электрик";
+"orderServicePlumber" = "Cантехник";
+"orderServiceBeauty" = "Cұлулық";
+"orderServiceCleaning" = "Үй тазалау";
+"orderServiceCook" = "Үйде пісіру";
 
 // Mark: - Profile page
 

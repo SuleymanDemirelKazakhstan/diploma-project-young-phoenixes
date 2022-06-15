@@ -35,7 +35,7 @@ class MyAddressViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "My Addresses"
+        navigationItem.title = L10n.profileAddress
         view.backgroundColor = .systemGray6
         setupLayouts()
     }

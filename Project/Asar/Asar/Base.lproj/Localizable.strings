@@ -17,6 +17,7 @@
 "onboardingLaunchTitle" = "Пристуйпайте к поиску специалиста или заказов, исходя от вашей профессии или нужды.";
 "onboardingNext" = "Далее";
 "onboardingSkip" = "Пропустить";
+"onboardingStart" = "Начать работу";
 
 // Mark: - Registration Page / Login Page
 
@@ -32,10 +33,24 @@
 "registrationTitle" = "Регистрация";
 "registrationSubtitle" = "Введите номер телефона, чтобы начать регистрацию";
 "registrationPrivacyPolicy" = "Я соглашаюсь с условиями сервиса и политикой конфиденциальности";
+"registrationEmailPlaceholder" = "Email";
+"registrationNumberPlaceholder" = "Номер телефона";
+"registrationSMSConfirmTitle" = "Подтверждение";
+"registrationSMSConfirmSubtitle" = "Введите код авторизации, полученный по SMS";
+"registrationSMSConfirmButton" = "Подтвердить";
 "registrationPasswordPlaceholder" = "Пароль";
 "registrationButton" = "Зарегистрироваться";
 
+// Mark: - Role choose
+
+"roleTitle" = "Выберите роль";
+"roleSubtitle" = "Чтобы закончить регистрацую, нужно выбрать роль";
+"roleSearchingSpecialist" = "Ищу специалиста";
+"roleSearchingJob" = "Ищу работу";
+
 // Mark: - Main Page
+
+"mainSearch" = "Поиск";
 
 "mainAuthorizationOnboarding" = "Авторизация";
 "mainAutorizationTitle" = "Зарегистрируйтесь соответсвием вашим интересам. Выберите роли клиента или специалиста.";
@@ -82,6 +97,11 @@
 "orderUploadImage" = "Загрузить фото или видео";
 "orderMapTitle" = "Точка назначения";
 "orderCreatButton" = "Создать";
+"orderServiceElectrical" = "Электрик";
+"orderServicePlumber" = "Сантехник";
+"orderServiceBeauty" = "Красота";
+"orderServiceCleaning" = "Уборка на дому";
+"orderServiceCook" = "Повар на дому";
 
 // Mark: - Profile page
 
@@ -102,6 +122,7 @@
 "profileNumberCardPlaceholder" = "Номер карты";
 "profileExpiryDatePlaceholder" = "Срок карты";
 "profileCVVPlaceholder" = "CVV";
+
 
 // Mark: - Setting Page
 

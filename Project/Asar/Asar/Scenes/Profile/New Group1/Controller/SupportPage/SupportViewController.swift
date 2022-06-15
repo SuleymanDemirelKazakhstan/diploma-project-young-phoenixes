@@ -32,7 +32,7 @@ class SupportViewController: UIViewController {
         super.viewDidLoad()
         tableDirector.tableView.reloadData()
         view.backgroundColor = .systemGray6
-        navigationItem.title = "Service"
+        navigationItem.title = L10n.profileSupport
         setupLayouts()
         setUpActions()
         // Do any additional setup after loading the view.

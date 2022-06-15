@@ -35,6 +35,20 @@ class ProfileInformationViewController: UIViewController {
         return label
     }()
     
+    private let nameView: UIView = {
+        let innerView = UIView()
+        innerView.backgroundColor = .white
+        innerView.layer.cornerRadius = 10
+        return innerView
+    }()
+    
+    private let nameTextField: UITextField = {
+          let textField = UITextField()
+        textField.placeholder = "Name and Surname"
+        textField.backgroundColor = UIColor.white
+          return textField
+      }()
+    
     private let phonenumberView: UIView = {
         let innerView = UIView()
         innerView.backgroundColor = .white
@@ -63,7 +77,7 @@ class ProfileInformationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Profile"
+        navigationItem.title = L10n.profileUserProfile
         view.backgroundColor = .systemGray6
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             image: UIImage(named: "accept"),
@@ -71,6 +85,7 @@ class ProfileInformationViewController: UIViewController {
             target: self,
             action: #selector(didTapAccept))
         phoneNumberTextField.delegate = self
+        nameTextField.delegate = self
         let docRef = db.collection("users").document(Auth.auth().currentUser?.email ?? "")
         docRef.getDocument { snapshot, error in
             guard let data = snapshot?.data(), error == nil else {
@@ -80,10 +95,17 @@ class ProfileInformationViewController: UIViewController {
             guard let phoneNumber = data["phoneNumber"] as? String else{
                 return
             }
-            
+            guard let nameUser = data["nameUser"] as? String else{
+                return
+            }
+
             DispatchQueue.main.async {
                 self.phoneNumberTextField.text = phoneNumber
+                self.nameTextField.text = nameUser
             }
+            
+//            print(data)
+            
         }
         setup()
         updateUI()
@@ -109,9 +131,21 @@ class ProfileInformationViewController: UIViewController {
             $0.edges.equalToSuperview().inset(16)
         }
         
+        view.addSubview(nameView)
+        nameView.snp.makeConstraints {
+            $0.top.equalTo(mailView.snp.bottom).offset(16)
+            $0.left.right.equalToSuperview().inset(16)
+            $0.height.equalTo(56)
+        }
+        
+        nameView.addSubview(nameTextField)
+        nameTextField.snp.makeConstraints {
+            $0.edges.equalToSuperview().inset(16)
+        }
+        
         view.addSubview(phonenumberView)
         phonenumberView.snp.makeConstraints {
-            $0.top.equalTo(mailView.snp.bottom).offset(16)
+            $0.top.equalTo(nameView.snp.bottom).offset(16)
             $0.left.right.equalToSuperview().inset(16)
             $0.height.equalTo(56)
         }
@@ -136,6 +170,11 @@ class ProfileInformationViewController: UIViewController {
     }
     
     @objc private func didTapAccept(){
+        guard let phoneNumber = phoneNumberTextField.text, !phoneNumber.isEmpty else { return }
+        
+        guard let nameUser = nameTextField.text, !nameUser.isEmpty else { return }
+        
+        saveData(phoneNumber: phoneNumber, nameUser: nameUser)
     }
     
     private func updateUI() {
@@ -145,18 +184,20 @@ class ProfileInformationViewController: UIViewController {
 //        phoneNumberTextField.text = user.email
      }
     
-    func saveData(phoneNumber: String){
+    func saveData(phoneNumber: String, nameUser: String){
         let docRef = db.collection("users").document(Auth.auth().currentUser?.email ?? "")
-        docRef.setData(["phoneNumber": phoneNumber])
+        docRef.setData(["phoneNumber": phoneNumber, "nameUser": nameUser])
     }
 }
 
 
 extension ProfileInformationViewController: UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if let phoneNumber = textField.text, !phoneNumber.isEmpty{
-            saveData(phoneNumber: phoneNumber)
-        }
+//        guard let phoneNumber = phoneNumberTextField.text, !phoneNumber.isEmpty else { return }
+//
+//        guard let nameUser = nameTextField.text, !nameUser.isEmpty else { return }
+//
+//        saveData(phoneNumber: phoneNumber, nameUser: nameUser)
         return true
     }
 }

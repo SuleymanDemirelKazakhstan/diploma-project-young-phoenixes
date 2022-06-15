@@ -34,7 +34,7 @@ class BankInformationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Bank Information"
+        navigationItem.title = L10n.profileBankInfo
         view.backgroundColor = .systemGray6
         setupLayouts()
     }

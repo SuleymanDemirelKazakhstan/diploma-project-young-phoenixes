@@ -38,7 +38,7 @@ class SettingsAppViewController: UIViewController {
         super.viewDidLoad()
         tableDirector.tableView.reloadData()
         view.backgroundColor = .systemGray6
-        navigationItem.title = "Settings"
+        navigationItem.title = L10n.profileSettings
         setupLayouts()
         setUpActions()
     }

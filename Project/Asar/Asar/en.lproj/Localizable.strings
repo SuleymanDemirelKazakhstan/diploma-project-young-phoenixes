@@ -17,6 +17,7 @@
 "onboardingLaunchTitle" = "Start looking for a specialist or orders based on your profession or need.";
 "onboardingNext" = "Next";
 "onboardingSkip" = "Skip";
+"onboardingStart" = "Start";
 
 // Mark: - Registration Page / Login Page
 
@@ -32,10 +33,24 @@
 "registrationTitle" = "Registration";
 "registrationSubtitle" = "Enter your phone number to start registration";
 "registrationPrivacyPolicy" = "I agree to the terms of service and privacy policy";
+"registrationEmailPlaceholder" = "Email";
+"registrationNumberPlaceholder" = "Phone number";
+"registrationSMSConfirmTitle" = "Confirmation";
+"registrationSMSConfirmSubtitle" = "Enter the authorization code received by SMS";
+"registrationSMSConfirmButton" = "Confirm";
 "registrationPasswordPlaceholder" = "Password";
 "registrationButton" = "Sign Up";
 
+// Mark: - Role choose
+
+"roleTitle" = "Choose a role";
+"roleSubtitle" = "To complete the registration, you need to select a role";
+"roleSearchingSpecialist" = "Looking for a specialist";
+"roleSearchingJob" = "Looking for a job";
+
 // Mark: - Main Page
+
+"mainSearch" = "Search";
 
 "mainAuthorizationOnboarding" = "Authorization";
 "mainAutorizationTitle" = "Register according to your interests. Select the client or specialist roles.";
@@ -82,6 +97,11 @@
 "orderUploadImage" = "Upload photo or video";
 "orderMapTitle" = "Curretn point";
 "orderCreatButton" = "Order";
+"orderServiceElectrical" = "An electrician";
+"orderServicePlumber" = "Plumber";
+"orderServiceBeauty" = "The beauty";
+"orderServiceCleaning" = "House cleaning";
+"orderServiceCook" = "Cook at home";
 
 // Mark: - Profile page
 
