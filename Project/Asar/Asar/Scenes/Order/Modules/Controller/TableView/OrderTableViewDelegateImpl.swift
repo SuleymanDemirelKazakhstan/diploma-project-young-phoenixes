@@ -91,12 +91,14 @@ extension OrderTableViewDelegateImpl: OrderFieldCellDelegate {
             dropDown.selectionAction = { [weak self] (index: Int, item: String) in
                 guard let _ = self else { return }
                 textField.configure(cellModel: .init(row: .category, form: .init(category: item)), row: row)
+                self?.store.dispatch(action: .didChangeTextField(text: item, row: .category))
             }
         case .paymentWay:
             dropDown.dataSource = ["Наличный расчет", "Безналичный расчет"]
             dropDown.selectionAction = {[weak self] (index: Int, item: String) in
                 guard let _ = self else { return }
                 textField.configure(cellModel: .init(row: .paymentWay, form: .init(paymentWay: item)), row: row)
+                self?.store.dispatch(action: .didChangeTextField(text: item, row: .paymentWay))
             }
         case .address:
             store.dispatch(action: .didTapMap)
@@ -106,18 +108,8 @@ extension OrderTableViewDelegateImpl: OrderFieldCellDelegate {
             print("")
         }
     }
+    
+    func textFieldDidChange(_ textField: OrderFieldCell, text: String, row: OrderRow) {
+        store.dispatch(action: .didChangeTextField(text: text, row: row))
+    }
 }
-
-// MARK: - FeedbackFieldCellDelegate
-
-//extension OrderTableViewDelegateImpl: FeedbackFieldCellDelegate {
-//    func dropDownButtonDidTap(_ cell: FeedbackFieldCell) {
-//        guard let indexPath = tableView?.indexPath(for: cell) else { return }
-//        store.dispatch(action: .didTapDropDown(row: rows[indexPath.row]))
-//    }
-//
-//    func textFieldDidChange(_ cell: FeedbackFieldCell, textField: BaseTextField) {
-//        guard let indexPath = tableView?.indexPath(for: cell) else { return }
-//        store.dispatch(action: .didChangeTextField(text: textField.text ?? "", row: rows[indexPath.row]))
-//    }
-//}

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 enum OrderFileType {
     case image(image: UIImage)
@@ -40,26 +41,23 @@ final class OrderStore {
     enum Action {
         case didLoadView
         case didChangeTextField(text: String?, row: OrderRow)
-        case didChangeContent(text: String?)
         case didTapDropDown(row: OrderRow)
         case didTapAttachment
-        case didTapSend
         case didTapMap
         case didTapCalendar
-        case didDeleteFile(index: Int)
+        case didTapSend
     }
 
     enum State {
         case rows(rows: [OrderRow], form: OrderForm)
-        case loading
-        case loadingFinished
         case error(message: String?)
         case textFieldChanged(form: OrderForm)
-        case contentChanged(form: OrderForm)
         case mapTapped
         case calendarTapped
+        case formSended
     }
     
+    private var db = Firestore.firestore()
     private var form: OrderForm = .init()
     private var rows: [OrderRow] = []
 
@@ -76,9 +74,6 @@ final class OrderStore {
             updateList()
         case let .didChangeTextField(text, row):
             didChangeTextField(text: text?.trimmingCharacters(in: .whitespacesAndNewlines), row: row)
-        case let .didChangeContent(text):
-            form.content = text
-            state = .contentChanged(form: form)
         case let .didTapDropDown(row):
             didTapDropDown(row: row)
         case .didTapAttachment:
@@ -94,15 +89,12 @@ final class OrderStore {
 //                self?.documentPickerService.presentDocumentPicker()
 //            })
 //            state = .attachmentTapped(items: items)
-        case let .didDeleteFile(index):
-            form.files.remove(at: index)
-            updateList()
-        case .didTapSend:
-            verifyFeedbackForm()
         case .didTapMap:
             state = .mapTapped
         case .didTapCalendar:
             state = .calendarTapped
+        case .didTapSend:
+            verifyFeedbackForm()
         }
     }
 
@@ -134,6 +126,10 @@ final class OrderStore {
             form.date = text
         case .address:
             form.address = text
+        case .category:
+            form.category = text
+        case .paymentWay:
+            form.paymentWay = text
         default:
             break
         }
@@ -154,36 +150,41 @@ final class OrderStore {
     }
 
     private func verifyFeedbackForm() {
-        guard let description = form.desciption, !description.isEmpty else {
-            state = .error(message: "")
-            return
-        }
-        guard let phoneNumber = form.phoneNumber, !phoneNumber.isEmpty else {
-            state = .error(message: "")
-            return
-        }
-        state = .loading
+//        guard let description = form.desciption, !description.isEmpty else {
+//            state = .error(message: "")
+//            return
+//        }
+//        guard let category = form.category, !category.isEmpty else {
+//            state = .error(message: "")
+//            return
+//        }
+//        guard let phoneNumber = form.phoneNumber, !phoneNumber.isEmpty else {
+//            state = .error(message: "")
+//            return
+//        }
+//        guard let address = form.address, !address.isEmpty else {
+//            state = .error(message: "")
+//            return
+//        }
+//        guard let date = form.date, !date.isEmpty else {
+//            state = .error(message: "")
+//            return
+//        }
         sendForm()
     }
 
     private func sendForm() {
-        
+        db.collection("order").document("abylbek39@gmail.com").collection("orders").addDocument(data:
+                                                                                                    ["description": form.desciption ?? "",
+                                                                                                     "category": form.category ?? "",
+                                                                                                     "phoneNumber": form.phoneNumber ?? "",
+                                                                                                     "address": form.address ?? "",
+                                                                                                     "date": form.date ?? "",
+                                                                                                     "paymentWay": form.paymentWay ?? ""])
+        { err in
+            self.state = .error(message: err?.localizedDescription)
+        }
+        state = .formSended
+        state = .textFieldChanged(form: .init())
     }
 }
-//
-//extension OrderStore: DocumentPickerServiceDelegate {
-//    func didPickDocument(_ service: DocumentPickerService, data: Data) {
-//        form.files.append(.data(data: data))
-//        updateList()
-//    }
-//}
-//
-//extension OrderStore: ImagePickerServiceDelegate {
-//    func didPickImage(_ service: ImagePickerService, image: UIImage) {
-//        form.files.append(.image(image: image))
-//        updateList()
-//    }
-//
-//    func didCropImage(_ service: ImagePickerService, image: UIImage) {}
-//}
-

@@ -9,6 +9,7 @@ import UIKit
 
 protocol OrderFieldCellDelegate: AnyObject {
     func rightViewButtonDidTap(_ textField: OrderFieldCell, row: OrderRow)
+    func textFieldDidChange(_ textField: OrderFieldCell, text: String, row: OrderRow)
 }
 
 class OrderFieldCell: UITableViewCell {
@@ -56,6 +57,7 @@ class OrderFieldCell: UITableViewCell {
     }
     
     private func setupUI() {
+        textField.delegate = self
         view.layer.cornerRadius = 10
         view.backgroundColor = .white
         descriptionLabel.textColor = UIColor(red: 0.567, green: 0.567, blue: 0.567, alpha: 1)
@@ -66,5 +68,11 @@ class OrderFieldCell: UITableViewCell {
     @objc
     private func rightViewButtonDidTap() {
         actionDelegate?.rightViewButtonDidTap(self, row: row ?? .header)
+    }
+}
+
+extension OrderFieldCell: UITextFieldDelegate {
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        actionDelegate?.textFieldDidChange(self, text: textField.text ?? "", row: row ?? .header)
     }
 }

@@ -30,6 +30,8 @@ class ContainerController: UITabBarController {
 
     private func setup() {
         tabBar.isTranslucent = true
+        tabBar.itemPositioning = .centered
+        UITabBar.appearance().clipsToBounds = true
         updateColors()
     }
 

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 protocol OrderNavigationDelegate: AnyObject {
     func closeDidTap(_ viewController: OrderViewController)
@@ -67,6 +68,7 @@ class OrderViewController: UIViewController {
         actionView.delegate = self
         actionView.configureTitle(text: "Создать")
         actionView.backgroundColor = .systemBackground
+        hideKeyboardWhenTappedAround()
         setupTableView()
     }
 
@@ -105,19 +107,14 @@ class OrderViewController: UIViewController {
                 vc.tableViewDelegateImpl.rows = rows
                 vc.tableViewDelegateImpl.form = form
                 vc.tableView.reloadData()
-            case .loading:
-                break
-            case .loadingFinished:
-                break
             case let .error(message):
-                break
+                vc.presentAlert(title: message)
+            case .formSended:
+                vc.presentAlert(title: "Заявка успешно отправлена")
             case let .textFieldChanged(form):
                 vc.tableViewDataSourceImpl.form = form
                 vc.tableViewDelegateImpl.form = form
                 vc.tableView.reloadData()
-            case let .contentChanged(form):
-                vc.tableViewDataSourceImpl.form = form
-                vc.tableViewDelegateImpl.form = form
             case .mapTapped:
                 vc.navigationDelegate?.mapDidTap(self)
             case .calendarTapped:
@@ -149,6 +146,6 @@ private extension OrderViewController {
 
 extension OrderViewController: BottomActionButtonDelegate {
     func actionButtonDidTap() {
-       print("")
+        store.dispatch(action: .didTapSend)
     }
 }
