@@ -34,7 +34,6 @@ class ProfileViewController: UIViewController {
     }()
     private let imageBottomTitle: UILabel = {
         let imageBottomTitle = UILabel()
-        imageBottomTitle.text = "Bexultan Nurpeiis"
         imageBottomTitle.font = .systemFont(ofSize: 18, weight: .bold)
         return imageBottomTitle
     }()
@@ -59,6 +58,7 @@ class ProfileViewController: UIViewController {
         rightBarItem()
         setupLayouts()
         setUpActions()
+        updateUI()
     }
     
     private func setupLayouts(){
@@ -106,6 +106,11 @@ class ProfileViewController: UIViewController {
     @objc private func didTapShape(){
         
     }
+    
+    private func updateUI() {
+       guard let user = Auth.auth().currentUser else { return }
+        imageBottomTitle.text = user.email
+     }
     
 //    private func setUpActions(){
 //           tableDirector.actionProxy.on(action: .didSelect) { [weak self] (configurator: FunctionCellConfigurator, cell) in

@@ -5,42 +5,109 @@
   Created by Abylbek Khassenov on 28.04.2022.
   
 */
-
 // Mark: - Eng
 
-"welcomeTitle" = "Welcome!";
-"subtitleOfWelcomeTitle" = "Enter the data";
-"phoneNumberPlaceholder" = "Phone number";
-"passwordPlaceholder" = "Password";
-"forgotPasswordButton" = "Forgot your password?";
-"logInButton" = "Log in";
-"dontHaveAccTitle" = "Don't have an account yet?";
-"makeRegistrationButton" =  "Register";
+// Mark: - Onboarding
+
+"onboardingAuthorization" = "Authorization";
+"onboardingAutorizationTitle" = "Register according to your interests. Select the client or specialist roles.";
+"onboardingProfile" = "Profile";
+"onboardingProfileTitle" = "Fill in the required information in profile for more details service search.";
+"onboardingLaunch" = "Full launch";
+"onboardingLaunchTitle" = "Start looking for a specialist or orders based on your profession or need.";
+"onboardingNext" = "Next";
+"onboardingSkip" = "Skip";
+
+// Mark: - Registration Page / Login Page
+
+"loginTitle" = "Welcome!";
+"loginSubtitle" = "Enter the data";
+"loginMailPlaceholder" = "Email";
+"loginPasswordPlaceholder" = "Password";
+"loginForgotPasswordButton" = "Forgot your password?";
+"loginLogInButton" = "Log in";
+"loginDontHaveAccTitle" = "Don't have an account yet?";
+"loginMakeRegistrationButton" =  "Register";
+
 "registrationTitle" = "Registration";
-"subtitleOfRegistrationTitle" = "Enter your phone number to start registration";
-"privacyPolicy" = "I agree to the terms of service and privacy policy";
-"сonfirmationTitle" = "Confirmation";
-"subtitleСonfirmation" = "Enter the authorization code received by SMS to number";
-"confirm" = "Confirm";
-"confirmationAlert" = "Allow 'ASAR' to read message below and enter the code";
-"cancel" = "Decline";
-"allow" = "Allow";
-"inputPassword" = "Set password";
-"subtitleInputPassword" = "Create a password containing latin letters, capital letters, numbers and symbols punctuation! @ $ % ^ ( ) _ - +";
-"input" = "Install";
-"chooseRole" = "Choose a role";
-"subtitleChooseRole" = "To complete registration, select";
-"lookingForSpecialist" = "Looking for a specialist";
-"lookingForJob" = "Looking for a job";
-"categoriesTitle" = "Categories";
-"plumberTitle" = "Plumber";
-"householdRepairsTitle" = "Household repairs";
-"cargoTitle" = "Cargo transportation";
-"cleaningTitle" = "Cleaning";
-"beautyTitle" = "Beauty";
-"electicianTitle" = "Electrician";
-"featuredTitle" = "Featured";
-"mainTabBarTitle" = "Home";
-"orderTabBarTitle" = "Order";
-"myOrdersTabBarTitle" = "My Orders";
-"profileTabBarTitle" = "Profile";
+"registrationSubtitle" = "Enter your phone number to start registration";
+"registrationPrivacyPolicy" = "I agree to the terms of service and privacy policy";
+"registrationPasswordPlaceholder" = "Password";
+"registrationButton" = "Sign Up";
+
+// Mark: - Main Page
+
+"mainAuthorizationOnboarding" = "Authorization";
+"mainAutorizationTitle" = "Register according to your interests. Select the client or specialist roles.";
+"mainProfileOnboardinf" = "Profile";
+"mainProfileTitle" = "Fill in the required information in profile for more details service search.";
+"mainLaunchOnboarding" = "Full launch";
+"mainLaunchTitle" = "Start looking for a specialist or orders based on your profession or need.";
+
+"mainCategoriesTitle" = "Categories";
+"mainPlumberTitle" = "Plumber";
+"mainHouseholdRepairsTitle" = "Household repairs";
+"mainCargoTitle" = "Cargo transportation";
+"mainCleaningTitle" = "Cleaning";
+"mainBeautyTitle" = "Beauty";
+"mainElecticianTitle" = "Electrician";
+
+"mainFeaturedTitle" = "Featured";
+
+"mainFAQTitle" = "FAQ";
+"mainFAQfirstQuestion" = "How to use the ASAR app?";
+"mainFAQfirstAnswer" = "A button that extends to the edges of the screen may not look like a button. Respect the standard system margins on the sides of full size buttons.";
+"mainFAQsecondQuestion" = "How to choose a good specialist?";
+"mainFAQsecondAnswer" = "A button that extends to the edges of the screen may not look like a button. Respect the standard system margins on the sides of full size buttons.";
+"mainFAQthirdQuestion" = "How to order services?";
+"mainFAQthirdAnswer" = "A button that extends to the edges of the screen may not look like a button. Respect the standard system margins on the sides of full size buttons.";
+"mainFAQfourthQuestion" = "How to protect yourself from fraud?";
+"mainFAQfourthAnswer" = "A button that extends to the edges of the screen may not look like a button. Respect the standard system margins on the sides of full size buttons.";
+"mainFAQfifthQuestion" = "How to choose a good specialist?";
+"mainFAQfifthAnswer" = "A button that extends to the edges of the screen may not look like a button. Respect the standard system margins on the sides of full size buttons.";
+
+// Mark: - Creat Order
+
+"orderTitle" = "Creat Order";
+"orderDetailOrderPlaceholder" = "Order Description";
+"orderSubtitle" = "Write a detailed description of the order so that the specialist can estimate the amount of work";
+"orderCategoryPlaceholder" = "Service category";
+"orderTelephoneNumberPlaceholder" = "Phone number";
+"orderAddressPlaceholder" = "Enter the exact address";
+"orderAddressButton" = "Map";
+"orderDataPlaceholder" = "Specify the exact date";
+"orderDataButton" = "Calendar";
+"orderPaymentPlaceholder" = "Payment type";
+"orderAddInformationTitle" = "Additional Information";
+"orderUploadImage" = "Upload photo or video";
+"orderMapTitle" = "Curretn point";
+
+// Mark: - Profile page
+
+"profileUserProfile" = "Personal information";
+"profileBankInfo" = "Bank data";
+"profileAddress" = "My addresses";
+"profileSettings" = "Application setup";
+"profileSupport" = "Help and Support";
+"profileExit" = "Exit";
+"profileAddAddressButton" = "Add Address";
+"profileAdressPlaceholder" = "Address";
+"profileEntrancePlaceholder" = "Entrance";
+"profileApartmentNumberPlaceholder" = "Apartment number";
+"profileFloorPlaceholder" = "Floor number";
+"profileAddBankCard" = "Add a card";
+"profileNamePlaceholder" = "Owner's name";
+"profileNumberCardPlaceholder" = "Card number";
+"profileExpiryDatePlaceholder" = "Expiry Date";
+"profileCVVPlaceholder" = "CVV";
+
+// Mark: - Setting Page
+
+"settingLocationData" = "Location data";
+"settingPush" = "Push Notifications";
+"settingPhotoData" = "Photo Data";
+"settingAccessMessage" = "Permission to post";
+"settingPolitacalConf" = "Privacy Policy";
+"settingService" = "Service";
+"settingAboutApp" = "About App";
+

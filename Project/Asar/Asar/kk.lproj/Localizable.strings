@@ -7,40 +7,107 @@
 */
 // Mark: - Kz
 
+// Mark: - Onboarding
 
-"welcomeTitle" = "Қош келдіңіз!";
-"subtitleOfWelcomeTitle" = "Берілген деректерді енгізіңіз";
-"phoneNumberPlaceholder" = "Телефон нөмірі";
-"passwordPlaceholder" = "Құпия сөз";
-"forgotPasswordButton" = "Құпия сөзіңізді ұмыттыңыз ба?";
-"logInButton" = "Кіру";
-"dontHaveAccTitle" = "Әлі тіркелмедіңіз ба?";
-"makeRegistrationButton" =  "Тіркелу";
+"onboardingAuthorization" = "Авторизация";
+"onboardingAutorizationTitle" = "Қызығушылықтарыңызға сәйкес тіркеліңіз. Клиент немесе маман рөлдерін таңдаңыз.";
+"onboardingProfile" = "Профиль";
+"onboardingProfileTitle" = "Қажетті ақпаратты толтырыңыз толығырақ профильде қызметті іздеу. ";
+"onboardingLaunch" = "Толық іске қосу";
+"onboardingLaunchTitle" = "Маман іздеуді бастаңыз немесе тапсырыстарыңызға негізделген мамандық немесе қажеттілік. ";
+"onboardingNext" = "Келесі";
+"onboardingSkip" = "Өткізу";
+
+// Mark: - Registration Page / Login Page
+
+"loginTitle" = "Қош келдіңіз!";
+"loginSubtitle" = "Берілген деректерді енгізіңіз";
+"loginMailPlaceholder" = "Пошта";
+"loginPasswordPlaceholder" = "Құпия сөз";
+"loginForgotPasswordButton" = "Құпия сөзіңізді ұмыттыңыз ба?";
+"loginLogInButton" = "Кіру";
+"loginDontHaveAccTitle" = "Әлі тіркелмедіңіз ба?";
+"loginMakeRegistrationButton" =  "Тіркелу";
+
 "registrationTitle" = "Тіркеу";
-"subtitleOfRegistrationTitle" = "Телефон нөміріңізді енгізіңіз, тіркеуді бастау үшін";
-"privacyPolicy" = "Мен қызмет көрсету шарттарымен және құпиялылық саясатымен келісемін";
-"сonfirmationTitle" = "Растау";
-"subtitleСonfirmation" = "Алынған авторизация кодын SMS арқылы енгізілген нөмір ";
-"confirm" = "Растау";
-"confirmationAlert" = "'ASAR' сөзін оқуға рұқсат етіңіз төмендегі хабарлама және кодты енгізіңіз";
-"cancel" = "Қабылдамау";
-"allow" = "Рұқсат ету";
-"inputPassword" = "Құпия сөзді орнату";
-"subtitleInputPassword" = "Латын тілінен тұратын құпия сөз жасаңыз әріптер, бас әріптер, сандар және белгілер тыныс белгілері! @ $ % ^ ( ) _ - +";
-"input" = "Орнату";
-"chooseRole" = "Рөлді таңдаңыз";
-"subtitleChooseRole" = "Тіркеуді аяқтау үшін таңдаңыз";
-"lookingForSpecialist" = "Маман іздеймін";
-"lookingForJob" = "Жұмыс іздеп жүрмін";
-"categoriesTitle" = "Санаттар";
-"plumberTitle" = "Сантехник";
-"householdRepairsTitle" = "Тұрмыстық жөндеу";
-"cargoTitle" = "Жүк тасымалдау";
-"cleaningTitle" = "Тазалау";
-"beautyTitle" = "Сұлулық";
-"electicianTitle" = "Электрик";
-"featuredTitle" = "Таңдаулы";
-"mainTabBarTitle" = "Басты бет";
-"orderTabBarTitle" = "Тапсырыс";
-"myOrdersTabBarTitle" = "Менің тапсырыстарым";
-"profileTabBarTitle" = "Профиль";
+"registrationSubtitle" = "Телефон нөміріңізді енгізіңіз, тіркеуді бастау үшін";
+"registrationPrivacyPolicy" = "Мен қызмет көрсету шарттарымен және құпиялылық саясатымен келісемін";
+"registrationPasswordPlaceholder" = "Құпия сөз";
+"registrationButton" = "Тіркелу";
+
+// Mark: - Main Page
+
+"mainAuthorizationOnboarding" = "Авторизация";
+"mainAutorizationTitle" = "Зызығушылықтарыңызға сәйкес тіркеліңіз. Клиент немесе маман рөлдерін таңдаңыз.";
+"mainProfileOnboardinf" = "Профиль";
+"mainProfileTitle" = "Қажетті ақпаратты толтырыңыз толығырақ профильде қызметті іздеу.";
+"mainLaunchOnboarding" = "Толық іске қосу";
+"mainLaunchTitle" = "Маман іздеуді бастаңыз немесе тапсырыстарыңызға негізделген мамандық немесе қажеттілік.";
+
+"mainCategoriesTitle" = "Санаттар";
+"mainPlumberTitle" = "Сантехник";
+"mainHouseholdRepairsTitle" = "Тұрмыстық жөндеу";
+"mainCargoTitle" = "Жүк тасымалдау";
+"mainCleaningTitle" = "Тазалау";
+"mainBeautyTitle" = "Сұлулық";
+"mainElecticianTitle" = "Электрик";
+
+"mainFeaturedTitle" = "Таңдаулы";
+
+"mainFAQTitle" = "Жиі қойылатын сұрақтар";
+"mainFAQfirstQuestion" = "ASAR қолданбасын қалай пайдалануға болады?";
+"mainFAQfirstAnswer" = "Экранның шетіне дейін созылатын түйме түймеге ұқсамауы мүмкін. Толық өлшемді түймелердің бүйірлеріндегі стандартты жүйе жиектерін сақтаңыз.";
+"mainFAQsecondQuestion" = "Жақсы маманды қалай таңдауға болады?";
+"mainFAQsecondAnswer" = "Экранның шетіне дейін созылатын түйме түймеге ұқсамауы мүмкін. Толық өлшемді түймелердің бүйірлеріндегі стандартты жүйе жиектерін сақтаңыз.";
+"mainFAQthirdQuestion" = "Қызметтерге қалай тапсырыс беруге болады?";
+"mainFAQthirdAnswer" = "Экранның шетіне дейін созылатын түйме түймеге ұқсамауы мүмкін. Толық өлшемді түймелердің бүйірлеріндегі стандартты жүйе жиектерін сақтаңыз.";
+"mainFAQfourthQuestion" = "Өзіңізді алаяқтықтан қалай қорғауға болады?";
+"mainFAQfourthAnswer" = "Экранның шетіне дейін созылатын түйме түймеге ұқсамауы мүмкін. Толық өлшемді түймелердің бүйірлеріндегі стандартты жүйе жиектерін сақтаңыз.";
+"mainFAQfifthQuestion" = "Жақсы маманды қалай таңдауға болады?";
+"mainFAQfifthAnswer" = "Экранның шетіне дейін созылатын түйме түймеге ұқсамауы мүмкін. Толық өлшемді түймелердің бүйірлеріндегі стандартты жүйе жиектерін сақтаңыз.";
+
+// Mark: - Creat Order
+
+"orderTitle" = "Қолданба жасау";
+"orderDetailOrderPlaceholder" = "Тапсырыс сипаттамасы";
+"orderSubtitle" = "Маман жұмыс көлемін бағалай алатындай етіп тапсырыстың толық сипаттамасын жазыңыз";
+"orderCategoryPlaceholder" = "Қызмет санаты";
+"orderTelephoneNumberPlaceholder" = "Телефон нөмірі";
+"orderAddressPlaceholder" = "Нақты мекенжайды енгізіңіз";
+"orderAddressButton" = "Карта";
+"orderDataPlaceholder" = "Нақты күнді көрсетіңіз";
+"orderDataButton" = "Күнтізбе";
+"orderPaymentPlaceholder" = "Төлем түрі";
+"orderAddInformationTitle" = "қосымша ақпарат";
+"orderUploadImage" = "Фотосуретті немесе бейнені жүктеп салыңыз";
+"orderMapTitle" = "Тұрақты нүкте";
+
+// Mark: - Profile page
+
+"profileUserProfile" = "Жеке ақпарат";
+"profileBankInfo" = "Банк деректері";
+"profileAddress" = "Менің мекенжайларым";
+"profileSettings" = "Қолданбаны орнату";
+"profileSupport" = "Анықтама және қолдау";
+"profileExit" = "Шығу";
+"profileAddAddressButton" = "Мекен жай қосу";
+"profileAdressPlaceholder" = "Мекенжай";
+"profileEntrancePlaceholder" = "Кіру";
+"profileApartmentNumberPlaceholder" = "Пәтер нөмірі";
+"profileFloorPlaceholder" = "Қабат нөмірі";
+"profileAddBankCard" = "Картаны қосыңыз";
+"profileNamePlaceholder" = "Иесінің аты";
+"profileNumberCardPlaceholder" = "Карта нөмірі";
+"profileExpiryDatePlaceholder" = "Карта мерзімі";
+"profileCVVPlaceholder" = "CVV";
+
+// Mark: - Setting Page
+
+"settingLocationData" = "Орын деректері";
+"settingPush" = "Push хабарландырулары";
+"settingPhotoData" = "Фото деректер";
+"settingAccessMessage" = "Жариялауға рұқсат";
+"settingPolitacalConf" = "Құпиялылық саясаты";
+"settingService" = "Қызмет көрсету шарттары";
+"settingAboutApp" = "Қолданба туралы";
+
