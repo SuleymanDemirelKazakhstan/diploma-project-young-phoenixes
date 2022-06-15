@@ -60,6 +60,9 @@ class SettingsAppViewController: UIViewController {
             else if configurator.item == "Условия сервиса" {
                 self?.navigationController?.pushViewController(Service(), animated: true)
             }
+            else if configurator.item == "О приложении" {
+                self?.navigationController?.pushViewController(AboutUs(), animated: true)
+            }
         }
     }
 }

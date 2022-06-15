@@ -14,7 +14,7 @@ final class CoordinatorFactory {
     
     func makeHomeMainCoordinator() -> (coordinator: Coordinator, module: UIViewController) {
         let navigationController = UINavigationController()
-        navigationController.tabBarItem.title = "HomeMain"
+//        navigationController.tabBarItem.title = "HomeMain"
         navigationController.tabBarItem.image = Asset.home.image
         let coordinator = HomeMainCoordinator(router: .init(navigationController: navigationController))
         return (coordinator, navigationController)
@@ -22,7 +22,7 @@ final class CoordinatorFactory {
         
     func makeOrderCoordinator() -> (coordinator: Coordinator, module: UIViewController) {
         let navigationController = UINavigationController()
-        navigationController.tabBarItem.title = "Order"
+//        navigationController.tabBarItem.title = "Order"
         navigationController.tabBarItem.image = Asset.plus.image
         let coordinator = OrderCoordinator(router: .init(navigationController: navigationController))
         return (coordinator, navigationController)
@@ -30,7 +30,7 @@ final class CoordinatorFactory {
     
     func makeMyOrdersCoordinator() -> (coordinator: Coordinator, module: UIViewController) {
         let navigationController = UINavigationController()
-        navigationController.tabBarItem.title = "MyOrders"
+//        navigationController.tabBarItem.title = "MyOrders"
         navigationController.tabBarItem.image = Asset.note.image
         let coordinator = MyOrdersCoordinator(router: .init(navigationController: navigationController))
         return (coordinator, navigationController)
@@ -38,7 +38,7 @@ final class CoordinatorFactory {
     
     func makeProfileCoordinator() -> (coordinator: Coordinator, module: UIViewController) {
         let navigationController = UINavigationController()
-        navigationController.tabBarItem.title = "Profile"
+//        navigationController.tabBarItem.title = "Profile"
         navigationController.tabBarItem.image = Asset.profile.image
         let coordinator = ProfileCoordinator(router: .init(navigationController: navigationController))
         return (coordinator, navigationController)
