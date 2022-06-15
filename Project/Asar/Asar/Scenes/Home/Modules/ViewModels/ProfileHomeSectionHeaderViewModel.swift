@@ -11,11 +11,11 @@ struct ProfileHomeSectionHeaderViewModel: ActionSectionHeaderViewModelProtocol {
     var title: String? {
         switch section.type {
         case .category:
-            return "Категории"
+            return L10n.mainCategoriesTitle
         case .faq:
-            return "Часто задаваемые вопросы"
+            return L10n.mainFAQTitle
         case .recommendation:
-            return "Рекоммендуемые"
+            return L10n.mainFeaturedTitle
         default:
             return nil
         }

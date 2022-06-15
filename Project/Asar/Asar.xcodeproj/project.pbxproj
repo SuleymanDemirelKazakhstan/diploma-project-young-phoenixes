@@ -198,6 +198,7 @@
 		6D9A9F1B28528E60000F9FCD /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		6D9A9F23285290D9000F9FCD /* PoliticalConf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticalConf.swift; sourceTree = "<group>"; };
 		6D9A9F25285290F4000F9FCD /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		6D9F3FB7285A47160023BF75 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6DB061C72855E76400C6F65D /* PoliticalConfModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticalConfModel.swift; sourceTree = "<group>"; };
 		6DB061C92855E78700C6F65D /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
 		6DB061CB2855E7AD00C6F65D /* PoliticalConfCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticalConfCell.swift; sourceTree = "<group>"; };
@@ -1592,6 +1593,7 @@
 				EC39282A281A248900F0049A /* Base */,
 				EC39282D281A254800F0049A /* kk */,
 				EC39282F281A259300F0049A /* en */,
+				6D9F3FB7285A47160023BF75 /* ru */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

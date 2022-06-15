@@ -39,8 +39,8 @@ class RegisterConfirmViewController: UIViewController {
     }
     
     private func setupUI() {
-        headerView.configureTexts(titleText: L10n.сonfirmationTitle, subtitleText: L10n.subtitleСonfirmation)
-        actionButton.configureTitle(text: L10n.confirm)
+        headerView.configureTexts(titleText: L10n.registrationTitle, subtitleText: L10n.registrationSubtitle)
+        actionButton.configureTitle(text: L10n.loginMakeRegistrationButton)
         
     }
 }

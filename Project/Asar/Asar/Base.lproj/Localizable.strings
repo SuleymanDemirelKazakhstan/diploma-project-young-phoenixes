@@ -81,9 +81,11 @@
 "orderAddInformationTitle" = "Дополнительная информация";
 "orderUploadImage" = "Загрузить фото или видео";
 "orderMapTitle" = "Точка назначения";
+"orderCreatButton" = "Создать";
 
 // Mark: - Profile page
 
+"profile" = "Профиль";
 "profileUserProfile" = "Личная информация";
 "profileBankInfo" = "Банковские данные";
 "profileAddress" = "Мои адреса";

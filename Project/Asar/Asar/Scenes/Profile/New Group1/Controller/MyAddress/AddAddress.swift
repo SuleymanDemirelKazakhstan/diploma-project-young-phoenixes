@@ -26,7 +26,7 @@ class AddAddress: UIViewController {
     
     private let currentAddress: UITextField = {
           let textField = UITextField()
-            textField.placeholder = "Адрес"
+            textField.placeholder = L10n.profileAdressPlaceholder
             textField.backgroundColor = UIColor.white
           return textField
       }()
@@ -40,7 +40,7 @@ class AddAddress: UIViewController {
     
     private let currentEntrance: UITextField = {
           let textField = UITextField()
-            textField.placeholder = "Подъезд"
+        textField.placeholder = L10n.profileEntrancePlaceholder
             textField.backgroundColor = UIColor.white
           return textField
       }()
@@ -55,7 +55,7 @@ class AddAddress: UIViewController {
     
     private let currentFlat: UITextField = {
           let textField = UITextField()
-            textField.placeholder = "Номер квартиры"
+        textField.placeholder = L10n.profileApartmentNumberPlaceholder
             textField.backgroundColor = UIColor.white
           return textField
       }()
@@ -69,7 +69,7 @@ class AddAddress: UIViewController {
     
     private let currentFloor: UITextField = {
           let textField = UITextField()
-            textField.placeholder = "Номер этажа"
+        textField.placeholder = L10n.profileFloorPlaceholder
             textField.backgroundColor = UIColor.white
           return textField
       }()
@@ -83,7 +83,7 @@ class AddAddress: UIViewController {
     
     private let addBtn: UIButton = {
         let button = UIButton()
-        button.setTitle("Добавить адрес", for: .normal)
+        button.setTitle(L10n.profileAddAddressButton, for: .normal)
         button.titleLabel?.textColor = .white
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
         button.backgroundColor = .systemBlue

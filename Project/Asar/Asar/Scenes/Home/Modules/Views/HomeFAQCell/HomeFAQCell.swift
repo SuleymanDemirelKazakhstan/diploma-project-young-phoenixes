@@ -10,11 +10,11 @@ import UIKit
 class HomeFAQCell: UITableViewCell {
     @IBOutlet weak var stackView: UIStackView!
     private var homeFAQ: [HomeFAQCellModel] = [
-        .init(title: "Как выбрать хорошего специалиста?", text: ""),
-        .init(title: "Как заказать услуги?", text: ""),
-        .init(title: "Как предостеречь себя от мошенничества?", text: ""),
-        .init(title: "Как предостеречь себя от мошенничества?", text: ""),
-        .init(title: "Как выбрать хорошего специалиста?", text: "")]
+        .init(title: L10n.mainFAQfirstQuestion, text: L10n.mainFAQfirstAnswer),
+        .init(title: L10n.mainFAQsecondQuestion, text: L10n.mainFAQsecondAnswer),
+        .init(title: L10n.mainFAQthirdQuestion, text: L10n.mainFAQthirdAnswer),
+        .init(title: L10n.mainFAQfourthQuestion, text: L10n.mainFAQfourthAnswer),
+        .init(title: L10n.mainFAQfifthQuestion, text: L10n.mainFAQfifthAnswer)]
     
     override func awakeFromNib() {
         super.awakeFromNib()

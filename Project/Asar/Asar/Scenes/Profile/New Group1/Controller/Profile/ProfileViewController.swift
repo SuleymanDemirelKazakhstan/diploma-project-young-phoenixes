@@ -12,12 +12,12 @@ import Firebase
 class ProfileViewController: UIViewController {
     
     private let items: [CellConfigurator] = [
-       FunctionCellConfigurator(item: "Личная информация"),
-       FunctionCellConfigurator(item: "Банковские данные"),
-       FunctionCellConfigurator(item: "Мои адреса"),
-       FunctionCellConfigurator(item: "Настройка приложения"),
-       FunctionCellConfigurator(item: "Помощь и поддержка"),
-       FunctionCellConfigurator(item: "Выйти")
+        FunctionCellConfigurator(item: L10n.profileUserProfile),
+        FunctionCellConfigurator(item: L10n.profileBankInfo),
+        FunctionCellConfigurator(item: L10n.profileAddress),
+        FunctionCellConfigurator(item: L10n.profileSettings),
+        FunctionCellConfigurator(item: L10n.profileSupport),
+        FunctionCellConfigurator(item: L10n.profileExit)
     ]
     
     private let topView: UIView = {
@@ -129,22 +129,22 @@ class ProfileViewController: UIViewController {
         tableDirector.actionProxy.on(action: .didSelect) { [weak self] (configurator: FunctionCellConfigurator, cell) in
             guard let strongSelf = self else { return }
             print(configurator.item)
-            if configurator.item == "Личная информация" {
+            if configurator.item == L10n.profileUserProfile {
                 self?.navigationController?.pushViewController(ProfileInformationViewController(), animated: true)
             }
-            else if configurator.item == "Банковские данные" {
+            else if configurator.item == L10n.profileBankInfo {
                 self?.navigationController?.pushViewController(BankInformationViewController(), animated: true)
             }
-            else if configurator.item == "Мои адреса" {
+            else if configurator.item == L10n.profileAddress {
                 self?.navigationController?.pushViewController(MyAddressViewController(), animated: true)
             }
-            else if configurator.item == "Настройка приложения" {
+            else if configurator.item == L10n.profileSettings {
                 self?.navigationController?.pushViewController(SettingsAppViewController(), animated: true)
             }
-            else if configurator.item == "Помощь и поддержка" {
+            else if configurator.item == L10n.profileSupport {
                 self?.navigationController?.pushViewController(SupportViewController(), animated: true)
             }
-            else if configurator.item == "Выйти" {
+            else if configurator.item == L10n.profileExit {
                 do{
                     try Auth.auth().signOut()
                     self?.dismiss(animated: true, completion: nil)

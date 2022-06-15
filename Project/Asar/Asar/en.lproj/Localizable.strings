@@ -81,8 +81,11 @@
 "orderAddInformationTitle" = "Additional Information";
 "orderUploadImage" = "Upload photo or video";
 "orderMapTitle" = "Curretn point";
+"orderCreatButton" = "Order";
 
 // Mark: - Profile page
+
+"profile" = "Profile";
 
 "profileUserProfile" = "Personal information";
 "profileBankInfo" = "Bank data";

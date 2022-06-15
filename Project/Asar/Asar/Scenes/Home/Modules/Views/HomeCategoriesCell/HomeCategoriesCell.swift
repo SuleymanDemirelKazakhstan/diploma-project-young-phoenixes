@@ -12,12 +12,13 @@ protocol HomeCategoriesCellDelegate: AnyObject {
 }
 
 class HomeCategoriesCell: UITableViewCell {
-    private var homeCategories: [HomeCategoryViewModel] = [.init(name: "Сантехник", image: Asset.wrench.image),
-                                                           .init(name: "Бытовой ремонт", image: Asset.hammer.image),
-                                                           .init(name: "Грузоперевозка", image: Asset.truck.image),
-                                                           .init(name: "Уборка", image: Asset.wrench.image),
-                                                           .init(name: "Красота", image: Asset.crown.image),
-                                                           .init(name: "Электрик", image: Asset.toolbox.image)]
+    private var homeCategories: [HomeCategoryViewModel] = [
+        .init(name: L10n.mainPlumberTitle, image: Asset.wrench.image),
+        .init(name: L10n.mainHouseholdRepairsTitle, image: Asset.hammer.image),
+        .init(name: L10n.mainCargoTitle, image: Asset.truck.image),
+        .init(name: L10n.mainCleaningTitle, image: Asset.wrench.image),
+        .init(name: L10n.mainBeautyTitle, image: Asset.crown.image),
+        .init(name: L10n.mainElecticianTitle, image: Asset.toolbox.image)]
     weak var delegate: HomeCategoriesCellDelegate?
     
     @IBOutlet weak var collectionView: UICollectionView!

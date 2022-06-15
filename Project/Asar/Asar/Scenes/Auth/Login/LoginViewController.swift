@@ -37,11 +37,13 @@ class LoginViewController: UIViewController {
     }
     
     private func setupUI() {
-        headerView.configureTexts(titleText: L10n.welcomeTitle, subtitleText: "")
+        headerView.configureTexts(titleText: L10n.loginTitle, subtitleText: L10n.loginSubtitle)
         actionView.delegate = self
-        actionView.configureTitle(text: "Войти")
+        actionView.configureTitle(text: L10n.loginLogInButton)
         Utilities.styleTextField(emailTextField)
+        emailTextField.placeholder = L10n.loginMailPlaceholder
         Utilities.styleTextField(passwordTextField)
+        passwordTextField.placeholder = L10n.loginPasswordPlaceholder
         passwordTextField.isSecureTextEntry = true
     }
     

@@ -30,7 +30,7 @@ struct OrderFieldCellModel {
     var description: String? {
         switch row {
         case .description:
-            return "Напишите подробное описание заказа, чтобы специалист оценил объем работы"
+            return L10n.orderSubtitle
         default:
             return nil
         }
@@ -48,9 +48,9 @@ struct OrderFieldCellModel {
     var rightViewText: String? {
         switch row {
         case .address:
-            return "Карта"
+            return L10n.orderAddressButton
         case .date:
-            return "Календарь"
+            return L10n.orderDataButton
         default:
             return nil
         }
@@ -59,17 +59,17 @@ struct OrderFieldCellModel {
     var placeholder: String? {
         switch row {
         case .description:
-            return "Описание заказа"
+            return L10n.orderDetailOrderPlaceholder
         case .category:
-            return "Категория услуг"
+            return L10n.orderCategoryPlaceholder
         case .phoneNumber:
-            return "Номер телефона"
+            return L10n.orderTelephoneNumberPlaceholder
         case .address:
-            return "Укажите точный адрес"
+            return L10n.orderAddressPlaceholder
         case .date:
-            return "Укажите точную дату"
+            return L10n.orderDataPlaceholder
         case .paymentWay:
-            return "Вид оплаты"
+            return L10n.orderPaymentPlaceholder
         default:
             return nil
         }

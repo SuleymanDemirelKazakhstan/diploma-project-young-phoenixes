@@ -39,10 +39,10 @@ class RegisterViewController: UIViewController {
     }
     
     private func setupUI() {
-        headerView.configureTexts(titleText: L10n.registrationTitle, subtitleText: L10n.subtitleOfRegistrationTitle)
+        headerView.configureTexts(titleText: L10n.registrationTitle, subtitleText: L10n.registrationSubtitle)
         setupCheckBoxView()
         configureTextFields()
-        actionButton.configureTitle(text: L10n.makeRegistrationButton)
+        actionButton.configureTitle(text: L10n.registrationButton)
         passwordTextField.isSecureTextEntry = true
 
     }
@@ -55,7 +55,7 @@ class RegisterViewController: UIViewController {
     
     private func setupCheckBoxView() {
         let view = CheckBoxView.loadFromNib()
-        view.setText(L10n.privacyPolicy, part: "условиями сервиса и политикой конфидициальности")
+        view.setText(L10n.registrationPrivacyPolicy, part: "условиями сервиса и политикой конфидициальности")
         stackView.addArrangedSubview(view)
     }
     

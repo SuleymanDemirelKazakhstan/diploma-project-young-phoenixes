@@ -81,9 +81,12 @@
 "orderAddInformationTitle" = "қосымша ақпарат";
 "orderUploadImage" = "Фотосуретті немесе бейнені жүктеп салыңыз";
 "orderMapTitle" = "Тұрақты нүкте";
+"orderCreatButton" = "Қолданба жасау";
+
 
 // Mark: - Profile page
 
+"profile" = "Профиль";
 "profileUserProfile" = "Жеке ақпарат";
 "profileBankInfo" = "Банк деректері";
 "profileAddress" = "Менің мекенжайларым";

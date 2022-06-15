@@ -11,13 +11,13 @@ import SnapKit
 class SettingsAppViewController: UIViewController {
 
     private let items: [CellConfigurator] = [
-        SettingCellConfigurator(item: "Данные о местоположении"),
-        SettingCellConfigurator(item: "Push-уведомления"),
-        SettingCellConfigurator(item: "Данные о фотографии"),
-        SettingCellConfigurator(item: "Разрешение к сообщению"),
-        FunctionCellConfigurator(item: "Политика конфиденциальности"),
-        FunctionCellConfigurator(item: "Условия сервиса"),
-        FunctionCellConfigurator(item: "О приложении")
+        SettingCellConfigurator(item: L10n.settingLocationData),
+        SettingCellConfigurator(item: L10n.settingPush),
+        SettingCellConfigurator(item: L10n.settingPhotoData),
+        SettingCellConfigurator(item: L10n.settingAccessMessage),
+        FunctionCellConfigurator(item: L10n.settingPolitacalConf),
+        FunctionCellConfigurator(item: L10n.settingService),
+        FunctionCellConfigurator(item: L10n.settingAboutApp)
     ]
     
     private let tableView: UITableView = {
@@ -54,13 +54,13 @@ class SettingsAppViewController: UIViewController {
         tableDirector.actionProxy.on(action: .didSelect) { [weak self] (configurator: FunctionCellConfigurator, cell) in
             guard let strongSelf = self else { return }
             print(configurator.item)
-            if configurator.item == "Политика конфиденциальности" {
+            if configurator.item == L10n.settingPolitacalConf {
                 self?.navigationController?.pushViewController(PoliticalConf(), animated: true)
             }
-            else if configurator.item == "Условия сервиса" {
+            else if configurator.item == L10n.settingService {
                 self?.navigationController?.pushViewController(Service(), animated: true)
             }
-            else if configurator.item == "О приложении" {
+            else if configurator.item == L10n.settingAboutApp {
                 self?.navigationController?.pushViewController(AboutUs(), animated: true)
             }
         }

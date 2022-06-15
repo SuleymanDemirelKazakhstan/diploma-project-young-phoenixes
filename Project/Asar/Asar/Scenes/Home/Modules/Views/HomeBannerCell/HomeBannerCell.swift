@@ -12,16 +12,16 @@ class HomeBannerCell: UITableViewCell {
     @IBOutlet weak var collectionView: UICollectionView!
 
     private var homeBanner: [HomeBannerModel] = [
-        .init(title: "Авторизация",
-              description: "Зарегистрируйтесь соответсвием вашим интересам. Выберите роли клиента или специалиста.",
+        .init(title: L10n.mainAuthorizationOnboarding,
+              description: L10n.mainAutorizationTitle,
               image: UIImage(named: "autorization")!,
               backgroundColor: .init(red: 0.816, green: 0.925, blue: 0.859, alpha: 1)),
-        .init(title: "Полный запуск",
-              description: "Пристуйпайте к поиску специалиста или заказов, исходя от вашей профессии или нужды.",
+        .init(title: L10n.mainLaunchOnboarding,
+              description: L10n.mainLaunchTitle,
               image: UIImage(named: "launch")!,
               backgroundColor: .init(red: 0.78, green: 0.902, blue: 0.929, alpha: 1)),
-        .init(title: "Профиль",
-              description: "Дополняйте нужную информацию в профиле для более уточненного поиска услуг.",
+        .init(title: L10n.mainProfileOnboardinf,
+              description: L10n.mainProfileTitle,
               image: UIImage(named: "profile")!,
               backgroundColor: UIColor(red: 0.946, green: 0.953, blue: 0.855, alpha: 1))
     ]

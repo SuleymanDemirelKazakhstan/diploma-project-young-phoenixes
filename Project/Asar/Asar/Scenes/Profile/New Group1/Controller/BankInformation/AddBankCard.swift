@@ -25,7 +25,7 @@ class AddBankCard: UIViewController {
     
     private let nameCard: UITextField = {
           let textField = UITextField()
-            textField.placeholder = "Имя владельца"
+        textField.placeholder = L10n.profileNamePlaceholder
             textField.backgroundColor = UIColor.white
           return textField
       }()
@@ -39,7 +39,7 @@ class AddBankCard: UIViewController {
     
     private let numberCard: UITextField = {
           let textField = UITextField()
-            textField.placeholder = "Номер карты"
+        textField.placeholder = L10n.profileNumberCardPlaceholder
             textField.backgroundColor = UIColor.white
           return textField
       }()
@@ -54,7 +54,7 @@ class AddBankCard: UIViewController {
     
     private let expiryDate: UITextField = {
           let textField = UITextField()
-            textField.placeholder = "Срок карты"
+        textField.placeholder = L10n.profileExpiryDatePlaceholder
             textField.backgroundColor = UIColor.white
           return textField
       }()
@@ -68,7 +68,7 @@ class AddBankCard: UIViewController {
     
     private let cvvNumber: UITextField = {
           let textField = UITextField()
-            textField.placeholder = "CVV"
+        textField.placeholder = L10n.profileCVVPlaceholder
             textField.isSecureTextEntry = true
             textField.backgroundColor = UIColor.white
           return textField
@@ -83,7 +83,7 @@ class AddBankCard: UIViewController {
     
     private let addBtn: UIButton = {
         let button = UIButton()
-        button.setTitle("Добавить адрес", for: .normal)
+        button.setTitle(L10n.profileAddBankCard, for: .normal)
         button.titleLabel?.textColor = .white
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
         button.backgroundColor = .systemBlue

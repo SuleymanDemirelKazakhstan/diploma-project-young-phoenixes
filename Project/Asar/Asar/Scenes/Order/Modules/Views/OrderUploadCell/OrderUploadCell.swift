@@ -20,10 +20,10 @@ class OrderUploadCell: UITableViewCell {
     
     private func setupUI() {
         view.layer.cornerRadius = 10
-        titleLabel.text = "Дополнительная информация"
+        titleLabel.text = L10n.orderAddInformationTitle
         iconButton.setImage(Asset.upload.image, for: .normal)
         iconButton.tintColor = UIColor(red: 0.141, green: 0.431, blue: 0.914, alpha: 1)
-        textButton.setTitle("Загрузить фото или видео", for: .normal)
+        textButton.setTitle(L10n.orderUploadImage, for: .normal)
         textButton.setTitleColor(UIColor(red: 0.141, green: 0.431, blue: 0.914, alpha: 1), for: .normal)
     }
 }

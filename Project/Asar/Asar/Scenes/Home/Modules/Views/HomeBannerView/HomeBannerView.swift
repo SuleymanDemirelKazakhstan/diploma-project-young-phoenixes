@@ -20,6 +20,8 @@ class HomeBannerView: UICollectionViewCell {
         // Initialization code
     }
 
+    
+    
     func configure(with viewModel: HomeBannerModel){
         titleLabel.text = viewModel.title
         subtitleLabel.text = viewModel.description

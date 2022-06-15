@@ -11,6 +11,6 @@ class OrderHeaderCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        titleLabel.text = "Создать заявку"
+        titleLabel.text = L10n.orderTitle
     }
 }

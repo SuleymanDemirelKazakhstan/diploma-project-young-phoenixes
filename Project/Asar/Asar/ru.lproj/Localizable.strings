@@ -6,6 +6,110 @@
   
 */
 
-// Mark: - English
+// Mark: - Russian
 
-"welcomeTitle" = "Welcome";
+
+"onboardingAuthorization" = "Авторизация";
+"onboardingAutorizationTitle" = "Зарегистрируйтесь соответсвием вашим интересам. Выберите роли клиента или специалиста.";
+"onboardingProfile" = "Профиль";
+"onboardingProfileTitle" = "Дополняйте нужную информацию в профиле для более уточненного поиска услуг.";
+"onboardingLaunch" = "Полный запуск";
+"onboardingLaunchTitle" = "Пристуйпайте к поиску специалиста или заказов, исходя от вашей профессии или нужды.";
+"onboardingNext" = "Далее";
+"onboardingSkip" = "Пропустить";
+
+// Mark: - Registration Page / Login Page
+
+"loginTitle" = "Добро пожаловать!";
+"loginSubtitle" = "Введите данные, указанные при регистрации";
+"loginMailPlaceholder" = "Почта";
+"loginPasswordPlaceholder" = "Пароль";
+"loginForgotPasswordButton" = "Забыли пароль?";
+"loginLogInButton" = "Войти";
+"loginDontHaveAccTitle" = "Еще нет аккаунта?";
+"loginMakeRegistrationButton" =  "Зарегистрироваться";
+
+"registrationTitle" = "Регистрация";
+"registrationSubtitle" = "Введите номер телефона, чтобы начать регистрацию";
+"registrationPrivacyPolicy" = "Я соглашаюсь с условиями сервиса и политикой конфиденциальности";
+"registrationPasswordPlaceholder" = "Пароль";
+"registrationButton" = "Зарегистрироваться";
+
+// Mark: - Main Page
+
+"mainAuthorizationOnboarding" = "Авторизация";
+"mainAutorizationTitle" = "Зарегистрируйтесь соответсвием вашим интересам. Выберите роли клиента или специалиста.";
+"mainProfileOnboardinf" = "Профиль";
+"mainProfileTitle" = "Дополняйте нужную информацию в профиле для более уточненного поиска услуг.";
+"mainLaunchOnboarding" = "Полный запуск";
+"mainLaunchTitle" = "Пристуйпайте к поиску специалиста или заказов, исходя от вашей профессии или нужды.";
+
+"mainCategoriesTitle" = "Категории";
+"mainPlumberTitle" = "Сантехник";
+"mainHouseholdRepairsTitle" = "Бытовой ремонт";
+"mainCargoTitle" = "Грузоперевозка";
+"mainCleaningTitle" = "Уборка";
+"mainBeautyTitle" = "Красота";
+"mainElecticianTitle" = "Электрик";
+
+"mainFeaturedTitle" = "Рекомендуемые";
+
+"mainFAQTitle" = "Часто задаваемые вопросы";
+"mainFAQfirstQuestion" = "Как пользоваться приложением ASAR?";
+"mainFAQfirstAnswer" = "Кнопка, которая доходит до краев экрана, может не выглядеть как кнопка. Соблюдайте стандартные системные поля по бокам полноразмерных кнопок.";
+"mainFAQsecondQuestion" = "Как выбрать хорошего специалиста?";
+"mainFAQsecondAnswer" = "Кнопка, которая доходит до краев экрана, может не выглядеть как кнопка. Соблюдайте стандартные системные поля по бокам полноразмерных кнопок.";
+"mainFAQthirdQuestion" = "Как заказать услуги?";
+"mainFAQthirdAnswer" = "Кнопка, которая доходит до краев экрана, может не выглядеть как кнопка. Соблюдайте стандартные системные поля по бокам полноразмерных кнопок.";
+"mainFAQfourthQuestion" = "Как предостеречь себя от мошенничества?";
+"mainFAQfourthAnswer" = "Кнопка, которая доходит до краев экрана, может не выглядеть как кнопка. Соблюдайте стандартные системные поля по бокам полноразмерных кнопок.";
+"mainFAQfifthQuestion" = "Как выбрать хорошего специалиста?";
+"mainFAQfifthAnswer" = "Кнопка, которая доходит до краев экрана, может не выглядеть как кнопка. Соблюдайте стандартные системные поля по бокам полноразмерных кнопок.";
+
+// Mark: - Creat Order
+
+"orderTitle" = "Создать заявку";
+"orderDetailOrderPlaceholder" = "Описание заказа";
+"orderSubtitle" = "Напишите подробное описание заказа, чтобы специалист оценил объем работы";
+"orderCategoryPlaceholder" = "Категория услуг";
+"orderTelephoneNumberPlaceholder" = "Номер телефона";
+"orderAddressPlaceholder" = "Укажите точный адрес";
+"orderAddressButton" = "Карта";
+"orderDataPlaceholder" = "Укажите точную дату";
+"orderDataButton" = "Календарь";
+"orderPaymentPlaceholder" = "Вид оплаты";
+"orderAddInformationTitle" = "Дополнительная информация";
+"orderUploadImage" = "Загрузить фото или видео";
+"orderMapTitle" = "Точка назначения";
+"orderCreatButton" = "Создать";
+
+// Mark: - Profile page
+
+"profile" = "Профиль";
+"profileUserProfile" = "Личная информация";
+"profileBankInfo" = "Банковские данные";
+"profileAddress" = "Мои адреса";
+"profileSettings" = "Настройка приложения";
+"profileSupport" = "Помощь и поддержка";
+"profileExit" = "Выйти";
+"profileAddAddressButton" = "Добавить адрес";
+"profileAdressPlaceholder" = "Адрес";
+"profileEntrancePlaceholder" = "Подъезд";
+"profileApartmentNumberPlaceholder" = "Номер квартиры";
+"profileFloorPlaceholder" = "Номер этажа";
+"profileAddBankCard" = "Добавить карту";
+"profileNamePlaceholder" = "Имя владельца";
+"profileNumberCardPlaceholder" = "Номер карты";
+"profileExpiryDatePlaceholder" = "Срок карты";
+"profileCVVPlaceholder" = "CVV";
+
+// Mark: - Setting Page
+
+"settingLocationData" = "Данные о местоположении";
+"settingPush" = "Push-уведомления";
+"settingPhotoData" = "Данные о фотографии";
+"settingAccessMessage" = "Разрешение к сообщению";
+"settingPolitacalConf" = "Политика конфиденциальности";
+"settingService" = "Условия сервиса";
+"settingAboutApp" = "О приложении";
+

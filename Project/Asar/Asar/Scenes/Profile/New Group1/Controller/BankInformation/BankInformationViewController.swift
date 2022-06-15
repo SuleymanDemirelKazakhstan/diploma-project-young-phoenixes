@@ -23,7 +23,7 @@ class BankInformationViewController: UIViewController {
     
     private let addBtn: UIButton = {
         let button = UIButton()
-        button.setTitle("Добавить карту", for: .normal)
+        button.setTitle(L10n.profileAddBankCard, for: .normal)
         button.titleLabel?.textColor = .white
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
         button.backgroundColor = .systemBlue
