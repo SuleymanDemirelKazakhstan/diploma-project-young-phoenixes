@@ -49,7 +49,7 @@ class BankCardCell: UITableViewCell {
 
     func configure(model: BankCard?) {
         if let model = model {
-            numberCard.text = model.numberCard
+            numberCard.text = model.nameCard
         }
     }
 

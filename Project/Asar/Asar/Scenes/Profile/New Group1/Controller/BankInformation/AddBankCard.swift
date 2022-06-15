@@ -101,7 +101,7 @@ class AddBankCard: UIViewController {
     
 
     @objc private func touchBtn(){
-        let bankCard = BankCard(numberCard: numberCard.text)
+        let bankCard = BankCard(nameCard:nameCard.text )
         delegate?.reloadTable(with: bankCard)
         navigationController?.popViewController(animated: true)
     }

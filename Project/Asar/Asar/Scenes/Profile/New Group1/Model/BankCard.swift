@@ -8,5 +8,5 @@
 import Foundation
 
 struct BankCard{
-    let numberCard: String?
+    let nameCard: String?
 }
