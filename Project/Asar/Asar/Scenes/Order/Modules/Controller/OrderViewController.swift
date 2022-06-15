@@ -53,10 +53,6 @@ class OrderViewController: UIViewController {
         setupDatePicker()
         store.dispatch(action: .didLoadView)
     }
-
-//    func updateRegion(region: Region) {
-//        store.dispatch(action: .didUpdateRegion(region: region))
-//    }
     
     func mapSelected() {
         store.dispatch(action: .didChangeTextField(text: "Солодовникова 21", row: .address))

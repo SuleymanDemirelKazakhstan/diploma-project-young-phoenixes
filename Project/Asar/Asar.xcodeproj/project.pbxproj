@@ -144,6 +144,9 @@
 		ECB3C51228559BB80058C258 /* OrderUploadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3C51028559BB80058C258 /* OrderUploadCell.swift */; };
 		ECB3C51328559BB80058C258 /* OrderUploadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB3C51128559BB80058C258 /* OrderUploadCell.xib */; };
 		ECB7F68F285909B10095C58C /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB7F68E285909B10095C58C /* Order.swift */; };
+		ECB7F6992859D75A0095C58C /* MyOrdersStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB7F6982859D75A0095C58C /* MyOrdersStore.swift */; };
+		ECB7F69D2859E37E0095C58C /* MyOrdersViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB7F69B2859E37E0095C58C /* MyOrdersViewCell.swift */; };
+		ECB7F69E2859E37E0095C58C /* MyOrdersViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECB7F69C2859E37E0095C58C /* MyOrdersViewCell.xib */; };
 		ECD0028B28093FEE005F2D0D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD0028928093FEE005F2D0D /* RegisterViewController.swift */; };
 		ECD0028C28093FEE005F2D0D /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECD0028A28093FEE005F2D0D /* RegisterViewController.xib */; };
 		ECD68BCB27FAB21A00A8DE0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECD68BCA27FAB21A00A8DE0A /* GoogleService-Info.plist */; };
@@ -306,6 +309,9 @@
 		ECB3C51028559BB80058C258 /* OrderUploadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderUploadCell.swift; sourceTree = "<group>"; };
 		ECB3C51128559BB80058C258 /* OrderUploadCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderUploadCell.xib; sourceTree = "<group>"; };
 		ECB7F68E285909B10095C58C /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		ECB7F6982859D75A0095C58C /* MyOrdersStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrdersStore.swift; sourceTree = "<group>"; };
+		ECB7F69B2859E37E0095C58C /* MyOrdersViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrdersViewCell.swift; sourceTree = "<group>"; };
+		ECB7F69C2859E37E0095C58C /* MyOrdersViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyOrdersViewCell.xib; sourceTree = "<group>"; };
 		ECD0028928093FEE005F2D0D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		ECD0028A28093FEE005F2D0D /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		ECD68BCA27FAB21A00A8DE0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -784,9 +790,8 @@
 		EC87632A281D1CB3005EFC81 /* MyOrders */ = {
 			isa = PBXGroup;
 			children = (
-				EC87632B281D1D2B005EFC81 /* MyOrdersCoordinator.swift */,
-				EC87632D281D37F2005EFC81 /* MyOrdersViewController.swift */,
-				EC87632E281D37F2005EFC81 /* MyOrdersViewController.xib */,
+				ECB7F6932859D6BD0095C58C /* Coordinator */,
+				ECB7F6922859D6B00095C58C /* Modules */,
 			);
 			path = MyOrders;
 			sourceTree = "<group>";
@@ -1119,6 +1124,59 @@
 			path = OrderUploadCell;
 			sourceTree = "<group>";
 		};
+		ECB7F6922859D6B00095C58C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				ECB7F6942859D6D60095C58C /* Controller */,
+				ECB7F6952859D7230095C58C /* Store */,
+				ECB7F6962859D72F0095C58C /* View */,
+				ECB7F6972859D7350095C58C /* ViewModel */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		ECB7F6932859D6BD0095C58C /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EC87632B281D1D2B005EFC81 /* MyOrdersCoordinator.swift */,
+			);
+			name = Coordinator;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		ECB7F6942859D6D60095C58C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC87632D281D37F2005EFC81 /* MyOrdersViewController.swift */,
+				EC87632E281D37F2005EFC81 /* MyOrdersViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ECB7F6952859D7230095C58C /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				ECB7F6982859D75A0095C58C /* MyOrdersStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		ECB7F6962859D72F0095C58C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECB7F69B2859E37E0095C58C /* MyOrdersViewCell.swift */,
+				ECB7F69C2859E37E0095C58C /* MyOrdersViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECB7F6972859D7350095C58C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		ECD0028D280943F4005F2D0D /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -1334,6 +1392,7 @@
 				EC042BFF284DE0670064871C /* SectionHeaderView.xib in Resources */,
 				EC042BF0284DC93B0064871C /* HomeFAQCell.xib in Resources */,
 				EC9E6D1A281F6A2300627C5B /* HomeCategoryCell.xib in Resources */,
+				ECB7F69E2859E37E0095C58C /* MyOrdersViewCell.xib in Resources */,
 				EC30C2C028569E44003EBF08 /* MapViewControler.xib in Resources */,
 				EC9E6D15281F686A00627C5B /* HomeCategoriesCell.xib in Resources */,
 				ECDA70F7280D73DA0009568A /* RegisterConfirmViewController.xib in Resources */,
@@ -1500,6 +1559,7 @@
 				EC897F9A27EDC1F500B11A5D /* AuthCoordinator.swift in Sources */,
 				6D9A9F0D2852615E000F9FCD /* FunctionCell.swift in Sources */,
 				ECB3C5082855375D0058C258 /* OrderFieldCell.swift in Sources */,
+				ECB7F69D2859E37E0095C58C /* MyOrdersViewCell.swift in Sources */,
 				6DC0517F2854D0CB00B23949 /* MyAddressTableViewCell.swift in Sources */,
 				6DB061C82855E76400C6F65D /* PoliticalConfModel.swift in Sources */,
 				6D9A9F1328527AF1000F9FCD /* BankInformationViewController.swift in Sources */,
@@ -1511,6 +1571,7 @@
 				EC876333281D384B005EFC81 /* HomeMainCoordinator.swift in Sources */,
 				EC042BEF284DC93B0064871C /* HomeFAQCell.swift in Sources */,
 				EC897F9727EDB9E700B11A5D /* LoginViewController.swift in Sources */,
+				ECB7F6992859D75A0095C58C /* MyOrdersStore.swift in Sources */,
 				ECEA16D6282285EB0080F629 /* HomeRecommendationsCell.swift in Sources */,
 				EC5A0A4728096CDF003EC0C3 /* HeaderView.swift in Sources */,
 				6D4CED4F28576ECB0075D284 /* AnswerCell.swift in Sources */,

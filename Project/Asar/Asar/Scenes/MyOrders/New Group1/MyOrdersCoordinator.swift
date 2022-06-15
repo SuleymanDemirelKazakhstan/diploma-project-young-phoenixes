@@ -13,7 +13,7 @@ class MyOrdersCoordinator: BaseCoordinator {
     }
     
     private func showMyOrdersViewController() {
-        let vc = MyOrdersViewController()
+        let vc = MyOrdersViewController(store: .init())
         router.setRootModule(vc)
     }
 }

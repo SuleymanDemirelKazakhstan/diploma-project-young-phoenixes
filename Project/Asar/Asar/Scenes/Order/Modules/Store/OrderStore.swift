@@ -41,7 +41,6 @@ final class OrderStore {
     enum Action {
         case didLoadView
         case didChangeTextField(text: String?, row: OrderRow)
-        case didTapDropDown(row: OrderRow)
         case didTapAttachment
         case didTapMap
         case didTapCalendar
@@ -74,21 +73,8 @@ final class OrderStore {
             updateList()
         case let .didChangeTextField(text, row):
             didChangeTextField(text: text?.trimmingCharacters(in: .whitespacesAndNewlines), row: row)
-        case let .didTapDropDown(row):
-            didTapDropDown(row: row)
         case .didTapAttachment:
             break
-//            let sourceTypes: [UIImagePickerController.SourceType] = [.camera, .photoLibrary]
-//            var items: [ActionSheetItem] = sourceTypes.compactMap { type in
-//                guard UIImagePickerController.isSourceTypeAvailable(type), let title = title(for: type) else { return nil }
-//                return ActionSheetItem(title: title) { [weak self] in
-//                    self?.imagePickerService.presentImagePicker(sourceType: type)
-//                }
-//            }
-//            items.append(ActionSheetItem(title: L10n.feedbackDocuments) { [weak self] in
-//                self?.documentPickerService.presentDocumentPicker()
-//            })
-//            state = .attachmentTapped(items: items)
         case .didTapMap:
             state = .mapTapped
         case .didTapCalendar:
@@ -134,19 +120,6 @@ final class OrderStore {
             break
         }
         state = .textFieldChanged(form: form)
-    }
-
-    private func didTapDropDown(row: OrderRow) {
-        switch row {
-        case .category:
-            break
-//            state = .messageSubjectSelected(subjects: storage.messageSubjects)
-        case .paymentWay:
-            break
-//            state = .regionSelectTapped(region: form.region)
-        default:
-            break
-        }
     }
 
     private func verifyFeedbackForm() {
