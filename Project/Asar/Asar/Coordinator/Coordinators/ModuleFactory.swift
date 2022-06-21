@@ -15,12 +15,12 @@ final class ModuleFactory {
         return mainViewController
     }
     
-    func makeLoginViewController(navigationDelegate: LoginViewControllerDelegate) -> UIViewController {
-        return LoginViewController(navigationDelegate: navigationDelegate)
+    func makeLoginViewController(viewState: ViewState?,navigationDelegate: LoginViewControllerDelegate) -> UIViewController {
+        return LoginViewController(navigationDelegate: navigationDelegate, viewState: viewState)
     }
     
-    func makeOnboardingViewController() -> UIViewController {
-        return OnboardingViewController()
+    func makeOnboardingViewController(delegate: OnboardingNavigationDelegate) -> UIViewController {
+        return OnboardingViewController(delegate: delegate)
     }
     
     func makeRegisterViewController(navigationDelegate: RegisterViewControllerDelegate) -> UIViewController {
@@ -29,5 +29,9 @@ final class ModuleFactory {
     
     func makeRegisterConfirmViewController(navigationDelegate: RegisterConfirmNavigationDelegate) -> UIViewController {
         return RegisterConfirmViewController(navigationDelegate: navigationDelegate)
+    }
+    
+    func makeRoleChooseViewController(navigationDelegate: RoleChooseViewDelegate) -> UIViewController {
+        return RoleChooseViewController(navigationDelegate: navigationDelegate)
     }
 }

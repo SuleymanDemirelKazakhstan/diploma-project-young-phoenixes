@@ -7,12 +7,16 @@
 
 import UIKit
 
-class OnboardingViewController: UIViewController{
+protocol OnboardingNavigationDelegate: AnyObject {
+    func showLoginPage()
+}
 
+class OnboardingViewController: UIViewController{
+    private weak var delegate: OnboardingNavigationDelegate?
     @IBOutlet weak var PageControl: UIPageControl!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var SkipButton: UIButton!
+    @IBOutlet weak var skipButton: UIButton!
     
     let OnboardingCollectionViewCellId = "OnboardingCollectionViewCell"
     
@@ -23,39 +27,49 @@ class OnboardingViewController: UIViewController{
         didSet{
             PageControl.currentPage = currentPage
             if currentPage == slides.count - 1{
-                nextButton.setTitle("Начать работу", for: .normal)
-            }else{
-                nextButton.setTitle(L10n.onboardingNext, for: .normal)
+                nextButton.setTitle(L10n.onboardingStart, for: .normal)
             }
         }
 
     }
+    
+    init(delegate: OnboardingNavigationDelegate) {
+        self.delegate = delegate
+        super.init(nibName: String(describing: Self.self), bundle: Bundle(for: Self.self))
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupUI()
+    }
+    
+    private func setupUI() {
+        self.navigationController?.isNavigationBarHidden = true
+        nextButton.setTitle(L10n.onboardingNext, for: .normal)
+        skipButton.setTitle(L10n.onboardingSkip, for: .normal)
         let nibCell = UINib(nibName: OnboardingCollectionViewCellId, bundle: nil)
         collectionView.register(nibCell, forCellWithReuseIdentifier: OnboardingCollectionViewCellId)
         
         slides = [
             OnboardingSlides(title: L10n.onboardingAuthorization,
                              description: L10n.onboardingAutorizationTitle,
-                             image: UIImage(named: "rect")!),
-            OnboardingSlides(title: L10n.onboardingProfile,
-                             description: L10n.onboardingProfileTitle,
-                             image: UIImage(named: "rect")!),
+                             image: Asset.onboard.image),
             OnboardingSlides(title: L10n.onboardingLaunch,
                              description: L10n.onboardingLaunchTitle,
-                             image: UIImage(named: "rect")!)
+                             image: Asset.onboard2.image),
+            OnboardingSlides(title: L10n.onboardingProfile,
+                             description: L10n.onboardingProfileTitle,
+                             image: Asset.onboard3.image)
         ]
     }
     
-   
-    
- 
-
     @IBAction func nextButtonClick(_ sender: UIButton) {
         if currentPage == slides.count - 1{
-            print("go to the next page")
+            delegate?.showLoginPage()
         }else{
             currentPage += 1
             collectionView.isPagingEnabled  = false
@@ -68,7 +82,7 @@ class OnboardingViewController: UIViewController{
     }
     
     @IBAction func skipButtonClic(_ sender: UIButton) {
-        print("next page")
+        delegate?.showLoginPage()
     }
 }
 

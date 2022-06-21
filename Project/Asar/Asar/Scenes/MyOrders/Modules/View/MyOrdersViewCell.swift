@@ -24,16 +24,18 @@ class MyOrdersViewCell: UITableViewCell {
     }
     
     func configure(order: Order) {
+        userImageView.image = Asset.user.image
         iconimageView.image = Asset.user.image
         categoryLabel.text = order.category
-        nameLabel.text = "Khassenov"
-        priceLabel.text = "15 000 тг"
+        nameLabel.text = order.name
+        priceLabel.text = order.price
         timeLabel.text = order.date
     }
     
     private func setupUI() {
         view.layer.cornerRadius = 10
         categoryLabel.textColor = .black
+        userImageView.tintColor = .lightGray
         iconimageView.tintColor = .lightGray
         nameLabel.textColor = .lightGray
         priceLabel.textColor = .black

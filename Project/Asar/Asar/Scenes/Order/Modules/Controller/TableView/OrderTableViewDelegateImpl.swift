@@ -28,7 +28,7 @@ extension OrderTableViewDelegateImpl: UITableViewDelegate {
         case .header:
             guard let cell = cell as? OrderHeaderCell else { return }
             cell.awakeFromNib()
-        case .description,.category, .phoneNumber, .address, .date, .paymentWay:
+        case .description,.category, .phoneNumber, .address, .date, .paymentWay, .price:
             guard let cell = cell as? OrderFieldCell else { return }
             cell.configure(cellModel: .init(row: row, form: form ?? .init()), row: row)
             cell.actionDelegate = self
@@ -65,7 +65,7 @@ extension OrderTableViewDelegateImpl: UITableViewDelegate {
             return 40
         case .description:
             return 124
-        case .category, .phoneNumber, .address, .date, .paymentWay:
+        case .category, .phoneNumber, .address, .date, .paymentWay, .price:
             return 88
         case .content:
             return 104

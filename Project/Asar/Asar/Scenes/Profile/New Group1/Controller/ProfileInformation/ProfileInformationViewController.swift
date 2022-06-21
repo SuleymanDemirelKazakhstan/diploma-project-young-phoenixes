@@ -79,6 +79,7 @@ class ProfileInformationViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.title = L10n.profileUserProfile
         view.backgroundColor = .systemGray6
+        hideKeyboardWhenTappedAround()
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             image: UIImage(named: "accept"),
             style: .done,

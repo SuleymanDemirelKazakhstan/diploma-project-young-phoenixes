@@ -13,9 +13,7 @@ protocol RegisterConfirmNavigationDelegate: AnyObject {
 
 class RegisterConfirmViewController: UIViewController {
     private weak var navigationDelegate: RegisterConfirmNavigationDelegate?
-    
     @IBOutlet private var headerView: HeaderView!
-  
     @IBOutlet private var codeTextField: SMSCodeTextField!
     @IBOutlet private var actionButton: BottomActionButton!
     
@@ -24,9 +22,6 @@ class RegisterConfirmViewController: UIViewController {
         actionButton.delegate = self
         setupUI()
         codeTextField.configure()
-        codeTextField.didEnterLastDigit = { [weak self] code in
-            print(code)
-        }
     }
     
     init(navigationDelegate: RegisterConfirmNavigationDelegate) {
@@ -39,8 +34,10 @@ class RegisterConfirmViewController: UIViewController {
     }
     
     private func setupUI() {
+        self.navigationController?.isNavigationBarHidden = true
         headerView.configureTexts(titleText: L10n.registrationTitle, subtitleText: L10n.registrationSubtitle)
         actionButton.configureTitle(text: L10n.loginMakeRegistrationButton)
+        hideKeyboardWhenTappedAround()
         
     }
 }

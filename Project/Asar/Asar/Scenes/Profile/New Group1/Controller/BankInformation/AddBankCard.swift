@@ -97,6 +97,7 @@ class AddBankCard: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemGray6
         setupLayouts()
+        hideKeyboardWhenTappedAround()
     }
     
 

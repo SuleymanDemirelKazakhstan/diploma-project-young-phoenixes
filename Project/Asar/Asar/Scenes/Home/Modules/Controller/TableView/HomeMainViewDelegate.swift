@@ -55,8 +55,6 @@ extension HomeMainTableViewDelegateImpl: UITableViewDelegate {
             return 458
         case .faqs:
             return 344
-        default:
-            return 0
         }
     }
 
@@ -72,8 +70,6 @@ extension HomeMainTableViewDelegateImpl: UITableViewDelegate {
             return 458
         case .faqs:
             return 344
-        default:
-            return 0
         }
     }
 
@@ -110,31 +106,17 @@ extension HomeMainTableViewDelegateImpl: UITableViewDelegate {
     }
 
     private func heightForHeader(in section: Int) -> CGFloat {
-        return 64
-//        switch sections[section].type {
-//        case .faqCategories:
-//            return 32
-//        case .options:
-//            return 24
-//        }
+        switch sections[section].type {
+        case .category, .faq, .recommendation:
+            return 64
+        default:
+            return 0
+        }
     }
 
     private func heightForFooter(for section: HomeSection) -> CGFloat {
         return 0
-//        switch section.type {
-//        case .faqCategories:
-//            return 24
-//        case .options:
-//            return 16
-//        }
     }
-
-//    private func heightForCategories(faqCategories: [FAQCategory]) -> CGFloat {
-//        let rowCount = faqCategories.count / 3
-//        let additionalRowCount = faqCategories.count.isMultiple(of: 3) ? 0 : 1
-//        let overallCount = rowCount + additionalRowCount
-//        return CGFloat(overallCount * 104 + (overallCount - 1) * 8)
-//    }
 }
 
 // MARK: - HomeRecommendationViewDelegate

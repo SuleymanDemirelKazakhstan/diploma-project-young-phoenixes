@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,9 +10,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="Asar" customModuleProvider="target">
             <connections>
                 <outlet property="PageControl" destination="5l9-tF-Ejf" id="6n7-Ot-8Bk"/>
-                <outlet property="SkipButton" destination="vlM-06-mbP" id="eAG-ne-FOf"/>
                 <outlet property="collectionView" destination="LLw-9J-hm8" id="PfF-76-GhZ"/>
                 <outlet property="nextButton" destination="Rzc-jI-hRc" id="7De-Lw-DEr"/>
+                <outlet property="skipButton" destination="vlM-06-mbP" id="eAG-ne-FOf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -39,27 +37,21 @@
                     </connections>
                 </collectionView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzc-jI-hRc">
-                    <rect key="frame" x="298" y="834" width="104" height="31"/>
+                    <rect key="frame" x="356" y="869" width="46" height="30"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Следующая">
-                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </buttonConfiguration>
                     <connections>
                         <action selector="nextButtonClick:" destination="-1" eventType="touchUpInside" id="sii-SL-hG5"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlM-06-mbP">
-                    <rect key="frame" x="12" y="834" width="104" height="31"/>
+                    <rect key="frame" x="12" y="869" width="46" height="30"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Пропустить">
-                        <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </buttonConfiguration>
                     <connections>
                         <action selector="skipButtonClic:" destination="-1" eventType="touchUpInside" id="pEm-Lg-Zz4"/>
                     </connections>
                 </button>
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="5l9-tF-Ejf">
-                    <rect key="frame" x="149" y="686" width="116" height="26"/>
+                    <rect key="frame" x="146.5" y="718.5" width="121.5" height="27.5"/>
                     <color key="pageIndicatorTintColor" systemColor="systemGrayColor"/>
                     <color key="currentPageIndicatorTintColor" systemColor="systemIndigoColor"/>
                 </pageControl>

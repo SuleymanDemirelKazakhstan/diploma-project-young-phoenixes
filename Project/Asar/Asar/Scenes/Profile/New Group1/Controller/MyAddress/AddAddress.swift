@@ -96,6 +96,7 @@ class AddAddress: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemGray6
         setupLayouts()
+        hideKeyboardWhenTappedAround()
     }
     
     @objc private func touchBtn(){

@@ -76,6 +76,8 @@ internal enum L10n {
   internal static let mainProfileOnboardinf = L10n.tr("Localizable", "mainProfileOnboardinf")
   /// Дополняйте нужную информацию в профиле для более уточненного поиска услуг.
   internal static let mainProfileTitle = L10n.tr("Localizable", "mainProfileTitle")
+  /// Поиск
+  internal static let mainSearch = L10n.tr("Localizable", "mainSearch")
   /// Авторизация
   internal static let onboardingAuthorization = L10n.tr("Localizable", "onboardingAuthorization")
   /// Зарегистрируйтесь соответсвием вашим интересам. Выберите роли клиента или специалиста.
@@ -92,6 +94,8 @@ internal enum L10n {
   internal static let onboardingProfileTitle = L10n.tr("Localizable", "onboardingProfileTitle")
   /// Пропустить
   internal static let onboardingSkip = L10n.tr("Localizable", "onboardingSkip")
+  /// Начать работу
+  internal static let onboardingStart = L10n.tr("Localizable", "onboardingStart")
   /// Дополнительная информация
   internal static let orderAddInformationTitle = L10n.tr("Localizable", "orderAddInformationTitle")
   /// Карта
@@ -100,6 +104,8 @@ internal enum L10n {
   internal static let orderAddressPlaceholder = L10n.tr("Localizable", "orderAddressPlaceholder")
   /// Категория услуг
   internal static let orderCategoryPlaceholder = L10n.tr("Localizable", "orderCategoryPlaceholder")
+  /// Создать
+  internal static let orderCreatButton = L10n.tr("Localizable", "orderCreatButton")
   /// Календарь
   internal static let orderDataButton = L10n.tr("Localizable", "orderDataButton")
   /// Укажите точную дату
@@ -110,6 +116,16 @@ internal enum L10n {
   internal static let orderMapTitle = L10n.tr("Localizable", "orderMapTitle")
   /// Вид оплаты
   internal static let orderPaymentPlaceholder = L10n.tr("Localizable", "orderPaymentPlaceholder")
+  /// Красота
+  internal static let orderServiceBeauty = L10n.tr("Localizable", "orderServiceBeauty")
+  /// Уборка на дому
+  internal static let orderServiceCleaning = L10n.tr("Localizable", "orderServiceCleaning")
+  /// Повар на дому
+  internal static let orderServiceCook = L10n.tr("Localizable", "orderServiceCook")
+  /// Электрик
+  internal static let orderServiceElectrical = L10n.tr("Localizable", "orderServiceElectrical")
+  /// Сантехник
+  internal static let orderServicePlumber = L10n.tr("Localizable", "orderServicePlumber")
   /// Напишите подробное описание заказа, чтобы специалист оценил объем работы
   internal static let orderSubtitle = L10n.tr("Localizable", "orderSubtitle")
   /// Номер телефона
@@ -118,6 +134,8 @@ internal enum L10n {
   internal static let orderTitle = L10n.tr("Localizable", "orderTitle")
   /// Загрузить фото или видео
   internal static let orderUploadImage = L10n.tr("Localizable", "orderUploadImage")
+  /// Профиль
+  internal static let profile = L10n.tr("Localizable", "profile")
   /// Добавить адрес
   internal static let profileAddAddressButton = L10n.tr("Localizable", "profileAddAddressButton")
   /// Добавить карту
@@ -152,14 +170,32 @@ internal enum L10n {
   internal static let profileUserProfile = L10n.tr("Localizable", "profileUserProfile")
   /// Зарегистрироваться
   internal static let registrationButton = L10n.tr("Localizable", "registrationButton")
+  /// Email
+  internal static let registrationEmailPlaceholder = L10n.tr("Localizable", "registrationEmailPlaceholder")
+  /// Номер телефона
+  internal static let registrationNumberPlaceholder = L10n.tr("Localizable", "registrationNumberPlaceholder")
   /// Пароль
   internal static let registrationPasswordPlaceholder = L10n.tr("Localizable", "registrationPasswordPlaceholder")
   /// Я соглашаюсь с условиями сервиса и политикой конфиденциальности
   internal static let registrationPrivacyPolicy = L10n.tr("Localizable", "registrationPrivacyPolicy")
+  /// Подтвердить
+  internal static let registrationSMSConfirmButton = L10n.tr("Localizable", "registrationSMSConfirmButton")
+  /// Введите код авторизации, полученный по SMS
+  internal static let registrationSMSConfirmSubtitle = L10n.tr("Localizable", "registrationSMSConfirmSubtitle")
+  /// Подтверждение
+  internal static let registrationSMSConfirmTitle = L10n.tr("Localizable", "registrationSMSConfirmTitle")
   /// Введите номер телефона, чтобы начать регистрацию
   internal static let registrationSubtitle = L10n.tr("Localizable", "registrationSubtitle")
   /// Регистрация
   internal static let registrationTitle = L10n.tr("Localizable", "registrationTitle")
+  /// Ищу работу
+  internal static let roleSearchingJob = L10n.tr("Localizable", "roleSearchingJob")
+  /// Ищу специалиста
+  internal static let roleSearchingSpecialist = L10n.tr("Localizable", "roleSearchingSpecialist")
+  /// Чтобы закончить регистрацую, нужно выбрать роль
+  internal static let roleSubtitle = L10n.tr("Localizable", "roleSubtitle")
+  /// Выберите роль
+  internal static let roleTitle = L10n.tr("Localizable", "roleTitle")
   /// О приложении
   internal static let settingAboutApp = L10n.tr("Localizable", "settingAboutApp")
   /// Разрешение к сообщению

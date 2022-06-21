@@ -16,11 +16,10 @@ enum LaunchInstructor {
     case onboarding
     
     static func configure( tutorialWasShown: Bool = onboardingWasShown, isAutorized: Bool = isAutorized) -> LaunchInstructor {
-        
         switch (tutorialWasShown, isAutorized) {
-        case (true, false), (false, false): return .auth
-        case (false, true): return .onboarding
-        case (true, true): return .main
+        case (true, false): return .auth
+        case (false, false): return .onboarding
+        case (true, true), (false, true): return .main
         }
     }
 }

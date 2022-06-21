@@ -83,6 +83,7 @@ class MapViewControler: UIViewController {
         actionButton.delegate = self
         setupMapView()
         setupUserLocationLayer()
+        hideKeyboardWhenTappedAround()
     }
     
     private func setupMapView() {

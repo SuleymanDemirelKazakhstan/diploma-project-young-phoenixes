@@ -7,8 +7,8 @@
 import UIKit
 
 final class CoordinatorFactory {
-    func makeAuthCoordinator(router: Router, coordinatorFactory: CoordinatorFactory, moduleFactory: ModuleFactory) -> AuthCoordinator {
-        let coordinator = AuthCoordinator(router: router, cordinatorFactory: coordinatorFactory, moduleFactory: moduleFactory)
+    func makeAuthCoordinator(router: Router, coordinatorFactory: CoordinatorFactory, moduleFactory: ModuleFactory, launchInsractor: LaunchInstructor) -> AuthCoordinator {
+        let coordinator = AuthCoordinator(router: router, cordinatorFactory: coordinatorFactory, moduleFactory: moduleFactory, launchInstractor: launchInsractor)
         return coordinator
     }
     
@@ -39,7 +39,7 @@ final class CoordinatorFactory {
     func makeProfileCoordinator() -> (coordinator: Coordinator, module: UIViewController) {
         let navigationController = UINavigationController()
 //        navigationController.tabBarItem.title = "Profile"
-        navigationController.tabBarItem.image = Asset.profile.image
+        navigationController.tabBarItem.image = Asset.user.image
         let coordinator = ProfileCoordinator(router: .init(navigationController: navigationController))
         return (coordinator, navigationController)
     }

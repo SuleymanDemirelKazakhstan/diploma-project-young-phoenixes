@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseFirestore
+import FirebaseAuth
 
 enum OrderFileType {
     case image(image: UIImage)
@@ -14,7 +15,9 @@ enum OrderFileType {
 }
 
 struct OrderForm {
+    var name: String?
     var desciption: String?
+    var price: String?
     var phoneNumber: String?
     var category: String?
     var paymentWay: String?
@@ -27,6 +30,7 @@ struct OrderForm {
 enum OrderRow {
     case header
     case description
+    case price
     case category
     case phoneNumber
     case address
@@ -54,6 +58,8 @@ final class OrderStore {
         case mapTapped
         case calendarTapped
         case formSended
+        case loading
+        case stopLoading
     }
     
     private var db = Firestore.firestore()
@@ -86,7 +92,7 @@ final class OrderStore {
 
     private func setupRows() {
         let rows: [OrderRow] = [
-            .header, .description, .category,
+            .header, .description, .price, .category,
             .phoneNumber, .address, .date,
             .paymentWay,.content
         ]
@@ -106,6 +112,8 @@ final class OrderStore {
         switch row {
         case .description:
             form.desciption = text
+        case .price:
+            form.price = text
         case .phoneNumber:
             form.phoneNumber = text
         case .date:
@@ -147,17 +155,32 @@ final class OrderStore {
     }
 
     private func sendForm() {
-        db.collection("order").document("abylbek39@gmail.com").collection("orders").addDocument(data:
-                                                                                                    ["description": form.desciption ?? "",
-                                                                                                     "category": form.category ?? "",
-                                                                                                     "phoneNumber": form.phoneNumber ?? "",
-                                                                                                     "address": form.address ?? "",
-                                                                                                     "date": form.date ?? "",
-                                                                                                     "paymentWay": form.paymentWay ?? ""])
+        state = .loading
+//        db.collection("users").document(Auth.auth().currentUser?.email ?? "").getDocument() {[self]
+//            (data, err) in
+//            if let err = err {
+//                print("Error getting documents: \(err)")
+//            } else {
+//                let data = data
+//                form.name = data?["name"] as? String
+//                form.phoneNumber = data?["phoneNumber"] as? String
+//            }
+//
+//        }
+        db.collection("orders").addDocument(data:
+                                                ["name": form.name ?? "",
+                                                 "description": form.desciption ?? "",
+                                                 "price": form.price ?? "",
+                                                 "category":form.category ?? "",
+                                                 "phoneNumber": form.phoneNumber ?? "",
+                                                 "address": form.address ?? "",
+                                                 "date": form.date ?? "",
+                                                 "paymentWay": form.paymentWay ?? ""])
         { err in
             self.state = .error(message: err?.localizedDescription)
         }
         state = .formSended
+        state = .stopLoading
         state = .textFieldChanged(form: .init())
     }
 }

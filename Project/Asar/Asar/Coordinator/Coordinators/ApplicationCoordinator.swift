@@ -18,9 +18,9 @@ final class ApplicationCoordinator: BaseCoordinator {
     override func start(launchInstructor: LaunchInstructor) {
         switch launchInstructor {
         case .auth:
-            runAuthFlow()
+            runAuthFlow(launch: .auth)
         case .onboarding:
-            runOnboardingFlow()
+            runAuthFlow(launch: .onboarding)
         case .main:
             showMain(viewControllers: [runHomeMainFlow(), runOrdersFlow(), runMyOrdersFlow(), runProfileFlow()])
         }
@@ -59,20 +59,8 @@ final class ApplicationCoordinator: BaseCoordinator {
         return module
     }
     
-    private func runOnboardingFlow() {
-        let coordinator = coordinatorFactory.makeAuthCoordinator(router: router, coordinatorFactory: coordinatorFactory, moduleFactory: moduleFactory)
-        self.addDependency(coordinator)
-        coordinator.start()
-    }
-    
-    private func runAuthFlow() {
-        let coordinator = coordinatorFactory.makeAuthCoordinator(router: router, coordinatorFactory: coordinatorFactory, moduleFactory: moduleFactory)
-        self.addDependency(coordinator)
-        coordinator.start()
-    }
-    
-    private func runMainFlow() {
-        let coordinator = coordinatorFactory.makeAuthCoordinator(router: router, coordinatorFactory: coordinatorFactory, moduleFactory: moduleFactory)
+    private func runAuthFlow(launch: LaunchInstructor) {
+        let coordinator = coordinatorFactory.makeAuthCoordinator(router: router, coordinatorFactory: coordinatorFactory, moduleFactory: moduleFactory, launchInsractor: launch)
         self.addDependency(coordinator)
         coordinator.start()
     }

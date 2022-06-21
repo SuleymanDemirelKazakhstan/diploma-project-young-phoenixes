@@ -17,6 +17,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Asar" customModuleProvider="target">
             <connections>
                 <outlet property="actionView" destination="i8E-s0-Dut" id="zwo-HX-eKY"/>
+                <outlet property="bottomButton" destination="gzj-fi-LOW" id="fxc-5m-TnS"/>
+                <outlet property="bottomTittle" destination="mYb-Vr-7gg" id="xOE-VY-3Cs"/>
                 <outlet property="emailTextField" destination="bfk-si-MNI" id="K8t-1I-qxK"/>
                 <outlet property="headerView" destination="Bj3-iW-pJF" id="OOk-nq-E4j"/>
                 <outlet property="passwordTextField" destination="MQJ-Gj-3ej" id="5UZ-Ag-kMK"/>
@@ -51,24 +53,46 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="i8E-s0-Dut" customClass="BottomActionButton" customModule="Asar" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="734" width="414" height="128"/>
+                    <rect key="frame" x="0.0" y="639" width="414" height="128"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="vHa-js-hEz">
+                    <rect key="frame" x="16" y="791" width="382" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYb-Vr-7gg">
+                            <rect key="frame" x="0.0" y="6" width="161.5" height="18"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzj-fi-LOW">
+                            <rect key="frame" x="166.5" y="0.0" width="215.5" height="30"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="bottomButtonDidTap:" destination="-1" eventType="touchUpInside" id="pUR-0M-BpP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bfk-si-MNI" secondAttribute="trailing" constant="16" id="05A-rv-sr0"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="i8E-s0-Dut" secondAttribute="bottom" id="3Pm-TU-TB3"/>
+                <constraint firstAttribute="bottom" secondItem="vHa-js-hEz" secondAttribute="bottom" constant="50" id="6md-dM-vp7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vHa-js-hEz" secondAttribute="trailing" constant="16" id="7G2-Mm-bn4"/>
                 <constraint firstItem="Bj3-iW-pJF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="8TZ-yn-31s"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="i8E-s0-Dut" secondAttribute="trailing" id="9ZG-Yt-rUh"/>
                 <constraint firstItem="Bj3-iW-pJF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="125" id="9dT-pV-eS1"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Bj3-iW-pJF" secondAttribute="trailing" constant="16" id="AfT-Z4-sr8"/>
                 <constraint firstItem="MQJ-Gj-3ej" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="HZe-8z-Dv8"/>
                 <constraint firstItem="bfk-si-MNI" firstAttribute="top" secondItem="Bj3-iW-pJF" secondAttribute="bottom" constant="20" id="Itk-16-fJQ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MQJ-Gj-3ej" secondAttribute="trailing" constant="16" id="LWT-dp-g4c"/>
+                <constraint firstItem="vHa-js-hEz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="MzP-qY-JaN"/>
+                <constraint firstItem="i8E-s0-Dut" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="RP0-LK-M20"/>
+                <constraint firstItem="vHa-js-hEz" firstAttribute="top" secondItem="i8E-s0-Dut" secondAttribute="bottom" constant="24" id="bEQ-uH-4ZW"/>
                 <constraint firstItem="MQJ-Gj-3ej" firstAttribute="top" secondItem="bfk-si-MNI" secondAttribute="bottom" constant="15" id="ctJ-Bv-OzA"/>
-                <constraint firstItem="i8E-s0-Dut" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ljE-Nh-f0O"/>
+                <constraint firstItem="i8E-s0-Dut" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="fzd-Xs-07M"/>
                 <constraint firstItem="bfk-si-MNI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="v9h-dv-4IR"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

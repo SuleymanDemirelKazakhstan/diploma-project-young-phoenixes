@@ -29,7 +29,6 @@ struct HomeSection {
 final class HomeStore {
     enum Action {
         case didLoadView
-        case willAppearView
         case didTapCategory(category: String)
     }
     
@@ -40,14 +39,12 @@ final class HomeStore {
         case sections(sections: [HomeSection])
         case categoryTapped(categoty: String)
     }
-    
-    private var isLoaded: Bool
+
     private var sections: [HomeSection] = []
 
     @Observable private(set) var state: State?
     
     init() {
-        isLoaded = false
     }
     
     // swiftlint:disable function_body_length cyclomatic_complexity
@@ -56,17 +53,11 @@ final class HomeStore {
         case .didLoadView:
             state = .loading
             configureSections()
-            getStorageContent()
-        case .willAppearView:
-            getStorageContent()
         case let .didTapCategory(category):
             state = .categoryTapped(categoty: category)
         }
     }
     
-    private func getStorageContent() {
-    }
-        
     private func configureSections() {
         sections = [
             .init(type: .banners, rows: [.banners]),

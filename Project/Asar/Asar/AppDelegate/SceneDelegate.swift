@@ -25,7 +25,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = UINavigationController()
         window?.makeKeyAndVisible()
-        let launchInstructor: LaunchInstructor = Auth.auth().currentUser == nil ? .auth : .main
+//        var onboardingWasShown = Auth.auth().currentUser == nil
+        let launchInstructor: LaunchInstructor = LaunchInstructor.configure(tutorialWasShown: Auth.auth().currentUser != nil, isAutorized: Auth.auth().currentUser != nil)
         self.applicationCoordinator.start(launchInstructor: launchInstructor)
     }
 }

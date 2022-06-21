@@ -10,19 +10,29 @@ import UIKit
 final class AuthCoordinator: BaseCoordinator {
     private let coordinatorFactory: CoordinatorFactory
     private let moduleFactory: ModuleFactory
+    private let launchInstractor: LaunchInstructor
+    private var viewState: ViewState?
 
-    init(router: Router, cordinatorFactory: CoordinatorFactory, moduleFactory: ModuleFactory) {
+    init(router: Router, cordinatorFactory: CoordinatorFactory, moduleFactory: ModuleFactory, launchInstractor: LaunchInstructor) {
         self.coordinatorFactory = cordinatorFactory
         self.moduleFactory = moduleFactory
+        self.launchInstractor = launchInstractor
         super.init(router: router)
     }
 
     override func start() {
-        showLoginViewController()
+        switch launchInstractor {
+        case .auth:
+            showLoginViewController(viewState: nil)
+        case .onboarding:
+            showOnboardingViewController()
+        default:
+            break
+        }
     }
 
-    private func showLoginViewController() {
-        let loginVC = moduleFactory.makeLoginViewController(navigationDelegate: self)
+    private func showLoginViewController(viewState: ViewState?) {
+        let loginVC = moduleFactory.makeLoginViewController(viewState: viewState, navigationDelegate: self)
         router.setRootModule(loginVC)
     }
     
@@ -32,12 +42,17 @@ final class AuthCoordinator: BaseCoordinator {
     }
     
     private func showOnboardingViewController() {
-        let onboarding = moduleFactory.makeOnboardingViewController()
+        let onboarding = moduleFactory.makeOnboardingViewController(delegate: self)
         router.setRootModule(onboarding)
     }
     
-    private func showMainViewController() {
-        let main = moduleFactory.makeMain(viewControllers: [runHomeMainFlow(), runOrdersFlow(), runMyOrdersFlow(), runProfileFlow()])
+    private func showRoleChooseViewController() {
+        let roleChoose = moduleFactory.makeRoleChooseViewController(navigationDelegate: self)
+        router.push(roleChoose, animated: true)
+    }
+    
+    private func showMainViewController(viewState: ViewState) {
+        let main = moduleFactory.makeMain(viewControllers: viewState == .client ? [runHomeMainFlow(), runOrdersFlow(), runMyOrdersFlow(), runProfileFlow()] : [runHomeMainFlow(), runMyOrdersFlow(), runProfileFlow()])
         router.setRootModule(main)
     }
     
@@ -81,12 +96,12 @@ final class AuthCoordinator: BaseCoordinator {
 
 // MARK: - LoginViewControllerDelegate
 extension AuthCoordinator: LoginViewControllerDelegate {
-    func loginDidTap() {
-        showMainViewController()
+    func loginDidTap(viewState: ViewState) {
+        showMainViewController(viewState: viewState)
     }
     
     func forgetPasswordDidTap() {
-        
+        showRegisterViewController()
     }
     
     func registerDidTap() {
@@ -100,12 +115,33 @@ extension AuthCoordinator: RegisterViewControllerDelegate {
     func registerButtonDidTap() {
         showRegisterConfirmViewController()
     }
+    
+    func loginButtonDidTap() {
+        showLoginViewController(viewState: nil)
+    }
 }
 
 // MARK: - RegisterConfirmNavigationDelegate
 
 extension AuthCoordinator: RegisterConfirmNavigationDelegate {
     func confirmDidTap() {
-        showMainViewController()
+//        showMainViewController()
+        showRoleChooseViewController()
+    }
+}
+
+// MARK: - OnboardingNavigationDelegate
+
+extension AuthCoordinator: OnboardingNavigationDelegate {
+    func showLoginPage() {
+        showLoginViewController(viewState: nil)
+    }
+}
+
+// MARK: - RoleChooseViewDelegate
+
+extension AuthCoordinator: RoleChooseViewDelegate {
+    func showMainPage(viewState: ViewState) {
+        showLoginViewController(viewState: viewState)
     }
 }

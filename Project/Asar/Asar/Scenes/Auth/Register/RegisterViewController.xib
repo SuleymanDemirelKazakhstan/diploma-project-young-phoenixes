@@ -17,17 +17,19 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="Asar" customModuleProvider="target">
             <connections>
                 <outlet property="actionButton" destination="gdq-N5-61l" id="6Nb-bm-ZKA"/>
+                <outlet property="bottomButton" destination="21w-zK-ePB" id="VgL-iq-KKX"/>
+                <outlet property="bottomTittle" destination="BlM-7i-i0x" id="C2E-Kx-Efq"/>
                 <outlet property="emailTextField" destination="2Du-OR-bxj" id="7lg-S6-9bT"/>
                 <outlet property="headerView" destination="sNE-W1-1G8" id="nyu-vl-RCR"/>
                 <outlet property="passwordTextField" destination="mf8-Vw-peD" id="New-gB-B0o"/>
-                <outlet property="phoneTextField" destination="GdG-BY-GEO" id="eOe-u8-Fcb"/>
+                <outlet property="phoneTextField" destination="3OV-wB-UBR" id="eyl-XG-yYG"/>
                 <outlet property="stackView" destination="8IX-S3-w1f" id="cBX-UJ-AR5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="727"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="840"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="sNE-W1-1G8" customClass="HeaderView" customModule="Asar" customModuleProvider="target">
@@ -37,14 +39,13 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="apb-9x-6iB">
                     <rect key="frame" x="16" y="321" width="382" height="200"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Номер телефона" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GdG-BY-GEO">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PhoneNumber" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3OV-wB-UBR">
                             <rect key="frame" x="0.0" y="0.0" width="382" height="56"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="56" id="bMI-2t-O2j"/>
+                                <constraint firstAttribute="height" constant="56" id="t3b-2H-6U6"/>
                             </constraints>
-                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
-                            <textInputTraits key="textInputTraits" keyboardType="phonePad" enablesReturnKeyAutomatically="YES" textContentType="tel"/>
+                            <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Du-OR-bxj">
                             <rect key="frame" x="0.0" y="72" width="382" height="56"/>
@@ -68,9 +69,28 @@
                     <rect key="frame" x="16" y="537" width="382" height="200"/>
                 </stackView>
                 <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="74" translatesAutoresizingMaskIntoConstraints="NO" id="gdq-N5-61l" customClass="BottomActionButton" customModule="Asar" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="653" width="414" height="74"/>
+                    <rect key="frame" x="0.0" y="662" width="414" height="74"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="g3D-3I-VbG">
+                    <rect key="frame" x="100" y="760" width="214" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BlM-7i-i0x">
+                            <rect key="frame" x="0.0" y="6" width="90.5" height="18"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21w-zK-ePB">
+                            <rect key="frame" x="95.5" y="0.0" width="118.5" height="30"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="bottomButtonDidTap:" destination="-1" eventType="touchUpInside" id="00f-t6-Hqq"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -80,16 +100,19 @@
                 <constraint firstItem="apb-9x-6iB" firstAttribute="top" secondItem="sNE-W1-1G8" secondAttribute="bottom" constant="24" id="DH5-GE-5Z2"/>
                 <constraint firstItem="8IX-S3-w1f" firstAttribute="top" secondItem="apb-9x-6iB" secondAttribute="bottom" constant="16" id="GOl-vs-h7U"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sNE-W1-1G8" secondAttribute="trailing" constant="16" id="HNh-pa-CGY"/>
+                <constraint firstAttribute="bottom" secondItem="g3D-3I-VbG" secondAttribute="bottom" constant="50" id="KU3-dx-EvS"/>
+                <constraint firstItem="g3D-3I-VbG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="LUb-1a-S2n"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8IX-S3-w1f" secondAttribute="trailing" constant="16" id="Nsq-hu-4f2"/>
-                <constraint firstItem="gdq-N5-61l" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cjf-s4-rdj"/>
+                <constraint firstItem="gdq-N5-61l" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="bpr-4j-Ixx"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="apb-9x-6iB" secondAttribute="trailing" constant="16" id="gG1-3K-luf"/>
-                <constraint firstItem="gdq-N5-61l" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="jQk-IZ-pX7"/>
                 <constraint firstItem="sNE-W1-1G8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="125" id="oHi-VK-H4u"/>
-                <constraint firstItem="gdq-N5-61l" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="y3G-nF-aOi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="g3D-3I-VbG" secondAttribute="trailing" constant="100" id="s4g-tO-9di"/>
+                <constraint firstItem="gdq-N5-61l" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tXi-Ke-4VH"/>
+                <constraint firstItem="g3D-3I-VbG" firstAttribute="top" secondItem="gdq-N5-61l" secondAttribute="bottom" constant="24" id="yqZ-Ic-y9D"/>
                 <constraint firstItem="apb-9x-6iB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="znR-Aw-Kw1"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="53.623188405797109" y="62.611607142857139"/>
+            <point key="canvasLocation" x="53.623188405797109" y="100.44642857142857"/>
         </view>
     </objects>
     <resources>

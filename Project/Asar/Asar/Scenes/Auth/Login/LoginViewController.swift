@@ -10,7 +10,7 @@ import Firebase
 import iOSUtilitiesSource
 
 protocol LoginViewControllerDelegate: AnyObject {
-    func loginDidTap()
+    func loginDidTap(viewState: ViewState)
     func forgetPasswordDidTap()
 }
 
@@ -20,9 +20,18 @@ class LoginViewController: UIViewController {
     @IBOutlet private var emailTextField: UITextField!
     @IBOutlet private var passwordTextField: UITextField!
     @IBOutlet private var actionView: BottomActionButton!
+    @IBOutlet private var bottomTittle: UILabel!
+    @IBOutlet private var bottomButton: UIButton!
+    private var viewState: ViewState?
+    private var db = Firestore.firestore()
     
-    init(navigationDelegate: LoginViewControllerDelegate) {
+    @IBAction func bottomButtonDidTap(_ sender: UIButton) {
+        navigationDelegate?.forgetPasswordDidTap()
+    }
+    
+    init(navigationDelegate: LoginViewControllerDelegate, viewState: ViewState?) {
         self.navigationDelegate = navigationDelegate
+        self.viewState = viewState
         super.init(nibName: String(describing: Self.self), bundle: Bundle(for: Self.self))
     }
     
@@ -37,6 +46,7 @@ class LoginViewController: UIViewController {
     }
     
     private func setupUI() {
+        self.navigationController?.isNavigationBarHidden = true
         headerView.configureTexts(titleText: L10n.loginTitle, subtitleText: L10n.loginSubtitle)
         actionView.delegate = self
         actionView.configureTitle(text: L10n.loginLogInButton)
@@ -45,26 +55,34 @@ class LoginViewController: UIViewController {
         Utilities.styleTextField(passwordTextField)
         passwordTextField.placeholder = L10n.loginPasswordPlaceholder
         passwordTextField.isSecureTextEntry = true
-    }
-    
-    func validateFields() -> String? {
-        // Check that all fields are filled in
-        if  emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-            passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
-            return "Please fill in all fields."
-        }
-        return nil
+        bottomTittle.text = L10n.loginDontHaveAccTitle
+        bottomButton.setTitle(L10n.loginMakeRegistrationButton
+                              , for: .normal)
     }
     
     private func actionButtonTapped() {
-        let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard let email = emailTextField.text, !email.isEmpty,
+              let password = passwordTextField.text, !password.isEmpty else {
+            showToast(message: "Заполните все поля")
+            return
+        }
+        if let viewState = viewState {
+            db.collection("users").document(email).setData(["viewState": "\(viewState)"], merge: true)
+        }
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             if error != nil {
                 print(error!)
             }
             else {
-                self.navigationDelegate?.loginDidTap()
+                self.db.collection("users").document(email).getDocument() { document, err in
+                    if let err = err {
+                        print(err)
+                    } else {
+                        self.viewState = (document?["viewState"] as? String) == "client" ? .client : .specialist
+                    }
+                }
+                print(self.viewState)
+                self.navigationDelegate?.loginDidTap(viewState: self.viewState ?? .client)
             }
         }
     }

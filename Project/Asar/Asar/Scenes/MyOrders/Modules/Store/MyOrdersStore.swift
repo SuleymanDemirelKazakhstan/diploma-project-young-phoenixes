@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseFirestore
+import FirebaseAuth
 
 final class MyOrdersStore {
     enum Action {
@@ -17,6 +18,8 @@ final class MyOrdersStore {
     enum State {
         case ordersLoaded
         case orderTapped
+        case loading
+        case stopLoading
     }
     
     
@@ -36,7 +39,8 @@ final class MyOrdersStore {
     }
     
     private func getOrders() {
-        db.collection("order").document("abylbek39@gmail.com").collection("orders").getDocuments() { [self]
+        state = .loading
+        db.collection("orders").getDocuments() { [self]
             (querySnapshot, err) in
                 if let err = err {
                     print("Error getting documents: \(err)")
@@ -49,8 +53,12 @@ final class MyOrdersStore {
                         let address = data["address"] as? String
                         let date = data["date"] as? String
                         let paymentWay = data["paymentWay"] as? String
+                        let name = data["name"] as? String
+                        let price = data["price"] as? String
                         self.orders.append(.init(id: document.documentID,
                                             description: description,
+                                            price: price,
+                                            name: "Abylbek Khassenov",
                                             category: category,
                                             phoneNumber: phoneNumber,
                                             address: address,
@@ -59,6 +67,7 @@ final class MyOrdersStore {
                         self.state = .ordersLoaded
                     }
                 }
+            state = .stopLoading
         }
     }
 }

@@ -15,13 +15,20 @@ private enum Constants {
     static let menuProgressFromTipThreshold: CGFloat = 44
 }
 
+enum ViewState {
+    case client
+    case specialist
+}
+
 class MainViewController: UIViewController {
     private let containerController: ContainerController
     private var selectedIndex: Int
     private var selectedOption: MenuOption?
+//    private var viewState: ViewState?
     
     init(containerController: ContainerController) {
         self.containerController = containerController
+//        self.viewState = viewState
         selectedIndex = 1
         super.init(nibName: nil, bundle: nil)
     }
@@ -34,7 +41,6 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupContainerController()
-        
     }
 
     override func viewWillAppear(_ animated: Bool) {

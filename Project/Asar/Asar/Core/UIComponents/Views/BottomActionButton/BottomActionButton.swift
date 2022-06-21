@@ -14,6 +14,11 @@ protocol BottomActionButtonDelegate: AnyObject {
 class BottomActionButton: UIView, NibOwnerLoadable {
     weak var delegate: BottomActionButtonDelegate?
     @IBOutlet weak var actionButton: UIButton!
+    var buttonEnabled: Bool? {
+        didSet {
+            buttonStateChanged()
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,8 +31,14 @@ class BottomActionButton: UIView, NibOwnerLoadable {
         actionButton.backgroundColor = .blue
     }
     
+    private func buttonStateChanged() {
+        actionButton.isEnabled = buttonEnabled ?? false
+        actionButton.backgroundColor = (buttonEnabled ?? false) ? .blue : .lightGray
+    }
+    
     func configureTitle(text: String) {
         actionButton.setTitle(text, for: .normal)
+        actionButton.setTitle(text, for: .disabled)
     }
     
     @IBAction func actionButtonDidTap(_ sender: UIButton) {

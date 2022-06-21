@@ -22,6 +22,8 @@ struct OrderFieldCellModel {
             return form.date
         case .address:
             return form.address
+        case .price:
+            return form.price
         default:
             return nil
         }
@@ -70,6 +72,8 @@ struct OrderFieldCellModel {
             return L10n.orderDataPlaceholder
         case .paymentWay:
             return L10n.orderPaymentPlaceholder
+        case .price:
+            return "Цена"
         default:
             return nil
         }

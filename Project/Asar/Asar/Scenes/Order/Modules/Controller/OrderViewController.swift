@@ -21,6 +21,7 @@ class OrderViewController: UIViewController {
     private let tableViewDelegateImpl: OrderTableViewDelegateImpl
     private let shodowView = UIView()
     private weak var navigationDelegate: OrderNavigationDelegate?
+    var vSpinner : UIView?
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var actionView: BottomActionButton!
@@ -55,7 +56,7 @@ class OrderViewController: UIViewController {
     }
     
     func mapSelected() {
-        store.dispatch(action: .didChangeTextField(text: "Солодовникова 21", row: .address))
+        store.dispatch(action: .didChangeTextField(text: "Абылбайхана 1/1", row: .address))
     }
 
     private func setupUI() {
@@ -115,6 +116,10 @@ class OrderViewController: UIViewController {
                 vc.navigationDelegate?.mapDidTap(self)
             case .calendarTapped:
                 self.showDatePicker()
+            case .loading:
+                vc.showSpinner(onView: vc.view)
+            case .stopLoading:
+                vc.removeSpinner()
             }
         }
     }
@@ -143,5 +148,27 @@ private extension OrderViewController {
 extension OrderViewController: BottomActionButtonDelegate {
     func actionButtonDidTap() {
         store.dispatch(action: .didTapSend)
+    }
+}
+
+extension OrderViewController {
+    func showSpinner(onView : UIView) {
+        let spinnerView = UIView.init(frame: onView.bounds)
+        spinnerView.backgroundColor = UIColor.init(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.5)
+        let ai = UIActivityIndicatorView.init(style: .whiteLarge)
+        ai.startAnimating()
+        ai.center = spinnerView.center
+        DispatchQueue.main.async {
+            spinnerView.addSubview(ai)
+            onView.addSubview(spinnerView)
+        }
+        vSpinner = spinnerView
+    }
+    
+    func removeSpinner() {
+        DispatchQueue.main.async {
+            self.vSpinner?.removeFromSuperview()
+            self.vSpinner = nil
+        }
     }
 }
